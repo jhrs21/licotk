@@ -1,0 +1,116 @@
+/* 
+    Document   : frontend_index.css
+    Created on : 11/04/2012, 10:16:08 AM
+    Author     : jacobo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/*HOW TO USER -- START*/
+#howtouser-image { background: url('/images/como_funciona_usuario_texto.png') no-repeat scroll 0 0 transparent;
+                   background-position: 13px -28px; margin-top: -17px; height: 715px; }
+#link-home { position: relative; left: 55px; top: 319px; height: 19px; width: 235px; cursor: pointer; }
+#link-info { position: relative; left: 798px; top: 606px; height: 14px; width: 55px; cursor: pointer; }
+#link-blackberry { position: relative; left: 55px; top:    331px; height: 30px; width: 72px; cursor: pointer; }
+#link-android { position: relative; left: 133px; top: 300px; height: 30px; width: 74px; cursor: pointer; }
+#link-iphone { position: relative; left: 213px; top: 271px; height: 30px; width: 74px; cursor: pointer; }
+#link-faq { position: relative; left: 684px; top: 293px; height: 50px; width: 194px; cursor: pointer; }
+/*HOW TO USER -- END*/
+
+/*HOW TO AFFILIATE -- START*/
+#howtoaffiliate-image { background: url('/images/como_funciona_afiliado.png') no-repeat scroll 0 0 transparent;
+                        background-position: -7px -60px; height: 650px; }
+#link-registro1 { position: relative; left: 302px; top: 246px; height: 16px; width: 26px; cursor: pointer; }
+#link-registro2 {width:297px;height:37px;position:relative;left:312px;top:596px;cursor:pointer}
+/*HOW TO AFFILIATE -- END*/
+
+.main-canvas-title h1,.main-canvas-title h2,.main-canvas-title h3{text-shadow: 0 2px 2px #bbb}
+.main-canvas-title h1{color: #18B9E8;font-size: 3em;font-weight: bold;margin: 0 0 20px}
+.main-canvas-title h2{margin-bottom: 20px;}
+.main-canvas-title h3{font-size: 1.5em;line-height:20px;}
+.aqui-te-premiamos-image{
+    background: url('/images/aqui_te_premiamos.png') no-repeat 5px 5px #FFF;
+    height: 125px; width: 110px; margin-bottom: -90px;position: relative; left: 750px; top: -130px;
+    display: block;
+    -moz-box-shadow: 0px 0px 3px #555;-webkit-box-shadow: 0px 0px 3px #555;box-shadow: 0px 0px 3px #555;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px
+}
+.whereAreWe{display: inline-block;width: 852px;padding: 0px 15px; text-align: left}
+.whereAreWe div{float: left;}
+.whereAreWe-row{background-color: #FFF;margin-bottom: 15px;width: 822px;float: left; padding: 15px;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px}
+.waw-image-frame{overflow: hidden;margin-right: 15px;-moz-box-shadow: 0px 0px 3px #555;-webkit-box-shadow: 0px 0px 3px #555;box-shadow: 0px 0px 3px #555;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px}
+.waw-description{font-family: Swis721LtBTLight;font-size: 15px;width: 680px;color: #808080}
+.waw-description-title{font-size:1.7em}
+.waw-description-subtitle{font-size:1.4em}
+.waw-pagination{font-size:1.5em}
+.waw-pagination a{margin-right:5px;color:#808080}
+
+#faqs div{text-align:left}
+#faqs .main-canvas div{margin:0 3%}
+#faqs .main-canvas-title h1{margin-top:10px;text-align:center}
+#faqs .main-canvas-title h2{font-size:1.9em;color:#808080;margin:20px 0px 10px 0px}
+#faqs .main-canvas-content{font-size:1.2em;padding:2%;background:#fff;-moz-box-shadow: 0px 0px 3px #555;-webkit-box-shadow: 0px 0px 3px #555;box-shadow: 0px 0px 3px #555;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px}
+#faqs .main-canvas-content ul{margin-left:2%}
+#faqs .main-canvas-content ul li{margin-bottom:1%}
+#faqs .main-canvas-content ul li.bottom-last{margin-bottom:0}
+#faqs .main-canvas-content ul li img{margin-left:35%}
+.faq-download-qr{display: block; margin-left: auto; margin-right: auto;}
+
+/*#main-container{
+    background: url('/images/main_background.png') repeat-y;
+}*/
+.contact-form-container {
+    width: 922px;
+    margin: -14px 0px 14px 14px;
+    float: left;
+    background: #FFFFFF;
+    /* -- CSS3 Shadow - create a shadow around each input element -- */ 
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+    box-shadow: 0px 0px 4px #aaa;
+
+    /* -- CSS3 - Rounded Corners -- */
+    -webkit-border-bottom-left-radius: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px; 
+    -moz-border-radius-bottomright: 30px; 
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.contact-form-container-inner{
+    font-family: HelveticaRegular;
+    text-align: center;
+    width: 882px;
+    float: left;
+    margin: 20px;
+    padding-bottom: 20px;
+    background: url(/images/contact_info.png) no-repeat;
+    height: 500px;
+    background-color: #E6E6E7;
+    background-position: center center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px;
+}
+#mailto-info{
+    cursor: pointer;
+    height: 13px;
+    left: 412px;
+    position: relative;
+    top: 217px;
+    width: 92px;
+}
+#mailto-soporte{
+    cursor: pointer;
+    height: 13px;
+    left: 408px;
+    position: relative;
+    top: 350px;
+    width: 112px;
+}
+#link-{ cursor: pointer;
+    height: 13px;
+    left: 428px;
+    position: relative;
+    top: 429px;
+    width: 68px;
+}

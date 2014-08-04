@@ -1,0 +1,219 @@
+Affiliate:
+  la_suisse:
+    name: La Suisse
+    description: Restaurante La Suisse
+    logo: la_suisse_logo.jpg
+    thumb: la_suisse.png
+    Category: restaurantes
+  raphia:
+    name: Raphia
+    description: Muebles y decoración con buen gusto.
+    logo: raphia_logo.jpg
+    thumb: raphia.png
+    Category: muebles_y_decoracion
+  teatrex:
+    name: Teatrex
+    description: Una propuesta diferente sobre teatro.
+    logo: teatrex_logo.jpg
+    thumb: teatrex.png
+    Category: teatro_y_cine
+
+Asset:
+  la_suisse_hatillo:
+    name: La Suisse
+    asset_type: place
+    Affiliate: la_suisse
+  raphia_hatillo:
+    name: Raphia (El Hatillo)
+    asset_type: place
+    Affiliate: raphia
+  teatrex_hatillo:
+    name: Teatrex
+    asset_type: place
+    Affiliate: teatrex
+    
+Location:
+  location_la_suisse_hatillo:
+    address: Av. Sur, C.C. Paseo El Hatillo, Piso 5. Urb. La Lagunita El Hatillo. Caracas – Venezuela
+    latitude: 10.423756
+    longitude: -66.823625
+    Asset: la_suisse_hatillo
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  location_raphia_hatillo:
+    address: CC Paseo El Hatillo
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: raphia_hatillo
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  location_teatrex_hatillo:
+    address: Av. Sur, C.C. Paseo El Hatillo, Piso 5. Urb. La Lagunita El Hatillo. Caracas – Venezuela
+    latitude: 10.423727
+    longitude: -66.824314
+    Asset: teatrex_hatillo
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+    
+Promo:
+  promo_teatrex:
+    name: Teatrex te recompensa
+    description: Con la compra de una entrada, en tu próxima visita tu pareja entra a mitad de precio
+    max_uses: 0
+    max_daily_tags: 1
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 3, 19, 2012)) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 6, 16, 2012)) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 3, 20, 2012)) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 3, 17, 2012)) ?>'
+    Affiliate: teatrex
+  promo_raphia:
+    name: Registrarte en LealTag
+    description: Por registrarte en LealTag, recibe Bs. 30 de consumo en tu próxima visita del Bazar Raphia
+    max_uses: 1
+    max_daily_tags: 1
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 3, 19, 2012)) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 6, 16, 2012)) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 3, 20, 2012)) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 3, 17, 2012)) ?>'
+    Affiliate: raphia
+  promo_lasuisse:
+    name: La Suisse premia tu lealtad
+    description: Por consumir al menos Bs. 300 recibe Bs. 80 de descuento en tu próxima compra de al menos Bs. 300
+    max_uses: 0
+    max_daily_tags: 1
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 3, 19, 2012)) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 6, 16, 2012)) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 3, 20, 2012)) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 3, 17, 2012)) ?>'
+    Affiliate: la_suisse
+
+PromoPrize:
+  promoprize_lasuisse:
+    threshold: 1
+    prize: Bs.80 de descuento en tu próximo consumo de al menos Bs.300
+    Promo: promo_lasuisse
+  promoprize_teatrex:
+    threshold: 1
+    prize: Al comprar 2 entradas, la 2da tendrá 50% de descuento.
+    Promo: promo_teatrex
+  promoprize_raphia:
+    threshold: 1
+    prize: Por registrarte en LealTag, recibe Bs. 30 de consumo en tu próxima visita del Bazar Raphia
+    Promo: promo_raphia
+
+PromoTerm:
+  lasuisse_term1:
+    Promo: promo_lasuisse
+    term: Se aceptará el canje de un (1) cupón por factura, por cliente por día. De tener más de un (1) cupón deberá ser canjeado otro día distinto.
+  lasuisse_term2:
+    Promo: promo_lasuisse
+    term: El cupón deberá ser enseñado desde la aplicación Lealtag o de forma impresa al momento de la facturación para su canje.
+  lasuisse_term3:
+    Promo: promo_lasuisse
+    term: No se devuelve dinero a cambio del cupón.
+  lasuisse_term4:
+    Promo: promo_lasuisse
+    term: Ningún empleado o familiar de los mismos podrán participar en la promoción.
+  lasuisse_term5:
+    Promo: promo_lasuisse
+    term: El cupón NO podrá ser utilizado en conjunto con otra promoción.
+  lasuisse_term6:
+    Promo: promo_lasuisse
+    term: Cada cupón es válido para una (1) sola compra, no es reusable.
+  lasuisse_term7:
+    Promo: promo_lasuisse
+    term: Máximo de cupones canjeables por factura uno (1).
+  lasuisse_term8:
+    Promo: promo_lasuisse
+    term: No se aceptará combinaciones de cupones en una misma factura.
+  lasuisse_term9:
+    Promo: promo_lasuisse
+    term: No se permitirá dividir montos en varias facturas para obtener más cupones.
+  lasuisse_term10:
+    Promo: promo_lasuisse
+    term: 'Los Tags requeridos para reclamar un premio podrán ser acumulados desde el 19/03/2012 hasta el 16/06/2012'
+  suisse_term11:
+    Promo: promo_lasuisse
+    term: 'Los premios alcanzados podrán ser canjeados desde el 20/03/2012 hasta el 17/06/2012'
+  lasuisse_term12:
+    Promo: promo_lasuisse
+    term: 'INDEPABIS: PROMOCIÓN AUTORIZADA POR EL INDEPABIS. Cantidad disponible: 8.000 cupones de descuento. Esta promoción serán ofertada únicamente en LA SUISSE PASEO EL HATILLO, los días entre el 19 de marzo de 2012 y el 17 de junio de 2012 en un horario corrido comprendido de lunes a sabado hasta las 10:00 PM y domingos de 12m a 8pm .Promoción válida por 90 días. El canje lo podrá realizar en LA SUISSE PASEO EL HATILLO. EL HATILLO LA LAGUNITA.'
+  teatrex_term1:
+    Promo: promo_teatrex
+    term: Se aceptará el canje de un (1) cupón por factura, por cliente por día. De tener más de un (1) cupón deberá ser canjeado otro día distinto.
+  teatrex_term2:
+    Promo: promo_teatrex
+    term: El cupón deberá ser enseñado desde la aplicación Lealtag o de forma impresa al momento de la facturación para su canje.
+  teatrex_term3:
+    Promo: promo_teatrex
+    term: No se devuelve dinero a cambio del cupón.
+  teatrex_term4:
+    Promo: promo_teatrex
+    term: Ningún empleado o familiar de los mismos podrán participar en la promoción.
+  teatrex_term5:
+    Promo: promo_teatrex
+    term: El cupón NO podrá ser utilizado en conjunto con otra promoción.
+  teatrex_term6:
+    Promo: promo_teatrex
+    term: Cada cupón es válido para una (1) sola compra, no es reusable.
+  teatrex_term7:
+    Promo: promo_teatrex
+    term: Máximo de cupones canjeables por factura uno (1).
+  teatrex_term8:
+    Promo: promo_teatrex
+    term: No se aceptará combinaciones de cupones en una misma factura.
+  teatrex_term9:
+    Promo: promo_teatrex
+    term: No se permitirá dividir montos en varias facturas para obtener más cupones.
+  teatrex_term10:
+    Promo: promo_teatrex
+    term: 'Los Tags requeridos para reclamar un premio podrán ser acumulados desde el 19/03/2012 hasta el 16/06/2012'
+  suisse_term11:
+    Promo: promo_teatrex
+    term: 'Los premios alcanzados podrán ser canjeados desde el 20/03/2012 hasta el 17/06/2012'
+  teatrex_term12:
+    Promo: promo_teatrex
+    term: 'INDEPABIS: PROMOCIÓN AUTORIZADA POR EL INDEPABIS. Cantidad disponible: 8.000 boletos. Esta promoción serán ofertada únicamente en TEATREX EL HATILLO, los días entre el 16 de marzo de 2012 y el 13 de junio de 2012 en un horario corrido comprendido desde las 4:00 PM hasta las 10:00 PM .Promoción válida por 90 días. El canje lo podrá realizar en TEATREX EL HATILLO C.C. E;L HATILLO LA LAGUNITA.'
+  raphia_term1:
+    Promo: promo_raphia
+    term: Se aceptará el canje de un (1) cupón por factura, por cliente por día. De tener más de un (1) cupón deberá ser canjeado otro día distinto.
+  raphia_term2:
+    Promo: promo_raphia
+    term: El cupón deberá ser enseñado desde la aplicación Lealtag o de forma impresa al momento de la facturación para su canje.
+  raphia_term3:
+    Promo: promo_raphia
+    term: No se devuelve dinero a cambio del cupón.
+  raphia_term4:
+    Promo: promo_raphia
+    term: Ningún empleado o familiar de los mismos podrán participar en la promoción.
+  raphia_term5:
+    Promo: promo_raphia
+    term: El cupón NO podrá ser utilizado en conjunto con otra promoción.
+  raphia_term6:
+    Promo: promo_raphia
+    term: Cada cupón es válido para una (1) sola compra, no es reusable.
+  raphia_term7:
+    Promo: promo_raphia
+    term: Máximo de cupones canjeables por factura uno (1).
+  raphia_term8:
+    Promo: promo_raphia
+    term: No se aceptará combinaciones de cupones en una misma factura.
+  raphia_term9:
+    Promo: promo_raphia
+    term: No se permitirá dividir montos en varias facturas para obtener más cupones.
+  raphia_term10:
+    Promo: promo_raphia
+    term: 'Los Tags requeridos para reclamar un premio podrán ser acumulados desde el 19/03/2012 hasta el 16/06/2012'
+  suisse_term11:
+    Promo: promo_raphia
+    term: 'Los premios alcanzados podrán ser canjeados desde el 20/03/2012 hasta el 17/06/2012'
+    

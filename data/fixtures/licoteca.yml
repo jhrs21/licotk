@@ -1,0 +1,437 @@
+Currency:
+  pts_lt:
+    name: Puntos LT
+    symbol: ptsLT
+    alpha_id: alphaIdPtsLT
+    is_super: 1
+    
+ValuePerAction:
+  tag_action:
+    alpha_id: alphaIdAction1
+    action: tag
+    value: 3
+    is_super: 1
+  redeem_action:
+    alpha_id: alphaIdAction2
+    action: redeem
+    value: 10
+    is_super: 1
+  feedback_action:
+    alpha_id: alphaIdAction3
+    action: feedback
+    value: 5
+    is_super: 1
+    
+
+Country:
+  venezuela:
+    name: Venezuela
+
+State:
+  miranda:
+    name: Miranda
+    Country: venezuela
+  distritocapital:
+    name: Distrito Capital
+    Country: venezuela
+  otro_estado:
+    name: Otro
+    Country: venezuela
+
+Municipality:
+  baruta:
+    name: Baruta
+    State: miranda
+  chacao:
+    name: Chacao
+    State: miranda
+  elhatillo:
+    name: El Hatillo
+    State: miranda
+  sucre:
+    name: Sucre
+    State: miranda
+  libertador:
+    name: Libertador
+    State: distritocapital
+  otro_municipio:
+    name: Otro
+    State: otro_estado
+
+City:
+  caracas:
+    name: Caracas
+    State: distritocapital
+  otra_ciudad:
+    name: Otra
+    State: otro_estado
+  
+MunicipalityCity:
+  barutacaracas:
+    Municipality: baruta
+    City: caracas
+  chacaocaracas:
+    Municipality: chacao
+    City: caracas
+  elhatillocaracas:
+    Municipality: elhatillo
+    City: caracas
+  sucrecaracas:
+    Municipality: sucre
+    City: caracas
+  libertadorcaracas:
+    Municipality: libertador
+    City: caracas
+  otro_municipiootra_ciudad:
+    Municipality: otro_municipio
+    City: otra_ciudad
+
+sfGuardUser:
+  jr:
+    first_name:     Jose
+    last_name:      Riera
+    email_address:  jhrs21@yahoo.com
+    username:       jhrs21
+    password:       123456
+    is_super_admin: false
+    alpha_id: alphaid_jr
+    hash: hash_jr
+    Groups: [Group_licoteca]
+  super_admin:
+    first_name:     Jose
+    last_name:      Riera
+    email_address:  jose.riera@lealtag.com
+    username:       josehriera
+    password:       josehriera
+    is_super_admin: true
+    Groups: [Group_admin]
+  licoteca_admin:
+    first_name:     Administrador
+    last_name:      Licoteca
+    email_address:  licoteca@lealtag.com
+    username:       licoteca_admin
+    password:       licoteca_admin
+    is_super_admin: false
+    is_admin: true
+    Affiliate: licoteca
+    Asset: licoteca_lacastellana
+    Groups: [Group_affiliate_admin]
+  licoteca_lacastellana_admin:
+    first_name:     Administrador
+    last_name:      Licoteca La Castellana
+    email_address:  licoteca_lacastellana@lealtag.com
+    username:       licoteca_lacastellana
+    password:       licoteca_lacastellana
+    is_super_admin: false
+    is_admin: false
+    Affiliate: licoteca
+    Asset: licoteca_lacastellana
+    Groups: [Group_affiliate_admin]
+  empleado_1:
+    first_name:     Juan
+    last_name:      Perez
+    email_address:  juan.perez@lealtag.com
+    username:       juan.perez
+    password:       juan.perez
+    is_super_admin: false
+    Affiliate: licoteca
+    Groups: [Group_employee]
+    
+sfGuardGroup:
+  Group_admin:
+    name:           admin
+    description:    Administrator group
+    Permissions:    [Permission_admin,Permission_admin_tasks]
+  Group_affiliate_admin:
+    name:           affiliate_admin
+    description:    Affiliate administrator group
+    Permissions:    [Permission_affiliate_admin,Permission_admin_tasks]
+  Group_employee:
+    name:           affiliate_employee
+    description:    Employee group
+    Permissions:    [Permission_affiliate_employee]
+  Group_licoteca:
+    name:           licoteca_users
+    description:    Licoteca Users group
+    Permissions:    [Permission_user]
+
+sfGuardPermission:
+  Permission_admin:
+    name:           admin
+    description:    Administrator permission
+  Permission_affiliate_admin:
+    name:           affiliate_admin
+    description:    Affiliate administrator permission
+  Permission_affiliate_employee:
+    name:           employee
+    description:    Employee permission
+  Permission_admin_tasks:
+    name:           admin_tasks
+    description:    Permission for execute administration tasks
+  Permission_user:
+    name:           user_tasks
+    description:    User permission
+    
+UserProfile:
+  profile_pv:
+    fullname: Jose Riera
+    email: jhrs21@yahoo.com
+    id_number: 18329575
+    birthdate: '1986-06-29'
+    gender: male
+    User: jr
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+
+UserAffiliateProfile:
+  profile_empleado_1:
+    User: empleado_1
+    email: juan.perez@gmail.com
+    fullname: Juan Perez
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+
+Category:
+  licorerias:
+    name: Licorerias
+#  restaurantes_comida_italiana:
+#    name: Comida italiana
+#    ParentCategory: restaurantes
+
+Affiliate:
+  licoteca:
+    alpha_id: alphaid_licoteca
+    hash: hash_licoteca
+    name: Licoteca
+    description: Licoteca CA
+    logo: licoteca_logo.jpg
+    thumb: licoteca.png
+    Category: licorerias
+
+AffiliateCategory:
+  licoteca_licorerias:
+    Affiliate: licoteca
+    Category: licorerias
+
+Asset:
+  licoteca_lacastellana:
+    alpha_id: CnsJnjcUEj
+    hash: bbdc137a786a93732d33e57ddffda67232e3b725177901b0a2
+    name: Licoteca
+    description: Licoteca en La Castellana
+    thumb: licoteca_thumb.png
+    logo: licoteca_logo.png
+    asset_type: place
+    Affiliate: licoteca
+    Category: licorerias
+    
+AssetCategory:
+  licoteca_licorerias:
+    Asset: licoteca_lacastellana
+    Category: licorerias
+
+Location:
+  location_licoteca_lacastellana:
+    address: Avenida Mohedano
+    latitude: 10.498635
+    longitude: -66.854162
+    Asset: licoteca_lacastellana
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+
+Promo:
+  promo_licoteca:
+    alpha_id: l1c0t3c4pr
+    name: ¡Mantente fiel a Licoteca!
+    description: Con el consumo en nuestra tienda te regalamos
+    indepabis: 'Texto de la declaración de Indepabis para la promoción de Licoteca'
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3, date("d"), date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-17, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+7, date("d"), date("Y"))) ?>'
+    Affiliate: licoteca
+    
+PromoRedeemerConfig:
+  td_redeemer:
+    url: http://lealtag.ip/api/control.php
+    api_key: LEALTAG
+    api_token: 877e1a188460ca23cd7646d70af385a8
+    # Promo: promo_td
+
+PromoPrize:
+  promoprize_licoteca:
+    threshold: 3
+    prize: Bs. 100 para consumo en productos de licoteca
+    Promo: promo_licoteca
+
+<?php $promos = array('promo_licoteca') ?>
+
+PromoTerm:
+<?php foreach($promos as $promo):?>
+<?php for ($i = 0; $i < rand(3,5); $i++) : ?>
+  term_<?php echo $promo.'_'.$i ?>:
+    term: <?php echo 'Condición_'.$i."\n"?>
+    Promo: <?php echo $promo."\n"?>
+<?php endfor; ?>
+<?php endforeach; ?>
+
+PromoCode:
+  promocode_licoteca_lacastellana:
+    alpha_id: pc_lt_0001VC
+    hash: pc_lt_lacastellana
+    status: active
+    digital: true
+    type: validation_required
+    Promo: promo_licoteca
+    User: empleado_1
+    Asset: licoteca_lacastellana
+    
+ValidationCode:
+<?php for($i=1;$i<=30;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_licoteca_lacastellana
+<?php endfor; ?>
+  
+AssetPromo:
+  promo_licoteca_lacastellana:
+    Promo: promo_licoteca
+    Asset: licoteca_lacastellana
+
+Subscription:
+  jr_licoteca_lacastellana:
+    User: jr
+    Affiliate: licoteca
+    Asset: licoteca_lacastellana
+
+ApiUser:
+  tu:
+    name: testuser
+    algorithm: sha1
+    salt: salt123456
+    apikey: 55ff862d944bb8ef213af7d98853ac95c4367fdb
+  # td:
+  #   name: tudescuenton
+  #   algorithm: sha1
+  #   salt: salt123
+  #   apikey: 5b933663ed177b718c7bc19800c967a0bb27f1bb
+  # todofarma:
+  #   name: todofarma
+  #   algorithm: sha1
+  #   salt: salt321
+  #   apikey: 8a86d52858bc7b718c7bc19800c967bc190c967a
+
+MembershipCard:
+<?php for($i = 1; $i < 21; $i++): ?>
+  mcard_<?php echo $i ?>:
+    alpha_id: <?php echo str_pad($i, 5, "m", STR_PAD_LEFT)."\n" ?>
+    status: unassigned
+<?php endfor; ?>
+
+Survey:
+  survey1:
+    alpha_id: survey1
+    name: 'Encuesta de MasterCard'
+    all_promos: true
+  # survey2:
+  #   alpha_id: survey2
+  #   name: 'Encuesta de MasterCard 2'
+  #   is_active: false
+  # survey3:
+  #   alpha_id: survey3
+  #   name: 'Encuesta de Prueba'
+  #   is_active: false
+  # survey_cable:
+  #   alpha_id: survey_cable
+  #   name: 'Encuesta de tablet para MasterCard'
+  #   is_active: true
+
+# SurveyPromo:
+#   survey2_promo_todofarma:
+#     Survey: survey2
+#     Promo: promo_todofarma
+    
+SurveyItem:
+  item1:
+    alpha_id: item1
+    label: '¿Qué medio de pago utilizaste?'
+    item_type: multiple_selection
+    is_required: true
+    position: 1
+    Survey: survey1
+  item2:
+    alpha_id: item2
+    label: 'Si pagaste con tarjeta de credito, ¿Qué tarjeta utilizaste?'
+    item_type: simple_selection
+    is_required: true
+    is_active: false
+    position: 2
+    Survey: survey1
+  item3:
+    alpha_id: item3
+    label: 'Si utilizaste tarjeta de credito MasterCard, por favor introduce el numero de voucher a continuación'
+    item_type: text
+    is_required: true
+    position: 3
+    Survey: survey1
+    
+SurveyItemOption:
+  item1_option1:
+    alpha_id: item1option1
+    label: 'Tarjeta de Debito'
+    position: 2
+    Item: item1
+  item1_option2:
+    alpha_id: item1option2
+    label: 'Tarjeta de Credito'
+    position: 1
+    Item: item1
+  item1_option3:
+    alpha_id: item1option3
+    label: Efectivo
+    position: 3
+    Item: item1
+  item2_option1:
+    alpha_id: item2option1
+    label: MasterCard
+    position: 2
+    Item: item2
+  item2_option2:
+    alpha_id: item2option2
+    label: Visa
+    position: 1
+    Item: item2
+  item2_option3:
+    alpha_id: item2option3
+    label: Otra
+    position: 3
+    Item: item2
+    
+<?php $actions = array('tag','redeem','application'); ?>
+<?php $vias = array('web','web_mobile','app'); ?>
+<?php $users = array('jr'); ?>
+<?php $surveys = array('survey1'); ?>
+<?php $assets = array('licoteca_lacastellana'); ?>
+<?php $items = array('item1','item2','item3'); ?>
+<?php $answers = array('item1option1','item1option2','item1option2','item1option1;item1option2','item1option1;item1option3','item1option2;item1option3','item1option1;item1option3;item1option3','Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit'); ?>
+<?php $usersOrder = array(); ?>
+
+SurveyApplication:
+<?php for($i = 0; $i < 20; $i++) :?>
+  application_<?php echo $i ?>:
+    action: <?php echo $actions[rand(0,2)]."\n" ?>
+    via: <?php echo $vias[rand(0,2)]."\n" ?>
+    User: <?php $usersOrder[$i] = $users[0]; echo $usersOrder[$i]."\n" ?>
+    Survey: survey1
+    Asset: <?php echo $assets[0]."\n" ?>
+<?php endfor;?>

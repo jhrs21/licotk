@@ -1,0 +1,593 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+homepage:
+  url:   /
+  param: { module: sfApply, action: apply } #LICOTECA
+#  param: { module: html_static, action: index }
+  
+web_mobile:
+  url:   /webmobile
+  param:  { module: sfApply, action: webMobile, sf_format: html }
+  requirements: { sf_method: get }
+
+user_test:
+  url:     /user/test.:sf_format
+  param:   { module: user, action: test, sf_format: html }
+  requirements: { sf_method: get }
+
+##
+##  API routes
+##  
+api_places_leading:
+  url:     api/:alpha_id/places/leading.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: placesLeading }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_place_affiliate:
+  url:     api/:alpha_id/places/affiliate.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: place }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_places_place:
+  url:     api/:alpha_id/places/place.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: place }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_places_search:
+  url:     api/:alpha_id/places/search.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: placesSearch }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_places_nearby:
+  url:     api/:alpha_id/places/nearby.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: placesNearby }
+  requirements: { sf_format: json, sf_method: get }  
+  
+api_brands_leading:
+  url:     api/:alpha_id/brands/leading.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: brandsLeading }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_brands_brand:
+  url:     api/:alpha_id/brands/brand.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: brand }
+  requirements: { sf_format: json, sf_method: get }
+
+api_brands_search:
+  url:     api/:alpha_id/brands/search.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: brandsSearch }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_categories:
+  url:     api/:alpha_id/categories.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: categories }
+  requirements: { sf_format: json, sf_method: get }
+
+api_places_category:
+  url:     api/:alpha_id/places/category.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: categoryPlaces }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_user_stuff:
+  url:     api/user/:alpha_id/stuff.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userStuff }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_user_ticket:
+  url:     api/user/:alpha_id/ticket.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userTicket }
+  requirements: { sf_format: json, sf_method: get }
+
+api_user_ticket_post:
+  url:     api/user/:alpha_id/ticket.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userTicket }
+  requirements: { sf_format: json, sf_method: post }
+  
+api_user_acquire:
+  url:     api/user/:alpha_id/acquire.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userAcquire }
+  requirements: { sf_format: json, sf_method: get }
+
+api_user_acquire_post:
+  url:     api/user/:alpha_id/acquire.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userAcquire }
+  requirements: { sf_format: json, sf_method: post }
+
+api_user_login:
+  url:     api/user/login.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userLogin }
+  requirements: { sf_format: json, sf_method: get }
+
+api_user_login_post:
+  url:     api/user/login.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userLogin }
+  requirements: { sf_format: json, sf_method: post }
+
+api_user_signin:
+  url:     api/user/signin.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userSignin }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_user_signin_post:
+  url:     api/user/signin.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userSignin }
+  requirements: { sf_format: json, sf_method: post }
+  
+api_user_update:
+  url:     api/user/:alpha_id/update.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userUpdate }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_user_update_post:
+  url:     api/user/:alpha_id/update.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userUpdate }
+  requirements: { sf_format: json, sf_method: post }
+  
+api_user_feedback:
+  url:     api/user/:alpha_id/feedback.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userFeedback }
+  requirements: { sf_format: json, sf_method: get }
+
+api_user_feedback_post:
+  url:     api/user/:alpha_id/feedback.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }
+  param:   { module: api, action: userFeedback }
+  requirements: { sf_format: json, sf_method: post }
+
+api_td_promocode:
+  url:     api/:apikey/:name/:promo_alpha_id/:asset_alpha_id/getPromoCode.:sf_format
+  param:   { module: api, action: getPromoCode }
+  requirements: { sf_format: json }
+  
+api_td_promocodeTest:
+  url:     api/:apikey/:name/:promo_alpha_id/:asset_alpha_id/getPromoCodeTest.:sf_format
+  param:   { module: api, action: getPromoCodeTest }
+  requirements: { sf_format: json }
+  
+api_td_promos:
+  url:     api/:apikey/:name/:affiliate_alpha_id/getPromos.:sf_format
+  param:   { module: api, action: getPromos }
+  requirements: { sf_format: json }
+
+api_get_validation_codes:
+  url:     api/:apikey/:name/:asset/:promo/getcodes.:sf_format
+  param:   { module: api, action: getCodes }
+  requirements: { sf_format: json }
+  
+api_get_asset:
+  url:     api/:apikey/:name/:asset/getasset.:sf_format
+  param:   { module: api, action: getAsset }
+  requirements: { sf_format: json }
+  
+api_checkin_tag:
+  url:     api/:apikey/:name/:asset/:promocode/:vcode/tag.:sf_format
+  param:   { module: api, action: checkInTag }
+  requirements: { sf_format: json }
+  
+api_checkin_redeem:
+  url:     api/:apikey/:name/:asset/redeem.:sf_format
+  param:   { module: api, action: checkInRedeem }
+  requirements: { sf_format: json }
+  
+api_checkin_stuff:
+  url:     api/:apikey/:name/:asset/stuff.:sf_format
+  param:   { module: api, action: checkInStuff }
+  requirements: { sf_format: json }  
+  
+api_replace_mcard:
+  url:     api/:apikey/:name/:asset/:user/:mcard/replace-membershipcard.:sf_format
+  param:   { module: api, action: replaceMembershipCard }
+  requirements: { sf_format: json }  
+  
+##
+##  End of API routes
+##
+
+user:
+  url:     /usuario.:sf_format
+  param:   { module: user, action: index, sf_format: html }
+  requirements: { sf_method: get }
+ 
+user_new_ticket:
+  url:     /usuario/registrar-tag.:sf_format
+  param:   { module: user, action: registerTag, sf_format: html }
+  requirements: { sf_method: get }
+  
+user_create_ticket:
+  url:     /usuario/crear-tag.:sf_format
+  param:   { module: user, action: registerTag, sf_format: html }
+  requirements: { sf_method: post }
+
+user_prize_sendbyemail:
+  url:     /usuario/premio/ver.:sf_format
+  param:   { module: user, action: prize, sf_format: html }
+  requirements: { sf_method: get }
+
+user_prize:
+  url:     /usuario/premio/:alpha_id.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Card, type: object }
+  param:   { module: user, action: prize, sf_format: html }
+  requirements: { sf_method: get }
+
+user_prizes:
+  url:     /usuario/premios.:sf_format
+  param:   { module: user, action: prizes, sf_format: html }
+  requirements: { sf_method: get }
+  
+pre_generate_coupon:
+  url: /usuario/cupon/:alpha_id/pregenerar.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Card, type: object }
+  param: {module: user, action: preGenerateCoupon, sf_format: html}
+  requirements: {sf_method: get}
+  
+pre_generate_coupon_post:
+  url: /usuario/cupon/:alpha_id/pregenerar.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Card, type: object }
+  param: {module: user, action: preGenerateCoupon, sf_format: html}
+  requirements: {sf_method: post}
+  
+generate_coupon:
+  url: /usuario/cupon/:alpha_id/generar/:prize.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Card, type: object }
+  param: {module: user, action: generateCoupon, sf_format: html}
+  requirements: {sf_method: get} 
+  
+generate_membership_card:
+  url: /usuario/tarjeta.:sf_format
+  param: {module: user, action: generateMembershipCard, sf_format: html}
+  requirements: {sf_method: get}
+  
+user_feedback_create:
+  url:     /usuario/comentario.:sf_format
+  param:   { module: user, action: feedback, sf_format: html }
+  requirements: { sf_method: get }
+  
+user_update_info:
+  url:  /usuario/actualizar.:sf_format
+  param:  {module: sfApply, action: update, sf_format: html }
+  requirements: { sf_method: get }
+  
+user_complete_info:
+  url:  /usuario/completar.:sf_format
+  param:  {module: sfApply, action: complete, sf_format: html }
+  requirements: { sf_method: get }
+
+user_complete_register:
+  url: usuario/registrar/:validate
+  param: { module: sfApply, action: completeRegister }
+  
+user_complete_register2:
+  url: usuario/completar/registro
+  param: { module: sfApply, action: completeRegister }
+  ## ESTA  ES LA RUTA PARA LA ACCIÓN DE COMPLETAR EL REGISTRO! DEFINIR BIEN!
+  
+##
+## Inicio de paginas estaticas
+##
+#LICOTECA
+#index:
+#  url:          /inicio
+#  param:        {module: html_static, action: index}
+#  requirements: { sf_method: get }
+  
+#howto_user:
+#  url:          /como-funciona/usuario
+#  param:        {module: html_static, action: howtoUser}
+#  requirements: { sf_method: get }
+  
+#howto_affiliate:
+#  url:          /como-funciona/afiliado
+#  param:        {module: html_static, action: howtoAffiliate}
+#  requirements: { sf_method: get }
+  
+#ayuda_index:
+#  url:          /ayuda
+#  param:        {module: html_static, action: ayudaIndex}
+#  requirements: {sf_method: get}
+  
+#ayuda_crear_promo:
+#  url:          /ayuda/crear-promocion
+#  param:        {module: html_static, action: crearPromo}
+#  requirements: {sf_method: get}
+  
+#ayuda_buena_promo:
+#  url:          /ayuda/buena-promocion
+#  param:        {module: html_static, action: buenaPromo}
+#  requirements: {sf_method: get}
+
+#ayuda_indepabis:
+#  url:          /ayuda/indepabis
+#  param:        {module: html_static, action: indepabis}
+#  requirements: {sf_method: get}
+
+#ayuda_empleado:
+#  url:          /ayuda/empleado
+#  param:        {module: html_static, action: empleado}
+#  requirements: {sf_method: get}
+  
+#ayuda_aumento_ventas:
+#  url:          /ayuda/aumento-ventas
+#  param:        {module: html_static, action: aumentoVentas}
+#  requirements: {sf_method: get}
+  
+#donde_estamos:
+#  url:          /donde-estamos
+#  param:        {module: html_static, action: whereAreWe}
+#  requirements: {sf_method: get}
+
+#donde_estamos2:
+#  url:		/dondeestamos
+#  param:	{module: html_static, action: whereAreWe}
+#  requirements: {sf_method: get}
+  
+#donde_estamos_afiliado:
+#  url:          /donde-estamos/afiliado/:slug.:sf_format
+#  class:        sfDoctrineRoute
+#  options:      { model: Affiliate, type: object }
+#  param:        {module: html_static, action: showAffiliate, sf_format: html}
+#  requirements: {sf_method: get}
+
+#preguntas_frecuentes:
+#  url:          /preguntas-frecuentes
+#  param:        {module: html_static, action: faq}
+#  requirements: {sf_method: get}
+  
+#contacto:
+#  url:          /contacto/inicio.:sf_format
+#  param:        {module: html_static, action: contact, sf_format: html}
+#  requirements: {sf_method: get}
+  
+#pregunta_sugerencia:
+#  url:          /contacto/pregunta-sugerencia.:sf_format
+#  param:        {module: contact, action: questionAndSuggestion, sf_format: html}
+#  requirements: {sf_method: get}
+  
+#procesar_pregunta_sugerencia:
+#  url:          /contacto/procesar-pregunta-sugerencia.:sf_format
+#  param:        {module: contact, action: questionAndSuggestion, sf_format: html}
+#  requirements: {sf_method: post}
+  
+#contacto_agradecimiento:
+#  url:    /contacto/agradecimiento.:sf_format
+#  param:  {module: contact, action: thankyou, sf_format: html}
+
+privacy_policy:
+  url:    /politicas-de-privacidad
+  param:  {module: html_static, action: privacyPolicy}
+  
+#privacy_policy_MC:
+#  url:    /rifamastercard
+#  param:  {module: html_static, action: privacyPolicyMC}
+##
+## Fin de paginas estaticas
+##
+
+##
+##  El siguiente conjunto de rutas es utilizado por el plugin sfDoctrineApplyPlugin
+##
+apply:
+  url:  /registro
+  param: { module: sfApply, action: apply }
+  
+mobile_apply:
+  url:  /registro-movil
+  param: { module: sfApply, action: mobileApply }
+
+reset:
+  url: /restaurar
+  param: { module: sfApply, action: reset }
+
+resetRequest:
+  url: /restaurar-peticion
+  param: { module: sfApply, action: resetRequest }
+  
+resetRequestEn:
+  url: /reset-request
+  param: { module: sfApply, action: resetRequest }
+
+validate:
+  url: /confirmar/:validate
+  param: { module: sfApply, action: confirm }
+
+settings:
+  url: /ajustes
+  param: { module: sfApply, action: settings }
+
+sf_guard_forgot_password:
+  url: /restaurar-peticion
+  param: { module: sfApply, action: resetRequest }
+## La siguiente es una ruta para una acción agregada por Jacobo  
+resend_verification:
+  url: /reenviar/:user_alpha
+  param: { module: sfApply, action: resendVerificationMail }
+##
+##  Fin de las rutas para el plugin sfDoctrineApplyPlugin
+##
+
+##
+##  El siguiente conjunto de rutas es utilizado por el plugin sfDoctrineGuardPlugin
+##
+sf_guard_login:
+  url:   /login
+  param: { module: sfGuardAuth, action: login }
+  
+sf_guard_signin:
+  url:   /ingreso
+  param: { module: sfGuardAuth, action: login }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+  
+sf_guard_signout2:
+  url:   /salir
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url: /restaurar-peticion
+  param: { module: sfApply, action: resetRequest }
+##
+##  Fin de las rutas para el plugin sfDoctrineGuardPlugin
+##
+
+contact_affiliate:
+  url: /contacto/negocio.:sf_format
+  param: {module: contact, action: index, sf_format: html}
+  requirements: { sf_method: get }
+
+contact_affiliate_post:
+  url: /contacto/negocio.:sf_format
+  param: {module: contact, action: index, sf_format: html}
+  requirements: { sf_method: post }  
+  
+##
+## Rutas para el self service
+##
+self_service:
+  url:    /autoregistro/index.:sf_format
+  param:  {module: self_service, action: index, sf_format: html}
+  
+self_service_thankyou:
+  url:    /autoregistro/gracias.:sf_format
+  param:  {module: self_service, action: thankyou, sf_format: html}
+##
+## Fin rutas relativas al self service
+##
+
+##
+## Rutas para el manejo de las encuestas
+##
+
+survey:
+  url:     /encuesta/participar.:sf_format
+  param:   { module: survey, action: surveys, sf_format: html }
+  requirements: { sf_method: get }
+  
+survey_application:
+  url:     /encuesta/respuestas:sf_format
+  param:   { module: survey, action: surveys, sf_format: html }
+  requirements: { sf_method: post }
+  
+survey_feedback:
+  url:     /encuesta/experiencia.:sf_format
+  param:   { module: survey, action: feedback, sf_format: html }
+  requirements: { sf_method: get }
+  
+survey_feedback_register:
+  url:     /encuesta/experiencia/participar.:sf_format
+  param:   { module: survey, action: feedback, sf_format: html }
+  requirements: { sf_method: post }
+
+##
+## Fin rutas relativas a las encuestas
+##
+
+##
+## Rutas para el manejo de las descargas de la app
+##
+update:
+  url:     /actualizar.:sf_format
+  param:   { sf_format: php }
+
+download:
+  url:     /download.:sf_format
+  param:   { module: download, action: index }
+  requirements: { sf_method: get }
+
+downloads:
+  url:     /downloads.:sf_format
+  param:   { module: download, action: index }
+  requirements: { sf_method: get }
+
+download_descarga:
+  url:     /descarga.:sf_format
+  param:   { module: download, action: index, sf_format: html }
+  requirements: { sf_method: get }
+  
+download_descargas:
+  url:     /descargas.:sf_format
+  param:   { module: download, action: index, sf_format: html }
+  requirements: { sf_method: get }  
+
+download_comingsoon:
+  url:     /download/comingsoon.:sf_format
+  param:   { module: download, action: comingSoon, sf_format: html }
+  requirements: { sf_method: get }
+
+download_qr:
+  url:     /:alpha_id.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: PromoCode, type: object }
+  param:   { module: download, action: index, sf_format: html }
+  requirements: { sf_method: get }
+##
+## Fin rutas relativas a la descarga
+##
+
+promo_add_prize:
+  url:     /promo/agregar/premio.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: self_service, action: addPromoPrizeForm, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_add_term:
+  url:     /promo/agregar/termino.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: self_service, action: addPromoTermForm, sf_format: html }
+  requirements: { sf_method: get }
+
+pruebaEmail:
+  url:    /prueba/email
+  param:  { module: html_static, action: pruebaEmail}

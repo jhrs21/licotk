@@ -1,0 +1,15 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+all:
+  lt:
+    api_user: tester
+    api_key: tester
+
+  elbuho:
+    user: LEALTAG
+    api_key: a0ol1em5fj4ng
+  
+  td:
+    user: LEALTAG
+    api_key: 877e1a188460ca23cd7646d70af385a8

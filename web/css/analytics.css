@@ -1,0 +1,197 @@
+.center{
+    font-family: HelveticaNeue;
+    font-size: 20px;
+}
+.container-header{
+    width: 875px;
+    margin-left: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+.container-header-link{
+    padding: 20px;
+}
+.horizontal-divider{
+    background: url(/images/grey_separator.png) repeat-x;
+    height: 40px;
+    margin-top: 10px;
+}
+#top-space{
+    height: 35px
+}
+#right-barside{
+    width:250px;
+    height:900px
+}
+#info-barside {
+
+}
+
+#filter-button{
+    width: auto;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    padding: 5px;
+    border: 1px solid #1a1a1a;
+    background: #FFD900;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+    -webkit-box-shadow: 0px 0px 5px #AAA;
+    -moz-box-shadow: 0px 0px 5px #aaa;
+    box-shadow: 0px 0px 5px #AAA;
+}
+
+#filter-button:hover {
+    -webkit-box-shadow: 0px 0px 10px #555;
+    -moz-box-shadow: 0px 0px 10px #555;
+    box-shadow: 0px 0px 10px #555;
+    cursor: pointer;
+}
+
+#activator{
+    margin-top: 10px;
+    color: #FFD900;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #1a1a1a;
+    margin-left: 32px;
+    display:block;
+    cursor: pointer;
+}
+#top{
+    font-family: Helvetica;
+    font-size: 12px;
+}
+.questions-image{
+    background: url('/images/estadisticas_derecha_v2.png') no-repeat scroll 0 0 transparent;    
+    height: 255px;
+    width: 250px;
+    float: left;
+}
+div.texto{
+    font-weight: bold;
+    color: #CECCCD;
+}
+div.titulo{
+    font-size: 200%;
+}
+div.texto-genero{
+    font-size: 120%;
+}
+div.numero-genero{
+    font-size: 150%;
+}
+.good-feed{
+    background: url('/images/bueno-01.jpg') no-repeat scroll 0 0 transparent;
+    background-position: 5px 0px;
+    height: auto;
+    text-align: right;
+    font-weight: bolder;
+    color: green;
+}
+.regular-feed{
+    background: url('/images/regular-01.jpg') no-repeat scroll 0 0 transparent;
+    background-position: 5px 0px;
+    height: auto;
+    text-align: right;
+    font-weight: bolder;
+
+}
+.bad-feed{
+    background: url('/images/malo-01.jpg') no-repeat scroll 0 0 transparent;
+    background-position: 5px 0px;
+    height: auto;
+    text-align: right;
+    font-weight: bolder;
+    color: red;
+}
+
+
+table,th,td{
+    border-style:solid;
+    border-width:1px;
+}
+
+/* Estilos para la página de todos los feedbacks*/
+
+#top{
+    width: 604px;
+    margin: 10px 18px 0 18px;
+    padding: 10px 20px;
+}
+
+#info-barside a{
+    font-weight: bold;
+    color: #CECCCD;
+}
+
+#info-barside h2{
+    font-weight: bold;
+    color: #A4A4A4;
+}
+
+#tags-total{
+    margin-left: 304px;
+}
+
+.addButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+    background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color:#ededed;
+    -moz-border-radius:42px;
+    -webkit-border-radius:42px;
+    border-radius:42px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    color:#28c92e;
+    font-family:Arial;
+    font-size:28px;
+    font-weight:bold;
+    padding:0px 10px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #ffffff;
+}.addButton:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+    background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+    background-color:#dfdfdf;
+}.addButton:active {
+    position:relative;
+    top:1px;
+}
+
+.removeButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+    background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color:#ededed;
+    -moz-border-radius:42px;
+    -webkit-border-radius:42px;
+    border-radius:42px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    color:#f55474;
+    font-family:Arial;
+    font-size:28px;
+    font-weight:bold;
+    padding:0px 12px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #ffffff;
+}.removeButton:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+    background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+    background-color:#dfdfdf;
+}.removeButton:active {
+    position:relative;
+    top:1px;
+}

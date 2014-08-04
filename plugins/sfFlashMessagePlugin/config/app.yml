@@ -1,0 +1,6 @@
+all:
+  sf_flash_message:
+    css_dir: '/sfFlashMessagePlugin/css/'
+    js_dir:  '/sfFlashMessagePlugin/js/'
+    delay: 2500
+    method: growl

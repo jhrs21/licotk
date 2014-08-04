@@ -1,0 +1,145 @@
+Country:
+  venezuela:
+    name: Venezuela
+  eeuu:
+    name: Estados Unidos
+
+State:
+  newyork:
+    name: New York
+    Country: eeuu
+  texas:
+    name: Texas
+    Country: eeuu
+  california:
+    name: California
+    Country: eeuu
+  miranda:
+    name: Miranda
+    Country: venezuela
+  carabobo:
+    name: Carabobo
+    Country: venezuela
+  distritocapital:
+    name: Distrito Capital
+    Country: venezuela
+
+Municipality:
+  baruta:
+    name: Baruta
+    State: miranda
+  chacao:
+    name: Chacao
+    State: miranda
+  elhatillo:
+    name: El Hatillo
+    State: miranda
+  sucre:
+    name: Sucre
+    State: miranda
+  libertador:
+    name: Libertador
+    State: distritocapital
+
+City:
+  caracas:
+    name: Caracas
+    State: distritocapital
+  
+MunicipalityCity:
+  barutacaracas:
+    Municipality: baruta
+    City: caracas
+  chacaocaracas:
+    Municipality: chacao
+    City: caracas
+  elhatillocaracas:
+    Municipality: elhatillo
+    City: caracas
+  sucrecaracas:
+    Municipality: sucre
+    City: caracas
+  libertadorcaracas:
+    Municipality: libertador
+    City: caracas
+    
+sfGuardGroup:
+  Group_admin:
+    name:           admin
+    description:    Administrator group
+    Permissions:    [Permission_admin,Permission_admin_tasks]
+  Group_affiliate_admin:
+    name:           affiliate_admin
+    description:    Affiliate administrator group
+    Permissions:    [Permission_affiliate_admin,Permission_admin_tasks]
+  Group_employee:
+    name:           affiliate_employee
+    description:    Employee group
+    Permissions:    [Permission_affiliate_employee]
+  Group_lealtag:
+    name:           lealtag_users
+    description:    Lealtag Users group
+    Permissions:    [Permission_user]
+
+sfGuardPermission:
+  Permission_admin:
+    name:           admin
+    description:    Administrator permission
+  Permission_affiliate_admin:
+    name:           affiliate_admin
+    description:    Affiliate administrator permission
+  Permission_affiliate_employee:
+    name:           employee
+    description:    Employee permission
+  Permission_admin_tasks:
+    name:           admin_tasks
+    description:    Permission for execute administration tasks
+  Permission_user:
+    name:           user_tasks
+    description:    User permission
+
+sfGuardUser:
+  jacobo:
+    first_name:     Jacobo
+    last_name:      Martínez
+    email_address:  jacobo@lealtag.com
+    username:       jacobo
+    password:       n0t13n3cl4v3
+    is_super_admin: true
+    Groups: [Group_admin]
+  jose:
+    first_name:     José
+    last_name:      Riera
+    email_address:  jose.riera@lealtag.com
+    username:       josehriera
+    password:       josehriera
+    is_super_admin: true
+    Groups: [Group_admin]
+  octavio:
+    first_name:     Octavio
+    last_name:      Azpurua
+    email_address:  octavio.azpurua@lealtag.com
+    username:       oazpuruaadmin
+    password:       oazpurua
+    is_super_admin: true
+    Groups: [Group_admin]
+    
+Category:
+  restaurantes:
+    name: Restaurantes
+  bares_y_discotecas:
+    name: Bares y Discotecas
+  comida_rapida:
+    name: Comida Rápida
+  ropa_y_calzado:
+    name: Ropa y Calzado
+  ferreterias:
+    name: Ferreterias
+  cafés_y_panaderias:
+    name: Cafés y Panaderías
+  tienda_de_conveniencia:
+    name: Tiendas de Conveniencia
+  muebles_y_decoracion:
+    name: Muebles y Decoración
+  teatro_y_cine:
+    name: Teatro y Cine

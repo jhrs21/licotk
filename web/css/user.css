@@ -1,0 +1,261 @@
+/* 
+    Document   : user
+    Created on : 11/04/2012, 12:38:29 PM
+    Author     : jacobo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.feedback-valoration-value{display:block;width:34px;height: 36px;background:url('/images/hands_sprite.png') no-repeat;}
+#label_feedback_valoration_1{background-position: -68px 0px}
+#label_feedback_valoration_0{background-position: -32px 0px}
+#register-tag-form div.radio_list{text-align: center}
+#register-tag-form div.radio_list div{width: 34px;float: left; margin-right: 10px}
+#register-tag-form div.radio_list div input{width:34px;margin:-15px 0px 0px 0px}
+#ui-dialog-title-feedback-modal{font-size: 2em}
+#feedback-modal{text-align:center}
+#feedback-modal ul{display: inline-block; padding-left: 25px}
+#feedback-modal ul li{float: left; margin-right: 8px;list-style: none}
+#feedback-modal ul li input{width: 34px; /*margin: -10px 0px 0px 0px*/}
+.prizes-tab-menu{margin: 0px 20px}
+#tabs{margin:0px 20px 20px 20px;padding-bottom:0px;-webkit-border-top-left-radius:0px;-moz-border-top-left-radius:0px;border-top-left-radius:0px}
+ul.prizes-tab-menu{list-style: none;list-style-position: outside}  
+ul.prizes-tab-menu li{display: block;position: relative;float: left;font-weight: bold;font-size: 1.2em;margin-right: 8px;padding: 5px 10px 5px 10px;background: #fff;border: 1px solid #E5E6E7;border-bottom: 0;color: #18B9E8;-webkit-border-top-left-radius:10px;-webkit-border-top-right-radius:10px;-moz-border-top-left-radius:10px;-moz-border-top-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;text-shadow: 0px 1px 1px #ccc;cursor: pointer}  
+ul.prizes-tab-menu li.active{background: #E5E6E7;border-bottom: 0;color: #808080}
+.prizes-empty-tab{background: url('/images/lt_background.png') 0px -10px no-repeat;padding: 60px 0px 30px 0px}
+.clear{clear: both;height:0;visibility: hidden;display: block} 
+
+#claim-prize-form-container, #prizes-container, #promo-actions-register-tag .register-tag-form-submit-container{margin-top:0px}
+.prize-details{font-family: HelveticaRegular;padding:15px;margin-top:0px;width:852px}
+.prize-details div{float:left;margin-right:10px}
+.prize-details .prize-details-row{display:block;width:852px;margin-right:0px}
+.white-frame, .prize-details p{margin-right:10px}
+.prize-details div.last, div.last p{margin-right:0px}
+.prize-details p{font-size: 1.1em}
+p.promo-detail-title{font-size:1.4em;text-align:left;padding:5px 10px;text-shadow: 0px 0px 2px #ccc }
+p.white-frame{font-size:1.1em}
+.dg-vertical-divider{background-position:100% 0px}
+#promo-image-container{height:130px;width:140px;padding:10px 0px 0px 10px}
+.promo-image{width:120px;height:120px;-webkit-box-shadow:0px 0px 4px #333;-moz-box-shadow:0px 0px 4px #333;box-shadow:0px 0px 4px #333;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;overflow:hidden}
+.promo-details, #promo-name-container, #promo-description-container{width:460px}
+#promo-description-container{margin-top:5px}
+#promo-dates-container{height:140px;width:215px}
+#promo-tags, #promo-actions, #promo-prizes, #promo-conditions, #promo-assets,
+#promo-actions-register-tag .register-tag-form-submit-container input.submit{margin-top:15px;}
+#promo-actions input.submit{padding:3px}
+#promo-tags{height:140px}
+#promo-tags ul{display:block;list-style-type:none;float:left}
+#promo-tags ul{width: 301px;}
+#promo-tags ul li{display:inline;float:left;margin-right:5px}
+#promo-tags ul li.top-space{margin-top:5px}
+#promo-tags ul li.last{margin-right:0px;}
+#promo-tags ul li span{display:block;padding:28px 23px}
+.active-tag{background:url('/images/tags_sprite.png') no-repeat; background-position: -6px -3px}
+.inactive-tag{background:url('/images/tags_sprite.png') no-repeat; background-position: -53px -3px}
+#promo-prizes, #promo-conditions{width: 852px}
+#promo-prizes .white-frame, #promo-prizes p{margin: 0px}
+#promo-prizes ul, #promo-conditions ul, #promo-assets ul{width: 817px;list-style-type:disc;padding-left:25px;float:left;margin-right:0px}
+#promo-actions-register-tag div{float:none;margin-right:0px}
+#promo-actions-register-tag .form-submit-container{margin: 0px}
+#claim-prize-form-container .main-canvas-title{margin-top: 20px;margin-bottom: 20px}
+#claim-prize-form-container select{width: 232px}
+.form-container {
+    width: 926px;
+    height: auto;
+    margin: -14px 13px 14px 13px;
+    float: left;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 4px #333;
+    -moz-box-shadow: 0px 0px 4px #333; 
+    box-shadow: 0px 0px 4px #333;
+    -webkit-border-bottom-left-radius: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px; 
+    -moz-border-radius-bottomright: 30px; 
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.vertical-divider{
+    background: url(/images/grey_separator.png) repeat-y;
+    width: 1px;
+    height: 60px;
+    float: left;
+}
+
+.black-text a{
+    color: black;
+}
+
+.prizes-header{
+    margin: 60px 22px 0px 22px;
+}
+
+.prizes-links{
+    margin-left: 350px;
+    margin-top: 24px;
+}
+
+.prizes-form-container-inner{
+    font-family: HelveticaRegular;
+    text-align: center;
+    width: 882px;
+    height: auto;
+    float: left;
+    margin: 20px;
+    padding-bottom: 20px;
+    background-color: #E6E6E7;
+    background-position: 18px 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px;
+    color: #808080
+}
+
+.prizes-row{font-family:HelveticaRegular;font-size:12px;text-shadow:0 1px 1px #aaa;background-color:#FFF;margin:0px 15px 15px 15px;width:822px;float:left;padding:15px;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px}
+.prizes-row div{float:left}
+.prizes-row-thumbnail{width:60px;height:60px;overflow:hidden;margin-right:15px;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;-moz-box-shadow:0px 0px 4px #333;-webkit-box-shadow:0px 0px 4px #333;box-shadow:0px 0px 4px #333}
+.prizes-row-promo-details,.prizes-row-promo,.prizes-row-description{width:600px;text-align:left;}
+.prizes-row-promo{font-size:18px}
+.prizes-row-promo a{text-decoration: none; color: #808080}
+.prizes-row-info, .prizes-row-progress, .prizes-row-actions{width:140px;text-align:right}
+.prizes-row-actions{margin-top:10px}
+/*.prizes-row-actions a{
+    display: inline-block;
+    width: auto;
+    margin-top: 10px; 
+    padding: 5px;
+    color: #FFFFFF; 
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #18B9E8;
+    border: 2px #FFFFFF solid;
+    -webkit-transition: -webkit-box-shadow 0.3s linear; 
+    -webkit-box-shadow: 0px 0px 3px #aaa;
+    -moz-box-shadow: 0px 0px 3px #aaa; 
+    box-shadow: 0px 0px 3px #aaa;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+    border-radius: 10px;
+}
+.prizes-row-actions a.first{margin-top: 0px}
+.prizes-row-actions a:hover {
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 8px #333;
+    -moz-box-shadow: 0px 0px 8px #333; 
+    box-shadow: 0px 0px 8px #333;		
+    cursor:  pointer; 
+}*/
+
+#black-text{
+    color: blue;
+    text-decoration: underline;
+}
+
+#prizes-titles{
+    font-family: HelveticaRegular;
+    color: #41414B;
+    font-size: 18px;
+    padding-bottom: 20px;
+    width: 882px;
+}
+
+.prizes-title{
+    margin: 20px;
+    font-family: HelveticaRegular;
+    color: #41414B;
+    font-size: 24px;
+}
+
+.prizes-tag-button{
+    position: relative;
+    top: 0px;
+    left: 712px;
+}
+
+.register-tag-form-container{
+    font-family: HelveticaRegular;
+    text-align: center;
+    margin: 0px 20px 20px 20px;
+    padding-bottom: 20px;
+    background: url(/images/signin_form.png) no-repeat;
+    background-color: #E4E4E4;
+    background-position: 18px 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px;
+    color: #7F7F7F
+}
+
+.register-tag-form-container .main-canvas-title {
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.register-tag-form-container-inner-title h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0px;
+    text-shadow: 0 2px 2px #CCCCCC;
+    color: #18B9E8;
+}
+
+.register-tag-form-container-inner-title h3 {
+    color: #7F7F80
+}
+
+.register-tag-form-container-inner-form, .register-tag-form-footer{
+    margin: 0px 331px;
+}
+
+.register-tag-form-container-inner-form {
+    font-family: HelveticaRegular;
+    text-align: center;
+}
+
+.frame{
+    padding: 15px;
+    background-color: #FFFFFF;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px;
+}
+
+.form_row_label label{font-family: Arial; font-size: 11.76px;}
+
+.register-tag-form-submit-container{text-align: right; margin-top: 10px}
+
+/*.register-tag-form-submit-container input.submit { 	
+    width: auto;
+    margin-top: 10px; 
+    padding: 5px;
+    color: #FFFFFF; 
+    text-transform: uppercase;
+    background-color: #18B9E8;
+    border: 2px #FFFFFF solid;
+    -webkit-transition: -webkit-box-shadow 0.3s linear; 
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+    box-shadow: 0px 0px 4px #aaa;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+    border-radius: 10px;
+}
+
+.register-tag-form-submit-container input.submit:hover { 		
+    -webkit-box-shadow: 0px 0px 10px #555;
+    -moz-box-shadow: 0px 0px 10px #aaa; 
+    box-shadow: 0px 0px 10px #555;		
+    cursor:  pointer; 
+}*/
+
+.register-tag-form-footer {
+    text-align: left;
+    margin-top: 20px;
+    background: url(/images/grey_separator.png) repeat-x;
+}
+
+.register-tag-form-footer p{padding-top: 5px;}
+.register-tag-form-footer a{color: #4674B8;}
+.register-tag-form-footer a:hover{color: #18B9E8; text-decoration: underline;}

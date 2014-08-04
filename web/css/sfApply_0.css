@@ -1,0 +1,162 @@
+/* 
+    Document   : sfApply
+    Created on : 11/04/2012, 02:50:44 PM
+    Author     : jacobo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#login-td-button-container{height: 70px; text-align: center}
+#login-td-button{display: inline-block}
+#login-td-button span{
+    width: 180px;
+    height: 65px;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    background: url('/images/buttons_sprite.png') 2px -72px no-repeat #FFFFFF;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px
+}
+.sign-up-form-container, .update-form-container {
+    width: 922px;
+    margin: -17px 0px 14px 14px;
+    float: left;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+    box-shadow: 0px 0px 4px #aaa;
+    -webkit-border-bottom-left-radius: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px; 
+    -moz-border-radius-bottomright: 30px; 
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.update-form-container-inner{background: url(/images/white_smile.png) no-repeat; background-position: 405px 15px}
+
+.sign-up-form-container-inner{background: url(/images/signup_form.png) no-repeat; background-position: 133px 20px}
+
+.sign-up-form-container-inner, .update-form-container-inner{
+    font-family: HelveticaRegular;
+    text-align: center;
+    width: 882px;
+    float: left;
+    margin: 20px;
+    padding-bottom: 10px;
+    background-color: #E6E6E7;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px
+}
+
+.update-form-container-inner{margin-top: 0px}
+
+.sign-up-form-container-inner-title {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    width: 882px;
+}
+
+.sign-up-form-container-inner-title h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0px;
+    text-shadow: 0 2px 2px #CCCCCC;
+    color: #18B9E8;
+}
+
+.sign-up-form-container-inner-form, .signin-link-container {
+    width: 248px;
+    margin: 0px 317px;
+}
+
+.frame {
+    background-color: #FFFFFF;
+    padding: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+    border-radius: 10px;
+}
+
+.sign-up-form-container-inner-form  .frame{width: 238px;}
+
+.sign-up-form-submit-container {text-align: right;width: 248px;margin-top: 15px;}
+
+.sign-up-form-container-inner-form, .sign-up-form-container-inner-form form#sign-up-form,
+form#sign-up-form input, form#sign-up-form select {color: #7F7F80;}
+
+form#sign-up-form input, form#sign-up-form select {
+    border: none;
+    padding: 4px;
+    background: #E6E6E7;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; 
+    border-radius: 3px;
+}
+
+
+#sign-up-form select#sfApplyApply_gender{width:212px}
+#sign-up-form select#sfApplyApply_phone_code{width:70px}
+#sign-up-form input#sfApplyApply_phone_number{width: 138px; padding: 5px}
+form#sign-up-form input{
+    width: 212px;
+}
+
+form#sign-up-form label {
+    font-size: 1.15em;
+    font-weight: bolder;
+}
+
+form#sign-up-form .form_row {
+    text-align: left;
+    margin: 5px;
+}
+
+.signin-link-container{
+    width: auto;
+    text-align: left;
+    margin-top: 12px;
+    background: url(/images/grey_separator.png) repeat-x;
+}
+
+.signin-link-container a {color: #4674B8;}
+
+.signin-link-container a:hover, .signin-form-submit-container a.signin-form-forgot:hover{color:#18B9E8; text-decoration:underline;}
+
+.update-password-link-container{
+    width: auto;
+    text-align: center;
+    margin-top: 12px;
+    background: url(/images/grey_separator.png) repeat-x;
+}
+
+.update-password-link-container a {color: #4674B8; }
+
+.update-password-link-container a:hover, .signin-form-submit-container a.signin-form-forgot:hover{color:#18B9E8; text-decoration:underline;}
+
+.update-form-container {
+    margin: -14px 0px 14px 14px;
+    float: left;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+    box-shadow: 0px 0px 4px #aaa;
+    -webkit-border-bottom-left-radius: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px; 
+    -moz-border-radius-bottomright: 30px; 
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#apply-after-container,#reset-request-container{background: url('/images/white_smile.png') no-repeat #E5E6E7}
+#reset-request-mailer-error-container,#apply-mailer-error-container{background: url('/images/error_face.png') no-repeat #E5E6E7}
+#apply-after-container, #apply-mailer-error-container, #reset-request-container,
+#reset-request-mailer-error-container{padding-top: 85px; background-position: center 20px}
+#reset-request-title,#reset-request-mailer-error-title,#apply-mailer-error-title, #apply-after-title{margin-bottom: 20px }
+.apply-content{text-align: center; margin: 0px 120px; font-size: 1.3em}
+
+#reset-request-form-container{margin: 20px 190px 0px 190px}
+#reset-request-form-container .frame {padding: 10px}

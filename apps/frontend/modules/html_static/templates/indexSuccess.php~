@@ -1,0 +1,190 @@
+<div id="home-top-background" class="gradient">
+    <!--<div id='pageflip'>
+                <a href='https://www.facebook.com/MasterCardVenezuela/app_664993200192906' target="_blank"><img alt='MasterCard te premia' src="/images/page_flip.png"/></a>
+                <div class='back-img'></div>
+            </div>-->
+    <!--<img id="MC-graffiti" alt='MasterCard te premia' src="<?php echo Util::auto_version('/images/gana-con-mastercard1.png') ?>"/>-->
+</div>
+<div id="home-top" class="container">
+    <div id="hand"></div>
+    <div id="pizza"></div>
+    <div id="main-msg">
+        <p class="darkblue dejavusanscondensed">GANA PREMIOS</p>
+        <p class="blue opensanscondensedlight">por ir a tus sitios favoritos</p>
+        <div id="corner"></div>
+    </div>
+    <div id="alt-msg" class="opensanscondensedlight">
+        <p class="white">
+            Regístrate <a href="<?php echo url_for('apply') ?>" title="Registro">AQUÍ</a>
+            <br>y descarga tu aplicación
+        </p>
+    </div>
+    <div id="sushi"></div>
+    <div id="card" class="card-big-blue">
+        <a href="<?php echo url_for('apply') ?>" title="Regístrate" alt="Regístrate"></a>
+    </div>
+    <div id="downloads">
+        <ul id="downloads-list">
+            <li><a class="download-btn-big download-btn-big-bb" target="_blank" href="http://appworld.blackberry.com/webstore/content/99034/" alt="BlackBerry"></a></li>
+            <li><a class="download-btn-big download-btn-big-ios" target="_blank" href="http://itunes.apple.com/us/app/lealtag/id542239833" alt="Apple"></a></li>
+            <li><a class="download-btn-big download-btn-big-android" target="_blank" href="https://play.google.com/store/apps/details?id=com.mobmedianet.lealtag" alt="Android"></a></li>
+        </ul>
+    </div>
+</div>
+<div id="home-top-separator" class="gray-separator"></div>
+<div id="home-main" class="container opensanscondensedlight">
+    <div id="wii" class="home-content">
+        <div id="wii-left" class="home-content-left">
+            <div id="wii-left-top-corner" class="lt-corner lt-corner-small lt-corner-small-tl"></div>
+            <div id="wii-left-bottom-corner" class="lt-corner lt-corner-big lt-corner-big-br"></div>
+            <div id="wii-left-tv">
+                <a class="advertisement" alt="Ver Comercial" href="http://www.youtube-nocookie.com/v/88GEYrqOSSM&rel=0&autoplay=1" title="La historia de mi apuesta..."></a>
+            </div>
+            <!--<div id="wii-left-face"></div>-->
+            <div id="wii-left-food"></div>
+<!--            <div id="wii-left-ad">
+                <div id="wii-left-ad-image" class="box_round">
+                    <a class="advertisement image" alt="Ver Comercial" href="http://www.youtube-nocookie.com/embed/88GEYrqOSSM" title="La historia de mi apuesta..."></a>
+                </div>
+                <a class="advertisement blue" alt="Ver Comercial" href="http://www.youtube-nocookie.com/embed/88GEYrqOSSM" title="La historia de mi apuesta...">
+                    Ver Comercial
+                </a>
+            </div>-->
+        </div>
+        <div class="home-content-right">
+            <p class="home-content-title blue">¿Qué es LealTag?</p>
+            <p class="home-content-text">
+                LealTag es la plataforma que te permite recibir premios, 
+                descuentos y regalos en tus sitios favoritos por ser un cliente frecuente.
+            </p>
+            <p class="text-align-center">
+                <a class="lt-button lt-button-blue box_round" href="<?php echo url_for('apply') ?>" title="Regístrate">Regístrate</a>
+            </p>
+        </div>
+    </div>
+    <div class="home-separator">
+        <hr class="separator">
+        <hr class="separator">
+    </div>
+    <div id="hiw" class="home-content">
+        <div class="home-content-left">
+            <p class="home-content-title orange">¿Cómo funciona?</p>
+            <div class="hiw-step">
+                <span class="big-bullet big-bullet-orange">1</span>
+                <p class="home-content-text">
+                    Descarga tu App o toma tu tarjeta LealTag
+                </p>
+            </div>
+            <div class="hiw-step">
+                <span class="big-bullet big-bullet-orange">2</span>
+                <p class="hiw-step home-content-text">
+                    Pide LealTag al pagar
+                </p>
+                <span class="money-icon" alt="money"></span>
+            </div>
+            <div class="hiw-step">
+                <span class="big-bullet big-bullet-orange">3</span>
+                <p class="hiw-step home-content-text">
+                    ¡Completa tus visitas y disfruta tus premios!
+                </p>
+            </div>
+        </div>
+        <div id="hiw-ways" class="home-content-right">
+            <div class="lt-icons lt-card-big-orange-icon"></div>
+            <div class="lt-icons lt-phone-big-orange-icon"></div>
+            <div class="lt-icons lt-tablet-big-orange-icon"></div>
+            <div class="lt-icons big-down-arrow"></div>
+            <div class="lt-icons lt-gift-big-orange-icon"></div>
+            <p id="quote" class="hiw-text hiw-text-big text-align-center orange">
+                "Todos los caminos llevan a un Tag"
+            </p>
+            <p class="hiw-text text-align-center darkgray">
+                Hildebrando Riera S.
+            </p>
+            <p class="text-align-right">
+                <a class="lt-button lt-button-orange box_round" href="<?php echo url_for('howto_user') ?>" title="Ver más">Ver más</a>
+            </p>
+        </div>
+    </div>
+    <div class="home-separator">
+        <hr class="separator">
+        <hr class="separator">
+    </div>
+    <div id="wigi" class="home-content">
+        <div class="home-content-left">
+            <div id="wigi-ways" class="box_round white-background">
+                <p class="home-content-subtitle purple text-align-center">
+                    Aplicación móvil o tarjeta
+                </p>
+                <div id="wigi-links-container">
+                    <ul>
+                        <li><a class="download-btn-medium download-btn-medium-bb" target="_blank" href="http://appworld.blackberry.com/webstore/content/99034/" alt="BlackBerry"></a></li>
+                        <li><a class="download-btn-medium download-btn-medium-ios" target="_blank" href="http://itunes.apple.com/us/app/lealtag/id542239833" alt="Apple"></a></li>
+                        <li><a class="download-btn-medium download-btn-medium-android" target="_blank" href="https://play.google.com/store/apps/details?id=com.mobmedianet.lealtag" alt="Android"></a></li>
+                    </ul>
+                </div>
+                <div id="wigi-card" class="card-big"></div>
+            </div>
+        </div>
+        <div class="home-content-right">
+            <p class="home-content-title purple">¿Cómo lo uso?</p>
+            <p class="home-content-text">
+                Descarga la aplicación desde tu celular o usa tu tarjeta LealTag 
+                en los comercios afiliados.
+            </p>
+        </div>
+    </div>
+    <div class="home-separator">
+        <hr class="separator">
+        <hr class="separator">
+    </div>
+    <div id="hry" class="home-content">
+        <div class="home-content-left">
+            <p class="home-content-title darkblue">¿Quiénes te premian?</p>
+            <p id="hry-content" class="home-content-text">
+                <span id="hry-img" alt="Aquí te premiamos"></span>
+                Son muchos comercios, visítalos y pide LealTag al momento de pagar para recibir tu tag. Busca siempre el mensaje:
+            </p>
+            <p class="home-content-text darkblue text-align-center text-bold">"Aquí te premiamos"</p>
+        </div>
+        <div class="home-content-right">
+            <div id="hry-featured" class="box_round">
+                <?php include_component('html_static', 'featured') ?>
+            </div>
+            <div id="hry-featured-more">
+                <a class="lt-button lt-button-darkblue box_round" href="<?php echo url_for('donde_estamos') ?>" title="Ver todos">Ver todos</a>
+            </div>
+            <p id="hry-featured-footer" class="home-content-text darkblue text-align-center">
+                Cada día se irán sumando nuevos comercios.
+            </p>
+        </div>
+    </div>
+    <div class="home-separator">
+        <hr class="separator">
+        <hr class="separator">
+    </div>
+    <div id="questions" class="home-content">
+        <p class="home-content-title text-align-center">
+            <a id="contact" class="darkgray">¿Tienes preguntas o sugerencias?</a>
+        </p>
+        <div id="qas-form-container" class="opensanscondensedlight">
+            <?php include_component('contact', 'qASForm') ?>
+        </div>
+    </div>
+    <div class="home-separator">
+        <hr class="separator">
+        <hr class="separator">
+    </div>
+    <div id="bussiness-contact" class="home-content">
+        <p class="home-content-title text-align-center">
+            <a id="bussiness-contact-link" href="<?php echo url_for('howto_affiliate') ?>">
+                Publica tu negocio <span id="bc-icon" class="rounded-right-arrow"></span>
+            </a>
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".advertisement").colorbox({iframe:true, innerWidth:640, innerHeight:360});
+    });
+</script>

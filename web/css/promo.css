@@ -1,0 +1,128 @@
+/* 
+    Document   : promo
+    Created on : 26/04/2012, 05:41:09 PM
+    Author     : usurio
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.container-header{
+    width: 875px;
+    margin-left: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.container-header-link{
+    padding: 20px;
+}
+
+.horizontal-divider{background: url(/images/grey_separator.png) repeat-x;height:5px;margin:15px 0}
+
+.vertical-divider{
+    background: url(/images/grey_separator.png) repeat-y;
+    height: 70px;
+    width: 2px;
+    float: left;
+    padding: 0px 5px 0px 5px;
+}
+
+.promo-form-container-inner{
+    font-family: HelveticaRegular;
+    text-align: center;
+    width: 882px;
+    height: auto;
+    float: left;
+    margin: 20px;
+    padding-bottom: 20px;
+    background-color: #E6E6E7;
+    background-position: 18px 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px;
+    color: #7F7F80
+}
+
+.top-link{
+    position: relative;
+    right: -750px;
+}
+
+.bottom-link{
+    position: relative;
+    top: 10px;
+    right: -370px;
+}
+
+.titles-active{
+}
+
+.name-cell-title{
+    width: 100px;
+    float: left;
+}
+
+.name-cell{
+    width: 100px;
+    float: left;
+}
+
+.description-cell-title{
+    width: 212px;
+    float: left;
+}
+
+.description-cell{
+    float: left;
+    width: 200px;
+}
+
+.start-cell-title{
+    float: left;
+    width: 112px;
+}
+
+.start-cell{
+    float: left;
+    width: 100px;
+}
+
+.end-cell-title{
+    float: left;
+    width: 112px;
+}
+
+.end-cell{
+    float: left;
+    width: 100px;
+}
+
+.begin-cell-title{
+    float: left;
+    width: 112px;
+}
+
+.begin-cell{
+    float: left;
+    width: 100px;
+}
+
+.expires-cell-title{
+    float: left;
+    width: 112px;
+}
+
+.expires-cell{
+    float: left;
+    width: 100px;
+}
+
+.option-cell-title{
+    float: left;
+    width: 122px;
+}
+
+.option-cell{
+    float: left;
+    width: 110px;
+}

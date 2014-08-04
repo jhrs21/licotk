@@ -1,0 +1,12 @@
+/* 
+    Document   : ie_hacks_frontend
+    Created on : 02/04/2012, 05:30:15 PM
+    Author     : jacobo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#sign-up-container ul.radio_list li input {
+    border: none;
+    background: #EEEEEE;
+}

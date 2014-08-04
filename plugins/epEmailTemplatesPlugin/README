@@ -1,0 +1,22 @@
+epHelloWorldPlugin
+=================
+
+This plugin prints "Hello, World!" to the screen.
+
+Installation
+------------
+
+  * Install the plugin
+
+        $ symfony plugin:install epHelloWorldPlugin.tgz
+
+  * Clear the cache
+
+        $ symfony cache:clear
+
+Documentation
+-------------
+
+Once the plugin is installed, run the following command:
+
+  $ symfony helloWorld

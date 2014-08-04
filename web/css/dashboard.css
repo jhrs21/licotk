@@ -1,0 +1,156 @@
+/* 
+    Document   : dashboard
+    Created on : 17/07/2012, 04:21:01 PM
+    Author     : usurio
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+* p{
+    font-family:HelveticaRegular;font-size:14px;background-color:#FFF;
+}
+
+#navegador ul{
+    list-style-type: none;
+    text-align: center;
+}
+#navegador li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+#navegador li a {
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+#navegador li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.left-column #first{
+    padding-top: 42px;
+}
+
+.left-column #second{
+    padding-top: 41.5px;
+}
+
+.vertical-divider{
+    background: url(/images/grey_separator.png) repeat-y;
+    width: 1px;
+    height: 1800px;
+    float: left;
+}
+
+body { font-family:Arial, Helvetica, Sans-Serif; font-size:0.8em;}
+#myTable div.arrow { background:transparent url(/images/arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
+
+#first{
+    height:50px;
+}
+
+#second{
+    height:50px;
+}
+
+#third{
+    height:50px;
+}
+
+#fourth{
+    height:50px;
+}
+
+#composition_chart{
+    font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;    
+    background: #fff;
+    margin: 0 auto;
+    width: auto;
+    padding: auto;
+    text-align: center;
+}
+
+#composition_chart td{
+    padding: 0px;
+}
+
+#composition_chart_2{
+    font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;    
+    background: #fff;
+    margin: 0 auto;
+    width: auto;
+    padding: auto;
+    text-align: center;
+    float: right;
+}
+
+#composition_chart_2 td{
+    padding: 0px;
+}
+
+div.charts table{
+    display: inline-block;
+}
+
+div.verticalText
+{
+    text-align: center;
+    vertical-align: middle;
+    width: 60px;
+    margin: 20px auto;
+    padding: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 10px;
+    white-space: nowrap;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);  				
+}
+
+.rec{
+    width:50px;
+    height:50px;
+    background-color:white;
+}
+
+.first_c{
+    background-color:cadetblue;  
+}
+
+#composition_chart #first.second_c{
+    background-color:cadetblue;
+}
+
+#composition_chart_2 #first.second_c{
+    background-color:cadetblue;
+}
+
+#second.third_c{
+    background-color:cadetblue;
+}
+
+#composition_chart #third.third_c{
+    background-color:cadetblue;
+} 
+
+#fourth.third_c{
+    background-color:cadetblue;
+}
+
+#composition_chart #second.fourth_c{
+    background-color:cadetblue;
+}
+
+#composition_chart_2 #third.fourth_c{
+    background-color:cadetblue;
+}

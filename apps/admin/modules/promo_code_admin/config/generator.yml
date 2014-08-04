@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PromoCode
+    theme:                 jroller
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          promo_code_admin
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        max_per_page: 5
+        display: [id,type,status,used_at,serial,promo_id,asset_id,user_id]
+        object_actions:
+          _edit:  ~
+          _delete:  ~
+          validation_code:  ~
+          print_tickets:  ~
+      ##filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

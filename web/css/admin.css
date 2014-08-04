@@ -1,0 +1,20 @@
+/* 
+    Document   : admin
+    Created on : 20/05/2012, 03:56:41 PM
+    Author     : jacobo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.align-center{text-align:center}
+.align-left{text-align:left}
+.align-right{text-align:right}
+.survey-details > div {margin-bottom:1%}
+.item-details{margin-bottom:1%}
+
+#top-menu ul {display: inline-block}
+#top-menu ul li{list-style: none; margin-right: 10px; float: left}
+
+.analytics-content { margin-left: 15px; }
+
+.filter_range_input,.filter_range_label{display:inline-block;width:100%}

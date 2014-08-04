@@ -1,0 +1,163 @@
+Subscription:
+  sub_nonna_1:
+    status: suspended
+    Affiliate: nonna_mia
+    User: pv
+  sub_nonna_2:
+    status: active
+    Affiliate: nonna_mia
+    User: ma
+  sub_nonna_3:
+    status: suspended
+    Affiliate: nonna_mia
+    User: oa
+  sub_nonna_4:
+    status: active
+    Affiliate: nonna_mia
+    User: cc
+  sub_nonna_5:
+    status: active
+    Affiliate: nonna_mia
+    User: mc
+  sub_nonna_6:
+    status: active
+    Affiliate: nonna_mia
+    User: rb
+  sub_nonna_7:
+    status: active
+    Affiliate: nonna_mia
+    User: rl
+
+Card:
+  card_nonna_mc:
+    alpha_id: alphaid1
+    hash: hash1
+    status: active
+    Promo: promo_nonna_mia
+    User: mc
+  card_nonna_ma:
+    alpha_id: alphaid2
+    hash: hash2
+    status: active
+    Promo: promo_nonna_mia
+    User: ma
+  card_nonna_rb:
+    alpha_id: alphaid3
+    hash: hash3
+    status: active
+    Promo: promo_nonna_mia
+    User: rb
+  card_nonna_rl:
+    alpha_id: alphaid4
+    hash: hash4
+    status: active
+    Promo: promo_nonna_mia
+    User: rl
+  card_nonna_cc:
+    alpha_id: alphaid5
+    hash: hash5
+    status: active
+    Promo: promo_nonna_mia
+    User: cc
+
+Ticket:
+  ticket1:
+    Promo: promo_nonna_mia
+    User: cc
+    Card: card_nonna_cc
+    PromoCode: promocode_nonna_mia_baruta
+  ticket2:
+    Promo: promo_nonna_mia
+    User: cc
+    Card: card_nonna_cc
+    PromoCode: promocode_nonna_mia_baruta
+  ticket3:
+    Promo: promo_nonna_mia
+    User: ma
+    Card: card_nonna_ma
+    PromoCode: promocode_nonna_mia_lacastellana
+  ticket4:
+    Promo: promo_nonna_mia
+    User: rl
+    Card: card_nonna_rl
+    PromoCode: promocode_nonna_mia_baruta
+  ticket5:
+    Promo: promo_nonna_mia
+    User: rl
+    Card: card_nonna_rl
+    PromoCode: promocode_nonna_mia_baruta
+  ticket6:
+    Promo: promo_nonna_mia
+    User: rb
+    Card: card_nonna_rb
+    PromoCode: promocode_nonna_mia_baruta
+  ticket7:
+    Promo: promo_nonna_mia
+    User: mc
+    Card: card_nonna_mc
+    PromoCode: promocode_nonna_mia_baruta
+  ticket8:
+    Promo: promo_nonna_mia
+    User: ma
+    Card: card_nonna_ma
+    PromoCode: promocode_nonna_mia_lacastellana
+  ticket9:
+    Promo: promo_nonna_mia
+    User: ma
+    Card: card_nonna_ma
+    PromoCode: promocode_nonna_mia_lacastellana
+  ticket10:
+    Promo: promo_nonna_mia
+    User: cc
+    Card: card_nonna_cc
+    PromoCode: promocode_nonna_mia_lacastellana
+    
+Feedback:
+  feed1:
+    User: cc
+    Promo: promo_nonna_mia
+    message: Muy buena atencion
+    Affiliate: nonna_mia
+    valoration: 2
+  feed2:
+    User: cc
+    Promo: promo_nonna_mia
+    message: La mejor pizza de mi vida
+    Affiliate: nonna_mia
+    valoration: 2
+  feed3:
+    User: ma
+    Promo: promo_nonna_mia
+    message: Que viva la nonna
+    Affiliate: nonna_mia
+    valoration: 2
+  feed4:
+    User: rl
+    Promo: promo_nonna_mia
+    message: El mesero me trato mal
+    Affiliate: nonna_mia
+    valoration: 0
+  feed5:
+    User: cc
+    Promo: promo_nonna_mia
+    message: Mucha gente en el local
+    Affiliate: nonna_mia
+    valoration: 1
+  feed6:
+    User: pv
+    Promo: promo_nonna_mia
+    message: Que mal servicio
+    Affiliate: nonna_mia
+    valoration: 1
+  feed7:
+    User: ma
+    Promo: promo_nonna_mia
+    message: Atencion rapida
+    Affiliate: farmatodo
+    valoration: 2
+  feed8:
+    User: cc
+    Promo: promo_nonna_mia
+    message: Pocos cajeros
+    Affiliate: farmatodo
+    valoration: 0        

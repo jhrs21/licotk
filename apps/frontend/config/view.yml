@@ -1,0 +1,21 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+#    charset: utf-8
+    title:        LealTag - Mereces ser premiado
+#    description:  LealTag es el nuevo plan de fidelidad que te premia por visitar los sitios que te gustan. Descarga la aplicación y empieza a escanear tus premios.
+#    keywords:     programa de lealtad, programa de fidelidad, lealtad, fidelidad, tag, loyalty, loyalty programs, aumentar ventas, conocer cliente 
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    []
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout

@@ -1,0 +1,40 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: lt_apitester, action: login }
+  
+## Begin of Lealtag Api Routes
+lt_apitester:
+  url:   /
+  param: { module: lt_apitester, action: login }
+  
+lt_apitester_login:
+  url:   /
+  param: { module: lt_apitester, action: login }
+  requirements: { sf_method: get }
+
+lt_apitester_login_test:
+  url:   /
+  param: { module: lt_apitester, action: login }
+  requirements: { sf_method: post }
+## End of Lealtag Api Routes
+
+elbuho_apitester:
+  url:  /elbuho
+  param: { module: elbuho_apitester, action: index}
+
+elbuho_apitester_login:
+  url:  /elbuho/login
+  param: { module: elbuho_apitester, action: login}
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

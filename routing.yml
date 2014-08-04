@@ -1,0 +1,66 @@
+## YAML Template.
+---
+prueba:
+  url:    api/points/test
+  param:  { module: points, action: index }
+  requirements: { sf_method: get }
+  
+get_user_points:
+  url:    api/:asset/points/:currency/getUserPoints/:user_id
+  param:  { module: points, action: getUserPoints }
+  requirements: { sf_method: get }
+  
+create_value_per_action:
+  url:    api/:asset/points/:currency/newAction
+  param:  { module: points, action: createValuePerAction }
+  requirements: { sf_method: post }
+
+edit_value_per_action:
+  url:    api/:asset/points/:currency/editAction/:action_per_value
+  param:  { module: points, action: editValuePerAction }
+  requirements: { sf_method: post }
+
+get_actions:
+  url:    api/:asset/points/getActions
+  param:  { module: points, action: getActions }
+  requirements: { sf_method: get }
+  
+consume_user_points:
+  url:    api/:asset/points/:currency/consumeUserPoints/:user_id
+  param:  { module: points, action: consumeUserPoints }
+  requirements: { sf_method: post }
+  
+discount_user_points:
+  url:    api/:asset/points/:currency/discountUserPoints/:user_id
+  param:  { module: points, action: discountUserPoints }
+  requirements: { sf_method: get }
+  
+add_user_points:
+  url:    api/:asset/points/:currency/addUserPoints/:user_id
+  param:  { module: points, action: addUserPoints }
+  requirements: { sf_method: get }
+  
+get_balance_user_points:
+  url:    api/:asset/points/:currency/getFlow/:user_id
+  param:  { module: points, action: getFlow }
+  requirements: { sf_method: get }
+  
+create_currency:
+  url:    api/:asset/points/newCurrency
+  param:  { module: points, action: createCurrency }
+  requirements: { sf_method: post }
+  
+get_wallet:
+  url:    api/:asset/points/getWallet/:user_id
+  param:  { module: points, action: getWallet }
+  requirements: { sf_method: get }
+  
+create_product:
+  url:    api/:asset/points/:currency/newProduct
+  param:  { module: points, action: createProduct }
+  requirements: { sf_method: post }
+  
+add_asset_to_group:
+  url:    api/:asset/points/:currency/addAssetToGroup
+  param:  { module: points, action: addAssetToGroup }
+  requirements: { sf_method: post }

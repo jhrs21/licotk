@@ -1,0 +1,18 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+all:
+  is_secure: false
+
+index:
+  is_secure: false
+  
+howtoUser:
+  is_secure: false
+
+howtoAffiliate:
+  is_secure: false
+
+whereAreWe:
+  is_secure: false
+  

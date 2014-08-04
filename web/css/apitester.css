@@ -1,0 +1,9 @@
+.top-menu ul{
+    list-style: none;
+}
+
+.top-menu ul li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}

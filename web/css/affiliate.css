@@ -1,0 +1,44 @@
+/* 
+    Document   : affiliate
+    Created on : 25/05/2012, 07:08:21 PM
+    Author     : usurio
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.promo-form-container-inner{
+    font-family: HelveticaRegular;
+    text-align: center;
+    width: 882px;
+    height: auto;
+    float: left;
+    margin: 20px;
+    padding-bottom: 20px;
+    background-color: #E6E6E7;
+    background-position: 18px 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px;
+    color: #7F7F80
+}
+
+.container-header{
+    width: 875px;
+    margin-left: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.container-header-link{
+    padding: 20px;
+}
+
+.horizontal-divider{
+    background: url(/images/grey_separator.png) repeat-x;
+    height: 40px;
+    margin-top: 10px;
+}

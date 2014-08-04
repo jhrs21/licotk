@@ -1,0 +1,89 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+#dev:
+#  elbuho:
+#    user: test_client
+#    api_key: test_client
+#    url: "http://50.16.82.211/elbuho/index.php/elbuho_api_v2"
+    
+all:
+  sendgrid:
+    username: clublicoteca
+    password: clublicoteca2014
+    email:  'club@licoteca.com.ve'
+    name:   'Licoteca'
+  
+  max_promos_on_page: 5
+  
+  recaptcha:
+    private_key: 6Levot0SAAAAAD-9enzWaQlN42XW1Wxevy1mZuc6
+    public_key: 6Levot0SAAAAAEjWVMjQQcJzEQWil2cCW-AqmbNM
+  
+  ep:
+    max_affiliates_per_page: 50
+    max_promoted: 5
+    max_suggested: 5
+  
+  mcard:
+    code_length: 5
+  
+  mobile_app:
+    max_affiliates_per_page: 10
+    max_promoted_affiliates: 5
+    ## En Kilometros
+    search_distance_radius: 10000
+    
+  elbuho:
+    user: LEALTAG
+    api_key: a0ol1em5fj4ng
+    
+  td:
+    user: LEALTAG
+    api_key: 877e1a188460ca23cd7646d70af385a8
+  
+  sf_guard_plugin:
+     remember_key_expiration_age:  2592000   # 30 days in seconds
+     remember_cookie_name:         epFrontEndRememberMe
+     signin_form: epUserSigninForm
+     login_form: epUserLoginForm
+     success_signin_url: user_prizes
+     success_signout_url: homepage
+     
+  sfApplyPlugin:
+    apply_subject: "Bienvenido a LealTag - Activa tu cuenta"
+    reset_subject: "Solicitud de modificación de tu contraseña en LealTag."
+    
+    # Account validation email configurations
+    from:
+      email: "no-reply@licoteca.com.ve"
+      fullname: "Licoteca"
+      
+    after: user_prizes
+      
+    # Application form class
+    sfApplyApplyForm_class: epUserApplyForm
+    
+    # Application update form class
+    sfApplyUpdateForm_class: epUserUpdateForm
+    
+    # Mobile application form class // Added by Jacobo
+    sfApplyApplyMobileForm: epMobileUserApplyForm
+    
+    # Password reset request Form class
+    sfApplyResetRequestForm_class: epUserResetRequestForm
+    
+    # Password reset form class
+    sfApplyResetForm_class: epUserResetPasswordForm
+    
+    # Settings form class
+    # sfApplySettingsForm_class: mySettingsFormClass
+    
+    # Application completion form class
+    sfApplyCompleteApplicationForm_class: epUserCompleteRegisterForm
+     
+  google:
+    maps_api_keys:
+        merecesserpremiado.com: AIzaSyBGv5yBxCTBFBjqo1SJtuMFz8hF-lk0AkQ
+        elperro.localhost: AIzaSyBGv5yBxCTBFBjqo1SJtuMFz8hF-lk0AkQ
+        lealtag.com: AIzaSyBGv5yBxCTBFBjqo1SJtuMFz8hF-lk0AkQ

@@ -1,0 +1,704 @@
+Country:
+  venezuela:
+    name: Venezuela
+
+State:
+  carabobo:
+    name: Carabobo
+    Country: venezuela
+  miranda:
+    name: Miranda
+    Country: venezuela
+  distritocapital:
+    name: Distrito Capital
+    Country: venezuela
+
+Municipality:
+  baruta:
+    name: Baruta
+    State: miranda
+  chacao:
+    name: Chacao
+    State: miranda
+  elhatillo:
+    name: El Hatillo
+    State: miranda
+  sucre:
+    name: Sucre
+    State: miranda
+  libertador:
+    name: Libertador
+    State: distritocapital
+
+City:
+  caracas:
+    name: Caracas
+    State: distritocapital
+  
+MunicipalityCity:
+  barutacaracas:
+    Municipality: baruta
+    City: caracas
+  chacaocaracas:
+    Municipality: chacao
+    City: caracas
+  elhatillocaracas:
+    Municipality: elhatillo
+    City: caracas
+  sucrecaracas:
+    Municipality: sucre
+    City: caracas
+  libertadorcaracas:
+    Municipality: libertador
+    City: caracas
+
+sfGuardUser:
+  ma:
+    first_name:     Miguel
+    last_name:      Sucre
+    email_address:  miguel.sucre@gmail.com
+    username:       miguel.sucre
+    password:       miguel.sucre
+    is_super_admin: false
+    alpha_id: alphaid_ma
+    hash: alphaid_ma
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+  rb:
+    first_name:     Ricardo
+    last_name:      Blanch
+    email_address:  ricardo.blanch@gmail.com
+    username:       ricardo.blanch
+    password:       ricardo.blanch
+    is_super_admin: false
+    alpha_id: alphaid_rb
+    hash: alphaid_rb
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+  rl:
+    first_name:     Ricardo
+    last_name:      Lunar
+    email_address:  ricardo.lunar@gmail.com
+    username:       ricardo.lunar
+    password:       ricardo.lunar
+    is_super_admin: false
+    alpha_id: alphaid_rl
+    hash: alphaid_rl
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+  oa:
+    first_name:     Octavio
+    last_name:      Azpurua
+    email_address:  oazpurua@gmail.com
+    username:       oazpurua
+    password:       oazpurua
+    is_super_admin: false
+    alpha_id: alphaid_oa
+    hash: alphaid_oa
+    City: caracas
+    Municipality: sucre
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+  jm:
+    first_name:     Jacobo
+    last_name:      Martínez
+    email_address:  jacobo.amn87@gmail.com
+    username:       jacobo.amn87
+    password:       n0t13n3cl4v3
+    is_super_admin: true
+    alpha_id: alphaid_jm
+    hash: alphaid_jm
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+  cc:
+    first_name:     Clara
+    last_name:      Cárdenas
+    email_address:  ccardenas@tudescuenton.com
+    username:       ccardenas
+    password:       ccardenas
+    is_super_admin: false
+    alpha_id: alphaid_cc
+    hash: alphaid_cc
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+  nc:
+    first_name:     Nicolas
+    last_name:      Cárdenas
+    email_address:  ncardenas@tudescuenton.com
+    username:       ncardenas
+    password:       ncardenas
+    is_super_admin: false
+    alpha_id: alphaid_nc
+    hash: alphaid_nc
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+  gv:
+    first_name:     Gianpaolo
+    last_name:      Valero
+    email_address:  alexander.gvc@tudescuenton.com
+    username:       alexander.gvc
+    password:       alexander.gvc
+    is_super_admin: false
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+  mc:
+    first_name:     Maria Gabriela
+    last_name:      Chacón
+    email_address:  maria.chacon@gmail.com
+    username:       gaby.chacon
+    password:       gaby.chacon
+    is_super_admin: false
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+  empleado_1:
+    first_name:     Juan
+    last_name:      Perez
+    email_address:  juan.perez@gmail.com
+    username:       juan.perez
+    password:       juan.perez
+    is_super_admin: false
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+    Groups: [Group_admin]
+  empleado_2:
+    first_name:     Alejandra
+    last_name:      Gonzalez
+    email_address:  alejandra.gonzalez@gmail.com
+    username:       alejandra.gonzalez
+    password:       alejandra.gonzalez
+    is_super_admin: false
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+    Groups: [Group_admin]
+  empleado_3:
+    first_name:     Gabriel
+    last_name:      Gutierrez
+    email_address:  gabriel.gutierrez@gmail.com
+    username:       gabriel.gutierrez
+    password:       gabriel.gutierrez
+    is_super_admin: false
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+    Groups: [Group_admin]
+
+sfGuardUserProfile:
+  profile_jm:
+    User: jm
+    email: jacobo.amn87@gmail.com
+    fullname: Jacobo Martínez
+    birthdate: 1987-05-09
+    gender: male
+  profile_ma:
+    fullname: Miguel Sucre
+    email: miguel.sucre@gmail.com
+    birthdate: 1982-11-22
+    gender: male
+    User: ma
+  profile_rb:
+    fullname: Ricardo Blanch
+    email:  ricardo.blanch@gmail.com
+    birthdate: 1982-07-11
+    gender: male
+    User: ma
+  profile_rl:
+    fullname: Ricardo Lunar
+    email:  ricardo.lunar@gmail.com
+    birthdate: 1990-03-17
+    gender: male
+    User: rl
+  profile_oa:
+    fullname: Octavio Azpurua
+    email:  oazpurua@gmail.com
+    birthdate: 1985-08-14
+    gender: male
+    User: oa
+  profile_cc:
+    fullname: Clara Cárdenas
+    email:  ccardenas@tudescuenton.com
+    birthdate: 1990-03-17
+    gender: female
+    User: cc
+  profile_nc:
+    fullname: Nicolas Cárdenas
+    email:  ncardenas@tudescuenton.com
+    birthdate: 1990-03-17
+    gender: male
+    User: nc
+  profile_gv:
+    fullname: Gianpaolo Valero
+    email:  alexander.gvc@tudescuenton.com
+    birthdate: 1990-03-17
+    gender: male
+    User: gv
+  profile_mc:
+    full_name: Maria Gabriela Chacón
+    email:  maria.chacon@gmail.com
+    birthdate: 1990-03-17
+    gender: female
+    User: mc
+  profile_empleado_1:
+    User: empleado_1
+    email: juan.perez@gmail.com
+    fullname: Juan Perez
+    birthdate: 1987-05-09
+    gender: male
+  profile_empleado_2:
+    User: empleado_2
+    email: alejandra.gonzalez@gmail.com
+    fullname: Alejandra Gonzalez
+    birthdate: 1987-05-09
+    gender: female
+  profile_empleado_3:
+    User: empleado_3
+    email: gabriel.guitierrez@gmail.com
+    fullname: Gabriel Guitierrez
+    birthdate: 1987-05-09
+    gender: male
+
+sfGuardGroup:
+  Group_admin:
+    name:           admin
+    description:    Administrator group
+    Permissions:    [Permission_admin]
+
+sfGuardPermission:
+  Permission_admin:
+    name:           admin
+    description:    Administrator permission
+
+Category:
+  restaurantes:
+    name: Restaurantes
+  bares_y_discotecas:
+    name: Bares y Discotecas
+  comida_rapida:
+    name: Comida Rápida
+  ropa_y_calzado:
+    name: Ropa y Calzado
+  ferreterias:
+    name: Ferreterias
+  cafés_y_panaderias:
+    name: Cafés y Panaderías
+  tienda_de_conveniencia:
+    name: Tiendas de Conveniencia
+
+Affiliate:
+  nonna_mia:
+    name: Nonna Mia
+    email: nonna_mia@correo.dom
+    logo: nonna_mia_logo.jpg
+    thumb: nonna_mia_thumb.jpg
+    Category: restaurantes
+  mamma_bella:
+    name: Mamma Bella
+    email: mamma_bella@correo.dom
+    logo: mamma_bella_logo.jpg
+    thumb: mamma_bella_thumb.jpg
+    Category: restaurantes
+  mcdonalds:
+    name: Mc Donalds
+    email: mcdonalds@correo.dom
+    logo: mcdonalds_logo.jpg
+    thumb: mcdonalds_thumb.jpg
+    Category: comida_rapida
+  farmatodo:
+    name: Farmatodo
+    email: farmatodo@correo.dom
+    logo: farmatodo_logo.jpg
+    thumb: farmatodo_thumb.jpg
+    Category: tienda_de_conveniencia
+  ferretotal:
+    name: Ferretotal
+    email: ferretotal@correo.dom
+    logo: ferretotal_logo.jpg
+    thumb: ferretotal_thumb.jpg
+    Category: ferreterias
+
+Asset:
+  nonna_mia_baruta:
+    name: Nonna Mia (Baruta)
+    asset_type: place
+    Affiliate: nonna_mia
+  nonna_mia_lacastellana:
+    name: Nonna Mia (La Castellana)
+    asset_type: place
+    Affiliate: nonna_mia
+  farmatodo_sambil:
+    name: Farmatodo (Sambil)
+    asset_type: place
+    Affiliate: farmatodo
+  farmatodo_latrinidad:
+    name: Farmatodo (La Trinidad)
+    asset_type: place
+    Affiliate: farmatodo
+  farmatodo_laboyera:
+    name: Farmatodo (La Boyera)
+    asset_type: place
+    Affiliate: farmatodo
+  farmatodo_lasmercedes:
+    name: Farmatodo (Las Mercedes)
+    asset_type: place
+    Affiliate: farmatodo
+  farmatodo_lospalosgrandes:
+    name: Farmatodo (Los Palos Grandes)
+    asset_type: place
+    Affiliate: farmatodo
+  farmatodo_loschorros:
+    name: Farmatodo (Los Chorros)
+    asset_type: place
+    Affiliate: farmatodo
+  mamma_bella_restaurante:
+    name: Mamma Bella (La Trinidad)
+    asset_type: place
+    Affiliate: mamma_bella
+  mcdonalds_latrinidad:
+    name: Mc Donalds (La Trinidad)
+    asset_type: place
+    Affiliate: mcdonalds
+  mcdonalds_lacastellana:
+    name: Mc Donalds (La Castellana)
+    asset_type: place
+    Affiliate: mcdonalds
+  mcdonalds_chacaito:
+    name: Mc Donalds (Chacaito)
+    asset_type: place
+    Affiliate: mcdonalds
+  mcdonalds_millenium:
+    name: Mc Donalds (Millenium Mall)
+    asset_type: place
+    Affiliate: mcdonalds
+  mcdonalds_sambil:
+    name: Mc Donalds (Sambil)
+    asset_type: place
+    Affiliate: mcdonalds
+  ferretotal_sambil:
+    name: Ferretotal (Sambil)
+    asset_type: place
+    Affiliate: ferretotal
+    
+Location:
+  location_nonna_mia_baruta:
+    address: Baruta
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: nonna_mia_baruta
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  location_nonna_mia_lacastellana:
+    address: La Castellana
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: nonna_mia_lacastellana
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_farmatodo_sambil:
+    address: Av. Libertador, C.C. Sambil, Municipio Chacao
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: farmatodo_sambil
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_farmatodo_latrinidad:
+    address: Zona Ind. La Trinidad
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: farmatodo_latrinidad
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  location_farmatodo_laboyera:
+    address: La Boyera, Municipio El Hatillo
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: farmatodo_laboyera
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  location_farmatodo_lasmercedes:
+    address: Av. Rio de Janeiro, Las Mercedes
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: farmatodo_lasmercedes
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  location_farmatodo_lospalosgrandes:
+    address: Los Palos Grandes
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: farmatodo_lospalosgrandes
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_farmatodo_loschorros:
+    address: Los Chorros
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: farmatodo_loschorros
+    City: caracas
+    Municipality: sucre
+    State: miranda
+    Country: venezuela
+  location_mamma_bella_restaurante:
+    address: C.C. Expresso
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mamma_bella_restaurante
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  location_mcdonalds_latrinidad:
+    address: La trinidad
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mcdonalds_latrinidad
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  location_mcdonalds_lacastellana:
+    address: Redoma de La Castellana, Municipio Chacao
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mcdonalds_lacastellana
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_mcdonalds_chacaito:
+    address: Plaza Brion de Chacaito
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mcdonalds_chacaito
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_mcdonalds_millenium:
+    address: Av, Romulo Gallegos, Centro Comercial Millenium Mall
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mcdonalds_millenium
+    City: caracas
+    Municipality: sucre
+    State: miranda
+    Country: venezuela
+  location_mcdonalds_sambil:
+    address: Av. Libertador, C.C. Sambil, Municipio Chacao
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mcdonalds_sambil
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_ferretotal_sambil:
+    address: Av. Libertador, C.C. Sambil, Municipio Chacao
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: ferretotal_sambil
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+
+Promo:
+  promo_mcdonalds:
+    name: Mc Donalds premia tu fidelidad
+    description: Con la compra de combos medianos o grandes acumulas tickets que luego podrán ser canjeados por beneficios
+    status: active
+    promo_condition: buy
+    promo_action: Compra de combos medianos o grandes
+    starts_at: 2012-01-15
+    ends_at: 2012-04-15
+    expires_at: 2012-05-15
+    Affiliate: mcdonalds
+  promo_ferretotal:
+    name: Ferretotal te invita a volver
+    description: Con el consumo de Bs. 250 o más obtén un cupón de 10% de descuento para tu próxima compra.
+    status: active
+    promo_condition: consume
+    promo_action: Consumo de Bs. 250 o más
+    starts_at: 2012-01-24
+    ends_at: 2012-04-24
+    expires_at: 2012-05-24
+    Affiliate: ferretotal
+  promo_nonna_mia:
+    name: La mia nonna me alimenta
+    description: Visita Nonna Mia 2 veces en las que consumas Bs. 200 o más y obten un cupón de 50% en pizzas.
+    status: active
+    promo_condition: visit
+    promo_action: Consumo de Bs. 250 o más
+    starts_at: 2012-01-24
+    ends_at: 2012-04-24
+    expires_at: 2012-05-24
+    Affiliate: nonna_mia
+  promo_mamma_bella:
+    name: Mamma Bella te conciente
+    description: Vista Mamma Bella restaurante y consume Bs. 250 o más y obten un cupón por una sangría para tu próxima visita.
+    status: active
+    promo_condition: visit
+    promo_action: Consumo de Bs. 250 o más
+    starts_at: 2012-01-24
+    ends_at: 2012-04-24
+    expires_at: 2012-05-24
+    Affiliate: mamma_bella
+  promo_farmatodo:
+    name: Farmatodo te entiende
+    description: Por la compra de Bs. 100 o más en productos participantes obten un cupón de Bs. 20 para tu próxima compra.
+    status: active
+    promo_condition: visit
+    promo_action: Compra de Bs. 100 o más en productos participantes
+    starts_at: 2012-01-24
+    ends_at: 2012-04-24
+    expires_at: 2012-05-24
+    Affiliate: farmatodo
+    
+PromoCondition:
+  promocondition_farmatodo:
+    threshold: 1
+    benefit: Bs. 20 para tu próxima compra.
+    Promo: promo_farmatodo
+  promocondition_mamma_bella:
+    threshold: 1
+    benefit: Un cupón por una sangría para tu próxima visita
+    Promo: promo_mamma_bella
+  promocondition_ferretotal:
+    threshold: 1
+    benefit: Un cupón de 10% de descuento para tu próxima compra
+    Promo: promo_ferretotal
+  promocondition_nonna_mia:
+    threshold: 1
+    benefit: Un cupón de 50% en pizzas
+    Promo: promo_nonna_mia
+  promocondition_mcdonalds_1:
+    threshold: 2
+    benefit: Un cupón por una barquilla para tu próxima compra.
+    Promo: promo_mcdonalds
+  promocondition_mcdonalds_2:
+    threshold: 4
+    benefit: Un cupón por un Big Mac y una ración de Papas Grandes para tu próxima visita con la compra de una bebida
+    Promo: promo_mcdonalds
+  promocondition_mcdonalds_3:
+    threshold: 6
+    benefit: Un cupón por un Big Mac, una ración de Papas Grandes y un Sundae para tu próxima visita con la compra de una bebida
+    Promo: promo_mcdonalds
+
+PromoCode:
+  promocode_farmatodo_loschorros:
+    status: active
+    Promo: promo_farmatodo
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: farmatodo_loschorros
+  promocode_farmatodo_sambil:
+    status: active
+    Promo: promo_farmatodo
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: farmatodo_sambil
+  promocode_farmatodo_latrinidad:
+    status: active
+    Promo: promo_farmatodo
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: farmatodo_latrinidad
+  promocode_farmatodo_laboyera:
+    status: active
+    Promo: promo_farmatodo
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: farmatodo_laboyera
+  promocode_farmatodo_lasmercedes:
+    status: active
+    Promo: promo_farmatodo
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: farmatodo_lasmercedes
+  promocode_farmatodo_lospalosgrandes:
+    status: active
+    Promo: promo_farmatodo
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: farmatodo_lospalosgrandes
+  promocode_mamma_bella_restaurante:
+    status: active
+    Promo: promo_mamma_bella
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mamma_bella_restaurante
+  promocode_nonna_mia_baruta:
+    status: active
+    Promo: promo_nonna_mia
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: nonna_mia_baruta
+  promocode_nonna_mia_lacastellana:
+    status: active
+    Promo: promo_nonna_mia
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: nonna_mia_lacastellana
+  promocode_ferretotal_sambil:
+    status: active
+    Promo: promo_ferretotal
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: ferretotal_sambil
+  promocode_mcdonalds_sambil:
+    status: active
+    Promo: promo_mcdonalds
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mcdonalds_sambil
+  promocode_mcdonalds_chacaito:
+    status: active
+    Promo: promo_mcdonalds
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mcdonalds_chacaito
+  promocode_mcdonalds_lacastellana:
+    status: active
+    Promo: promo_mcdonalds
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mcdonalds_lacastellana
+  promocode_mcdonalds_latrinidad:
+    status: active
+    Promo: promo_mcdonalds
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mcdonalds_latrinidad
+  promocode_mcdonalds_millenium:
+    status: active
+    Promo: promo_mcdonalds
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mcdonalds_millenium

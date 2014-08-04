@@ -1,0 +1,163 @@
+/* 
+    Document   : promo_code
+    Created on : 26/04/2012, 05:41:09 PM
+    Author     : usurio
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.container-header{
+    width: 875px;
+    margin-left: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.container-header-link{
+    padding: 20px;
+}
+
+.horizontal-divider{
+    background: url(/images/grey_separator.png) repeat-x;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.vertical-divider{
+    background: url(/images/grey_separator.png) repeat-y;
+    height: 70px;
+    width: 2px;
+    float: left;
+    padding: 0px 5px 0px 5px;
+}
+
+.form-container-inner{
+    font-family: HelveticaRegular;
+    text-align: center;
+    width: 882px;
+    height: auto;
+    float: left;
+    margin: 20px;
+    padding-bottom: 20px;
+    background-color: #E6E6E7;
+    background-position: 18px 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px;
+    color: #7F7F80
+}
+
+#signin-form-container{background:url(/images/lt_background.png) 18px 15px no-repeat;background-color: #E6E6E7}
+
+.qr-code{
+    margin-top: 100px;
+    box-shadow: 0px 0px 4px #aaa;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px;
+}
+
+.validation-code{
+    width: 132px;
+    -webkit-box-shadow: 0px -1px 3px #aaa;
+    -moz-box-shadow:    0px -1px 3px #aaa;
+    box-shadow:         0px -1px 3px #aaa;
+    float: left;
+    margin-right: 0px;
+    background-color: white;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px;
+    color: #555;
+    font-size: 1.5em;
+}
+
+a.lt-button, #sign-up-container input.submit, form#sign-up-form input.submit, input.submit {
+    width: auto;
+    margin-top: 10px; 
+    padding: 5px;
+    color: #FFFFFF; 
+    text-transform: uppercase;
+    background-color: #18B9E8;
+    border: 2px #FFFFFF solid;
+    -webkit-transition: -webkit-box-shadow 0.3s linear; 
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+    box-shadow: 0px 0px 4px #aaa;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+    border-radius: 10px;
+}
+
+a.lt-button:hover, #sign-up-container input.submit:hover, form#sign-up-form input.submit:hover, input.submit:hover {
+    -webkit-box-shadow: 0px 0px 10px #555;
+    -moz-box-shadow: 0px 0px 10px #aaa; 
+    box-shadow: 0px 0px 10px #555;		
+    cursor:  pointer; 
+}
+
+.main-canvas-title h2{
+    width: 882px;
+    float: left;
+    text-align: center;
+    margin: 60px 0 -60px -124px;
+}
+
+.main-canvas-content-footer{
+    width: 882px;
+    float: left;
+    text-align: left;
+}
+.main-canvas-content-footer a{
+    margin-left: 10px;
+}
+
+.content{
+    margin-top: -10px;
+    width: 882px;
+    float: left;
+    margin-right: 0px;
+}
+
+.generator{
+    width: 550px;
+    float: left;
+}
+
+.generated-qr{
+    width: 550px;
+    float: left;
+    margin: 0 0 0 40px;
+}
+
+.vcode{
+    width: 550px;
+    float: left;
+    margin-right: 0px;
+    margin: 10px 0 0 250px;
+}
+
+.generate-button{
+    width: 550px;
+    float: left;
+    margin-right: 0px;
+    margin: 0 0 0 44px;
+}
+
+.instructions{
+    width: 284px;
+    float: left;
+    padding-top: 86px;
+    margin: 0 0px 0 -24px;
+    text-align: left;
+}
+
+.instructions p{
+    font-size: 1.2em;
+}
+
+.instructions h1{
+    font-size: 2em;
+    padding-bottom: 10px;
+    color: #18B9E8;
+}

@@ -1,0 +1,322 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+#dev:
+#  elbuho:
+#    user: test_client
+#    api_key: test_client
+#    url: "http://190.9.43.239/elbuho/index.php/elbuho_api_v2"
+    
+all:
+  elbuho:
+    user: LEALTAG
+    api_key: a0ol1em5fj4ng
+
+  main_domain: 'http://club.licoteca.com.ve'
+  domain: 'club.licoteca.com.ve'
+
+  ep:
+    max_affiliates_per_page: 10
+    max_promoted: 3
+    max_suggested: 3
+    ## En minutos
+    refresh_time: 320
+    ## En Kilometros
+    search_distance_radius: 10000
+    main_domain: 'https://club.licoteca.com.ve'
+    domain: 'club.licoteca.com.ve'
+    
+  sendgrid:
+    username: clublicoteca
+    password: clublicoteca2014
+    email:  'club@licoteca.com.ve'
+    name:   'Licoteca'
+    
+  emails:
+    templates_dir: 'api2/emailsPartials'
+    partials_dir:  'api2/emailsPartials/partials'
+    styles_dir:    'api2/emailsPartials/styles'
+    bodies_dir:    'api2/emailsPartials/bodies'
+  
+  ##
+  ##  Lo siguiente es una definición cableada para la encuesta de MasterCard en el tablet
+  ##
+  mastercard:
+    survey_id: 1sxtLF4RfZ
+    item_id: R0AzBX7S2K
+    affirmative_option_id: SaPdkeAfNN
+  ##
+  ##  Fin del cable
+  ##
+    
+  mailing_config:
+    from:
+      email: "club@licoteca.com.ve"
+      fullname: "Licoteca"
+  
+## API error list
+  errorlist:
+    api000:
+      message: Error de autenticación de usuario del API
+      type: ApiError
+    api001:
+      message: Faltan parámetros obligatorios
+      type: ApiError
+    api002:
+      message: El valor %value% es inválido para el parámetro %param%
+      type: ApiError
+    api003:
+      message: El valor %value% para el parámetro %param% no tiene el formato adecuado
+      type: ApiError
+    api100:
+      message: Error al intentar enviar correo de verificación
+      type: ApiMailerError
+    api101:
+      message: Error al intentar enviar correo de bienvenida
+      type: ApiMailerError
+    api102:
+      message: Error al intentar enviar correo para completación de datos
+      type: ApiMailerError
+    api200:
+      message: Identificador de usuario inválido
+      type: UserError
+    api201:
+      message: Hay errores en la información de registro
+      type: UserError
+    api202:
+      message: Error al intentar acceder, email y/o contraseña inválido
+      type: UserError
+    api203:
+      message: Contraseña inválida
+      type: UserError
+    api204:
+      message: Aún no has verificado tu cuenta en TuDescuenton.com, debes verificarla antes de poder usarla para ingresar a LealTag, te hemos enviado un correo electrónico para que puedas verificarla
+      type: UserError
+    api205:
+      message: Ya tienes una cuenta creada en TuDescuenton.com, utiliza el mismo email y contraseña para ingresar a LealTag
+      type: UserError
+    api206:
+      message: Correo electrónico inválido
+      type: UserError
+    api207:
+      message: El correo electrónico no se encuentra registrado
+      type: UserError
+    api208:
+      message: Aún no has verificado tu cuenta, debes verificarla antes de poder modificar tus datos
+      type: UserError
+    api209:
+      message: Ha ocurrido un error al tratar de actualizar tus datos. Por favor, contactanos a la dirección soporte@lealtag.com
+      type: UserError
+    api210:
+      message: Ha ocurrido un error al tratar de modificar tu contraseña. Por favor, contactanos a la dirección soporte@lealtag.com
+      type: UserError
+    api211:
+      message: Aún no has verificado tu cuenta, debes verificarla para poder reclamar tu premio
+      type: UserError
+    api212:
+      message: Aún no has completado los datos de tu cuenta, sigue las instrucciones que acabamos de enviar a tu email para poder reclamar tu premio
+      type: UserError
+    api213:
+      message: Aún no has completado tu registro, sigue las instrucciones que acabamos de enviar a tu email para poder completarlo.
+      type: UserError
+    api300:
+      message: Código de Promoción inválido
+      type: PromoError
+    api301:
+      message: El periodo para acumular Tags en la promoción %promo% ya ha terminado
+      type: PromoError
+    api302:
+      message: Ya has alcanzado el máximo de participaciones (%max%) para la promoción %promo%. Si tienes algún premio aún puedes canjearlo
+      type: PromoError
+    api303:
+      message: Ya has realizado el máximo de Tags diarios (%max%) para la promoción %promo%
+      type: PromoError
+    api304:
+      message: Código de Activación inválido
+      type: PromoError
+    api305:
+      message: El Código de Activación ya ha sido utilizado
+      type: PromoError
+    api306:
+      message: El Código de Promoción no corresponde al establecimiento o marca
+      type: PromoError
+    api307:
+      message: El Código de Promoción esta ináctivo
+      type: PromoError
+    api308:
+      message: El periodo de canje de la promoción aún no ha iniciado
+      type: PromoError
+    api309:
+      message: El periodo de canje de la promoción ya ha finalizado
+      type: PromoError
+    api310:
+      message: Identificador de Promoción inválido
+      type: PromoError
+    api311:
+      message: El establecimiento no está asociado a la promoción indicada
+      type: PromoError
+    api312:
+      message: El identificador de la promoción es inválido
+      type: PromoError
+    api400:
+      message: Identificador de tarjeta inválido
+      type: CardError
+    api401:
+      message: La tarjeta ya ha sido canjeada
+      type: CardError
+    api402:
+      message: La tarjeta ya ha expirado
+      type: CardError
+    api403:
+      message: La tarjeta ha sido cancelada por el usuario.
+      type: CardError
+    api500:
+      message: Identificador de premio inválido
+      type: PrizeError
+    api501:
+      message: El premio indicado no corresponde con la promoción indicada
+      type: PrizeError
+    api502:
+      message: Se ha agotado la existencia del premio solicitado
+      type: PrizeError
+    api503:
+      message: Aún no has acumulado suficientes Tags para reclamar este Premio 
+      type: PrizeError
+    api504:
+      message: Identificador de Cupón inválido
+      type: PrizeError
+    api505:
+      message: El premio no puede ser canjeado en este establecimiento
+      type: PrizeError
+    api506:
+      message: El premio ya ha sido utilizado
+      type: PrizeError
+    api507:
+      message: El premio ya ha expirado
+      type: PrizeError
+    api508:
+      message: El periodo de canje para este premio aún no ha comenzado
+      type: PrizeError
+    api509:
+      message: El password para el premio indicado es inválido
+      type: PrizeError
+    api600:
+      message: Identificador de categoria inválido
+      type: CategoryError
+    api601:
+      message: Identificador de categoria de establecimiento inválido
+      type: CategoryError
+    api602:
+      message: Identificador de categoria de marca inválido
+      type: CategoryError
+    api700:
+      message: Identificador de establecimiento inválido
+      type: AssetError
+    api701:
+      message: Identificador de marca inválido
+      type: AssetError
+    api800:
+      message: Identificador de tarjeta inválido
+      type: MembershipCardError
+    api801:
+      message: Tarjeta inválida
+      type: MembershipCardError
+    api802:
+      message: Tarjeta no asignada, indica el correo electrónico al que vincular la tarjeta
+      type: MembershipCardError
+    api803:
+      message: La tarjeta no está asignada a un usuario
+      type: MembershipCardError
+    api900:
+      message: Ha ocurrido un error al tratar de crear una cuenta de usuario. Por favor, contáctanos a la dirección soporte@lealtag.com
+      type: BuhoError
+    api901:
+      message: Ha ocurrido un error al tratar de iniciar tu sesión. Por favor, contáctanos a la dirección soporte@lealtag.com
+      type: BuhoError
+    api902:
+      message: Ha ocurrido un error al tratar de enviar el correo para la verificación de tu cuenta en TuDescuenton.com. Por favor, contáctanos a la dirección soporte@lealtag.com
+      type: BuhoError
+    api903:
+      message: Identificador de usuario inválido
+      type: BuhoError
+    api1000:
+      message: %message%
+      type: GenericApiError
+    api1100:
+      message: Ha ocurrido un problema de comunicación con el servidor de %affiliate% al intentar canjear tu premio. Por favor, intenta más tarde nuevamente.
+      type: AutomaticRedeemError
+    api1101:
+      message: No se ha recibido respuesta del servidor de %affiliate% en el tiempo esperado. Por favor, intenta más tarde nuevamente.
+      type: AutomaticRedeemError
+    api1200:
+      message: Faltan parámetros obligatorios para procesar la petición
+      type: AutomaticRedeemError
+    api1201:
+      message: Error de autenticación de credenciales del API
+      type: AutomaticRedeemError
+    api1202:
+      message: Tu correo electrónico (%email%) no tiene el formato adecuado.
+      type: AutomaticRedeemError
+    api1203:
+      message: Tu correo electrónico (%email%) no está registrado en el servidor de %affiliate%.
+      type: AutomaticRedeemError
+    api1204:
+      message: Se ha agotado la existencia del premio (%prize%) que has solicitado en %affiliate%.
+      type: AutomaticRedeemError
+    api1205:
+      message: No se ha encontrado el premio (%prize%) que has solicitado en %affiliate%.
+      type: AutomaticRedeemError
+    api1300:
+      message: Por favor corrija los errores señalados en el formulario
+      type: FormValidationError
+    api2000:
+      message: Error desde la BD.
+      type: PointsError
+    api2001:
+      message: Usuario inválido.
+      type: PointsError
+    api2002:
+      message: Permiso denegado. Moneda con varios establecimientos.
+      type: PointsError
+    api2003:
+      message: Permiso denegado. Moneda de superusuario.
+      type: PointsError
+    api2004:
+      message: Establecimiento inválido.
+      type: PointsError
+    api2005:
+      message: Bolsillo invalido.
+      type: PointsError
+    api2006:
+      message: Puntos insuficientes para reclamar ese premio.
+      type: PointsError
+    api2007:
+      message: Permiso denegado del cliente del Api sobre esa moneda.
+      type: PointsError
+    api2008:
+      message: Establecimiento o moneda inválida.
+      type: PointsError
+    api2009:
+      message: No existe acción de consumo para ese grupo de establecimientos.
+      type: PointsError
+    api2010:
+      message: No existe acción de descuento (admin) para ese grupo de establecimientos.
+      type: PointsError
+    api2011:
+      message: Permiso denegado para la acción %action%.
+      type: PointsError
+    api2012:
+      message: Falta parámetro requerido.
+      type: PointsError
+    api2013:
+      message: Permiso denegado. Cliente de Api inválido.
+      type: PointsError
+    api2014:
+      message: Ya existe relación entre moneda y establecimiento.
+      type: PointsError
+    api2015:
+      message: Nombre de acción repetido para esa moneda.
+      type: PointsError
+    api2016:
+      message: Token inválido.
+      type: PointsError

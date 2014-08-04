@@ -1,0 +1,1935 @@
+CurrencyAsset:
+  todofarma_CA:
+    Asset: todofarma_sambil
+    Currency: pts_todofarma
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3, date("d"), date("Y"))) ?>' 
+
+Currency:
+  pts_lt:
+    name: Puntos LT
+    symbol: ptsLT
+    alpha_id: alphaIdPtsLT
+    is_super: 1
+  pts_todofarma:
+    name: Farma Puntos
+    symbol: ptsF
+    alpha_id: alphaIdPtsF
+    is_super: 0
+    
+ValuePerAction:
+  tag_action:
+    alpha_id: alphaIdAction1
+    action: tag
+    value: 3
+    is_super: 1
+  redeem_action:
+    alpha_id: alphaIdAction2
+    action: redeem
+    value: 10
+    is_super: 1
+  feedback_action:
+    alpha_id: alphaIdAction3
+    action: feedback
+    value: 5
+    is_super: 1
+  tag_action_todofarma:
+    alpha_id: alphaIdAction4
+    action: tag
+    value: 4
+    is_super: 0
+    CurrencyAsset: todofarma_CA
+  consume_action_todofarma:
+    alpha_id: alphaIdAction5
+    action: consume
+    value: 0
+    is_super: 0
+    description: Accion usada para consumir un producto de todofarma
+    CurrencyAsset: todofarma_CA
+    
+PointsProduct:
+  farmatodo_product:
+    alpha_id: alphaIdProduct
+    name: una caja de curitas
+    value: 10
+    description: unas curitas con la cara de chavez impresas
+    Asset: todofarma_sambil
+
+Country:
+  venezuela:
+    name: Venezuela
+  eeuu:
+    name: Estados Unidos
+
+State:
+  newyork:
+    name: New York
+    Country: eeuu
+  texas:
+    name: Texas
+    Country: eeuu
+  california:
+    name: California
+    Country: eeuu
+  miranda:
+    name: Miranda
+    Country: venezuela
+  carabobo:
+    name: Carabobo
+    Country: venezuela
+  distritocapital:
+    name: Distrito Capital
+    Country: venezuela
+
+Municipality:
+  baruta:
+    name: Baruta
+    State: miranda
+  chacao:
+    name: Chacao
+    State: miranda
+  elhatillo:
+    name: El Hatillo
+    State: miranda
+  sucre:
+    name: Sucre
+    State: miranda
+  libertador:
+    name: Libertador
+    State: distritocapital
+
+City:
+  caracas:
+    name: Caracas
+    State: distritocapital
+  
+MunicipalityCity:
+  barutacaracas:
+    Municipality: baruta
+    City: caracas
+  chacaocaracas:
+    Municipality: chacao
+    City: caracas
+  elhatillocaracas:
+    Municipality: elhatillo
+    City: caracas
+  sucrecaracas:
+    Municipality: sucre
+    City: caracas
+  libertadorcaracas:
+    Municipality: libertador
+    City: caracas
+
+sfGuardUser:
+  pv:
+    first_name:     Pedro
+    last_name:      Vallenilla
+    email_address:  pedro.vallenilla@gmail.com
+    username:       pedro.vallenilla
+    password:       pedro.vallenilla
+    is_super_admin: false
+    alpha_id: alphaid_pv
+    hash: hash_pv
+    Groups: [Group_lealtag]
+  ma:
+    first_name:     Miguel
+    last_name:      Sucre
+    email_address:  miguel.sucre@gmail.com
+    username:       miguel.sucre
+    password:       miguel.sucre
+    is_super_admin: false
+    alpha_id: alphaid_ma
+    hash: hash_ma
+    Groups: [Group_lealtag]
+  rb:
+    first_name:     Ricardo
+    last_name:      Blanch
+    email_address:  ricardo.blanch@gmail.com
+    username:       ricardo.blanch
+    password:       ricardo.blanch
+    is_super_admin: false
+    alpha_id: alphaid_rb
+    hash: hash_rb
+    Groups: [Group_lealtag]
+  mg:
+    first_name:     Maria
+    last_name:      Gomez
+    email_address:  maria.gomez@pruebaprueba.com
+    username:       maria.gomez
+    password:       maria.gomez
+    is_super_admin: false
+    alpha_id: alphaid_mg
+    hash: hash_mg
+    Groups: [Group_lealtag]
+  dl:
+    first_name:     Daniela
+    last_name:      Lopez
+    email_address:  daniela.lopez@pruebaprueba.com
+    username:       daniela.lopez
+    password:       daniela.lopez
+    is_super_admin: false
+    alpha_id: alphaid_dl
+    hash: hash_dl
+    Groups: [Group_lealtag]
+  gl:
+    first_name:     Gabriela
+    last_name:      Lopez
+    email_address:  gabriela.lopez@pruebaprueba.com
+    username:       gabriela.lopez
+    password:       gabriela.lopez
+    is_super_admin: false
+    alpha_id: alphaid_gl
+    hash: hash_gl
+    Groups: [Group_lealtag]
+  mgg:
+    first_name:     Maria Gabriela
+    last_name:      Gutierrez
+    email_address:  mg.gutierrez@pruebaprueba.com
+    username:       mg.gutierrez
+    password:       mg.gutierrez
+    is_super_admin: false
+    alpha_id: alphaid_mgg
+    hash: hash_mgg
+    Groups: [Group_lealtag]
+  av:
+    first_name:     Andres
+    last_name:      Vizcarrondo
+    email_address:  andres.vizcarrondo@gmail.com
+    username:       andres.vizcarrondo
+    password:       andres.vizcarrondo
+    is_super_admin: false
+    alpha_id: alphaid_av
+    hash: hash_av
+    Groups: [Group_lealtag]
+  rl:
+    first_name:     Ricardo
+    last_name:      Lunar
+    email_address:  ricardo.lunar@gmail.com
+    username:       ricardo.lunar
+    password:       ricardo.lunar
+    is_super_admin: false
+    alpha_id: alphaid_rl
+    hash: hash_rl
+    Groups: [Group_lealtag]
+  oa:
+    first_name:     Octavio
+    last_name:      Azpurua
+    email_address:  oazpurua@gmail.com
+    username:       oazpurua
+    password:       oazpurua
+    is_super_admin: false
+    alpha_id: alphaid_oa
+    hash: hash_oa
+    Groups: [Group_lealtag]
+  cc:
+    first_name:     Clara
+    last_name:      Cárdenas
+    email_address:  ccardenas@tudescuenton.com
+    username:       ccardenas
+    password:       ccardenas
+    is_super_admin: false
+    alpha_id: alphaid_cc
+    hash: hash_cc
+    Groups: [Group_lealtag]
+  nc:
+    first_name:     Nicolas
+    last_name:      Cárdenas
+    email_address:  ncardenas@tudescuenton.com
+    username:       ncardenas
+    password:       ncardenas
+    is_super_admin: false
+    alpha_id: alphaid_nc
+    hash: hash_nc
+    Groups: [Group_lealtag]
+  gv:
+    first_name:     Gianpaolo
+    last_name:      Valero
+    email_address:  alexander.gvc@tudescuenton.com
+    username:       alexander.gvc
+    password:       alexander.gvc
+    is_super_admin: false
+    alpha_id: alphaid_gv
+    hash: hash_gv
+    Groups: [Group_lealtag]
+  mc:
+    first_name:     Maria Gabriela
+    last_name:      Chacón
+    email_address:  maria.chacon@gmail.com
+    username:       gaby.chacon
+    password:       gaby.chacon
+    is_super_admin: false
+    alpha_id: alphaid_mc
+    hash: hash_mc
+    Groups: [Group_lealtag]
+  jamn87:
+    first_name:     Jacobo
+    last_name:      Martínez
+    email_address:  jacobo.amn87@gmail.com
+    username:       jacobo.amn87
+    password:       jacobo.amn87
+    is_super_admin: false
+    alpha_id: alphaid_jm
+    hash: hash_jm
+    Groups: [Group_lealtag]
+  jacobo:
+    first_name:     Jacobo
+    last_name:      Martínez
+    email_address:  jacobo@lealtag.com
+    username:       jacobo
+    password:       n0t13n3cl4v3
+    is_super_admin: false
+    Groups: [Group_admin]
+  jose:
+    first_name:     José
+    last_name:      Riera
+    email_address:  jose.riera@lealtag.com
+    username:       josehriera
+    password:       josehriera
+    is_super_admin: true
+    Groups: [Group_admin]
+  octavio:
+    first_name:     Octavio
+    last_name:      Azpurua
+    email_address:  octavio.azpurua@lealtag.com
+    username:       oazpuruaadmin
+    password:       oazpurua
+    is_super_admin: true
+    Groups: [Group_admin]
+  todofarma_admin:
+    first_name:     Administrador
+    last_name:      Todofarma
+    email_address:  todofarma_admin@gmail.com
+    username:       todofarma_admin
+    password:       todofarma_admin
+    is_super_admin: false
+    is_admin: true
+    Affiliate: todofarma
+    Asset: todofarma_sambil
+    Groups: [Group_affiliate_admin]
+  todofarma_sambil_admin:
+    first_name:     Administrador
+    last_name:      Todofarma
+    email_address:  todofarma_sambil_admin@gmail.com
+    username:       todofarma_sambil_admin
+    password:       todofarma_sambil_admin
+    is_super_admin: false
+    is_admin: false
+    Affiliate: todofarma
+    Asset: todofarma_sambil
+    Groups: [Group_affiliate_admin]
+  nonnamia_admin:
+    first_name:     Administrador
+    last_name:      NonnaMia
+    email_address:  nonnamia_admin@gmail.com
+    username:       nonnamia_admin
+    password:       nonnamia_admin
+    is_super_admin: false
+    Affiliate: monna_mia
+    Asset: monna_mia_baruta
+    Groups: [Group_affiliate_admin]
+  empleado_1:
+    first_name:     Juan
+    last_name:      Perez
+    email_address:  juan.perez@gmail.com
+    username:       juan.perez
+    password:       juan.perez
+    is_super_admin: false
+    Affiliate: todofarma
+    Groups: [Group_employee]
+  empleado_2:
+    first_name:     Alejandra
+    last_name:      Gonzalez
+    email_address:  alejandra.gonzalez@gmail.com
+    username:       alejandra.gonzalez
+    password:       alejandra.gonzalez
+    is_super_admin: false
+    Affiliate: todofarma
+    Groups: [Group_employee]
+  empleado_3:
+    first_name:     Gabriel
+    last_name:      Gutierrez
+    email_address:  gabriel.gutierrez@gmail.com
+    username:       gabriel.gutierrez
+    password:       gabriel.gutierrez
+    is_super_admin: false
+    Affiliate: todofarma
+    Groups: [Group_employee]
+    
+sfGuardGroup:
+  Group_admin:
+    name:           admin
+    description:    Administrator group
+    Permissions:    [Permission_admin,Permission_admin_tasks]
+  Group_affiliate_admin:
+    name:           affiliate_admin
+    description:    Affiliate administrator group
+    Permissions:    [Permission_affiliate_admin,Permission_admin_tasks]
+  Group_employee:
+    name:           affiliate_employee
+    description:    Employee group
+    Permissions:    [Permission_affiliate_employee]
+  Group_lealtag:
+    name:           lealtag_users
+    description:    Lealtag Users group
+    Permissions:    [Permission_user]
+
+sfGuardPermission:
+  Permission_admin:
+    name:           admin
+    description:    Administrator permission
+  Permission_affiliate_admin:
+    name:           affiliate_admin
+    description:    Affiliate administrator permission
+  Permission_affiliate_employee:
+    name:           employee
+    description:    Employee permission
+  Permission_admin_tasks:
+    name:           admin_tasks
+    description:    Permission for execute administration tasks
+  Permission_user:
+    name:           user_tasks
+    description:    User permission
+    
+UserProfile:
+  profile_pv:
+    fullname: Pedro Vallenilla
+    email: pedro.vallenilla@gmail.com
+    id_number: 19050786
+    birthdate: '1988-10-29'
+    gender: male
+    User: pv
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  profile_ma:
+    fullname: Miguel Sucre
+    email: miguel.sucre@gmail.com
+    id_number: 15650786
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 11, 22, 1982)) ?>'
+    gender: male
+    User: ma
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  profile_rb:
+    fullname: Ricardo Blanch
+    email:  ricardo.blanch@gmail.com
+    id_number: 12677906
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 7, 11, 1982)) ?>'
+    gender: male
+    User: rb
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  profile_rl:
+    fullname: Ricardo Lunar
+    email:  ricardo.lunar@gmail.com
+    id_number: 20953728
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 3, 17, 1990)) ?>'
+    gender: male
+    User: rl
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  profile_av:
+    fullname: Andres Vizcarrondo
+    email:  andres.vizcarrondo@gmail.com
+    id_number: 13627716
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 7, 11, 1981)) ?>'
+    gender: male
+    User: av
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  profile_oa:
+    fullname: Octavio Azpurua
+    email:  oazpurua@gmail.com
+    id_number: 16551723
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 8, 17, 1985)) ?>'
+    gender: male
+    User: oa
+    City: caracas
+    Municipality: sucre
+    State: miranda
+    Country: venezuela
+  profile_cc:
+    fullname: Clara Cárdenas
+    email:  ccardenas@tudescuenton.com
+    id_number: 16257853
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 7, 2, 1983)) ?>'
+    gender: female
+    User: cc
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  profile_nc:
+    fullname: Nicolas Cárdenas
+    email:  ncardenas@tudescuenton.com
+    id_number: 19729126
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 5, 17, 1987)) ?>'
+    gender: male
+    User: nc
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  profile_gv:
+    fullname: Gianpaolo Valero
+    email:  alexander.gvc@tudescuenton.com
+    id_number: 18235098
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 10, 11, 1987)) ?>'
+    gender: male
+    User: gv
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  profile_mc:
+    full_name: Maria Gabriela Chacón
+    email:  maria.chacon@gmail.com
+    id_number: 17287368
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 2, 13, 1987)) ?>'
+    gender: female
+    User: mc
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  profile_mg:
+    full_name: Maria Gomez
+    email:  maria.gomez@pruebaprueba.com
+    id_number: 17211168
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 2, 23, 1986)) ?>'
+    gender: female
+    User: mg
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  profile_dl:
+    full_name: Daniela Lopez
+    email:  daniela.lopez@pruebaprueba.com
+    id_number: 17221268
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 1, 2, 1988)) ?>'
+    gender: female
+    User: dl
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  profile_gl:
+    full_name: Gabriela Lopez
+    email:  gabriela.lopez@pruebaprueba.com
+    id_number: 16221267
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 5, 15, 1986)) ?>'
+    gender: female
+    User: gl
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  profile_mgg:
+    full_name: Maria Gabriela Gutierrez
+    email:  mg.gutierrez@pruebaprueba.com
+    id_number: 15221267
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 6, 18, 1985)) ?>'
+    gender: female
+    User: mgg
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  profile_jamn87:
+    full_name: Jacobo Martínez
+    email:  jacobo.amn87@gmail.com
+    id_number: 18700266
+    birthdate: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, 5, 9, 1987)) ?>'
+    gender: male
+    User: jamn87
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+
+UserAffiliateProfile:
+  profile_empleado_1:
+    User: empleado_1
+    email: juan.perez@gmail.com
+    fullname: Juan Perez
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  profile_empleado_2:
+    User: empleado_2
+    email: alejandra.gonzalez@gmail.com
+    fullname: Alejandra Gonzalez
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  profile_empleado_3:
+    User: empleado_3
+    email: gabriel.guitierrez@gmail.com
+    fullname: Gabriel Guitierrez
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+
+Category:
+  restaurantes:
+    name: Restaurantes
+  restaurantes_comida_italiana:
+    name: Comida italiana
+    ParentCategory: restaurantes
+  restaurantes_comida_thai:
+    name: Comida Thailandesa
+    ParentCategory: restaurantes
+  restaurantes_comida_arabe:
+    name: Comida Arabe
+    ParentCategory: restaurantes
+  restaurantes_comida_venezolana:
+    name: Comida Venezolana
+    ParentCategory: restaurantes
+  bares_y_discotecas:
+    name: Bares y Discotecas
+  comida_rapida:
+    name: Comida Rápida
+  ropa_y_calzado:
+    name: Ropa y Calzado
+  ferreterias:
+    name: Ferreterias
+  cafés_y_panaderias:
+    name: Cafés y Panaderías
+  tienda_de_conveniencia:
+    name: Tiendas de Conveniencia
+  muebles_y_decoracion:
+    name: Muebles y Decoración
+  teatro_y_cine:
+    name: Teatro y Cine
+  bebidas_gaseosas:
+    name: Bebidas Gaseosas
+    category_type: brand
+  paginas_web:
+    name: Paginas Web
+    category_type: brand
+
+Affiliate:
+  fepsico:
+    alpha_id: fepsico
+    hash: fepsico
+    name: Fepsico
+    description: Fepsico Alimentos
+    logo: fepsico_logo.jpg
+    thumb: fepsico.png
+    Category: bebidas_gaseosas
+  tudescuenton:
+    alpha_id: tudescuenton
+    hash: tudescuenton
+    name: Tudescuenton
+    description: TuDescuenton.com
+    logo: tudescuenton_logo.jpg
+    thumb: tudescuenton.jpg
+    Category: paginas_web
+  monna_mia:
+    alpha_id: monna_mia
+    hash: monna_mia
+    name: Monna Mia
+    description: Restaurante de comida italiana y pizzas a la leña
+    logo: monna_mia_logo.jpg
+    thumb: monna_mia.png
+    Category: restaurantes
+  mamma_carina:
+    alpha_id: mamma_carina
+    hash: mamma_carina
+    name: Mamma Carina
+    description: Restaurante de comida italiana y pizzas a la leña
+    logo: mamma_carina_logo.jpg
+    thumb: mamma_carina.png
+    Category: restaurantes
+  mctonalds:
+    alpha_id: mctonalds
+    hash: mctonalds
+    name: Mc Tonalds
+    description: Cadena de comida rápida
+    logo: mctonalds_logo.jpg
+    thumb: mctonalds.jpg
+    Category: comida_rapida
+  todofarma:
+    alpha_id: todofarma
+    hash: todofarma
+    name: Todofarma
+    description: Farmacia y todo lo que necesites
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    Category: tienda_de_conveniencia
+  totalferre:
+    alpha_id: totalferre
+    hash: totalferre
+    name: Totalferre
+    description: Ferreteria, materiales de construcción y todo para el hogar.
+    logo: totalferre_logo.jpg
+    thumb: totalferre.png
+    Category: ferreterias
+  warairarepanoburger:
+    alpha_id: warairarepanoburger
+    hash: warairarepanoburger
+    name: Waraira Repano Burger
+    description: Hamburguesas gourmet.
+    logo: warairarepanoburger_logo.jpg
+    thumb: warairarepanoburger.png
+    Category: comida_rapida
+  stonemediaburger:
+    alpha_id: stonemediaburger
+    hash: stonemediaburger
+    name: Stone Media Burger
+    description: Hamburguesas gourmet.
+    logo: stone_media.jpg
+    thumb: stone_media_2.png
+    Category: comida_rapida
+
+AffiliateCategory:
+  monna_mia_restaurantes:
+    Affiliate: monna_mia
+    Category: restaurantes
+  monna_mia_restaurantes:
+    Affiliate: monna_mia
+    Category: restaurantes_comida_italiana
+  mamma_carina_restaurantes:
+    Affiliate: mamma_carina
+    Category: restaurantes
+  mamma_carina_restaurantes:
+    Affiliate: mamma_carina
+    Category: restaurantes_comida_italiana
+  mctonalds_comida_rapida:
+    Affiliate: mctonalds
+    Category: comida_rapida
+  warairarepanoburger_comida_rapida:
+    Affiliate: warairarepanoburger
+    Category: comida_rapida
+  stonemediaburger_comida_rapida:
+    Affiliate: stonemediaburger
+    Category: comida_rapida
+
+Asset:
+  tudescuenton_td:
+    alpha_id: CnsJnjcUEj
+    hash: bbdc137a786a93732d33e57ddffda67232e3b725177901b0a2
+    name: Tudescuenton
+    description: Tudescuenton.com para que ahorres un monton
+    thumb: pepsi_thumb.png
+    logo: pepsi_logo.png
+    asset_type: brand
+    Affiliate: tudescuenton
+    Category: paginas_web
+  fepsico_fepsi:
+    alpha_id: <?php echo str_pad("1", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Fepsi
+    description: Bebida gaseosa sabor a Cola
+    thumb: fepsi_thumb.png
+    logo: fepsi_logo.png
+    asset_type: brand
+    Affiliate: fepsico
+    Category: bebidas_gaseosas
+  warairarepanoburger_hatillo:
+    alpha_id: <?php echo str_pad("2", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Warairarepano Burger (El Hatillo)
+    description: Warairarepano Burger (Sede El Hatillo)
+    thumb: wb_thumb.png
+    logo: wb_logo.png
+    asset_type: place
+    Affiliate: warairarepanoburger
+    Category: comida_rapida
+  warairarepanoburger_lospalosgrandes:
+    alpha_id: <?php echo str_pad("3", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Warairarepano Burger (Los Palos Grandes)
+    description: Warairarepano Burger (Sede Los Palos Grandes)
+    thumb: wb_thumb.png
+    logo: wb_logo.png
+    asset_type: place
+    Affiliate: warairarepanoburger
+    Category: comida_rapida
+  monna_mia_baruta:
+    alpha_id: <?php echo str_pad("4", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Monna Mia (Baruta)
+    description: Monna Mia (Baruta)
+    logo: monna_mia_logo.jpg
+    thumb: monna_mia.png
+    asset_type: place
+    Category: restaurantes
+    Affiliate: monna_mia
+  monna_mia_lacastellana:
+    alpha_id: <?php echo str_pad("5", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Monna Mia (La Castellana)
+    description: Monna Mia (La Castellana)
+    logo: monna_mia_logo.jpg
+    thumb: monna_mia.png
+    asset_type: place
+    Category: restaurantes
+    Affiliate: monna_mia
+  todofarma_sambil:
+    alpha_id: <?php echo str_pad("6", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Todofarma (Sambil)
+    description: Todofarma (Sambil)
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Category: tienda_de_conveniencia
+    Affiliate: todofarma
+  todofarma_latrinidad:
+    alpha_id: <?php echo str_pad("7", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Todofarma (La Trinidad)
+    description: Todofarma (La Trinidad)
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Category: tienda_de_conveniencia
+    Affiliate: todofarma
+  todofarma_laboyera:
+    alpha_id: <?php echo str_pad("8", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Todofarma (La Boyera)
+    description: Todofarma (La Boyera)
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Category: tienda_de_conveniencia
+    Affiliate: todofarma
+  todofarma_lasmercedes:
+    alpha_id: <?php echo str_pad("9", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Todofarma (Las Mercedes)
+    description: Todofarma (Las Mercedes)
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Category: tienda_de_conveniencia
+    Affiliate: todofarma
+  todofarma_lospalosgrandes:
+    alpha_id: <?php echo str_pad("10", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Todofarma (Los Palos Grandes)
+    description: Todofarma (Las Mercedes)
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Category: tienda_de_conveniencia
+    Affiliate: todofarma
+  todofarma_loschorros:
+    alpha_id: <?php echo str_pad("11", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Todofarma (Los Chorros)
+    description: Todofarma (Los Chorros)
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Category: tienda_de_conveniencia
+    Affiliate: todofarma
+  mamma_carina_restaurante:
+    alpha_id: <?php echo str_pad("12", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Mamma Carina (La Trinidad)
+    description: Mamma Carina (La Trinidad)
+    logo: mamma_carina_logo.jpg
+    thumb: mamma_carina.png
+    asset_type: place
+    Category: restaurantes
+    Affiliate: mamma_carina
+  mctonalds_latrinidad:
+    alpha_id: <?php echo str_pad("13", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Mc Tonalds (La Trinidad)
+    description: Mc Tonalds (La Trinidad)
+    asset_type: place
+    Category: comida_rapida
+    Affiliate: mctonalds
+  mctonalds_lacastellana:
+    alpha_id: <?php echo str_pad("14", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Mc Tonalds (La Castellana)
+    description: Mc Tonalds (La Castellana)
+    asset_type: place
+    Category: comida_rapida
+    Affiliate: mctonalds
+  mctonalds_chacaito:
+    name: Mc Tonalds (Chacaito)
+    asset_type: place
+    Affiliate: mctonalds
+  mctonalds_millenium:
+    alpha_id: <?php echo str_pad("15", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Mc Tonalds (Millenium Mall)
+    description: Mc Tonalds (Millenium Mall)
+    asset_type: place
+    Category: comida_rapida
+    Affiliate: mctonalds
+  mctonalds_sambil:
+    alpha_id: <?php echo str_pad("16", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Mc Tonalds (Sambil)
+    description: Mc Tonalds (Sambil)
+    asset_type: place
+    Category: comida_rapida
+    Affiliate: mctonalds
+  totalferre_sambil:
+    alpha_id: <?php echo str_pad("17", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Totalferre (Sambil)
+    description: Totalferre (Sambil)
+    asset_type: place
+    Affiliate: totalferre
+  stonemediaburger_hatillo:
+    alpha_id: <?php echo str_pad("18", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Stone Media Burger (El Hatillo)
+    description: Stone Media Burger (Sede El Hatillo)
+    thumb: stonemediaburger_thumb.png
+    logo: stonemediaburger_logo.png
+    asset_type: place
+    Affiliate: stonemediaburger
+    Category: comida_rapida
+  stonemediaburger_lospalosgrandes:
+    alpha_id: <?php echo str_pad("19", 10, "a", STR_PAD_LEFT)."\n" ?>
+    name: Stone Media Burger (Los Palos Grandes)
+    description: Stone Media Burger (Sede Los Palos Grandes)
+    thumb: stonemediaburger_thumb.png
+    logo: stonemediaburger_logo.png
+    asset_type: place
+    Affiliate: stonemediaburger
+    Category: comida_rapida
+    
+AssetCategory:
+  pepse_bebidas:
+    Asset: fepsico_fepsi
+    Category: bebidas_gaseosas
+  tudescuenton_pagweb:
+    Asset: tudescuenton_td
+    Category: paginas_web
+  monna_mia_baruta_restaurantes:
+    Asset: monna_mia_baruta
+    Category: restaurantes
+  monna_mia_baruta_restaurantes_comida_italiana:
+    Asset: monna_mia_baruta
+    Category: restaurantes_comida_italiana
+  monna_mia_lacastellana_restaurantes:
+    Asset: monna_mia_lacastellana
+    Category: restaurantes
+  monna_mia_lacastellana_restaurantes_comida_italiana:
+    Asset: monna_mia_baruta
+    Category: restaurantes_comida_italiana
+  mamma_carina_restaurante_restaurantes:
+    Asset: mamma_carina_restaurante
+    Category: restaurantes
+  mamma_carina_restaurante_restaurantes_comida_italiana:
+    Asset: mamma_carina_restaurante
+    Category: restaurantes_comida_italiana
+  totalferre_sambil_ferreterias:
+    Asset: totalferre_sambil
+    Category: ferreterias
+  warairarepanoburger_hatillo_comida_rapida:
+    Asset: warairarepanoburger_hatillo
+    Category: comida_rapida
+  warairarepanoburger_lospalosgrandes_comida_rapida:
+    Asset: warairarepanoburger_lospalosgrandes
+    Category: comida_rapida
+  mctonalds_latrinidad_comida_rapida:
+    Asset: mctonalds_latrinidad
+    Category: comida_rapida
+  mctonalds_lacastellana_comida_rapida:
+    Asset: mctonalds_lacastellana
+    Category: comida_rapida
+  mctonalds_chacaito_comida_rapida:
+    Asset: mctonalds_chacaito
+    Category: comida_rapida
+  mctonalds_millenium_comida_rapida:
+    Asset: mctonalds_millenium
+    Category: comida_rapida
+  mctonalds_sambil_comida_rapida:
+    Asset: mctonalds_sambil
+    Category: comida_rapida
+  todofarma_sambil_tienda_de_conveniencia:
+    Asset: todofarma_sambil
+    Category: tienda_de_conveniencia
+  todofarma_latrinidad_tienda_de_conveniencia:
+    Asset: todofarma_latrinidad
+    Category: tienda_de_conveniencia
+  todofarma_laboyera_tienda_de_conveniencia:
+    Asset: todofarma_laboyera
+    Category: tienda_de_conveniencia
+  todofarma_lasmercedes_tienda_de_conveniencia:
+    Asset: todofarma_lasmercedes
+    Category: tienda_de_conveniencia
+  todofarma_lospalosgrandes_tienda_de_conveniencia:
+    Asset: todofarma_lospalosgrandes
+    Category: tienda_de_conveniencia
+  todofarma_loschorros_tienda_de_conveniencia:
+    Asset: todofarma_loschorros
+    Category: tienda_de_conveniencia
+
+Location:
+  location_fepsi_metro:
+    name: Universidad Metropolitana
+    address: Universidad Metropolitana
+    latitude: 10.799221
+    longitude: -66.787577
+    Asset: fepsico_fepsi
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  location_warairarepanoburger_hatillo:
+    address: CC Paseo El Hatillo
+    latitude: <?php echo 10.72 + lcg_value() * 0.06 ."\n"?>
+    longitude: <?php echo -67 + lcg_value() * 0.2 ."\n"?>
+    Asset: warairarepanoburger_hatillo
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  location_warairarepanoburger_lospalosgrandes:
+    address: 6ta Tranversal, entre 3ra y 7ta Av. Los Palos Grandes 
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: warairarepanoburger_lospalosgrandes
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_monna_mia_baruta:
+    address: Baruta
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: monna_mia_baruta
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  location_monna_mia_lacastellana:
+    address: La Castellana
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: monna_mia_lacastellana
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_todofarma_sambil:
+    address: Av. Libertador, C.C. Sambil, Municipio Chacao
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: todofarma_sambil
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_todofarma_latrinidad:
+    address: Zona Ind. La Trinidad
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: todofarma_latrinidad
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  location_todofarma_laboyera:
+    address: La Boyera, Municipio El Hatillo
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: todofarma_laboyera
+    City: caracas
+    Municipality: elhatillo
+    State: miranda
+    Country: venezuela
+  location_todofarma_lasmercedes:
+    address: Av. Rio de Janeiro, Las Mercedes
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: todofarma_lasmercedes
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  location_todofarma_lospalosgrandes:
+    address: Los Palos Grandes
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: todofarma_lospalosgrandes
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_todofarma_loschorros:
+    address: Los Chorros
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: todofarma_loschorros
+    City: caracas
+    Municipality: sucre
+    State: miranda
+    Country: venezuela
+  location_mamma_carina_restaurante:
+    address: C.C. Expresso
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mamma_carina_restaurante
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  location_mctonalds_latrinidad:
+    address: La trinidad
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mctonalds_latrinidad
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+  location_mctonalds_lacastellana:
+    address: Redoma de La Castellana, Municipio Chacao
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mctonalds_lacastellana
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_mctonalds_chacaito:
+    address: Plaza Brion de Chacaito
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mctonalds_chacaito
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_mctonalds_millenium:
+    address: Av, Romulo Gallegos, Centro Comercial Millenium Mall
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mctonalds_millenium
+    City: caracas
+    Municipality: sucre
+    State: miranda
+    Country: venezuela
+  location_mctonalds_sambil:
+    address: Av. Libertador, C.C. Sambil, Municipio Chacao
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: mctonalds_sambil
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+  location_totalferre_sambil:
+    address: Av. Libertador, C.C. Sambil, Municipio Chacao
+    latitude: <?php echo 10.7 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: totalferre_sambil
+    City: caracas
+    Municipality: chacao
+    State: miranda
+    Country: venezuela
+
+Promo:
+  promo_fepsico:
+    alpha_id: <?php echo str_pad("1", 10, "p", STR_PAD_LEFT)."\n" ?>
+    name: ¡Refresacate con fepsi!
+    description: Con el consumo de al menos Bs. 200, te regalamos Bs. 50 para tu próxima visita en la que consumas al menos Bs. 200
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "¡Refresacate con fepsi!"'
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3, date("d"), date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-17, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+7, date("d"), date("Y"))) ?>'
+    Affiliate: fepsico
+  promo_td:
+    alpha_id: <?php echo str_pad("2", 10, "p", STR_PAD_LEFT)."\n" ?>
+    name: TuDescuenton te premia
+    alpha_id: ciip7g2dhI
+    hash: bbdc137a786a93732d33e57ddffda67232e3b725177901b0a1
+    description: Con la compra de 3 cupones con valor de Bs. 300 o más te ganas 30 TDBolos
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "TuDescuenton te premia"'
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    redeem_automated: true
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3, date("d"), date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-17, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+7, date("d"), date("Y"))) ?>'
+    Affiliate: tudescuenton
+  promo_warairarepanoburger:
+    alpha_id: <?php echo str_pad("3", 10, "p", STR_PAD_LEFT)."\n" ?>
+    name: ¡Buen provecho en Waraira Repano Burger!
+    description: Con el consumo de al menos Bs. 200, te regalamos Bs. 50 para tu próxima visita en la que consumas al menos Bs. 200
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "¡Buen provecho en Waraira Repano Burger!"'
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3, date("d"), date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-17, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+7, date("d"), date("Y"))) ?>'
+    Affiliate: warairarepanoburger
+  promo_mctonalds:
+    alpha_id: <?php echo str_pad("4", 10, "p", STR_PAD_LEFT)."\n" ?>
+    name: Mc Tonalds premia tu fidelidad
+    description: Con la compra de combos medianos o grandes acumulas tickets que luego podrán ser canjeados por beneficios
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "Mc Tonalds premia tu fidelidad"'
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3, date("d"), date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-17, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+7, date("d"), date("Y"))) ?>'
+    Affiliate: mctonalds
+  promo_totalferre:
+    alpha_id: <?php echo str_pad("5", 10, "p", STR_PAD_LEFT)."\n" ?>
+    name: Totalferre te invita a volver
+    description: Con el consumo de Bs. 250 o más obtén un cupón de 10% de descuento para tu próxima compra.
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "Totalferre te invita a volver"'
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3, date("d"), date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-17, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+7, date("d"), date("Y"))) ?>'
+    Affiliate: totalferre
+  promo_monna_mia:
+    alpha_id: <?php echo str_pad("6", 10, "p", STR_PAD_LEFT)."\n" ?>
+    name: La mia nonna me alimenta
+    description: Visita Monna Mia 2 veces en las que consumas Bs. 200 o más y obten un cupón de 50% en pizzas.
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "La mia nonna me alimenta"'
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3, date("d"), date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3, date("d")+1, date("Y"))) ?>'
+    Affiliate: monna_mia
+  promo_mamma_carina:
+    alpha_id: <?php echo str_pad("7", 10, "p", STR_PAD_LEFT)."\n" ?>
+    name: Mamma Carina te conciente
+    description: Vista Mamma Carina restaurante y consume Bs. 250 o más y obten un cupón por una sangría para tu próxima visita.
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "Mamma Carina te conciente"'
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")  , date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3  , date("d"), date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-17, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+7  , date("d"), date("Y"))) ?>'
+    Affiliate: mamma_carina
+  promo_todofarma:
+    alpha_id: <?php echo str_pad("8", 10, "p", STR_PAD_LEFT)."\n" ?>
+    name: Todofarma te entiende
+    description: Por visitas en las que compres Bs. 100 o más acumula tickets que luego podrás canjear por 25% de descuento (3 tickets) o 60% de descuento (6 tickets).
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "Todofarma te entiende"'
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")  , date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3  , date("d"), date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-17, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+7  , date("d"), date("Y"))) ?>'
+    Affiliate: todofarma
+  promo_todofarma_vencida:
+    alpha_id: <?php echo str_pad("9", 10, "p", STR_PAD_LEFT)."\n" ?>
+    name: Todofarma te entiende 2
+    description: Por visitas en las que compres Bs. 100 o más acumula tickets que luego podrás canjear por 25% de descuento (3 tickets) o 60% de descuento (6 tickets).
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-3, date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-17, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d"), date("Y"))) ?>'
+    Affiliate: todofarma
+  promo_todofarma_prueba:
+    alpha_id: <?php echo str_pad("10", 10, "p", STR_PAD_LEFT)."\n" ?>
+    name: Todofarma te entiende 3
+    description: Por visitas en las que compres Bs. 100 o más acumula tickets que luego podrás canjear por 25% de descuento (3 tickets) o 60% de descuento (6 tickets).
+    max_uses: 0
+    max_daily_tags: 0
+    status: active
+    starts_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-15, date("Y"))) ?>'
+    ends_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+3, date("d"), date("Y"))) ?>'
+    begins_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m"), date("d")-17, date("Y"))) ?>'
+    expires_at: '<?php echo date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")+7  , date("d"), date("Y"))) ?>'
+    Affiliate: todofarma
+    
+PromoRedeemerConfig:
+  td_redeemer:
+    url: http://50.16.120.47/api/control.php
+    api_key: LEALTAG
+    api_token: 877e1a188460ca23cd7646d70af385a8
+    Promo: promo_td
+
+PromoPrize:
+  promoprize_fepsico:
+    threshold: 3
+    prize: Bs. 100 para consumo en productos fepsi
+    Promo: promo_fepsico
+  promoprize_td:
+    threshold: 3
+    prize: Un cupon de 30
+    Promo: promo_td
+  promoprize_warairarepanoburger:
+    threshold: 1
+    prize: Bs 50 a tu favor para tu próxima visita donde consumas al menos Bs 200.
+    Promo: promo_warairarepanoburger
+  promoprize_todofarma_1:
+    threshold: 3
+    prize: 25% de descuento para tu próxima compra.
+    Promo: promo_todofarma
+  promoprize_todofarma_2:
+    threshold: 6
+    prize: 60% de descuento próxima compra.
+    Promo: promo_todofarma    
+  promoprize_mamma_carina:
+    threshold: 1
+    prize: Un cupón por una sangría para tu próxima visita
+    Promo: promo_mamma_carina
+  promoprize_totalferre:
+    threshold: 1
+    prize: Un cupón de 10% de descuento para tu próxima compra
+    Promo: promo_totalferre
+  promoprize_monna_mia:
+    threshold: 1
+    prize: Un cupón de 50% en pizzas
+    Promo: promo_monna_mia
+  promoprize_mctonalds_1:
+    threshold: 2
+    prize: Un cupón por una barquilla para tu próxima compra.
+    Promo: promo_mctonalds
+  promoprize_mctonalds_2:
+    threshold: 7
+    prize: Un cupón por un Big Mac y una ración de Papas Grandes para tu próxima visita con la compra de una bebida
+    Promo: promo_mctonalds
+  promoprize_mctonalds_3:
+    threshold: 6
+    prize: Un cupón por un Big Mac, una ración de Papas Grandes y un Sundae para tu próxima visita con la compra de una bebida
+    Promo: promo_mctonalds
+
+<?php $promos = array('promo_fepsico','promo_td','promo_warairarepanoburger','promo_mctonalds','promo_totalferre','promo_monna_mia','promo_mamma_carina','promo_todofarma') ?>
+
+PromoTerm:
+<?php foreach($promos as $promo):?>
+<?php for ($i = 0; $i < rand(5,10); $i++) : ?>
+  term_<?php echo $promo.'_'.$i ?>:
+    term: <?php echo 'Condición_'.$i."\n"?>
+    Promo: <?php echo $promo."\n"?>
+<?php endfor; ?>
+<?php endforeach; ?>
+
+PromoCode:
+  promocode_fepsico_fepsi:
+    alpha_id: fepsi_0001VC
+    hash: fepsico_fepsi_hash
+    status: active
+    serial: 12576
+    type: validation_required
+    digital: true
+    Promo: promo_fepsico
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: fepsico_fepsi
+  promocode_tudescuenton_td:
+    alpha_id: 2906198699VC
+    hash: tudescuenton_td_hash
+    status: active
+    serial: 12573
+    type: validation_required
+    digital: true
+    Promo: promo_td
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: tudescuenton_td
+  promocode_warairarepanoburger_hatillo:
+    alpha_id: pc_ab_0001VC
+    hash: pc_ab_hatillo
+    status: active
+    type: validation_required
+    digital: true
+    Promo: promo_warairarepanoburger
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: warairarepanoburger_hatillo
+  promocode_warairarepanoburger_lpg:
+    alpha_id: pc_ab_0002
+    hash: pc_ab_lpg
+    status: active
+    Promo: promo_warairarepanoburger
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: warairarepanoburger_lospalosgrandes
+  promocode_todofarma_loschorros:
+    alpha_id: pc_ft_0001
+    hash: pc_ft_loschorros
+    status: active
+    digital: true
+    type: validation_required
+    Promo: promo_todofarma
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: todofarma_loschorros
+  promocode_todofarma_sambil:
+    alpha_id: pc_ft_0002VC
+    hash: pc_ft_sambil
+    status: active
+    digital: true
+    type: validation_required
+    Promo: promo_todofarma
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: todofarma_sambil
+  promocode_todofarma_latrinidad:
+    alpha_id: pc_ft_0003
+    hash: pc_ft_latrinidad
+    status: active
+    digital: true
+    type: validation_required
+    Promo: promo_todofarma
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: todofarma_latrinidad
+  promocode_todofarma_laboyera:
+    alpha_id: pc_ft_0007VC
+    hash: pc_ft_laboyera
+    status: active
+    digital: true
+    type: validation_required
+    Promo: promo_todofarma
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: todofarma_laboyera
+  promocode_todofarma_lasmercedes:
+    alpha_id: pc_ft_0005
+    hash: pc_ft_lasmercedes
+    status: active
+    digital: true
+    type: validation_required
+    Promo: promo_todofarma
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: todofarma_lasmercedes
+  promocode_todofarma_lospalosgrandes:
+    alpha_id: pc_ft_0006VC
+    hash: pc_ft_lospalosgrandes
+    status: active
+    digital: true
+    type: validation_required
+    Promo: promo_todofarma
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: todofarma_lospalosgrandes
+  promocode_mamma_carina_restaurante:
+    alpha_id: pc_mb_0001
+    hash: pc_mb_rest
+    status: active
+    Promo: promo_mamma_carina
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mamma_carina_restaurante
+  promocode_monna_mia_baruta:
+    alpha_id: pc_nm_0001
+    hash: pc_nm_baruta
+    status: active
+    Promo: promo_monna_mia
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: monna_mia_baruta
+  promocode_monna_mia_baruta_gen_qr:
+    alpha_id: pc_nm_0002VC
+    hash: pc_nm_baruta2
+    status: active
+    serial: 29686
+    type: validation_required
+    digital: true
+    Promo: promo_monna_mia
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: monna_mia_baruta
+  promocode_monna_mia_lacastellana:
+    alpha_id: pc_nm_0003
+    hash: pc_nm_lacastellana
+    status: active
+    Promo: promo_monna_mia
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: monna_mia_lacastellana
+  promocode_totalferre_sambil:
+    alpha_id: pc_ftotal1
+    hash: pc_ftotal_sambil
+    status: active
+    Promo: promo_totalferre
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: totalferre_sambil
+  promocode_mctonalds_sambil:
+    alpha_id: pc_mcd_001
+    hash: pc_mcd_sambil
+    status: active
+    Promo: promo_mctonalds
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mctonalds_sambil
+  promocode_mctonalds_chacaito:
+    alpha_id: pc_mcd_002
+    hash: pc_mcd_chacaito
+    status: active
+    Promo: promo_mctonalds
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mctonalds_chacaito
+  promocode_mctonalds_lacastellana:
+    alpha_id: pc_mcd_003
+    hash: pc_mcd_lacastellana
+    status: active
+    Promo: promo_mctonalds
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mctonalds_lacastellana
+  promocode_mctonalds_latrinidad:
+    alpha_id: pc_mcd_007
+    hash: pc_mcd_latrinidad
+    status: active
+    Promo: promo_mctonalds
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mctonalds_latrinidad
+  promocode_mctonalds_millenium:
+    alpha_id: pc_mcd_005VC
+    hash: pc_mcd_millenium
+    status: active
+    type: validation_required
+    digital: true
+    Promo: promo_mctonalds
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: mctonalds_millenium
+  promocode_todofarma_sambil_vencida:
+    alpha_id: pc_ft_0007
+    hash: pc_ft_sambil_vencida
+    status: active
+    digital: true
+    Promo: promo_todofarma_vencida
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: todofarma_sambil
+  promocode_todofarma_sambil_prueba:
+    alpha_id: pc_ft_0008
+    hash: pc_ft_sambil_prueba
+    status: active
+    digital: true
+    Promo: promo_todofarma_prueba
+    User: empleado_<?php echo rand(1,3)."\n" ?>
+    Asset: todofarma_sambil
+    
+ValidationCode:
+<?php for($i=1;$i<=30;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_mctonalds_millenium
+<?php endfor; ?>
+<?php for($i=31;$i<=60;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_fepsico_fepsi
+<?php endfor; ?>
+<?php for($i=61;$i<=90;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_tudescuenton_td
+<?php endfor; ?>
+<?php for($i=91;$i<=120;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_warairarepanoburger_hatillo
+<?php endfor; ?>
+<?php for($i=121;$i<=150;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_todofarma_sambil
+<?php endfor; ?>
+<?php for($i=151;$i<=180;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_todofarma_laboyera
+<?php endfor; ?>
+<?php for($i=181;$i<=210;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_todofarma_lospalosgrandes
+<?php endfor; ?>
+<?php for($i=211;$i<=270;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_monna_mia_baruta_gen_qr
+<?php endfor; ?>
+<?php for($i=271;$i<=270;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_monna_mia_baruta_gen_qr
+<?php endfor; ?>
+<?php for($i=271;$i<=300;$i++):?>
+  vc_<?php echo $i?>:
+    code: <?php echo str_pad($i, 5, "c", STR_PAD_LEFT)."\n" ?>
+    active: true
+    PromoCode: promocode_tudescuenton_td
+<?php endfor; ?>
+  
+AssetPromo:
+  promo_fepsico_fepsi:
+    Promo: promo_fepsico
+    Asset: fepsico_fepsi
+  promo_tudescuenton_td:
+    Promo: promo_td
+    Asset: tudescuenton_td
+  monna_mia1:
+    Promo: promo_monna_mia
+    Asset: monna_mia_baruta
+  monna_mia2:
+    Promo: promo_monna_mia
+    Asset: monna_mia_lacastellana
+  warairarepanoburger1:
+    Promo: promo_warairarepanoburger
+    Asset: warairarepanoburger_hatillo
+  warairarepanoburger2:
+    Promo: promo_warairarepanoburger
+    Asset: warairarepanoburger_lospalosgrandes
+  mctonalds1:
+    Promo: promo_mctonalds
+    Asset: mctonalds_latrinidad
+  mctonalds2:
+    Promo: promo_mctonalds
+    Asset: mctonalds_lacastellana
+  mctonalds3:
+    Promo: promo_mctonalds
+    Asset: mctonalds_chacaito
+  mctonalds4:
+    Promo: promo_mctonalds
+    Asset: mctonalds_millenium
+  mctonalds5:
+    Promo: promo_mctonalds
+    Asset: mctonalds_sambil
+  todofarma1:
+    Promo: promo_todofarma
+    Asset: todofarma_sambil
+  todofarma2:
+    Promo: promo_todofarma
+    Asset: todofarma_latrinidad
+  todofarma3:
+    Promo: promo_todofarma
+    Asset: todofarma_laboyera
+  todofarma4:
+    Promo: promo_todofarma
+    Asset: todofarma_lasmercedes
+  todofarma5:
+    Promo: promo_todofarma
+    Asset: todofarma_lospalosgrandes
+  todofarma6:
+    Promo: promo_todofarma
+    Asset: todofarma_loschorros
+  mamma_carina1:
+    Promo: promo_mamma_carina
+    Asset: mamma_carina_restaurante
+  promo_totalferre1:
+    Promo: promo_totalferre
+    Asset: totalferre_sambil
+
+Subscription:
+  ma_monna_mia_baruta:
+    User: ma
+    Affiliate: monna_mia
+    Asset: monna_mia_baruta
+  ma_monna_mia_lacastellana:
+    User: ma
+    Affiliate: monna_mia
+    Asset: monna_mia_lacastellana
+  cc_monna_mia_baruta:
+    User: cc
+    Affiliate: monna_mia
+    Asset: monna_mia_baruta
+  rl_monna_mia_lacastellana:
+    User: rl
+    Affiliate: monna_mia
+    Asset: monna_mia_lacastellana
+
+ApiUser:
+  tu:
+    name: testuser
+    algorithm: sha1
+    salt: salt123456
+    apikey: a34c98a86d52858abcc53ae7798aa79b21796ed3
+  td:
+    name: tudescuenton
+    algorithm: sha1
+    salt: salt123
+    apikey: 5b933663ed177b718c7bc19800c967a0bb27f1bb
+  todofarma:
+    name: todofarma
+    algorithm: sha1
+    salt: salt321
+    apikey: 8a86d52858bc7b718c7bc19800c967bc190c967a
+
+MembershipCard:
+<?php for($i = 1; $i < 21; $i++): ?>
+  mcard_<?php echo $i ?>:
+    alpha_id: <?php echo str_pad($i, 5, "m", STR_PAD_LEFT)."\n" ?>
+    status: unassigned
+<?php endfor; ?>
+
+Survey:
+  survey1:
+    alpha_id: survey1
+    name: 'Encuesta de MasterCard'
+    all_promos: true
+  survey2:
+    alpha_id: survey2
+    name: 'Encuesta de MasterCard 2'
+    is_active: false
+  survey3:
+    alpha_id: survey3
+    name: 'Encuesta de Prueba'
+    is_active: false
+  survey_cable:
+    alpha_id: survey_cable
+    name: 'Encuesta de tablet para MasterCard'
+    is_active: true
+
+SurveyPromo:
+  survey2_promo_fepsico:
+    Survey: survey2
+    Promo: promo_fepsico
+  survey2_promo_td:
+    Survey: survey2
+    Promo: promo_td
+  survey2_promo_warairarepanoburger:
+    Survey: survey2
+    Promo: promo_warairarepanoburger
+  survey2_promo_mctonalds:
+    Survey: survey2
+    Promo: promo_mctonalds
+  survey2_promo_totalferre:
+    Survey: survey2
+    Promo: promo_totalferre
+  survey2_promo_todofarma:
+    Survey: survey2
+    Promo: promo_todofarma
+  survey3_promo_fepsico:
+    Survey: survey3
+    Promo: promo_fepsico
+  survey3_promo_td:
+    Survey: survey3
+    Promo: promo_td
+  survey3_promo_warairarepanoburger:
+    Survey: survey3
+    Promo: promo_warairarepanoburger
+  survey3_promo_mctonalds:
+    Survey: survey3
+    Promo: promo_mctonalds
+  survey3_promo _totalferre:
+    Survey: survey3
+    Promo: promo_totalferre
+  survey3_promo_todofarma:
+    Survey: survey3
+    Promo: promo_todofarma
+    
+SurveyItem:
+  item1:
+    alpha_id: item1
+    label: '¿Qué medio de pago utilizaste?'
+    item_type: multiple_selection
+    is_required: true
+    position: 1
+    Survey: survey1
+  item2:
+    alpha_id: item2
+    label: 'Si pagaste con tarjeta de credito, ¿Qué tarjeta utilizaste?'
+    item_type: simple_selection
+    is_required: true
+    is_active: false
+    position: 2
+    Survey: survey1
+  item3:
+    alpha_id: item3
+    label: 'Si utilizaste tarjeta de credito MasterCard, por favor introduce el numero de voucher a continuación'
+    item_type: text
+    is_required: true
+    position: 3
+    Survey: survey1
+  item4:
+    alpha_id: item4
+    label: '¿Qué medio de pago utilizaste?'
+    item_type: multiple_selection
+    is_required: true
+    position: 2
+    Survey: survey2
+  item5:
+    alpha_id: item5
+    label: 'Si pagaste con tarjeta de credito, ¿Qué tarjeta utilizaste?'
+    item_type: simple_selection
+    is_required: true
+    position: 3
+    Survey: survey2
+  item6:
+    alpha_id: item6
+    label: 'Si utilizaste tarjeta de credito MasterCard, por favor introduce el numero de voucher a continuación'
+    item_type: text
+    is_required: true
+    position: 1
+    Survey: survey2
+  item7:
+    alpha_id: item7
+    label: 'Item1'
+    item_type: multiple_selection
+    is_required: true
+    position: 2
+    Survey: survey3
+  item8:
+    alpha_id: item8
+    label: 'Item2'
+    item_type: simple_selection
+    is_required: true
+    position: 3
+    Survey: survey3
+  item9:
+    alpha_id: item9
+    label: 'Item3'
+    item_type: text
+    is_required: true
+    is_active: false
+    position: 1
+    Survey: survey3
+  item_cable:
+    alpha_id: item_cable
+    label: '¿Pagaste utilizando tu tarjeta MasterCard o Maestro?'
+    item_type: simple_selection
+    is_required: true
+    is_active: true
+    position: 1
+    Survey: survey_cable
+    
+SurveyItemOption:
+  item1_option1:
+    alpha_id: item1option1
+    label: 'Tarjeta de Debito'
+    position: 2
+    Item: item1
+  item1_option2:
+    alpha_id: item1option2
+    label: 'Tarjeta de Credito'
+    position: 1
+    Item: item1
+  item1_option3:
+    alpha_id: item1option3
+    label: Efectivo
+    position: 3
+    Item: item1
+  item2_option1:
+    alpha_id: item2option1
+    label: MasterCard
+    position: 2
+    Item: item2
+  item2_option2:
+    alpha_id: item2option2
+    label: Visa
+    position: 1
+    Item: item2
+  item2_option3:
+    alpha_id: item2option3
+    label: Otra
+    position: 3
+    Item: item2
+  item4_option1:
+    alpha_id: item4option1
+    label: 'Tarjeta de Debito'
+    position: 2
+    Item: item4
+  item4_option2:
+    alpha_id: item4option2
+    label: 'Tarjeta de Credito'
+    position: 1
+    Item: item4
+  item4_option3:
+    alpha_id: item4option3
+    label: Efectivo
+    position: 3
+    Item: item4
+  item5_option1:
+    alpha_id: item5option1
+    label: MasterCard
+    position: 2
+    Item: item5
+  item5_option2:
+    alpha_id: item5option2
+    label: Visa
+    position: 1
+    Item: item5
+  item5_option3:
+    alpha_id: item5option3
+    label: Otra
+    position: 3
+    Item: item5
+  item7_option1:
+    alpha_id: item7option1
+    label: 'Tarjeta de Debito'
+    position: 2
+    Item: item7
+  item7_option2:
+    alpha_id: item7option2
+    label: 'Tarjeta de Credito'
+    position: 1
+    Item: item7
+  item7_option3:
+    alpha_id: item7option3
+    label: Efectivo
+    position: 3
+    Item: item7
+  item8_option1:
+    alpha_id: item8option1
+    label: MasterCard
+    position: 2
+    Item: item8
+  item8_option2:
+    alpha_id: item8option2
+    label: Visa
+    position: 1
+    Item: item8
+  item8_option3:
+    alpha_id: item8option3
+    label: Otra
+    position: 3
+    Item: item8
+  item_cable_option1:
+    alpha_id: affirmative
+    label: Si
+    position: 1
+    Item: item_cable
+  item_cable_option2:
+    alpha_id: negative
+    label: No
+    position: 2
+    Item: item_cable
+    
+<?php $actions = array('tag','redeem','application'); ?>
+<?php $vias = array('web','web_mobile','app'); ?>
+<?php $users = array('pv','ma','rb','av','rl','oa','cc','nc','gv','mc','mg','mgg','dl','gl','jamn87'); ?>
+<?php $surveys = array('survey1'); ?>
+<?php $assets = array('todofarma_sambil','todofarma_latrinidad','todofarma_laboyera','todofarma_lasmercedes','todofarma_lospalosgrandes','todofarma_loschorros'); ?>
+<?php $items = array('item1','item2','item3'); ?>
+<?php $answers = array('item1option1','item1option2','item1option2','item1option1;item1option2','item1option1;item1option3','item1option2;item1option3','item1option1;item1option3;item1option3','item2option1','item2option2','item2option3','Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit'); ?>
+<?php $usersOrder = array(); ?>
+
+SurveyApplication:
+<?php for($i = 0; $i < 200; $i++) :?>
+  application_<?php echo $i ?>:
+    action: <?php echo $actions[rand(0,2)]."\n" ?>
+    via: <?php echo $vias[rand(0,2)]."\n" ?>
+    User: <?php $usersOrder[$i] = $users[rand(0,14)]; echo $usersOrder[$i]."\n" ?>
+    Survey: survey1
+    Asset: <?php echo $assets[rand(0,5)]."\n" ?>
+<?php endfor;?>
+
+SurveyItemAnswer:
+<?php for($i = 0; $i < 200; $i++) :?>
+<?php for($j = 0; $j < 3; $j++) :?>
+  item_answer_<?php echo $i.'_'.$j ?>:
+    answer: <?php echo ( $j == 2 ? substr( $answers[ 10 ], 0, rand( 5, 197 ) ) : ( $j == 0 ? $answers[ rand( 0, 6 ) ] : $answers[ rand( 7, 9 ) ] ) )."\n" ?>
+    User: <?php echo $usersOrder[$i]."\n" ?>
+    Survey: survey1
+    Application: application_<?php echo $i."\n" ?>
+    Item: <?php echo $items[$j]."\n" ?>
+<?php endfor;?>
+<?php endfor;?>

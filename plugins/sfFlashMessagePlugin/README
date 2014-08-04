@@ -1,0 +1,66 @@
+sfFlashMessagePlugin
+====================
+
+Description
+-----------
+
+This helper plugin displays user flash messages using jQueryNotifyBar or jquery-notice plugin (your choice).
+First method displays very nice looking notify bar which pops from the top and disappear after defined amount of time.
+Second method displays growl-like messages at the right side of the browser window.
+Customization is possible.
+
+This plugin uses awesome [jQuery library](http://www.jquery.com), jqueryNotifyBar plugin by Dmitri Smirnov and jquery-notice plugin by
+Tim Benniks
+
+[Try out demonstration - method one](http://sfplugins.infoart.net.pl/fm/growl/test1) | 
+[Try out demonstration - method two](http://sfplugins.infoart.net.pl/fm/pop/test1)
+
+Requirements
+------------
+
+This plugin requires JqueryReloadedPlugin.
+
+Installation
+------------
+
+    $ symfony plugin:install sfFlashMessagePlugin
+    $ symfony cache:clear
+
+Usage
+-----
+
+Place jquery helper in your layout or template (or settings.yml):
+
+    <?php use_helper("jQuery") ?>
+
+And inside _body_ tag place FlashMessage helper:
+
+    <?php use_helper("sfFlashMessage") ?>
+
+Define flash message in your actions.class.php
+
+    $this->getUser()->setFlash('notice', 'This is notice');
+    
+Above will display green notice with 'This is notice' text.
+
+If there is no flash message defined for the user, nothing will be displayed.
+
+Customizations
+--------------
+
+Possible types of flash messages are:
+
+    $this->getUser()->setFlash('success', 'This is success');  //green color
+    $this->getUser()->setFlash('notice', 'This is notice');    //yellow color
+    $this->getUser()->setFlash('warning', 'This is warning');  //orange color
+    $this->getUser()->setFlash('error', 'This is error');      //red color
+    
+In your app.yml file:
+
+    sf_flash_message:
+      delay: 2500 #delay time after which notice disappear (in miliseconds)
+                  #error and warning messages displays twice as long as notice and success messages
+      method: growl   #pop - use jQueryNotifyBar plugin (pops notice from the top),
+                      #growl - use jquery-notice plugin (displays growl-like notice on the right side without interference to each other)
+    
+You can also customize look and feel of notify bars by defining your own css. (See css plugin dir).

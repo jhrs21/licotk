@@ -1,0 +1,483 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: analytics, action: show }
+  
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+  
+affiliate:
+  url:     /affiliate.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: list }
+  param:   { module: affiliate, action: index, sf_format: html }
+  requirements: { sf_method: get }
+ 
+affiliate_new:
+  url:     /affiliate/new.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: object }
+  param:   { module: affiliate, action: new, sf_format: html }
+  requirements: { sf_method: get }
+ 
+affiliate_create:
+  url:     /affiliate/create.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: object }
+  param:   { module: affiliate, action: new, sf_format: html }
+  requirements: { sf_method: post }
+ 
+affiliate_edit:
+  url:     /affiliate/:id/edit.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: object }
+  param:   { module: affiliate, action: edit, sf_format: html }
+  requirements: { sf_method: get }
+ 
+affiliate_update:
+  url:     /affiliate/:id/update.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: object }
+  param:   { module: affiliate, action: edit, sf_format: html }
+  requirements: { sf_method: put }
+ 
+affiliate_change_pass:
+  url:  /affiliate/password
+  param: {module: affiliate, action: changePass}
+  requirements: { sf_method: get }
+  
+affiliate_change_pass_post:
+  url:  /affiliate/password
+  param: {module: affiliate, action: changePass}
+  requirements: { sf_method: post }
+
+affiliate_show:
+  url:     /affiliate/:id/show.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: object }
+  param:   { module: affiliate, action: show, sf_format: html }
+  requirements: { sf_method: get }
+  
+asset_places:
+  url:     /asset/places.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: list }
+  param:   { module: asset, action: places, sf_format: html }
+  requirements: { sf_method: get }
+  
+asset_brands:
+  url:     /asset/brands.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: list }
+  param:   { module: asset, action: brands, sf_format: html }
+  requirements: { sf_method: get }
+ 
+asset_new_place:
+  url:     /asset/place/new.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: asset, action: newPlace, sf_format: html }
+  requirements: { sf_method: get }
+  
+asset_create_place:
+  url:     /asset/place/create.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: asset, action: newPlace, sf_format: html }
+  requirements: { sf_method: post }
+
+asset_new_brand:
+  url:     /asset/brand/new.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: asset, action: newBrand, sf_format: html }
+  requirements: { sf_method: get }
+ 
+asset_create_brand:
+  url:     /asset/brand/create.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: asset, action: newBrand, sf_format: html }
+  requirements: { sf_method: post }
+  
+asset_edit_place:
+  url:     /asset/place/:id/edit.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: asset, action: editPlace, sf_format: html }
+  requirements: { sf_method: get }
+ 
+asset_update_place:
+  url:     /asset/place/:id/update.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: asset, action: editPlace, sf_format: html }
+  requirements: { sf_method: put }
+  
+asset_edit_brand:
+  url:     /asset/brand/:id/edit.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: asset, action: editBrand, sf_format: html }
+  requirements: { sf_method: get }
+ 
+asset_update_brand:
+  url:     /asset/brand/:id/update.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: asset, action: editBrand, sf_format: html }
+  requirements: { sf_method: put }
+ 
+asset_show_place:
+  url:     /asset/place/:id/show.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: asset, action: showPlace, sf_format: html }
+  requirements: { sf_method: get }
+  
+asset_show_brand:
+  url:     /asset/brand/:id/show.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: asset, action: showBrand, sf_format: html }
+  requirements: { sf_method: get }
+  
+location_populate_select:
+  url:     /location/populate-select.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Location, type: object }
+  param:   { module: location, action: populateSelect, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo:
+  url:     /promo.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: list }
+  param:   { module: promo, action: index, sf_format: html }
+  requirements: { sf_method: get }
+ 
+promo_new:
+  url:     /promo/new.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: promo, action: new, sf_format: html }
+  requirements: { sf_method: get }
+ 
+promo_create:
+  url:     /promo/create.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: promo, action: new, sf_format: html }
+  requirements: { sf_method: post }
+ 
+promo_edit:
+  url:     /promo/:id/edit.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: promo, action: edit, sf_format: html }
+  requirements: { sf_method: get }
+ 
+promo_update:
+  url:     /promo/:id/update.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: promo, action: edit, sf_format: html }
+  requirements: { sf_method: put }
+ 
+promo_show:
+  url:     /promo/:id/show.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: promo, action: show, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_add_prize:
+  url:     /promo/add/prize.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: promo, action: addPromoPrizeForm, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_add_term:
+  url:     /promo/add/term.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: promo, action: addPromoTermForm, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_list_coupon:
+  url:     /promo/:id/coupons.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: promo, action: listCoupons, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_list_coupon_post:
+  url:     /promo/:id/coupons.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:   { module: promo, action: listCoupons, sf_format: html }
+  requirements: { sf_method: post }
+  
+promo_redeem:
+  url:     /promo/redeem.:sf_format
+  param:   { module: promo, action: redeem, sf_format: html }
+  requirements: { sf_method: get }
+
+promo_redeem_coupon_validation:
+  url:     /promo/redeem/coupon.:sf_format
+  param:   { module: promo, action: redeemCoupon, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_redeem_coupon:
+  url:     /promo/redeem/coupon.:sf_format
+  param:   { module: promo, action: redeemCoupon, sf_format: html }
+  requirements: { sf_method: post }
+
+promo_search_user_prizes:
+  url:     /promo/search/user-prizes.:sf_format
+  param:   { module: promo, action: searchUserPrizes, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_search_user_prizes_post:
+  url:     /promo/search/user-prizes.:sf_format
+  param:   { module: promo, action: searchUserPrizes, sf_format: html }
+  requirements: { sf_method: post }
+  
+promo_user_prizes:
+  url:     /promo/user/:user/prizes/:promo.:sf_format
+  param:   { module: promo, action: userStuff, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_redeem_prizes:
+  url:     /promo/user/:user/prize/:promo/redeem.:sf_format
+  param:   { module: promo, action: redeemPrize, sf_format: html }
+  requirements: { sf_method: post }
+
+analytics:
+  url:      /analytics
+  param:    {module: analytics, action: show }
+  
+analytics_asset:
+  url:      /analytics/show/:alpha_id
+  class:    sfDoctrineRoute
+  options:  { model: Asset, type: object }
+  param:    {module: analytics, action: showAsset }
+  requirements: { sf_method: get }
+
+analytics_asset_post:
+  url:      /analytics/show/:alpha_id
+  class:    sfDoctrineRoute
+  options:  { model: Asset, type: object }
+  param:    {module: analytics, action: showAsset }
+  requirements: { sf_method: post }
+  
+all_feedbacks:
+  url:      /analytics/feedbacks
+  param:    {module: analytics, action: feedbacks}
+
+all_asset_feedbacks:
+  url:     /analytics/feedbacks/:alpha_id
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: analytics, action: feedbacksByAsset }
+  requirements: { sf_method: get }
+  
+all_asset_feedbacks_post:
+  url:     /analytics/feedbacks/:alpha_id
+  class:   sfDoctrineRoute
+  options: { model: Asset, type: object }
+  param:   { module: analytics, action: feedbacksByAsset }
+  requirements: { sf_method: post }
+  
+#analytics_index:
+#  url:      /analytics
+#  param:    {module: analytics,action: index }
+#
+QR_index:
+  url:      /pruebaQR
+  param:    {module: analytics,action: pruebaQR }
+
+#promo_code:
+#  class:   sfDoctrineRouteCollection
+#  options: { model: PromoCode }
+
+promo_code:
+  url:     /promo_code/list.:sf_format
+  param:   { module: promo_code, action: index, sf_format: html }
+  requirements: { sf_method: get }
+ 
+promo_code_new:
+  url:     /promo_code/new.:sf_format
+  param:   { module: promo_code, action: new, sf_format: html }
+  requirements: { sf_method: get }
+ 
+promo_code_create:
+  url:     /promo_code.:sf_format
+  param:   { module: promo_code, action: create, sf_format: html }
+  requirements: { sf_method: post }
+
+promo_code_printQR:
+  url:    /promo_code/print/:affiliate/:id.:sf_format
+  param:  { module: promo_code, action: printQR, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_code_deactivate:
+  url:     /promo_code/deactivate.:sf_format
+  param:   { module: promo_code, action: deactivate, sf_format: html }
+  requirements: { sf_method: get }
+
+promo_code_edit:
+  url:     /promo_code/:affiliate/:id/edit.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: PromoCode, type: object }
+  param:   { module: promo_code, action: edit, sf_format: html }
+  requirements: { sf_method: get }
+ 
+promo_code_update:
+  url:     /promo_code/:affiliate/:id.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: PromoCode, type: object }
+  param:   { module: promo_code, action: update, sf_format: html }
+  requirements: { sf_method: put }
+ 
+promo_code_delete:
+  url:     /promo_code/:affiliate/:id.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: PromoCode, type: object }
+  param:   { module: promo_code, action: delete, sf_format: html }
+  requirements: { sf_method: delete }
+ 
+#promo_code_show:
+#  url:     /promo_code/:affiliate/:id.:sf_format
+#  param:   { module: promo_code, action: show, sf_format: html }
+#  requirements: { sf_method: get }  
+  
+promo_code_activate:
+  url:     /promo_code/:id/activate.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: object }
+  param:   { module: promo_code, action: activate, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_code_activate_post:
+  url:     /promo_code/:id/activate.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: object }
+  param:   { module: promo_code, action: activate, sf_format: html }
+  requirements: { sf_method: post }
+
+qr_generator:
+  url:    /promo/:id/generadorqr.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Promo, type: object }
+  param:  { module: promo_code, action: qrGenerator, sf_format: html }
+  requirements: { sf_method: get }
+  
+promo_code_pdf0:
+  url:      /promo_code/pdf0/:affiliate
+  param:   { module: promo_code, action: superqr, sf_format: html }
+  requirements: { sf_method: get }  
+  
+pruebaAmCharts:
+  url:      /prueba/amcharts
+  param:    { module: analytics, action: amCharts }  
+  
+promo_code_pdf1:
+  url:      /promo_code/:id/pdf1
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: object }
+  param:   { module: promo_code, action: superqrparte1, sf_format: html }
+  requirements: { sf_method: get }
+
+promo_code_pdf2:
+  url:      /promo_code/:id/pdf2
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: object }
+  param:   { module: promo_code, action: superqrparte2, sf_format: html }
+  requirements: { sf_method: get }
+
+promo_code_pdf3:
+  url:      /promo_code/:id/pdf3
+  class:   sfDoctrineRoute
+  options: { model: Affiliate, type: object }
+  param:   { module: promo_code, action: superqrparte3, sf_format: html }
+  requirements: { sf_method: get }
+
+promo_code_pdf4:
+  url:      /promo_code/pdf4/:affiliate.:sf_format
+  param:   { module: promo_code, action: cuponQr, sf_format: html }
+  requirements: { sf_method: get }
+
+give_tag:
+  url:          /tag/new.:sf_format
+  param:        { module: tag, action: tag, sf_format: html }
+  requirements: { sf_method: get }
+
+register_tag:
+  url:          /tag/create.:sf_format
+  param:        { module: tag, action: tag, sf_format: html }
+  requirements: { sf_method: post }
+
+help_index:
+  url:          /ayuda.:sf_format
+  param:        { module: help, action: index, sf_format: html }
+  requirements: { sf_method: get }
+  
+##
+##  Survey Module Routes
+##
+
+survey:
+  url:      /encuesta/listado
+  class:   sfDoctrineRoute
+  options: { model: Survey, type: list }
+  param:   { module: survey, action: index, sf_format: html }
+  requirements: { sf_method: get }
+  
+survey_show_results:
+  url:      /encuesta/:alpha_id/resultados
+  class:   sfDoctrineRoute
+  options: { model: Survey, type: object }
+  param:   { module: survey, action: results, sf_format: html }
+  requirements: { sf_method: get }
+  
+survey_results_filter:
+  url:      /encuesta/:alpha_id/resultados/filtrar
+  class:   sfDoctrineRoute
+  options: { model: Survey, type: object }
+  param:   { module: survey, action: filterResults, sf_format: html }
+  requirements: { sf_method: post }
+  
+survey_download_data:
+  url:      /encuesta/:alpha_id/datos
+  class:   sfDoctrineRoute
+  options: { model: Survey, type: object }
+  param:   { module: survey, action: data, sf_format: html }
+  requirements: { sf_method: get }
+  
+##
+##  End of Survey Module Routes
+##
+
+#options:  { model: JobeetCategory, type: object }
+## generic rules
+## please, remove them by adding more specific rules
+#default_index:
+#  url:   /:module
+#  param: { action: index }
+#
+#default:
+#  url:   /:module/:action/*

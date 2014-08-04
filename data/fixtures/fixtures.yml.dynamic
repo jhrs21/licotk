@@ -1,0 +1,208 @@
+# # Populate this file with data to be loaded by your ORM's *:data-load task.
+# # You can create multiple files in this directory (i.e. 010_users.yml,
+# # 020_articles.yml, etc) which will be loaded in alphabetical order.
+# # 
+# # See documentation for your ORM's *:data-load task for more information.
+# 
+# User:
+#   fabien:
+#     username: fabien
+#     password: changeme
+#     name:     Fabien Potencier
+#     email:    fabien.potencier@symfony-project.com
+#   kris:
+#     username: Kris.Wallsmith
+#     password: changeme
+#     name:     Kris Wallsmith
+#     email:    kris.wallsmith@symfony-project.com
+Country:
+  venezuela:
+    name: Venezuela
+
+State:
+<?php for($i = 1; $i < 23; $i++): ?>  
+  estado_<?php echo $i ?>:
+    name: Estado-<?php echo $i."\n" ?>
+    Country: venezuela
+<?php endfor; ?>
+  miranda:
+    name: Miranda
+    Country: venezuela
+  distritocapital:
+    name: Distrito Capital
+    Country: venezuela
+
+Municipality:
+<?php for($j = 1; $j < 4; $j++): ?>
+<?php for($i = 1; $i < 10; $i++): ?>  
+  municipio_<?php echo $i ?>:
+    name: Municipio-<?php echo $i."\n" ?>
+    State: estado_<?php echo $j."\n" ?>
+<?php endfor; ?>
+<?php endfor; ?>
+  baruta:
+    name: Baruta
+    State: miranda
+  chacao:
+    name: Chacao
+    State: miranda
+  elhatillo:
+    name: El Hatillo
+    State: miranda
+  sucre:
+    name: Sucre
+    State: miranda
+  libertador:
+    name: Libertador
+    State: distritocapital
+
+City:
+  caracas:
+    name: Caracas
+    State: distritocapital
+  
+MunicipalityCity:
+  barutacaracas:
+    Municipality: baruta
+    City: caracas
+  chacaocaracas:
+    Municipality: chacao
+    City: caracas
+  elhatillocaracas:
+    Municipality: elhatillo
+    City: caracas
+  sucrecaracas:
+    Municipality: sucre
+    City: caracas
+  libertadorcaracas:
+    Municipality: libertador
+    City: caracas
+
+sfGuardUser:
+<?php for($i = 1; $i <= 20; $i++): ?>
+  user_<?php echo $i ?>:
+    first_name:     Nombre <?php echo "U_".$i."\n"?>
+    last_name:      Apellido <?php echo "U_".$i."\n"?>
+    email_address:  correo_u_<?php echo $i?>@gmail.com
+    username:       usuario<?php echo $i."\n"?>
+    password:       usuario<?php echo $i."\n"?>
+    is_super_admin: false
+    gender: <?php echo (rand(0,5) >= 3  ? "male" : "female")."\n" ?>
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+<?php endfor; ?>
+  User_admin:
+    first_name:     John
+    last_name:      Doe
+    email_address:  john.doe@gmail.com
+    username:       admin
+    password:       admin
+    is_super_admin: true
+    gender: male
+    City: caracas
+    Municipality: baruta
+    State: miranda
+    Country: venezuela
+    Groups:         [Group_admin]
+
+sfGuardGroup:
+  Group_admin:
+    name:           admin
+    description:    Administrator group
+    Permissions:    [Permission_admin]
+
+sfGuardPermission:
+  Permission_admin:
+    name:           admin
+    description:    Administrator permission
+
+Category:
+<?php for($i = 1; $i <= 10; $i++): ?>
+  categoria_<?php echo $i ?>:
+    name: Categoria <?php echo $i."\n" ?>
+<?php endfor; ?>
+
+<?php $data = array() ?>
+
+Affiliate:
+<?php for($j = 1; $j <= 50; $j++): ?>
+<?php $data['affiliate_'.$j]['assets'] = array() ?>
+<?php $data['affiliate_'.$j]['promos'] = array() ?>
+
+  affiliate_<?php echo $j ?>:
+    name: Afiliado <?php echo $j."\n" ?>
+    email: affiliate_<?php echo $j ?>@correo.dominio
+    logo: affiliate_<?php echo $j ?>_logo.jpg
+    thumb: affiliate_<?php echo $j ?>_thumb.jpg
+    Category: categoria_<?php echo rand(1,10)."\n" ?>
+<?php endfor; ?>
+
+<?php $municipios = array('libertador', 'baruta', 'chacao', 'elhatillo', 'sucre')?>
+
+Asset:
+<?php for($i = 1; $i <= 200; $i++): ?>
+<?php $k = rand(1,50); ?>
+<?php $data['affiliate_'.$k]['assets'][] = 'asset_'.$i ?>
+  asset_<?php echo $i ?>:
+    name: Asset <?php echo $i."\n" ?>
+    asset_type: place
+    Affiliate: affiliate_<?php echo $k."\n" ?>
+<?php endfor; ?>
+
+Location:
+<?php for($i = 1; $i <= 200; $i++): ?>
+  location_asset_<?php echo $i ?>:
+    address: Dirección del establecimiento <?php echo $i."\n"?>
+    latitude: <?php echo 10.4 + lcg_value() * 0.13 ."\n"?>
+    longitude: <?php echo -67.05 + lcg_value() * 0.31 ."\n"?>
+    Asset: asset_<?php echo $i."\n" ?>
+    City: caracas
+    Municipality: <?php echo $municipios[rand(0,4)]."\n"?>
+    State: miranda
+    Country: venezuela
+<?php endfor; ?>
+
+<?php $condition_types = array('buy', 'visit', 'scan', 'consume'); ?>
+<?php $date = date("Y-m-d"); ?>
+Promo:
+<?php for($j = 1; $j <= 50; $j++): ?>
+<?php $data['affiliate_'.$j]['promos'][] = 'promo_'.$j ?>
+<?php $start = strtotime(date("Y-m-d", strtotime($date)) . " -".rand(3,30)." days"); ?>
+<?php $end = strtotime(date("Y-m-d", strtotime($date)) ." +".rand(30,60)." days"); ?>
+  promo_<?php echo $j ?>:
+    name: Promoción <?php echo $j."\n" ?>
+    description: Descripción de la promoción <?php echo $j."\n" ?>
+    status: active
+    promo_condition: <?php echo $condition_types[rand(0,3)]."\n" ?>
+    promo_action: <?php echo "Acción de Promo ".$j."\n" ?>
+    starts_at: <?php echo $start."\n"?>
+    ends_at: <?php echo $end."\n"?>
+    expires_at: <?php echo $end."\n"?>
+    Affiliate: affiliate_<?php echo $j."\n" ?>
+<?php endfor; ?>
+
+PromoCondition:
+<?php for($j = 1; $j <= 50; $j++): ?>
+<?php for($i = 1; $i <= rand(1,3); $i++): ?>
+  promocondition_<?php echo $j.'_'.$i?>:
+    threshold: <?php echo rand(1,5)."\n" ?>
+    benefit: <?php echo "Beneficio de Promo ".$j." Condición ".$i."\n" ?>
+    Promo: promo_<?php echo $j."\n" ?>
+<?php endfor; ?>
+<?php endfor; ?>
+
+PromoCode:
+<?php $i = 1; foreach($data as $d): ?>
+<?php foreach($d['promos'] as $promo): ?>
+<?php foreach($d['assets'] as $asset): ?>
+  promocode_<?php echo $i ?>:
+    status: active
+    Promo: <?php echo $promo."\n" ?>
+    User: user_<?php echo rand(1,20)."\n" ?>
+    Asset: <?php echo $asset."\n" ?>
+<?php $i++; endforeach; ?>
+<?php endforeach; ?>
+<?php endforeach; ?>

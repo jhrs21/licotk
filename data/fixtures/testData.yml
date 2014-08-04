@@ -1,0 +1,5970 @@
+Affiliate:
+  Affiliate_27:
+    alpha_id: fepsico
+    hash: fepsico
+    name: Fepsico
+    description: 'Fepsico Alimentos'
+    logo: fepsico_logo.jpg
+    thumb: fepsico.png
+    active: true
+    Category: Category_37
+  Affiliate_28:
+    alpha_id: tudescuenton
+    hash: tudescuenton
+    name: Tudescuenton
+    description: TuDescuenton.com
+    logo: pepsico_logo.jpg
+    thumb: pepsico.png
+    active: true
+    Category: Category_38
+  Affiliate_29:
+    alpha_id: monna_mia
+    hash: monna_mia
+    name: 'Monna Mia'
+    description: 'Restaurante de comida italiana y pizzas a la leña'
+    logo: monna_mia_logo.jpg
+    thumb: monna_mia.png
+    active: true
+    Category: Category_39
+  Affiliate_30:
+    alpha_id: mamma_carina
+    hash: mamma_carina
+    name: 'Mamma Carina'
+    description: 'Restaurante de comida italiana y pizzas a la leña'
+    logo: mamma_carina_logo.jpg
+    thumb: mamma_carina.png
+    active: true
+    Category: Category_39
+  Affiliate_31:
+    alpha_id: mctonalds
+    hash: mctonalds
+    name: 'Mc Tonalds'
+    description: 'Cadena de comida rápida'
+    logo: mcdonalds_120x120.png
+    thumb: mcdonalds.png
+    active: true
+    Category: Category_40
+  Affiliate_32:
+    alpha_id: todofarma
+    hash: todofarma
+    name: Todofarma
+    description: 'Farmacia y todo lo que necesites'
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    active: true
+    Category: Category_41
+  Affiliate_33:
+    alpha_id: totalferre
+    hash: totalferre
+    name: Totalferre
+    description: 'Ferreteria, materiales de construcción y todo para el hogar.'
+    logo: ferretotal_logo.jpg
+    thumb: ferretotal.png
+    active: true
+    Category: Category_42
+  Affiliate_34:
+    alpha_id: warairarepanoburger
+    hash: warairarepanoburger
+    name: 'Warairarepano Burger'
+    description: 'Hamburguesas gourmet.'
+    logo: warairarepanoburger_logo.jpg
+    thumb: warairarepanoburger.png
+    active: true
+    Category: Category_40
+  Affiliate_35:
+    alpha_id: stonemediaburger
+    hash: stonemediaburger
+    name: 'Stone Media Burger'
+    description: 'Hamburguesas gourmet de Stone Media'
+    logo: stone_media.png
+    thumb: stone_media_2.png
+    active: true
+    Category: Category_40
+AffiliateCategory:
+  AffiliateCategory_10:
+    Affiliate: Affiliate_29
+    Category: Category_43
+  AffiliateCategory_11:
+    Affiliate: Affiliate_30
+    Category: Category_43
+  AffiliateCategory_12:
+    Affiliate: Affiliate_31
+    Category: Category_40
+  AffiliateCategory_13:
+    Affiliate: Affiliate_34
+    Category: Category_40
+  AffiliateCategory_14:
+    Affiliate: Affiliate_35
+    Category: Category_40
+ApiUser:
+  ApiUser_5:
+    name: testuser
+    algorithm: sha1
+    salt: salt123456
+    apikey: a34c98a86d52858abcc53ae7798aa79b21796ed3
+  ApiUser_6:
+    name: tudescuenton
+    algorithm: sha1
+    salt: salt123
+    apikey: 5b933663ed174b418c4bc19800c967a0bb27f1bb
+Asset:
+  Asset_46:
+    alpha_id: aaaaaaaaa1
+    hash: 1a17b8464fa897e663d0c9ea262cf0de9d23dfe8ebaa57dea7d4fe7fe18bbdf8
+    name: Fepsi
+    description: 'Bebida gaseosa sabor a Cola'
+    big_logo: null
+    logo: fepsi_logo.png
+    thumb: fepsi_thumb.png
+    asset_type: brand
+    Affiliate: Affiliate_27
+    Category: Category_37
+  Asset_47:
+    alpha_id: CnsJnjcUEj
+    hash: bbdc134a486a93732d33e54ddffda64232e3b425174901b0a2
+    name: Tudescuenton
+    description: 'Tudescuenton.com para que ahorres un monton'
+    big_logo: null
+    logo: pepsi_logo.png
+    thumb: pepsi_thumb.png
+    asset_type: brand
+    Affiliate: Affiliate_28
+    Category: Category_38
+  Asset_48:
+    alpha_id: aaaaaaaaa2
+    hash: 796e39fbf213659b0e60eecd2fd401b8bcebc8229653b4be63e11b55365f68d4
+    name: 'Warairarepano Burger (El Hatillo)'
+    description: 'Warairarepano Burger (Sede El Hatillo)'
+    big_logo: null
+    logo: wb_logo.png
+    thumb: wb_thumb.png
+    asset_type: place
+    Affiliate: Affiliate_34
+    Category: Category_40
+  Asset_49:
+    alpha_id: aaaaaaaaa3
+    hash: 69a77a2fe567f80cdbc6ee99b0e74ba9f4b9c34ca6a0093817e42806164c6558
+    name: 'Warairarepano Burger (Los Palos Grandes)'
+    description: 'Warairarepano Burger (Sede Los Palos Grandes)'
+    big_logo: null
+    logo: wb_logo.png
+    thumb: wb_thumb.png
+    asset_type: place
+    Affiliate: Affiliate_34
+    Category: Category_40
+  Asset_50:
+    alpha_id: aaaaaaaa18
+    hash: 8501cb7bae5311968ede08c1edf7abdecb2493025c38c96723cf7fce87189786
+    name: 'Stone Media Burger (El hatillo)'
+    description: 'Hamburguesas gourmet de Stone Media'
+    big_logo: null
+    logo: stone_media.png
+    thumb: stone_media_2.png
+    asset_type: place
+    Affiliate: Affiliate_35
+    Category: Category_40
+  Asset_51:
+    alpha_id: aaaaaaaa19
+    hash: 2507fe7a9825f90ffd462b6a38be646c936e07309f916b6d7ae0adf5e25407ce
+    name: 'Stone Media Burger (Los Palos Grandes)'
+    description: 'Hamburguesas gourmet de Stone Media'
+    big_logo: null
+    logo: stone_media.png
+    thumb: stone_media_2.png
+    asset_type: place
+    Affiliate: Affiliate_35
+    Category: Category_40
+  Asset_52:
+    alpha_id: aaaaaaaaa4
+    hash: 5e1dd72df52dfc77914c01d0a2fd1637038066c86abba98d45a06874e06897ac
+    name: 'Monna Mia (Baruta)'
+    description: 'Monna Mia (Baruta)'
+    big_logo: null
+    logo: monna_mia_logo.jpg
+    thumb: monna_mia.png
+    asset_type: place
+    Affiliate: Affiliate_29
+    Category: Category_39
+  Asset_53:
+    alpha_id: aaaaaaaaa5
+    hash: 18d6cb7801e09a6d8ed94e650ac6d360427fb373097ab95669a893a40f2e8a19
+    name: 'Monna Mia (La Castellana)'
+    description: 'Monna Mia (La Castellana)'
+    big_logo: null
+    logo: monna_mia_logo.jpg
+    thumb: monna_mia.png
+    asset_type: place
+    Affiliate: Affiliate_29
+    Category: Category_39
+  Asset_54:
+    alpha_id: aaaaaaaaa6
+    hash: 192046fb8a6256df7a77f8d61396ac3f56fcc65d5250adc8aa4960934723fca7
+    name: 'Todofarma (Sambil)'
+    description: 'Todofarma (Sambil)'
+    big_logo: null
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Affiliate: Affiliate_32
+    Category: Category_41
+  Asset_55:
+    alpha_id: aaaaaaaaa7
+    hash: e05b679bda30178798a9139781eaf162870ba063c1d0249789cb3ed85bbdf725
+    name: 'Todofarma (La Trinidad)'
+    description: 'Todofarma (La Trinidad)'
+    big_logo: null
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Affiliate: Affiliate_32
+    Category: Category_41
+  Asset_56:
+    alpha_id: aaaaaaaaa8
+    hash: 0401749b7ce2a35c6b44d9b596ddfb35f18e64b84f0072fc9c9e370194ecf52a
+    name: 'Todofarma (La Boyera)'
+    description: 'Todofarma (La Boyera)'
+    big_logo: null
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Affiliate: Affiliate_32
+    Category: Category_41
+  Asset_57:
+    alpha_id: aaaaaaaaa9
+    hash: eaae0d45b0054b291d12d1ea157283cfb04064ef73762c8983ba8689903f3764
+    name: 'Todofarma (Las Mercedes)'
+    description: 'Todofarma (Las Mercedes)'
+    big_logo: null
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Affiliate: Affiliate_32
+    Category: Category_41
+  Asset_58:
+    alpha_id: aaaaaaaa10
+    hash: 2d7bc86c038ef9fbcad9a177d8393c15ad88fc8d9c5b38c7f5d2fa4eee81a62e
+    name: 'Todofarma (Los Palos Grandes)'
+    description: 'Farmatodo (Las Mercedes)'
+    big_logo: null
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Affiliate: Affiliate_32
+    Category: Category_41
+  Asset_59:
+    alpha_id: aaaaaaaa11
+    hash: 1c322c3fb06dfd858130108d7786ba983816430ad06bbe157072a9f7d1a8383a
+    name: 'Todofarma (Los Chorros)'
+    description: 'Farmatodo (Los Chorros)'
+    big_logo: null
+    logo: todofarma_logo.jpg
+    thumb: todofarma.png
+    asset_type: place
+    Affiliate: Affiliate_32
+    Category: Category_41
+  Asset_60:
+    alpha_id: aaaaaaaa12
+    hash: 95c09104c104aac6cd5daa82ecf7a9660d8eebd3661ed6c9ffff7206f0734917
+    name: 'Mamma Bella (La Trinidad)'
+    description: 'Mamma Bella (La Trinidad)'
+    big_logo: null
+    logo: mamma_bella_logo.jpg
+    thumb: mamma_bella.png
+    asset_type: place
+    Affiliate: Affiliate_30
+    Category: Category_39
+  Asset_61:
+    alpha_id: aaaaaaaa13
+    hash: 8fd458874f0663203e1d979f4c94df9807e43224c78ade29d95dc326a7386305
+    name: 'Mc Donalds (La Trinidad)'
+    description: 'Mc Donalds (La Trinidad)'
+    big_logo: null
+    logo: null
+    thumb: null
+    asset_type: place
+    Affiliate: Affiliate_31
+    Category: Category_40
+  Asset_62:
+    alpha_id: aaaaaaaa14
+    hash: bfc66d68b71a41a6df8438777e046057938eb91007078a6f6b9114655d2fd725
+    name: 'Mc Donalds (La Castellana)'
+    description: 'Mc Donalds (La Castellana)'
+    big_logo: null
+    logo: null
+    thumb: null
+    asset_type: place
+    Affiliate: Affiliate_31
+    Category: Category_40
+  Asset_63:
+    alpha_id: U8YMJ6iXzo
+    hash: 6161c9b61bad3530e3312445748fe2e560fc630397362ef6ef9a3a751a8e4ae6
+    name: 'Mc Donalds (Chacaito)'
+    description: null
+    big_logo: null
+    logo: null
+    thumb: null
+    asset_type: place
+    Affiliate: Affiliate_31
+  Asset_64:
+    alpha_id: aaaaaaaa15
+    hash: c65ca7621c62e47ac1c207e806e19b586ad4a9315890f6cf867b5015a0b673cc
+    name: 'Mc Donalds (Millenium Mall)'
+    description: 'Mc Donalds (Millenium Mall)'
+    big_logo: null
+    logo: null
+    thumb: null
+    asset_type: place
+    Affiliate: Affiliate_31
+    Category: Category_40
+  Asset_65:
+    alpha_id: aaaaaaaa16
+    hash: 8bdf3d95f15b18f9eda31fa75dae32053d6caba7610301bc59f68d0de381fedb
+    name: 'Mc Donalds (Sambil)'
+    description: 'Mc Donalds (Sambil)'
+    big_logo: null
+    logo: null
+    thumb: null
+    asset_type: place
+    Affiliate: Affiliate_31
+    Category: Category_40
+  Asset_66:
+    alpha_id: aaaaaaaa17
+    hash: 60af04e3788f3628ace24518b82b6c5e39628af0f17dca52aa1385d563c7ce66
+    name: 'Ferretotal (Sambil)'
+    description: 'Ferretotal (Sambil)'
+    big_logo: null
+    logo: null
+    thumb: null
+    asset_type: place
+    Affiliate: Affiliate_33
+AssetCategory:
+  AssetCategory_47:
+    Asset: Asset_46
+    Category: Category_37
+  AssetCategory_48:
+    Asset: Asset_47
+    Category: Category_38
+  AssetCategory_49:
+    Asset: Asset_52
+    Category: Category_39
+  AssetCategory_50:
+    Asset: Asset_52
+    Category: Category_43
+  AssetCategory_51:
+    Asset: Asset_53
+    Category: Category_39
+  AssetCategory_52:
+    Asset: Asset_52
+    Category: Category_43
+  AssetCategory_53:
+    Asset: Asset_60
+    Category: Category_39
+  AssetCategory_54:
+    Asset: Asset_60
+    Category: Category_43
+  AssetCategory_55:
+    Asset: Asset_66
+    Category: Category_42
+  AssetCategory_56:
+    Asset: Asset_48
+    Category: Category_40
+  AssetCategory_57:
+    Asset: Asset_49
+    Category: Category_40
+  AssetCategory_58:
+    Asset: Asset_61
+    Category: Category_40
+  AssetCategory_59:
+    Asset: Asset_62
+    Category: Category_40
+  AssetCategory_60:
+    Asset: Asset_63
+    Category: Category_40
+  AssetCategory_61:
+    Asset: Asset_64
+    Category: Category_40
+  AssetCategory_62:
+    Asset: Asset_65
+    Category: Category_40
+  AssetCategory_63:
+    Asset: Asset_54
+    Category: Category_41
+  AssetCategory_64:
+    Asset: Asset_55
+    Category: Category_41
+  AssetCategory_65:
+    Asset: Asset_56
+    Category: Category_41
+  AssetCategory_66:
+    Asset: Asset_57
+    Category: Category_41
+  AssetCategory_67:
+    Asset: Asset_58
+    Category: Category_41
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  AssetCategory_68:
+    Asset: Asset_59
+    Category: Category_41
+  AssetCategory_69:
+    Asset: Asset_50
+    Category: Category_40
+  AssetCategory_70:
+    Asset: Asset_51
+    Category: Category_40
+AssetPromo:
+  AssetPromo_41:
+    Asset: Asset_46
+    Promo: Promo_22
+  AssetPromo_42:
+    Asset: Asset_47
+    Promo: Promo_23
+  AssetPromo_43:
+    Asset: Asset_52
+    Promo: Promo_27
+  AssetPromo_44:
+    Asset: Asset_53
+    Promo: Promo_27
+  AssetPromo_45:
+    Asset: Asset_48
+    Promo: Promo_24
+  AssetPromo_46:
+    Asset: Asset_49
+    Promo: Promo_24
+  AssetPromo_47:
+    Asset: Asset_50
+    Promo: Promo_32
+  AssetPromo_48:
+    Asset: Asset_51
+    Promo: Promo_32
+  AssetPromo_49:
+    Asset: Asset_61
+    Promo: Promo_25
+  AssetPromo_50:
+    Asset: Asset_62
+    Promo: Promo_25
+  AssetPromo_51:
+    Asset: Asset_63
+    Promo: Promo_25
+  AssetPromo_52:
+    Asset: Asset_64
+    Promo: Promo_25
+  AssetPromo_53:
+    Asset: Asset_65
+    Promo: Promo_25
+  AssetPromo_54:
+    Asset: Asset_54
+    Promo: Promo_29
+  AssetPromo_55:
+    Asset: Asset_55
+    Promo: Promo_29
+  AssetPromo_56:
+    Asset: Asset_56
+    Promo: Promo_29
+  AssetPromo_57:
+    Asset: Asset_57
+    Promo: Promo_29
+  AssetPromo_58:
+    Asset: Asset_58
+    Promo: Promo_29
+  AssetPromo_59:
+    Asset: Asset_59
+    Promo: Promo_29
+  AssetPromo_60:
+    Asset: Asset_60
+    Promo: Promo_28
+  AssetPromo_61:
+    Asset: Asset_66
+    Promo: Promo_26
+Category:
+  Category_37:
+    alpha_id: bmvgy2qTc3
+    category_type: brand
+    name: 'Bebidas Gaseosas'
+  Category_38:
+    alpha_id: T4n95nASCr
+    category_type: brand
+    name: 'Paginas Web'
+  Category_39:
+    alpha_id: g38WavQ8Oh
+    category_type: place
+    name: Restaurantes
+    description: null
+  Category_40:
+    alpha_id: 32WTPHdoGW
+    category_type: place
+    name: 'Comida Rápida'
+  Category_41:
+    alpha_id: yTCksTF9NU
+    category_type: place
+    name: 'Tiendas de Conveniencia'
+  Category_42:
+    alpha_id: cSATA0dVxs
+    category_type: place
+    name: Ferreterias
+  Category_43:
+    alpha_id: 3SfxXMm5d7
+    category_type: place
+    name: 'Comida italiana'
+    ParentCategory: Category_39
+  Category_44:
+    alpha_id: 0kjdpNQN1R
+    category_type: place
+    name: 'Comida Thailandesa'
+    description: null
+    ParentCategory: Category_39
+  Category_45:
+    alpha_id: FfT2idXY3m
+    category_type: place
+    name: 'Comida Arabe'
+    description: null
+    ParentCategory: Category_39
+  Category_46:
+    alpha_id: 11xEAS0cLo
+    category_type: place
+    name: 'Comida Venezolana'
+    description: null
+    ParentCategory: Category_39
+  Category_47:
+    alpha_id: ITOyHTElJs
+    category_type: place
+    name: 'Bares y Discotecas'
+  Category_48:
+    alpha_id: f8LAKISgNj
+    category_type: place
+    name: 'Ropa y Calzado'
+  Category_49:
+    alpha_id: HFYWeCJIEk
+    category_type: place
+    name: 'Cafés y Panaderías'
+  Category_50:
+    alpha_id: bcOwL1rMpZ
+    category_type: place
+    name: 'Muebles y Decoración'
+  Category_51:
+    alpha_id: vZ14PKkn2e
+    category_type: place
+    name: 'Teatro y Cine'
+City:
+  City_3:
+    name: Caracas
+    State: State_18
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: caracas
+Country:
+  Country_5:
+    name: Venezuela
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Country_6:
+    name: 'Estados Unidos'
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+Currency:
+  Currency_3:
+    name: 'Puntos LT'
+    symbol: ptsLT
+    is_super: true
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+Location:
+  Location_39:
+    name: 'Universidad Metropolitana'
+    address: 'Universidad Metropolitana'
+    latitude: '10.499221'
+    longitude: '-66.784574'
+    Asset: Asset_46
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_13
+    City: City_3
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Location_40:
+    name: ''
+    address: 'CC Paseo El Hatillo'
+    latitude: '10.444159'
+    longitude: '-66.916995'
+    Asset: Asset_48
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_13
+    City: City_3
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Location_41:
+    name: ''
+    address: '6ta Tranversal, entre 3ra y 4ta Av. Los Palos Grandes'
+    latitude: '10.410963'
+    longitude: '-66.953313'
+    Asset: Asset_49
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Location_42:
+    name: ''
+    address: Baruta
+    latitude: '10.511464'
+    longitude: '-66.912743'
+    Asset: Asset_52
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_11
+    City: City_3
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Location_43:
+    name: ''
+    address: 'La Castellana'
+    latitude: '10.522293'
+    longitude: '-66.938262'
+    Asset: Asset_53
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Location_44:
+    name: ''
+    address: 'Av. Libertador, C.C. Sambil, Municipio Chacao'
+    latitude: '10.493127'
+    longitude: '-66.912467'
+    Asset: Asset_54
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Location_45:
+    name: ''
+    address: 'Zona Ind. La Trinidad'
+    latitude: '10.483201'
+    longitude: '-66.918614'
+    Asset: Asset_55
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_11
+    City: City_3
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Location_46:
+    name: ''
+    address: 'La Boyera, Municipio El Hatillo'
+    latitude: '10.512957'
+    longitude: '-66.754195'
+    Asset: Asset_56
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_13
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_47:
+    name: ''
+    address: 'Av. Rio de Janeiro, Las Mercedes'
+    latitude: '10.436107'
+    longitude: '-66.948444'
+    Asset: Asset_57
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_11
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_48:
+    name: ''
+    address: 'Los Palos Grandes'
+    latitude: '10.483820'
+    longitude: '-66.973628'
+    Asset: Asset_58
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_49:
+    name: ''
+    address: 'Los Chorros'
+    latitude: '10.448228'
+    longitude: '-66.936947'
+    Asset: Asset_59
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_14
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_50:
+    name: ''
+    address: 'C.C. Expresso'
+    latitude: '10.444881'
+    longitude: '-66.930203'
+    Asset: Asset_60
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_11
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_51:
+    name: ''
+    address: 'La trinidad'
+    latitude: '10.427675'
+    longitude: '-66.782670'
+    Asset: Asset_61
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_11
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_52:
+    name: ''
+    address: 'Redoma de La Castellana, Municipio Chacao'
+    latitude: '10.505979'
+    longitude: '-67.033467'
+    Asset: Asset_62
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_53:
+    name: ''
+    address: 'Plaza Brion de Chacaito'
+    latitude: '10.402694'
+    longitude: '-66.761798'
+    Asset: Asset_63
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_54:
+    name: ''
+    address: 'Av, Romulo Gallegos, Centro Comercial Millenium Mall'
+    latitude: '10.468143'
+    longitude: '-66.753733'
+    Asset: Asset_64
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_14
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_55:
+    name: ''
+    address: 'Av. Libertador, C.C. Sambil, Municipio Chacao'
+    latitude: '10.505833'
+    longitude: '-66.781553'
+    Asset: Asset_65
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_56:
+    name: ''
+    address: 'Av. Libertador, C.C. Sambil, Municipio Chacao'
+    latitude: '10.480782'
+    longitude: '-66.773235'
+    Asset: Asset_66
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_57:
+    name: ''
+    address: 'CC Paseo El Hatillo'
+    latitude: '10.422123'
+    longitude: '-66.846144'
+    Asset: Asset_50
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_13
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Location_58:
+    name: ''
+    address: '6ta Tranversal, entre 3ra y 4ta Av. Los Palos Grandes'
+    latitude: '10.474113'
+    longitude: '-66.747383'
+    Asset: Asset_51
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+MembershipCard:
+  MembershipCard_80:
+    alpha_id: 24T92B
+    User: sfGuardUser_40
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_81:
+    alpha_id: Y9LX2X
+    User: sfGuardUser_41
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_82:
+    alpha_id: MPC1C6
+    User: sfGuardUser_42
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_83:
+    alpha_id: 7NS66M
+    User: sfGuardUser_43
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_84:
+    alpha_id: 1CSCSX
+    User: sfGuardUser_44
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_85:
+    alpha_id: LRKTH5
+    User: sfGuardUser_45
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_86:
+    alpha_id: MDXMG5
+    User: sfGuardUser_46
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_87:
+    alpha_id: YCPF3M
+    User: sfGuardUser_47
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_88:
+    alpha_id: PK16DJ
+    User: sfGuardUser_48
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_89:
+    alpha_id: 27R7J1
+    User: sfGuardUser_49
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_90:
+    alpha_id: BZ8T6P
+    User: sfGuardUser_50
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_91:
+    alpha_id: D24P2X
+    User: sfGuardUser_51
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_92:
+    alpha_id: ZSFFSH
+    User: sfGuardUser_52
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_93:
+    alpha_id: RSRRGZ
+    User: sfGuardUser_53
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_94:
+    alpha_id: RCCRRF
+    User: sfGuardUser_54
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_95:
+    alpha_id: MN1N32
+    User: sfGuardUser_55
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_96:
+    alpha_id: 1NX7X5
+    User: sfGuardUser_56
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_97:
+    alpha_id: KPRYJ2
+    User: sfGuardUser_57
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_98:
+    alpha_id: GY1JTL
+    User: sfGuardUser_58
+    status: active
+    validate: null
+    is_virtual: true
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_99:
+    alpha_id: mmmm1
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_100:
+    alpha_id: mmmm2
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_101:
+    alpha_id: mmmm3
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_102:
+    alpha_id: mmmm4
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_103:
+    alpha_id: mmmm5
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_104:
+    alpha_id: mmmm6
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_105:
+    alpha_id: mmmm7
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_106:
+    alpha_id: mmmm8
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_107:
+    alpha_id: mmmm9
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_108:
+    alpha_id: mmm10
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_109:
+    alpha_id: mmm11
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_110:
+    alpha_id: mmm12
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_111:
+    alpha_id: mmm13
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_112:
+    alpha_id: mmm14
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_113:
+    alpha_id: mmm15
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_114:
+    alpha_id: mmm16
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_115:
+    alpha_id: mmm17
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_116:
+    alpha_id: mmm18
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_117:
+    alpha_id: mmm19
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MembershipCard_118:
+    alpha_id: mmm20
+    status: unassigned
+    validate: null
+    is_virtual: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+Municipality:
+  Municipality_11:
+    name: Baruta
+    State: State_16
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: baruta
+  Municipality_12:
+    name: Chacao
+    State: State_16
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: chacao
+  Municipality_13:
+    name: 'El Hatillo'
+    State: State_16
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: el-hatillo
+  Municipality_14:
+    name: Sucre
+    State: State_16
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: sucre
+  Municipality_15:
+    name: Libertador
+    State: State_18
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: libertador
+MunicipalityCity:
+  MunicipalityCity_11:
+    Municipality: Municipality_11
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MunicipalityCity_12:
+    Municipality: Municipality_12
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MunicipalityCity_13:
+    Municipality: Municipality_13
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MunicipalityCity_14:
+    Municipality: Municipality_14
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  MunicipalityCity_15:
+    Municipality: Municipality_15
+    City: City_3
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+Pocket:
+  Pocket_40:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_40
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_41:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_41
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_42:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_42
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_43:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_43
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_44:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_44
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_45:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_45
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_46:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_46
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_47:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_47
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_48:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_48
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_49:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_49
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_50:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_50
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_51:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_51
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_52:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_52
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_53:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_53
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_54:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_54
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_55:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_55
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_56:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_56
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_57:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_57
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Pocket_58:
+    balance: '0'
+    is_super: true
+    Currency: Currency_3
+    User: sfGuardUser_58
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+Promo:
+  Promo_22:
+    alpha_id: ppppppppp1
+    hash: 99b4279655425267859e364771cbde7cc11d3d3ccae6e4647709235cac0cfd4d
+    name: '¡Refresacate con Pepsi!'
+    description: 'Con el consumo de al menos Bs. 200, te regalamos Bs. 50 para tu próxima visita en la que consumas al menos Bs. 200'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "¡Refresacate con Pepsi!"'
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2013-03-17 00:00:00'
+    begins_at: '2012-12-03 00:00:00'
+    expires_at: '2013-04-17 00:00:00'
+    Affiliate: Affiliate_27
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Promo_23:
+    alpha_id: ciip4g2dhI
+    hash: bbdc134a486a93732d33e54ddffda64232e3b425174901b0a1
+    name: 'TuDescuenton te premia'
+    description: 'Con la compra de un cupon mayor de 300 te ganas 30 bolos'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "TuDescuenton te premia"'
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2013-03-17 00:00:00'
+    begins_at: '2012-12-03 00:00:00'
+    expires_at: '2013-04-17 00:00:00'
+    Affiliate: Affiliate_28
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Promo_24:
+    alpha_id: ppppppppp3
+    hash: 8b6845ef36ada2876d90563032b99e0b9775c16c7e29451585d0d24747951f1a
+    name: '¡Buen provecho en Avila Burger!'
+    description: 'Con el consumo de al menos Bs. 200, te regalamos Bs. 50 para tu próxima visita en la que consumas al menos Bs. 200'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "¡Buen provecho en Avila Burger!"'
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2013-03-17 00:00:00'
+    begins_at: '2012-12-03 00:00:00'
+    expires_at: '2013-04-17 00:00:00'
+    Affiliate: Affiliate_34
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Promo_25:
+    alpha_id: ppppppppp4
+    hash: f38d2c2069055c50c8df765233e05b2de731291c724768e68a6f588565ae5475
+    name: 'Mc Donalds premia tu fidelidad'
+    description: 'Con la compra de combos medianos o grandes acumulas tickets que luego podrán ser canjeados por beneficios'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "Mc Donalds premia tu fidelidad"'
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2013-03-17 00:00:00'
+    begins_at: '2012-12-03 00:00:00'
+    expires_at: '2013-04-17 00:00:00'
+    Affiliate: Affiliate_31
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Promo_26:
+    alpha_id: ppppppppp5
+    hash: 985643b2373130d96ae7fd8bf518d97e16f6c007e6f76db8fd273a62591463f6
+    name: 'Ferretotal te invita a volver'
+    description: 'Con el consumo de Bs. 250 o más obtén un cupón de 10% de descuento para tu próxima compra.'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "Ferretotal te invita a volver"'
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2013-03-17 00:00:00'
+    begins_at: '2012-12-03 00:00:00'
+    expires_at: '2013-04-17 00:00:00'
+    Affiliate: Affiliate_33
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Promo_27:
+    alpha_id: ppppppppp6
+    hash: 87f7c6054c724c8e251f61ed72bfc3a4609787040841c8a3b0837ab28dbb6cc1
+    name: 'La mia nonna me alimenta'
+    description: 'Visita Nonna Mia 2 veces en las que consumas Bs. 200 o más y obten un cupón de 50% en pizzas.'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "La mia nonna me alimenta"'
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2013-03-17 00:00:00'
+    begins_at: '2012-12-02 00:00:00'
+    expires_at: '2013-03-18 00:00:00'
+    Affiliate: Affiliate_29
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Promo_28:
+    alpha_id: ppppppppp7
+    hash: ec507c3d6440ac7e865e1a594982ded1f50d0d5a61e8f991d03491a3aa670a66
+    name: 'Mamma Bella te conciente'
+    description: 'Vista Mamma Bella restaurante y consume Bs. 250 o más y obten un cupón por una sangría para tu próxima visita.'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "Mamma Bella te conciente"'
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2013-03-17 00:00:00'
+    begins_at: '2012-12-03 00:00:00'
+    expires_at: '2013-04-17 00:00:00'
+    Affiliate: Affiliate_30
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Promo_29:
+    alpha_id: ppppppppp8
+    hash: 553259608389889073658b7d8f7c03eb2bbce57cd92d23cbddba105069cb7adb
+    name: 'Farmatodo te entiende'
+    description: 'Por visitas en las que compres Bs. 100 o más acumula tickets que luego podrás canjear por 25% de descuento (3 tickets) o 60% de descuento (6 tickets).'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: 'Texto de la declaración de Indepabis para la promoción: "Farmatodo te entiende"'
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2013-03-17 00:00:00'
+    begins_at: '2012-12-03 00:00:00'
+    expires_at: '2013-04-17 00:00:00'
+    Affiliate: Affiliate_32
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Promo_30:
+    alpha_id: ppppppppp9
+    hash: c84c066ac25e6488e711436d4417315cf281819180ac859581100a9bfd4f6d3a
+    name: 'Farmatodo te entiende 2'
+    description: 'Por visitas en las que compres Bs. 100 o más acumula tickets que luego podrás canjear por 25% de descuento (3 tickets) o 60% de descuento (6 tickets).'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: null
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2012-12-14 00:00:00'
+    begins_at: '2012-12-03 00:00:00'
+    expires_at: '2012-12-17 00:00:00'
+    Affiliate: Affiliate_32
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Promo_31:
+    alpha_id: pppppppp10
+    hash: b6330d1c77a7b35b87054532d12500946481ae19e0dc8fd3fc8d8d857a75f8a2
+    name: 'Farmatodo te entiende 3'
+    description: 'Por visitas en las que compres Bs. 100 o más acumula tickets que luego podrás canjear por 25% de descuento (3 tickets) o 60% de descuento (6 tickets).'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: null
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2013-03-17 00:00:00'
+    begins_at: '2012-12-03 00:00:00'
+    expires_at: '2013-04-17 00:00:00'
+    Affiliate: Affiliate_32
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Promo_32:
+    alpha_id: pppppppp11
+    hash: 69d93a685d0c9a0ddf4edb496f27faf72169720b9aaa8fc5ac997ef58fc887c1
+    name: '¡Buen provecho en Stone Media Burger!'
+    description: 'Recibe tu tag por consumir al menos Bs.100. Gana premios al canjear tus tags'
+    max_uses: '0'
+    max_daily_tags: '0'
+    thumb: null
+    photo: null
+    indepabis: 'Texto de la declaración de Indepabis para la promoción:'
+    status: active
+    redeem_automated: false
+    starts_at: '2012-12-02 00:00:00'
+    ends_at: '2013-03-17 00:00:00'
+    begins_at: '2012-12-03 00:00:00'
+    expires_at: '2013-04-17 00:00:00'
+    Affiliate: Affiliate_35
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+PromoCode:
+  PromoCode_47:
+    alpha_id: pc_wb_0001VC
+    hash: pc_wb_hatillo
+    type: validation_required
+    status: active
+    used_at: null
+    serial: null
+    digital: true
+    Promo: Promo_32
+    Asset: Asset_50
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  PromoCode_48:
+    alpha_id: pc_wb_0002VC
+    hash: pc_wb_lpg
+    type: validation_required
+    status: active
+    used_at: null
+    serial: null
+    digital: true
+    Promo: Promo_32
+    Asset: Asset_51
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  PromoCode_49:
+    alpha_id: pepsi_0001VC
+    hash: pepsico_pepsi_hash
+    type: validation_required
+    status: active
+    used_at: null
+    serial: '12546'
+    digital: true
+    Promo: Promo_22
+    User: sfGuardUser_58
+    Asset: Asset_46
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  PromoCode_50:
+    alpha_id: 2906198699VC
+    hash: tudescuenton_td_hash
+    type: validation_required
+    status: active
+    used_at: null
+    serial: '12543'
+    digital: true
+    Promo: Promo_23
+    User: sfGuardUser_58
+    Asset: Asset_47
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  PromoCode_51:
+    alpha_id: pc_ab_0001VC
+    hash: pc_ab_hatillo
+    type: validation_required
+    status: active
+    used_at: null
+    serial: null
+    digital: true
+    Promo: Promo_24
+    User: sfGuardUser_58
+    Asset: Asset_48
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  PromoCode_52:
+    alpha_id: pc_ab_0002
+    hash: pc_ab_lpg
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_24
+    User: sfGuardUser_58
+    Asset: Asset_49
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  PromoCode_53:
+    alpha_id: pc_ft_0001
+    hash: pc_ft_loschorros
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_29
+    User: sfGuardUser_57
+    Asset: Asset_59
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  PromoCode_54:
+    alpha_id: pc_ft_0002VC
+    hash: pc_ft_sambil
+    type: validation_required
+    status: active
+    used_at: null
+    serial: null
+    digital: true
+    Promo: Promo_29
+    User: sfGuardUser_57
+    Asset: Asset_54
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_55:
+    alpha_id: pc_ft_0003
+    hash: pc_ft_latrinidad
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_29
+    User: sfGuardUser_56
+    Asset: Asset_55
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_56:
+    alpha_id: pc_ft_0004VC
+    hash: pc_ft_laboyera
+    type: validation_required
+    status: active
+    used_at: null
+    serial: null
+    digital: true
+    Promo: Promo_29
+    User: sfGuardUser_56
+    Asset: Asset_56
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_57:
+    alpha_id: pc_ft_0005
+    hash: pc_ft_lasmercedes
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_29
+    User: sfGuardUser_58
+    Asset: Asset_57
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_58:
+    alpha_id: pc_ft_0006VC
+    hash: pc_ft_lospalosgrandes
+    type: validation_required
+    status: active
+    used_at: null
+    serial: null
+    digital: true
+    Promo: Promo_29
+    User: sfGuardUser_58
+    Asset: Asset_58
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_59:
+    alpha_id: pc_mb_0001
+    hash: pc_mb_rest
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_28
+    User: sfGuardUser_56
+    Asset: Asset_60
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_60:
+    alpha_id: pc_nm_0001
+    hash: pc_nm_baruta
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_27
+    User: sfGuardUser_56
+    Asset: Asset_52
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_61:
+    alpha_id: pc_nm_0002VC
+    hash: pc_nm_baruta2
+    type: validation_required
+    status: active
+    used_at: null
+    serial: '29686'
+    digital: true
+    Promo: Promo_27
+    User: sfGuardUser_58
+    Asset: Asset_52
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_62:
+    alpha_id: pc_nm_0003
+    hash: pc_nm_lacastellana
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_27
+    User: sfGuardUser_56
+    Asset: Asset_53
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_63:
+    alpha_id: pc_ftotal1
+    hash: pc_ftotal_sambil
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_26
+    User: sfGuardUser_57
+    Asset: Asset_66
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_64:
+    alpha_id: pc_mcd_001
+    hash: pc_mcd_sambil
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_25
+    User: sfGuardUser_57
+    Asset: Asset_65
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_65:
+    alpha_id: pc_mcd_002
+    hash: pc_mcd_chacaito
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_25
+    User: sfGuardUser_57
+    Asset: Asset_63
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_66:
+    alpha_id: pc_mcd_003
+    hash: pc_mcd_lacastellana
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_25
+    User: sfGuardUser_57
+    Asset: Asset_62
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_67:
+    alpha_id: pc_mcd_004
+    hash: pc_mcd_latrinidad
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: false
+    Promo: Promo_25
+    User: sfGuardUser_56
+    Asset: Asset_61
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_68:
+    alpha_id: pc_mcd_005VC
+    hash: pc_mcd_millenium
+    type: validation_required
+    status: active
+    used_at: null
+    serial: null
+    digital: true
+    Promo: Promo_25
+    User: sfGuardUser_57
+    Asset: Asset_64
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_69:
+    alpha_id: pc_ft_0007
+    hash: pc_ft_sambil_vencida
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: true
+    Promo: Promo_30
+    User: sfGuardUser_56
+    Asset: Asset_54
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  PromoCode_70:
+    alpha_id: pc_ft_0008
+    hash: pc_ft_sambil_prueba
+    type: many_uses
+    status: active
+    used_at: null
+    serial: null
+    digital: true
+    Promo: Promo_31
+    User: sfGuardUser_57
+    Asset: Asset_54
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+PromoPrize:
+  PromoPrize_26:
+    alpha_id: EGGui2xROB
+    hash: 6fb9f142c3842e4ca64a194e5dc4a4f3b71304374fa3dbfdcb1a78787d9d1f4e
+    threshold: '3'
+    prize: 'Bs. 100 para consumo en productos Pepsi'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_22
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_27:
+    alpha_id: 91ogFYYgaS
+    hash: 4fb78a62d671e7a644834125f0544ef0b1a3ea343ff58662015bfb679121d0d1
+    threshold: '3'
+    prize: 'Un cupon de 30'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_23
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_28:
+    alpha_id: vUHXiulVtv
+    hash: 4acfbd3be06e98e07332f77f0c446132720be12d72beef828c8056f51a371c8e
+    threshold: '1'
+    prize: 'Bs 50 a tu favor para tu próxima visita donde consumas al menos Bs 200.'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_29:
+    alpha_id: CBPmTa15XU
+    hash: 1bc3ee4b2470ef519bafd57d214c6820d340401d37e3aa5b1bb5996e6bffff62
+    threshold: '3'
+    prize: '25% de descuento para tu próxima compra.'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_29
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_30:
+    alpha_id: 3u7HvYpGKV
+    hash: 2da93b8f9f355942f8b2eecd51aac343f8cf47b897429eec739530a2bad6f2ae
+    threshold: '6'
+    prize: '60% de descuento próxima compra.'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_29
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_31:
+    alpha_id: aTQGNmVilv
+    hash: f6da4ed3239cc1a3044ca0a08f163ddcc498eaa2afe1bf1a9e2fe5d2114e2cf1
+    threshold: '1'
+    prize: 'Un cupón por una sangría para tu próxima visita'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_28
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_32:
+    alpha_id: gAWABDBMPK
+    hash: 911232824f951619dc0886a0bda09f19104c656b7d5cb4da062d0e16cd7cc5f0
+    threshold: '1'
+    prize: 'Un cupón de 10% de descuento para tu próxima compra'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_33:
+    alpha_id: WnBnV8ZN9U
+    hash: 074a5508a30a2f264cc54f45cc44e5fa446ba60fca3d58b9357b5f0bfc778076
+    threshold: '1'
+    prize: 'Un cupón de 50% en pizzas'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_27
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_34:
+    alpha_id: omPPHJDfQ5
+    hash: 3b379334ebda49f02bc4c77c6e23528af68e9e30024aeb748474b44b92e3c5c3
+    threshold: '2'
+    prize: 'Un cupón por una barquilla para tu próxima compra.'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_25
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_35:
+    alpha_id: RiUHMgoRS4
+    hash: 021f4f3c9fd5ae027ff5939d09ad086f4f2c7ef33704ffc776bfc7794dc0309f
+    threshold: '4'
+    prize: 'Un cupón por un Big Mac y una ración de Papas Grandes para tu próxima visita con la compra de una bebida'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_25
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_36:
+    alpha_id: HJ4hswyAqY
+    hash: b3447931dfe05413700ef4abaaf80ad2b366650643906f249191e6be57a99534
+    threshold: '6'
+    prize: 'Un cupón por un Big Mac, una ración de Papas Grandes y un Sundae para tu próxima visita con la compra de una bebida'
+    thumb: null
+    stock: '0'
+    delivered: '0'
+    Promo: Promo_25
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_37:
+    alpha_id: t81n6LZ4Ev
+    hash: 907bcec035274a911214e2ab0467a96923c7a3eeb2521a33990b8b8cbb333732
+    threshold: '1'
+    prize: 'Un refresco gratis con tu combo'
+    thumb: null
+    stock: '80000'
+    delivered: '0'
+    Promo: Promo_32
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_38:
+    alpha_id: h0oor9IBrV
+    hash: 3b611cc9010486b8f999f3655d9f318941c9cd8a33147501f8b948eb0f979940
+    threshold: '2'
+    prize: '2x1 en la compra de tu combo'
+    thumb: null
+    stock: '80000'
+    delivered: '0'
+    Promo: Promo_32
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoPrize_39:
+    alpha_id: aL1iiR6rCg
+    hash: 06786022e2c1ac85437181298fb1e30ba3dbd17fc16f93a25e3c357221cc68a5
+    threshold: '3'
+    prize: 'Una cena para dos gratis'
+    thumb: null
+    stock: '80000'
+    delivered: '0'
+    Promo: Promo_32
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+PromoTerm:
+  PromoTerm_112:
+    term: Condición_0
+    Promo: Promo_22
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_113:
+    term: Condición_1
+    Promo: Promo_22
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_114:
+    term: Condición_2
+    Promo: Promo_22
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_115:
+    term: Condición_3
+    Promo: Promo_22
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_116:
+    term: Condición_4
+    Promo: Promo_22
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_117:
+    term: Condición_5
+    Promo: Promo_22
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_118:
+    term: Condición_6
+    Promo: Promo_22
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_119:
+    term: Condición_0
+    Promo: Promo_23
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_120:
+    term: Condición_1
+    Promo: Promo_23
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_121:
+    term: Condición_2
+    Promo: Promo_23
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_122:
+    term: Condición_3
+    Promo: Promo_23
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_123:
+    term: Condición_4
+    Promo: Promo_23
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_124:
+    term: Condición_0
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_125:
+    term: Condición_1
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_126:
+    term: Condición_2
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_127:
+    term: Condición_3
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_128:
+    term: Condición_4
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_129:
+    term: Condición_5
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_130:
+    term: Condición_6
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_131:
+    term: Condición_7
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_132:
+    term: Condición_0
+    Promo: Promo_25
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_133:
+    term: Condición_1
+    Promo: Promo_25
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_134:
+    term: Condición_2
+    Promo: Promo_25
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_135:
+    term: Condición_3
+    Promo: Promo_25
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_136:
+    term: Condición_4
+    Promo: Promo_25
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_137:
+    term: Condición_0
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_138:
+    term: Condición_1
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_139:
+    term: Condición_2
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_140:
+    term: Condición_3
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_141:
+    term: Condición_4
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_142:
+    term: Condición_5
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_143:
+    term: Condición_6
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_144:
+    term: Condición_7
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_145:
+    term: Condición_0
+    Promo: Promo_27
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_146:
+    term: Condición_1
+    Promo: Promo_27
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_147:
+    term: Condición_2
+    Promo: Promo_27
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_148:
+    term: Condición_3
+    Promo: Promo_27
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_149:
+    term: Condición_4
+    Promo: Promo_27
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_150:
+    term: Condición_5
+    Promo: Promo_27
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_151:
+    term: Condición_6
+    Promo: Promo_27
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_152:
+    term: Condición_7
+    Promo: Promo_27
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_153:
+    term: Condición_0
+    Promo: Promo_28
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_154:
+    term: Condición_1
+    Promo: Promo_28
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_155:
+    term: Condición_2
+    Promo: Promo_28
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_156:
+    term: Condición_3
+    Promo: Promo_28
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_157:
+    term: Condición_4
+    Promo: Promo_28
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_158:
+    term: Condición_5
+    Promo: Promo_28
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_159:
+    term: Condición_6
+    Promo: Promo_28
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_160:
+    term: Condición_7
+    Promo: Promo_28
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_161:
+    term: Condición_0
+    Promo: Promo_29
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_162:
+    term: Condición_1
+    Promo: Promo_29
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_163:
+    term: Condición_2
+    Promo: Promo_29
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_164:
+    term: Condición_3
+    Promo: Promo_29
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_165:
+    term: Condición_4
+    Promo: Promo_29
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_166:
+    term: Condición_5
+    Promo: Promo_29
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_167:
+    term: Condición_6
+    Promo: Promo_29
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_168:
+    term: 'El usuario debe completar el registro para canjear'
+    Promo: Promo_32
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_169:
+    term: 'Máximo un escaneo por día'
+    Promo: Promo_32
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  PromoTerm_170:
+    term: 'No válido con otras promociones'
+    Promo: Promo_32
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+sfGuardGroup:
+  sfGuardGroup_9:
+    name: admin
+    description: 'Administrator group'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardGroup_10:
+    name: affiliate_admin
+    description: 'Affiliate administrator group'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardGroup_11:
+    name: affiliate_employee
+    description: 'Employee group'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardGroup_12:
+    name: lealtag_users
+    description: 'Lealtag Users group'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+sfGuardGroupPermission:
+  sfGuardGroupPermission_9_11:
+    Group: sfGuardGroup_9
+    Permission: sfGuardPermission_11
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardGroupPermission_9_12:
+    Group: sfGuardGroup_9
+    Permission: sfGuardPermission_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardGroupPermission_10_12:
+    Group: sfGuardGroup_10
+    Permission: sfGuardPermission_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardGroupPermission_10_13:
+    Group: sfGuardGroup_10
+    Permission: sfGuardPermission_13
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardGroupPermission_11_14:
+    Group: sfGuardGroup_11
+    Permission: sfGuardPermission_14
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardGroupPermission_12_15:
+    Group: sfGuardGroup_12
+    Permission: sfGuardPermission_15
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+sfGuardPermission:
+  sfGuardPermission_11:
+    name: admin
+    description: 'Administrator permission'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardPermission_12:
+    name: admin_tasks
+    description: 'Permission for execute administration tasks'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardPermission_13:
+    name: affiliate_admin
+    description: 'Affiliate administrator permission'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardPermission_14:
+    name: employee
+    description: 'Employee permission'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardPermission_15:
+    name: user_tasks
+    description: 'User permission'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+sfGuardUser:
+  sfGuardUser_40:
+    first_name: Pedro
+    last_name: Vallenilla
+    email_address: pedro.vallenilla@gmail.com
+    username: pedro.vallenilla
+    algorithm: sha1
+    salt: 80aff695fa8774b4d8ef6d4a2835caa0
+    password: c6fe6f4042b94b85f6f770b46464ea042ccfb098
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: alphaid_pv
+    hash: alphaid_pv
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_41:
+    first_name: Miguel
+    last_name: Sucre
+    email_address: miguel.sucre@gmail.com
+    username: miguel.sucre
+    algorithm: sha1
+    salt: c3609b46142a146a21f037e9e811dccc
+    password: 0592ed22ddabab738e4c368ee0e43300f7f56a77
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: alphaid_ma
+    hash: alphaid_ma
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_42:
+    first_name: Ricardo
+    last_name: Blanch
+    email_address: ricardo.blanch@gmail.com
+    username: ricardo.blanch
+    algorithm: sha1
+    salt: 4696ea92793d27db4bcfa18cea0e83b9
+    password: 2180820db3eebdcdd61d2f03b38b3e9532ca0293
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: alphaid_rb
+    hash: alphaid_rb
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_43:
+    first_name: Andres
+    last_name: Vizcarrondo
+    email_address: andres.vizcarrondo@gmail.com
+    username: andres.vizcarrondo
+    algorithm: sha1
+    salt: 7d6609c326fce68d7cb8fbd6646e0691
+    password: 24e8b334901a8b659150d6df40f8b3750b79031f
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: alphaid_av
+    hash: alphaid_av
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_44:
+    first_name: Ricardo
+    last_name: Lunar
+    email_address: ricardo.lunar@gmail.com
+    username: ricardo.lunar
+    algorithm: sha1
+    salt: 63fc80143b6bb424d2483bf2e419dc7c
+    password: ce651fb60ac37b152d3d7d70c5d31123801e7f50
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: alphaid_rl
+    hash: alphaid_rl
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_45:
+    first_name: Octavio
+    last_name: Azpurua
+    email_address: oazpurua@gmail.com
+    username: oazpurua
+    algorithm: sha1
+    salt: a4ebbe3880cd56ce41b5d0643664eaed
+    password: 7eda8a83d230757bd58ecb1bb43b8d5dc8462ad6
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: alphaid_oa
+    hash: alphaid_oa
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_46:
+    first_name: Clara
+    last_name: Cárdenas
+    email_address: ccardenas@tudescuenton.com
+    username: ccardenas
+    algorithm: sha1
+    salt: 2d16a93b680fe1a579935247fb5070f4
+    password: b0f96e631f61748dac383d79201db243ea38d407
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: alphaid_cc
+    hash: alphaid_cc
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_47:
+    first_name: Nicolas
+    last_name: Cárdenas
+    email_address: ncardenas@tudescuenton.com
+    username: ncardenas
+    algorithm: sha1
+    salt: ec3a28083b3a1900caa3874cfc9d433e
+    password: c54945cb831f0040c8186d09ca84fef7ad0ce0dd
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: alphaid_nc
+    hash: alphaid_nc
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_48:
+    first_name: Gianpaolo
+    last_name: Valero
+    email_address: alexander.gvc@tudescuenton.com
+    username: alexander.gvc
+    algorithm: sha1
+    salt: aefc6ac5348160679705f4d3ce06bea7
+    password: c618bb12edc1cbb2eb0d6f36ed1ce909758b2d8f
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: alphaid_gv
+    hash: alphaid_gv
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_49:
+    first_name: 'Maria Gabriela'
+    last_name: Chacón
+    email_address: maria.chacon@gmail.com
+    username: gaby.chacon
+    algorithm: sha1
+    salt: 6127e3bb260af8a53c1150d433024f37
+    password: d4269a70b1a1538eef3b7d02dcd2bb163bd824ee
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: alphaid_mc
+    hash: alphaid_mc
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_50:
+    first_name: Jacobo
+    last_name: Martínez
+    email_address: jacobo@lealtag.com
+    username: jacobo
+    algorithm: sha1
+    salt: 9f2c775bbc1f98ac3d9fc97731cff474
+    password: 90b37fbd1f770727661160a487a9b2a9cd410dad
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: 2yHcSPXnG6
+    hash: 0ab91dd489b464e02cf24daefceb0001e98564e23a2b40c6863142fd12497d2f
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_51:
+    first_name: José
+    last_name: Riera
+    email_address: jose.riera@lealtag.com
+    username: josehriera
+    algorithm: sha1
+    salt: 14a52b97226b565cf02a88679ea9f4ea
+    password: 1cea786020a330afacf270849e385c702db65c68
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    alpha_id: K76gOCPgj7
+    hash: 94f7ada2b95905a52e828ba0af55c3f4d9112717a538008a6d818c7b19b7b072
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_52:
+    first_name: Octavio
+    last_name: Azpurua
+    email_address: octavio.azpurua@lealtag.com
+    username: oazpuruaadmin
+    algorithm: sha1
+    salt: 4310114681f6851b127270d439bdf844
+    password: 67a374a01f168b523e60b200911a8f3c2ad26012
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    alpha_id: lhvzL0VCQk
+    hash: da4dd65d381f590f820d3fa0072fc2079f102a0cefea562b9a97be274a640820
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_53:
+    first_name: Administrador
+    last_name: Farmatodo
+    email_address: farmatodo_admin@gmail.com
+    username: farmatodo_admin
+    algorithm: sha1
+    salt: 78b3264319f30485ea4310504383d76b
+    password: 3ea33f18f293d6bd631e76b4997a3eb6d88e715d
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: lAxcRtkijy
+    hash: deb33e9a5c7548c0c590e2196855a7be26f43c3f3fd322c5e1dd40b995599340
+    is_admin: true
+    data_complete: false
+    pre_registered: false
+    Affiliate: Affiliate_32
+    Asset: Asset_54
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_54:
+    first_name: Administrador
+    last_name: Farmatodo
+    email_address: farmatodo_sambil_admin@gmail.com
+    username: farmatodo_sambil_admin
+    algorithm: sha1
+    salt: 40d7512355f846dd587a78296a366b00
+    password: eb5df0ccf38d91900311cb223228508d56d5de44
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: OYPBZW9XpO
+    hash: 339a5bc5b30155436b01d683739ee3d5caae3ae7718e6efb85b648217c4dd99a
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    Affiliate: Affiliate_32
+    Asset: Asset_54
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_55:
+    first_name: Administrador
+    last_name: NonnaMia
+    email_address: nonnamia_admin@gmail.com
+    username: nonnamia_admin
+    algorithm: sha1
+    salt: eb16f391cc1746585d4392ae0d971871
+    password: fa84cedcce8dbf771e9039ae0bf1f6e2ca3f5992
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: fW15zY8tHs
+    hash: 9bf95af3d8cae7ee55f4a3ff12f96a1c2fff0bc3fd680835bd1751eedae7e010
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    Affiliate: Affiliate_29
+    Asset: Asset_52
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_56:
+    first_name: Juan
+    last_name: Perez
+    email_address: juan.perez@gmail.com
+    username: juan.perez
+    algorithm: sha1
+    salt: 3ebd8ee79373e496fd5f4e152b143308
+    password: 5061fb87eb19767b9f5256398962129c01aec82b
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: z7azOP52eK
+    hash: 43e534981004619d9e979ea93790df13c7d6d7312240d5048d1ab6ab3b9312e2
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    Affiliate: Affiliate_32
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_57:
+    first_name: Alejandra
+    last_name: Gonzalez
+    email_address: alejandra.gonzalez@gmail.com
+    username: alejandra.gonzalez
+    algorithm: sha1
+    salt: 2f29083e93859991dbce54b8d9944ffb
+    password: 65db3179cc59eafab1eb14af2b8d982a8b3c12e0
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: xCiGHtzlfZ
+    hash: 0b2074b3ccfaefffb0715cd27e08f6669c12704309a546e12c0283b07818bc8b
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    Affiliate: Affiliate_32
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUser_58:
+    first_name: Gabriel
+    last_name: Gutierrez
+    email_address: gabriel.gutierrez@gmail.com
+    username: gabriel.gutierrez
+    algorithm: sha1
+    salt: 3b8103ace9a6c9b0055f8572f1960224
+    password: 72961cdd48f5d1146112d9f9375bc41cb6b0809e
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    alpha_id: NFSTGT4SUI
+    hash: 7b66cf796fb618de0160b2a67c9ff967b34800f7a87ec82fe312bf364c536014
+    is_admin: false
+    data_complete: false
+    pre_registered: false
+    Affiliate: Affiliate_32
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+sfGuardUserGroup:
+  sfGuardUserGroup_40_12:
+    User: sfGuardUser_40
+    Group: sfGuardGroup_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_41_12:
+    User: sfGuardUser_41
+    Group: sfGuardGroup_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_42_12:
+    User: sfGuardUser_42
+    Group: sfGuardGroup_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_43_12:
+    User: sfGuardUser_43
+    Group: sfGuardGroup_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_44_12:
+    User: sfGuardUser_44
+    Group: sfGuardGroup_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_45_12:
+    User: sfGuardUser_45
+    Group: sfGuardGroup_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_46_12:
+    User: sfGuardUser_46
+    Group: sfGuardGroup_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_47_12:
+    User: sfGuardUser_47
+    Group: sfGuardGroup_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_48_12:
+    User: sfGuardUser_48
+    Group: sfGuardGroup_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_49_12:
+    User: sfGuardUser_49
+    Group: sfGuardGroup_12
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_50_9:
+    User: sfGuardUser_50
+    Group: sfGuardGroup_9
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_51_9:
+    User: sfGuardUser_51
+    Group: sfGuardGroup_9
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_52_9:
+    User: sfGuardUser_52
+    Group: sfGuardGroup_9
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_53_10:
+    User: sfGuardUser_53
+    Group: sfGuardGroup_10
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_54_10:
+    User: sfGuardUser_54
+    Group: sfGuardGroup_10
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_55_10:
+    User: sfGuardUser_55
+    Group: sfGuardGroup_10
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_56_11:
+    User: sfGuardUser_56
+    Group: sfGuardGroup_11
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_57_11:
+    User: sfGuardUser_57
+    Group: sfGuardGroup_11
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  sfGuardUserGroup_58_11:
+    User: sfGuardUser_58
+    Group: sfGuardGroup_11
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+State:
+  State_13:
+    name: 'New York'
+    Country: Country_6
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: new-york
+  State_14:
+    name: Texas
+    Country: Country_6
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: texas
+  State_15:
+    name: California
+    Country: Country_6
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: california
+  State_16:
+    name: Miranda
+    Country: Country_5
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: miranda
+  State_17:
+    name: Carabobo
+    Country: Country_5
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: carabobo
+  State_18:
+    name: 'Distrito Capital'
+    Country: Country_5
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+    slug: distrito-capital
+Subscription:
+  Subscription_9:
+    status: ''
+    Affiliate: Affiliate_29
+    Asset: Asset_52
+    User: sfGuardUser_41
+    last_interaction: '0000-00-00 00:00:00'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Subscription_10:
+    status: ''
+    Affiliate: Affiliate_29
+    Asset: Asset_53
+    User: sfGuardUser_41
+    last_interaction: '0000-00-00 00:00:00'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Subscription_11:
+    status: ''
+    Affiliate: Affiliate_29
+    Asset: Asset_52
+    User: sfGuardUser_46
+    last_interaction: '0000-00-00 00:00:00'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+  Subscription_12:
+    status: ''
+    Affiliate: Affiliate_29
+    Asset: Asset_53
+    User: sfGuardUser_44
+    last_interaction: '0000-00-00 00:00:00'
+    created_at: '2012-12-17 16:04:36'
+    updated_at: '2012-12-17 16:04:36'
+Survey:
+  Survey_5:
+    alpha_id: VsNQ0N3HEA
+    name: 'Encuesta de MasterCard'
+    all_promos: false
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  Survey_6:
+    alpha_id: mCiwZRNZP9
+    name: 'Encuesta de MasterCard 2'
+    all_promos: false
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+SurveyItem:
+  SurveyItem_13:
+    label: '¿Qué medio de pago utilizaste?'
+    help: null
+    item_type: multiple_selection
+    is_required: true
+    position: '1'
+    Survey: Survey_5
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItem_14:
+    label: 'Si pagaste con tarjeta de credito, ¿Qué tarjeta utilizaste?'
+    help: null
+    item_type: simple_selection
+    is_required: true
+    position: '2'
+    Survey: Survey_5
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItem_15:
+    label: 'Si utilizaste tarjeta de credito MasterCard, por favor introduce el numero de voucher a continuación'
+    help: null
+    item_type: text
+    is_required: true
+    position: '3'
+    Survey: Survey_5
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItem_16:
+    label: '¿Qué medio de pago utilizaste?'
+    help: null
+    item_type: multiple_selection
+    is_required: true
+    position: '2'
+    Survey: Survey_6
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItem_17:
+    label: 'Si pagaste con tarjeta de credito, ¿Qué tarjeta utilizaste?'
+    help: null
+    item_type: simple_selection
+    is_required: true
+    position: '3'
+    Survey: Survey_6
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItem_18:
+    label: 'Si utilizaste tarjeta de credito MasterCard, por favor introduce el numero de voucher a continuación'
+    help: null
+    item_type: text
+    is_required: true
+    position: '1'
+    Survey: Survey_6
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+SurveyItemOption:
+  SurveyItemOption_25:
+    label: 'Tarjeta de Debito'
+    image: null
+    image_only: false
+    position: '2'
+    Item: SurveyItem_13
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_26:
+    label: 'Tarjeta de Credito'
+    image: null
+    image_only: false
+    position: '1'
+    Item: SurveyItem_13
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_27:
+    label: Efectivo
+    image: null
+    image_only: false
+    position: '3'
+    Item: SurveyItem_13
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_28:
+    label: MasterCard
+    image: null
+    image_only: false
+    position: '2'
+    Item: SurveyItem_14
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_29:
+    label: Visa
+    image: null
+    image_only: false
+    position: '1'
+    Item: SurveyItem_14
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_30:
+    label: Otra
+    image: null
+    image_only: false
+    position: '3'
+    Item: SurveyItem_14
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_31:
+    label: 'Tarjeta de Debito'
+    image: null
+    image_only: false
+    position: '2'
+    Item: SurveyItem_16
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_32:
+    label: 'Tarjeta de Credito'
+    image: null
+    image_only: false
+    position: '1'
+    Item: SurveyItem_16
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_33:
+    label: Efectivo
+    image: null
+    image_only: false
+    position: '3'
+    Item: SurveyItem_16
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_34:
+    label: MasterCard
+    image: null
+    image_only: false
+    position: '2'
+    Item: SurveyItem_17
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_35:
+    label: Visa
+    image: null
+    image_only: false
+    position: '1'
+    Item: SurveyItem_17
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyItemOption_36:
+    label: Otra
+    image: null
+    image_only: false
+    position: '3'
+    Item: SurveyItem_17
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+SurveyPromo:
+  SurveyPromo_21:
+    Survey: Survey_5
+    Promo: Promo_22
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyPromo_22:
+    Survey: Survey_5
+    Promo: Promo_23
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyPromo_23:
+    Survey: Survey_5
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyPromo_24:
+    Survey: Survey_5
+    Promo: Promo_25
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyPromo_25:
+    Survey: Survey_5
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyPromo_26:
+    Survey: Survey_6
+    Promo: Promo_22
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyPromo_27:
+    Survey: Survey_6
+    Promo: Promo_23
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyPromo_28:
+    Survey: Survey_6
+    Promo: Promo_24
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyPromo_29:
+    Survey: Survey_6
+    Promo: Promo_25
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  SurveyPromo_30:
+    Survey: Survey_6
+    Promo: Promo_26
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+UserAffiliateProfile:
+  UserAffiliateProfile_7:
+    User: sfGuardUser_56
+    email: juan.perez@gmail.com
+    fullname: 'Juan Perez'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    position: ''
+    id_number: ''
+    phone: ''
+    phone2: null
+  UserAffiliateProfile_8:
+    User: sfGuardUser_57
+    email: alejandra.gonzalez@gmail.com
+    fullname: 'Alejandra Gonzalez'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    position: ''
+    id_number: ''
+    phone: ''
+    phone2: null
+  UserAffiliateProfile_9:
+    User: sfGuardUser_58
+    email: gabriel.guitierrez@gmail.com
+    fullname: 'Gabriel Guitierrez'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    position: ''
+    id_number: ''
+    phone: ''
+    phone2: null
+UserProfile:
+  UserProfile_22:
+    User: sfGuardUser_40
+    email: pedro.vallenilla@gmail.com
+    fullname: 'Pedro Vallenilla'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_13
+    City: City_3
+    id_number: '19050786'
+    phone: ''
+    gender: male
+    birthdate: '1988-10-29'
+  UserProfile_23:
+    User: sfGuardUser_41
+    email: miguel.sucre@gmail.com
+    fullname: 'Miguel Sucre'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_13
+    City: City_3
+    id_number: '15650786'
+    phone: ''
+    gender: male
+    birthdate: '1982-11-22'
+  UserProfile_24:
+    User: sfGuardUser_42
+    email: ricardo.blanch@gmail.com
+    fullname: 'Ricardo Blanch'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_13
+    City: City_3
+    id_number: '12677906'
+    phone: ''
+    gender: male
+    birthdate: '1982-07-11'
+  UserProfile_25:
+    User: sfGuardUser_44
+    email: ricardo.lunar@gmail.com
+    fullname: 'Ricardo Lunar'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_11
+    City: City_3
+    id_number: '20953428'
+    phone: ''
+    gender: male
+    birthdate: '1990-03-17'
+  UserProfile_26:
+    User: sfGuardUser_43
+    email: andres.vizcarrondo@gmail.com
+    fullname: 'Andres Vizcarrondo'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_11
+    City: City_3
+    id_number: '13624716'
+    phone: ''
+    gender: male
+    birthdate: '1981-04-11'
+  UserProfile_27:
+    User: sfGuardUser_45
+    email: oazpurua@gmail.com
+    fullname: 'Octavio Azpurua'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_14
+    City: City_3
+    id_number: '16551723'
+    phone: ''
+    gender: male
+    birthdate: '1985-08-14'
+  UserProfile_28:
+    User: sfGuardUser_46
+    email: ccardenas@tudescuenton.com
+    fullname: 'Clara Cárdenas'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_13
+    City: City_3
+    id_number: '16257853'
+    phone: ''
+    gender: female
+    birthdate: '1983-07-02'
+  UserProfile_29:
+    User: sfGuardUser_47
+    email: ncardenas@tudescuenton.com
+    fullname: 'Nicolas Cárdenas'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_13
+    City: City_3
+    id_number: '19729126'
+    phone: ''
+    gender: male
+    birthdate: '1987-05-17'
+  UserProfile_30:
+    User: sfGuardUser_48
+    email: alexander.gvc@tudescuenton.com
+    fullname: 'Gianpaolo Valero'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_13
+    City: City_3
+    id_number: '18235098'
+    phone: ''
+    gender: male
+    birthdate: '1987-10-11'
+  UserProfile_31:
+    User: sfGuardUser_49
+    email: maria.chacon@gmail.com
+    fullname: 'Maria Gabriela Chacón'
+    validate: null
+    Country: Country_5
+    State: State_16
+    Municipality: Municipality_12
+    City: City_3
+    id_number: '17284368'
+    phone: ''
+    gender: female
+    birthdate: '1987-02-13'
+ValidationCode:
+  ValidationCode_601:
+    serial: '38153'
+    code: cccc1
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_602:
+    serial: '49828'
+    code: cccc2
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_603:
+    serial: '76830'
+    code: cccc3
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_604:
+    serial: '91862'
+    code: cccc4
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_605:
+    serial: '54958'
+    code: cccc5
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_606:
+    serial: '10491'
+    code: cccc6
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_607:
+    serial: '98364'
+    code: cccc7
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_608:
+    serial: '82199'
+    code: cccc8
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_609:
+    serial: '56620'
+    code: cccc9
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_610:
+    serial: '43386'
+    code: ccc10
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_611:
+    serial: '44831'
+    code: ccc11
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_612:
+    serial: '81765'
+    code: ccc12
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_613:
+    serial: '29112'
+    code: ccc13
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_614:
+    serial: '12049'
+    code: ccc14
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_615:
+    serial: '13017'
+    code: ccc15
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_616:
+    serial: '49167'
+    code: ccc16
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_617:
+    serial: '56303'
+    code: ccc17
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_618:
+    serial: '16265'
+    code: ccc18
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_619:
+    serial: '69253'
+    code: ccc19
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_620:
+    serial: '27605'
+    code: ccc20
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_621:
+    serial: '47983'
+    code: ccc21
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_622:
+    serial: '64119'
+    code: ccc22
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_623:
+    serial: '80021'
+    code: ccc23
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_624:
+    serial: '88764'
+    code: ccc24
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_625:
+    serial: '60453'
+    code: ccc25
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_626:
+    serial: '59961'
+    code: ccc26
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_627:
+    serial: '70524'
+    code: ccc27
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_628:
+    serial: '24640'
+    code: ccc28
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_629:
+    serial: '78793'
+    code: ccc29
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_630:
+    serial: '97061'
+    code: ccc30
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_68
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_631:
+    serial: '35571'
+    code: ccc31
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_632:
+    serial: '88832'
+    code: ccc32
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_633:
+    serial: '15534'
+    code: ccc33
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_634:
+    serial: '58426'
+    code: ccc34
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_635:
+    serial: '69430'
+    code: ccc35
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_636:
+    serial: '57473'
+    code: ccc36
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_637:
+    serial: '79325'
+    code: ccc37
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_638:
+    serial: '85888'
+    code: ccc38
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_639:
+    serial: '84478'
+    code: ccc39
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_640:
+    serial: '21576'
+    code: ccc40
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_641:
+    serial: '75187'
+    code: ccc41
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_642:
+    serial: '76495'
+    code: ccc42
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_643:
+    serial: '82805'
+    code: ccc43
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_644:
+    serial: '42993'
+    code: ccc44
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_645:
+    serial: '67696'
+    code: ccc45
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:37'
+    updated_at: '2012-12-17 16:04:37'
+  ValidationCode_646:
+    serial: '14579'
+    code: ccc46
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_647:
+    serial: '68041'
+    code: ccc47
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_648:
+    serial: '13156'
+    code: ccc48
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_649:
+    serial: '67257'
+    code: ccc49
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_650:
+    serial: '82240'
+    code: ccc50
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_651:
+    serial: '93907'
+    code: ccc51
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_652:
+    serial: '46258'
+    code: ccc52
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_653:
+    serial: '73017'
+    code: ccc53
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_654:
+    serial: '28215'
+    code: ccc54
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_655:
+    serial: '88936'
+    code: ccc55
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_656:
+    serial: '24393'
+    code: ccc56
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_657:
+    serial: '73360'
+    code: ccc57
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_658:
+    serial: '68803'
+    code: ccc58
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_659:
+    serial: '64538'
+    code: ccc59
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_660:
+    serial: '79639'
+    code: ccc60
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_49
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_661:
+    serial: '62842'
+    code: ccc61
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_662:
+    serial: '18520'
+    code: ccc62
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_663:
+    serial: '91370'
+    code: ccc63
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_664:
+    serial: '28059'
+    code: ccc64
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_665:
+    serial: '50160'
+    code: ccc65
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_666:
+    serial: '53757'
+    code: ccc66
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_667:
+    serial: '45757'
+    code: ccc67
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_668:
+    serial: '24456'
+    code: ccc68
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_669:
+    serial: '40909'
+    code: ccc69
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_670:
+    serial: '11067'
+    code: ccc70
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_671:
+    serial: '36055'
+    code: ccc71
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_672:
+    serial: '45675'
+    code: ccc72
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_673:
+    serial: '50646'
+    code: ccc73
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_674:
+    serial: '55845'
+    code: ccc74
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_675:
+    serial: '41882'
+    code: ccc75
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_676:
+    serial: '36535'
+    code: ccc76
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_677:
+    serial: '57675'
+    code: ccc77
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_678:
+    serial: '98600'
+    code: ccc78
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_679:
+    serial: '11836'
+    code: ccc79
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_680:
+    serial: '42958'
+    code: ccc80
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_681:
+    serial: '13605'
+    code: ccc81
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_682:
+    serial: '80663'
+    code: ccc82
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_683:
+    serial: '58636'
+    code: ccc83
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_684:
+    serial: '79111'
+    code: ccc84
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_685:
+    serial: '60512'
+    code: ccc85
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_686:
+    serial: '85655'
+    code: ccc86
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_687:
+    serial: '72274'
+    code: ccc87
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_688:
+    serial: '88556'
+    code: ccc88
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_689:
+    serial: '62962'
+    code: ccc89
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_690:
+    serial: '49488'
+    code: ccc90
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_691:
+    serial: '80433'
+    code: ccc91
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_692:
+    serial: '30155'
+    code: ccc92
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_693:
+    serial: '46833'
+    code: ccc93
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_694:
+    serial: '78215'
+    code: ccc94
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_695:
+    serial: '99110'
+    code: ccc95
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_696:
+    serial: '42661'
+    code: ccc96
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_697:
+    serial: '19765'
+    code: ccc97
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_698:
+    serial: '62873'
+    code: ccc98
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_699:
+    serial: '20966'
+    code: ccc99
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_700:
+    serial: '30756'
+    code: cc100
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_701:
+    serial: '72555'
+    code: cc101
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_702:
+    serial: '14606'
+    code: cc102
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_703:
+    serial: '41702'
+    code: cc103
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_704:
+    serial: '42342'
+    code: cc104
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_705:
+    serial: '76578'
+    code: cc105
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:38'
+    updated_at: '2012-12-17 16:04:38'
+  ValidationCode_706:
+    serial: '39205'
+    code: cc106
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_707:
+    serial: '22088'
+    code: cc107
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_708:
+    serial: '48683'
+    code: cc108
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_709:
+    serial: '95549'
+    code: cc109
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_710:
+    serial: '27771'
+    code: cc110
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_711:
+    serial: '10291'
+    code: cc111
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_712:
+    serial: '66992'
+    code: cc112
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_713:
+    serial: '88151'
+    code: cc113
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_714:
+    serial: '68861'
+    code: cc114
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_715:
+    serial: '61558'
+    code: cc115
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_716:
+    serial: '28317'
+    code: cc116
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_717:
+    serial: '39836'
+    code: cc117
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_718:
+    serial: '47021'
+    code: cc118
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_719:
+    serial: '34808'
+    code: cc119
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_720:
+    serial: '33900'
+    code: cc120
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_51
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_721:
+    serial: '15146'
+    code: cc121
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_722:
+    serial: '81930'
+    code: cc122
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_723:
+    serial: '59549'
+    code: cc123
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_724:
+    serial: '95962'
+    code: cc124
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_725:
+    serial: '88810'
+    code: cc125
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_726:
+    serial: '64046'
+    code: cc126
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_727:
+    serial: '56477'
+    code: cc127
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_728:
+    serial: '38608'
+    code: cc128
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_729:
+    serial: '17429'
+    code: cc129
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_730:
+    serial: '27442'
+    code: cc130
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_731:
+    serial: '31627'
+    code: cc131
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_732:
+    serial: '75159'
+    code: cc132
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_733:
+    serial: '75002'
+    code: cc133
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_734:
+    serial: '36202'
+    code: cc134
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_735:
+    serial: '80842'
+    code: cc135
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_736:
+    serial: '69101'
+    code: cc136
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_737:
+    serial: '75928'
+    code: cc137
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_738:
+    serial: '92152'
+    code: cc138
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_739:
+    serial: '19038'
+    code: cc139
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_740:
+    serial: '39402'
+    code: cc140
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_741:
+    serial: '32489'
+    code: cc141
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_742:
+    serial: '39158'
+    code: cc142
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_743:
+    serial: '61297'
+    code: cc143
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_744:
+    serial: '68418'
+    code: cc144
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_745:
+    serial: '44328'
+    code: cc145
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_746:
+    serial: '69229'
+    code: cc146
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_747:
+    serial: '69454'
+    code: cc147
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_748:
+    serial: '82879'
+    code: cc148
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_749:
+    serial: '30931'
+    code: cc149
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_750:
+    serial: '33397'
+    code: cc150
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_54
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_751:
+    serial: '78202'
+    code: cc151
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_752:
+    serial: '50105'
+    code: cc152
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_753:
+    serial: '84995'
+    code: cc153
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_754:
+    serial: '71363'
+    code: cc154
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_755:
+    serial: '40029'
+    code: cc155
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_756:
+    serial: '65335'
+    code: cc156
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_757:
+    serial: '12391'
+    code: cc157
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_758:
+    serial: '14215'
+    code: cc158
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_759:
+    serial: '68743'
+    code: cc159
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_760:
+    serial: '14024'
+    code: cc160
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_761:
+    serial: '94667'
+    code: cc161
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_762:
+    serial: '15734'
+    code: cc162
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_763:
+    serial: '21270'
+    code: cc163
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_764:
+    serial: '15469'
+    code: cc164
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_765:
+    serial: '43684'
+    code: cc165
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_766:
+    serial: '88242'
+    code: cc166
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_767:
+    serial: '74015'
+    code: cc167
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_768:
+    serial: '94520'
+    code: cc168
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:39'
+    updated_at: '2012-12-17 16:04:39'
+  ValidationCode_769:
+    serial: '19237'
+    code: cc169
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_770:
+    serial: '31585'
+    code: cc170
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_771:
+    serial: '42105'
+    code: cc171
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_772:
+    serial: '99056'
+    code: cc172
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_773:
+    serial: '59024'
+    code: cc173
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_774:
+    serial: '10467'
+    code: cc174
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_775:
+    serial: '41783'
+    code: cc175
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_776:
+    serial: '55806'
+    code: cc176
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_777:
+    serial: '85004'
+    code: cc177
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_778:
+    serial: '86000'
+    code: cc178
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_779:
+    serial: '90460'
+    code: cc179
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_780:
+    serial: '33657'
+    code: cc180
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_56
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_781:
+    serial: '62571'
+    code: cc181
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_782:
+    serial: '12505'
+    code: cc182
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_783:
+    serial: '14093'
+    code: cc183
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_784:
+    serial: '45776'
+    code: cc184
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_785:
+    serial: '11259'
+    code: cc185
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_786:
+    serial: '75837'
+    code: cc186
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_787:
+    serial: '54723'
+    code: cc187
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_788:
+    serial: '56932'
+    code: cc188
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_789:
+    serial: '53520'
+    code: cc189
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_790:
+    serial: '20813'
+    code: cc190
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_791:
+    serial: '42964'
+    code: cc191
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_792:
+    serial: '25778'
+    code: cc192
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_793:
+    serial: '86688'
+    code: cc193
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_794:
+    serial: '17137'
+    code: cc194
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_795:
+    serial: '59064'
+    code: cc195
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_796:
+    serial: '35679'
+    code: cc196
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_797:
+    serial: '26428'
+    code: cc197
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_798:
+    serial: '54617'
+    code: cc198
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_799:
+    serial: '58621'
+    code: cc199
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_800:
+    serial: '18373'
+    code: cc200
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_801:
+    serial: '76137'
+    code: cc201
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_802:
+    serial: '48210'
+    code: cc202
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_803:
+    serial: '30591'
+    code: cc203
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_804:
+    serial: '29973'
+    code: cc204
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_805:
+    serial: '30278'
+    code: cc205
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_806:
+    serial: '32318'
+    code: cc206
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_807:
+    serial: '69750'
+    code: cc207
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_808:
+    serial: '38866'
+    code: cc208
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_809:
+    serial: '58565'
+    code: cc209
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_810:
+    serial: '12619'
+    code: cc210
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_58
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_811:
+    serial: '24023'
+    code: cc211
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_812:
+    serial: '52203'
+    code: cc212
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_813:
+    serial: '62514'
+    code: cc213
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_814:
+    serial: '26225'
+    code: cc214
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_815:
+    serial: '46681'
+    code: cc215
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_816:
+    serial: '99785'
+    code: cc216
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_817:
+    serial: '70838'
+    code: cc217
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_818:
+    serial: '23221'
+    code: cc218
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_819:
+    serial: '90601'
+    code: cc219
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_820:
+    serial: '34689'
+    code: cc220
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_821:
+    serial: '62870'
+    code: cc221
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_822:
+    serial: '65982'
+    code: cc222
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_823:
+    serial: '82032'
+    code: cc223
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_824:
+    serial: '29694'
+    code: cc224
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_825:
+    serial: '77878'
+    code: cc225
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_826:
+    serial: '51730'
+    code: cc226
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_827:
+    serial: '53195'
+    code: cc227
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_828:
+    serial: '28615'
+    code: cc228
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_829:
+    serial: '93555'
+    code: cc229
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_830:
+    serial: '57033'
+    code: cc230
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_831:
+    serial: '97667'
+    code: cc231
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_832:
+    serial: '57979'
+    code: cc232
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:40'
+    updated_at: '2012-12-17 16:04:40'
+  ValidationCode_833:
+    serial: '31440'
+    code: cc233
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_834:
+    serial: '38249'
+    code: cc234
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_835:
+    serial: '63404'
+    code: cc235
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_836:
+    serial: '71107'
+    code: cc236
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_837:
+    serial: '48615'
+    code: cc237
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_838:
+    serial: '36278'
+    code: cc238
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_839:
+    serial: '25851'
+    code: cc239
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_840:
+    serial: '71808'
+    code: cc240
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_841:
+    serial: '27964'
+    code: cc241
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_842:
+    serial: '39821'
+    code: cc242
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_843:
+    serial: '35869'
+    code: cc243
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_844:
+    serial: '49976'
+    code: cc244
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_845:
+    serial: '63245'
+    code: cc245
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_846:
+    serial: '74989'
+    code: cc246
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_847:
+    serial: '79844'
+    code: cc247
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_848:
+    serial: '93383'
+    code: cc248
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_849:
+    serial: '57540'
+    code: cc249
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_850:
+    serial: '29346'
+    code: cc250
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_851:
+    serial: '22744'
+    code: cc251
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_852:
+    serial: '83006'
+    code: cc252
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_853:
+    serial: '64029'
+    code: cc253
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_854:
+    serial: '87672'
+    code: cc254
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_855:
+    serial: '41596'
+    code: cc255
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_856:
+    serial: '57016'
+    code: cc256
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_857:
+    serial: '36754'
+    code: cc257
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_858:
+    serial: '14509'
+    code: cc258
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_859:
+    serial: '86359'
+    code: cc259
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_860:
+    serial: '45490'
+    code: cc260
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_861:
+    serial: '58744'
+    code: cc261
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_862:
+    serial: '96055'
+    code: cc262
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_863:
+    serial: '59390'
+    code: cc263
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_864:
+    serial: '93979'
+    code: cc264
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_865:
+    serial: '82421'
+    code: cc265
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_866:
+    serial: '17458'
+    code: cc266
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_867:
+    serial: '54731'
+    code: cc267
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_868:
+    serial: '81536'
+    code: cc268
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_869:
+    serial: '53480'
+    code: cc269
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_870:
+    serial: '82568'
+    code: cc270
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_61
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_871:
+    serial: '30069'
+    code: cc271
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_872:
+    serial: '67589'
+    code: cc272
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_873:
+    serial: '15405'
+    code: cc273
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_874:
+    serial: '45593'
+    code: cc274
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_875:
+    serial: '14314'
+    code: cc275
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_876:
+    serial: '35829'
+    code: cc276
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_877:
+    serial: '53505'
+    code: cc277
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_878:
+    serial: '66537'
+    code: cc278
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_879:
+    serial: '72023'
+    code: cc279
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_880:
+    serial: '83611'
+    code: cc280
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_881:
+    serial: '56397'
+    code: cc281
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_882:
+    serial: '49448'
+    code: cc282
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_883:
+    serial: '45501'
+    code: cc283
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_884:
+    serial: '30767'
+    code: cc284
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_885:
+    serial: '43644'
+    code: cc285
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_886:
+    serial: '10760'
+    code: cc286
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_887:
+    serial: '33623'
+    code: cc287
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_888:
+    serial: '36275'
+    code: cc288
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_889:
+    serial: '28596'
+    code: cc289
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_890:
+    serial: '47457'
+    code: cc290
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_891:
+    serial: '71989'
+    code: cc291
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_892:
+    serial: '44093'
+    code: cc292
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_893:
+    serial: '16779'
+    code: cc293
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_894:
+    serial: '14631'
+    code: cc294
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_895:
+    serial: '63149'
+    code: cc295
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_896:
+    serial: '14293'
+    code: cc296
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:41'
+    updated_at: '2012-12-17 16:04:41'
+  ValidationCode_897:
+    serial: '22654'
+    code: cc297
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  ValidationCode_898:
+    serial: '36461'
+    code: cc298
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  ValidationCode_899:
+    serial: '10626'
+    code: cc299
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+  ValidationCode_900:
+    serial: '42333'
+    code: cc300
+    used: false
+    used_at: null
+    active: true
+    PromoCode: PromoCode_50
+    created_at: '2012-12-17 16:04:42'
+    updated_at: '2012-12-17 16:04:42'
+ValuePerAction:
+  ValuePerAction_7:
+    action: tag
+    value: '3'
+    is_super: true
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  ValuePerAction_8:
+    action: redeem
+    value: '10'
+    is_super: true
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'
+  ValuePerAction_9:
+    action: feedback
+    value: '5'
+    is_super: true
+    created_at: '2012-12-17 16:04:35'
+    updated_at: '2012-12-17 16:04:35'

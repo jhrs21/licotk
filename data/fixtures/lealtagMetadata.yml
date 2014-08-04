@@ -1,0 +1,26 @@
+Currency:
+  pts_lt:
+    name: Puntos LT
+    symbol: ptsLT
+    is_super: 1
+    
+ValuePerAction:
+  tag_action:
+    action: tag
+    value: 3
+    is_super: 1
+  redeem_action:
+    action: redeem
+    value: 10
+    is_super: 1
+  feedback_action:
+    action: feedback
+    value: 5
+    is_super: 1
+    
+ApiUser:
+  td:
+    name: tudescuenton
+    algorithm: sha1
+    salt: salt123
+    apikey: 5b933663ed174b418c4bc19800c967a0bb27f1bb    

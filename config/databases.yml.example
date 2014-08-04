@@ -1,0 +1,20 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=db'
+      username: user
+      password: 1234
+      queries:	["SET time_zone = 'America/Caracas';"]
+test:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=db_test'
+      username: db_test
+      password: 4321
+task:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      profiler: false

@@ -1,0 +1,25 @@
+/* 
+    Document   : forms
+    Created on : 16/04/2012, 03:56:03 PM
+    Author     : jacobo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+div.form_errors, ul.error_list{
+    padding: 5px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    background-color: #FF3232;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+ul.error_list a {font-weight: 600;}
+
+ul.error_list a:hover {color: #fad42e;text-decoration: underline;}
+
+div.form_errors ul.error_list {padding: 0px;margin: 0px;}
+
+ul.error_list {list-style-type: none}

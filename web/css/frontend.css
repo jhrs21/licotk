@@ -1,0 +1,312 @@
+@import "fonts.css";
+@import "forms.css";
+
+html, body{height:100%}
+body:before {content:"";height:100%;float:left;width:0;margin-top:-32767px}/*Opera Fix*/
+#wrap,#main{min-height:100%}
+#main{padding-bottom:203px;margin:0 auto;width:950px;position:relative}
+#footer{position:relative;height:203px;clear:both;margin-top:-203px}
+#footer-container{background:#222124}
+#footer-content{background:url('/images/footer_background.png') repeat-y;height:158px}
+#footer-content div{float:left}
+#footer-copyrights{height:158px;width:170px;background:url('/images/copyright.png') no-repeat;background-position:15px 70px}
+#footer-mailto{width:112px;padding-right:18px}
+#footer-menu{width:650px;height:100px;margin-top:40px;margin-left:-18px;background:#FFFFFF}
+ul.footer-menu-column{font-family:HelveticaRegular;display:block;list-style-type:none;margin:10px 0px 0px 20px;float:left}
+ul.footer-menu-column li a{color:#A5A8AB;font-size:1.1em;cursor:pointer}
+ul.footer-menu-column li.column-header a{color:#18B9E8;font-size:1.3em;text-transform:uppercase}
+ul.footer-menu-column li a:hover{text-decoration:underline;color:#4674B7}
+.main-container-inner{width:922px;float:left;background:#FFFFFF;margin:-14px 0px 14px 14px;-webkit-box-shadow: 0px 0px 4px #aaa;-moz-box-shadow: 0px 0px 4px #aaa;box-shadow: 0px 0px 4px #aaa;-webkit-border-bottom-left-radius:30px;-webkit-border-bottom-right-radius:30px;-moz-border-radius-bottomleft:30px;-moz-border-radius-bottomright:30px;border-bottom-left-radius:30px;border-bottom-right-radius:30px}
+#main-container, #main-footer{background:url('/images/main_background.png') repeat-y}
+#main-footer{height:45px;position:relative;clear:both}
+#main-footer-inner{margin:0px 30px 10px 30px;height:35px;background:url('/images/white_separator.png') no-repeat;background-position:0px 100%}
+#main-footer-buttons{height:30px;padding-top:5px;margin-left:450px}
+#main-footer-buttons a{display:inline-block;margin-right:10px;float:left}
+#main-footer-buttons a:first-child{margin-right:35px}
+#main-footer-buttons a span{display:block;height:27px}
+#main-footer-buttons a span:hover{height:32px;margin-top:-5px}
+.register-tag-button-up{width:142px;background:url('/images/buttons_sprite.png') no-repeat;background-position:-2px -2px}
+.google-plus-button{width:52px;background:url('/images/buttons_sprite.png') no-repeat;background-position:-145px -2px}
+.facebook-button{width:83px;background:url('/images/buttons_sprite.png') no-repeat;background-position:-200px -2px}
+.twitter-button{width:83px;background:url('/images/buttons_sprite.png') no-repeat;background-position:-285px -2px}
+#main-footer img{margin:0px 0px 10px 35px}
+#main-info-container{margin-top:-14px;background:url('/images/main_downloads_container2.png') no-repeat;background-position:292px -60px}
+
+#how-it-works-container{margin-top:20px;margin-right:10px;height:260px;float:left}
+#how-it-works-container ul{list-style:none;margin-left:30px}
+#how-it-works-container ul li{display:inline-block;margin-bottom:15px}
+#how-it-works-container .numbered-list{font-family:Swis721LtBTLight;color:#808080}
+#how-it-works-container ul p.numbered-list-number{margin-top:5px;font-size:4.5em;line-height:0.9em;color:#A84C9E;text-shadow:0px 0px 2px #555}
+#how-it-works-container ul p.numbered-list-item{text-align:left;font-size:1.6em;text-shadow:0px 1px 1px #ccc}
+#how-it-works-container span.qr-cloud{background:url('/images/home_sprite.png') -1px -20px no-repeat;padding:36px 34px;position:relative;top:-90px;left:200px;}
+#how-it-works-container ul p.numbered-list-item-blue {color:#18B9E8}
+#how-it-works-container ul li div{display:block}
+#how-it-works-container ul li div.numbered-list-bottom {margin-top:10px;padding-bottom:20px;background:url('/images/home_sprite.png') no-repeat;background-position: center 0px}
+#howto-show-more{margin-left:200px}
+#downloads-container {height:280px;text-align:center}
+#downloads-container img{margin-top:25px}
+
+#sign-up-container{margin-top:14px}
+#sign-up-container table th{width:65px}
+#sign-up-container form {font-family:Arial;color:#808080;font-size:12px}
+#sign-up-container input, #sign-up-container select{padding:2px;background:#fff;font-size:14px;color:#808080;border:2px #CCCCCC solid;-webkit-transition:background 0.3s linear;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
+#sign-up-container input {width:180px}
+#sign-up-container input:hover, select:hover{background: #EEEEEE}
+#sign-up-container input:focus, select:focus{border:2px #F2911E solid}
+td.sign-up-form-submit-container{text-align:center}
+#sign-up-container form table tr th{text-align:right}
+#sign-up-container form table tr th, #sign-up-container form table tr td{padding:4px}
+#sign-up-container select#sfApplyApply_gender{width:188px}
+#sign-up-container select#sfApplyApply_phone_code{width:70px}
+#sign-up-container input#sfApplyApply_phone_number{width:104px;padding:3px}
+/* PAGINAS ESTATICAS*/
+/* Ayuda (main)*/
+.white-background-repeat{
+    background-image:url('/images/linea-blanca-horiz.png');
+    background-repeat:repeat-y;
+    margin-top: 10px;
+}
+
+#index-background{
+    height: 400px
+}
+
+#indepabis-background{
+    margin-top: -100px;
+    margin-left: 1px;
+    height: 100px
+}
+
+#white-bottom{
+    background-image:url('/images/fondo-bordeado-blanco.png');
+    height: 53px;
+}
+
+#right-button{text-align: right; font-size: 16px}
+
+#buttons-image{margin-top: 100px}
+
+#crear-promo-image {background: url('/images/ayuda_crear_promo.png') no-repeat scroll 0 0 transparent; height: 614px}
+
+#buena-promo-image {background: url('/images/ayuda-buena-promo.png') no-repeat scroll 0 0 transparent; height: 683px}
+
+#link-indepabis {
+    position: relative;
+    left: 167px;
+    top: 300px;
+    height: 11px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#indepabis-image {
+    background: url('/images/ayuda-indepabis.png') no-repeat scroll 0 0 transparent;
+    height: 738px;
+}
+
+#empleado-image {
+    background: url('/images/ayuda_empleado.png') no-repeat scroll 0 0 transparent;
+    height: 737px;
+}
+
+#link-empleado-mailto{
+    position: relative;
+    left: 560px;
+    top: 577px;
+    height: 13px;
+    width: 85px;
+    cursor: pointer;
+}
+
+#aumento-ventas-image {
+    background: url('/images/ayuda_aumento_ventas.png') no-repeat scroll 0 0 transparent;
+    height: 548px;
+}
+
+#link-aumento-ventas{
+    position: relative;
+    left: 557px;
+    top: 470px;
+    height: 13px;
+    width: 40px;
+    cursor: pointer;
+}
+/*FIN -- Ayuda (main)*/
+/* FIN -- PAGINAS ESTATICAS*/
+
+/*********************************header*************************************/
+#header_inner{width:950px;margin:0 auto}
+body,h1,ul,li,p{margin:0;padding:0}
+body{min-width:950px;font:62.5%/1.5 Arial}
+body #global_container{min-width:950px;position:relative}
+a{color:#FFF;text-decoration:none}
+#questionlinks a:hover{color:#18B9E8; text-decoration:underline;}
+#questionlinks a{color:#999;}
+#header ul{list-style:none}
+#header_container{height:135px;min-height:135px; height:135px\9; min-height:135px\9; *height:135px; *min-height:135px;}
+
+:root #header_container{height:135px\0/IE9; min-height:135px\0/IE9;} /* IE9 */
+
+#header{background-image:-moz-linear-gradient( top,  #333 0% ,  #1a1a1a 100%  );background-image:-webkit-gradient( linear, 0  0% , 0  100% , from( #333 ), to( #1a1a1a ) );-moz-box-shadow:-2px 1px 2px 0 rgba(0,0,0,0.4);-webkit-box-shadow:-2px 1px 2px 0 rgba(0,0,0,0.4);box-shadow:-2px 1px 2px 0 rgba(0,0,0,0.4);background-color:#282828;border-bottom:5px solid #B3B3B3;height:35px;position:relative;z-index:100}
+#header .subnav{-moz-border-radius-bottomleft:8px;-webkit-border-bottom-left-radius:8px;-o-border-bottom-left-radius:8px;-ms-border-bottom-left-radius:8px;-khtml-border-bottom-left-radius:8px;border-bottom-left-radius:8px;-moz-border-radius-bottomright:8px;-webkit-border-bottom-right-radius:8px;-o-border-bottom-right-radius:8px;-ms-border-bottom-right-radius:8px;-khtml-border-bottom-right-radius:8px;border-bottom-right-radius:8px;-moz-box-shadow:1px 2px 2px 0 #0d0d0d;-webkit-box-shadow:1px 2px 2px 0 #0d0d0d;box-shadow:1px 2px 2px 0 #0d0d0d;background-color:#1a1a1a;color:#ccc;display:none;padding:10px 0 10px 0;position:absolute;right:0px;top:43px;width:160px;z-index:1005}
+#header #header_inner{position:relative}
+#header h1{position:absolute;top:45px;left:40px}
+#header p{font-family:Arial;color:#FFFFFF;position:absolute;top:110px;left:450px;z-index: 1000;font-size:1.2em;line-height:1.5}
+#header h1 a{background:url("/images/logo_slogan.png") no-repeat -1px -1px;display:block;height:85px;text-indent:-10000px;width:230px}
+#header h1 a:hover{cursor:pointer}
+#header ul li{float:left;padding-left:0;padding-right:0;white-space:nowrap}
+#header div.layer2{left:0px;position:relative;width:950px;height:45px}
+#header ul.partners_links{float:left;height:40px;padding:4px 0 0 0}
+#header ul.partners_links li{font-size:1.1em;line-height:34px;padding:0 10px}
+#header ul.partners_links li.divisor{background:url(/images/vertical_gray.gif) right 50% no-repeat;padding:0 0 0 0}
+#header .links li:hover ul.subnav{display:block}
+#header_nav{float:right;list-style:none}
+#header_nav li{padding-bottom:10px;text-align:center;text-shadow:0 2px 2px #000;position:relative;font-size:1.4em}
+#header_nav li.combination_1 a{display:block}
+#header_nav li.combination_2 a{display:none}
+#header_nav li a{display:block;overflow:hidden;padding:14px 16px 8px 16px}
+#header_nav li a.current,#header_nav li a:hover{background-color:#141414;background-image: linear-gradient(bottom, rgb(20,20,20) 0%, rgb(0,0,0) 100%); background-image:-moz-linear-gradient( top,  #141414 0% ,  #000 100%  );background-image:-webkit-gradient( linear, 0  0% , 0  100% , from( #141414 ), to( #000 ) );background-image: -ms-linear-gradient(bottom, rgb(20,20,20) 0%, rgb(0,0,0) 100%);color:#fff;margin-top:10px;padding-top:5px;padding-bottom:0px;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;-o-border-radius:5px 5px 0 0;-ms-border-radius:5px 5px 0 0;-khtml-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;background-clip:padding-box; margin-left:10px}
+#header_nav li a.current{background-color:#B3B3B3;background-image:-moz-linear-gradient( top,  #B3B3AA 0% ,  #B3B3B3 100%  );background-image:-webkit-gradient( linear, 0  0% , 0  100% , from( #B3B3AA ), to( #B3B3B3 ) );text-shadow:0 2px 2px #999;font-weight:bold}
+#header-register-tag{position: relative;top:15px; left: 750px;width: 185px; height: 35px}
+#header-register-tag li{display: inline;text-align:center;text-shadow:0 2px 2px #000;font-size:1.5em}
+#header-register-tag li a{display:block;overflow:hidden;padding:5px 10px;font-weight:bold;vertical-align:top;line-height:1.4em;text-shadow:0 2px 2px #999;color:#F4F2F2;background-color: #95B850;background-image:linear-gradient(bottom, rgb(96,141,61) 0%, rgb(149,184,80) 100%);background-image:-moz-linear-gradient(top,#95B850 0%,#608D3D 100%);background-image:-webkit-gradient(linear,0 0%,0 100%,from(#95B850),to(#608D3D));background-image: -ms-linear-gradient(rgb(96,141,61) 0%,bottom,rgb(149,184,80) 100%);-moz-border-radius:10px;-webkit-border-radius:10px;-o-border-radius:10px;-ms-border-radius:10px;-khtml-border-radius:10px;border-radius:10px;-webkit-transition:-webkit-box-shadow 0.3s linear;-webkit-box-shadow:0px 0px 4px #999;-moz-box-shadow:0px 0px 4px #999;box-shadow:0px 0px 4px #999;background-clip:padding-box}
+#header-register-tag li a:hover{-webkit-box-shadow:0px 0px 10px #555;-moz-box-shadow:0px 0px 10px #555;box-shadow:0px 0px 10px #555;}
+span.tag-simbol{display:inline-block;padding:2px 0 0 22px;background:url(/images/buttons_sprite.png) no-repeat;background-position:-150px -43px}
+
+/* Formulario de Signin */
+#td-message{color: #888; width: 280px; font-size: 1.1em; text-align: left}
+#td-message a {color: #4674B7}
+#td-message a:hover{color:#18B9E8;text-decoration:underline}
+#signin-form-container{background:url(/images/signin_form.png) 18px 15px no-repeat;background-color: #E6E6E7}
+#signin-form-title{margin-top: 70px;margin-bottom: 10px}
+#signin-form-title h3{font-size: 1.25em; margin-bottom: 5px }
+form#signin-form .form_row {margin-bottom: 8px;}
+form#signin-form label {font-size: 1.15em;font-weight: bolder;}
+form#signin-form div:last-child{margin-bottom: 0px}
+form#signin-form input#signin_remember{width: 15px;margin: 0px;border: none;background: none;-webkit-border-radius: 0px;-moz-border-radius: 0px; border-radius: 0px;}
+.signin-form-submit-container{margin-top: 5px;text-align: right}
+
+/** Estilo para el header de colores **/
+.color-banner h1{font-family: Swis721LtBTLight;font-size: 2em;color: #FFFFFF;text-shadow: 0 1px 1px #666666;margin-top: 18px;}
+#color-banner{padding-bottom:14px;background: url('/images/color_banner_footer.png') 0 100% no-repeat}
+#color-banner.highlight{padding: 14px 0px 17px 0px;background: url('/images/color_banner_footer.png') 0 67px no-repeat; background-color: #FFFFFF}
+.color-banner div{text-align: center;height: 53px;float: left}
+.color-banner div.thin {height: 13px;}
+.color-banner div.blue{width: 308px;margin: 0px;background-color: #18B9E8}
+.color-banner div.purpule{width: 321px;background-color: #A84C9E}
+.color-banner div.orange{width: 321px;background-color: #F2911E}
+.color-banner div.highlight{margin-top: -14px; padding-top: 14px;}
+#color_nav .color_nav_grey_line{position: relative; top:67px; width: 880px; height: 17px; margin: 0px 35px; background: url('/images/color_nav_grey_line.png') 0% 23% repeat-x;}
+.color_nav_pike {width: 25px; height: 17px; background: url('/images/color_nav_pikes.png')}
+.color_nav_pike_purple {margin-left: 115px; background-position: 0px 0px}
+.color_nav_pike_blue {margin-left: 440px; background-position: -27px 0px}
+.color_nav_pike_orange {margin-left: 735px; background-position: -54px 0px}
+
+.user-header{margin: 15px 30px 0px;text-align: center;}
+ul.user-links{padding-bottom: 10px; list-style-type: none; display: block; margin-bottom: 10px; background: url(/images/grey_separator.png) 0 99% repeat-x;}
+ul.user-links li{display: inline}
+ul.user-links li{margin: 0px 7px; padding-bottom: 12px;}
+ul.user-links li a{font-size: 1.3em; color: #808080; text-shadow: 0px 1px 1px #ccc;}
+ul.user-links li a:hover, ul.user-links li.active a{color: #18B9E8}
+ul.user-links li.active{background: url(/images/grey_pike_up.png) 50% 17px no-repeat;}
+.user-header .register-tag-button{position: relative; left: 380px; top: -16px}
+
+.horizontal-divider{background: url(/images/grey_separator.png) repeat-x;height: 2px;}
+.dg-vertical-divider{background: url(/images/dark_grey_separator2.png) repeat-y;}
+
+.ep-modal{text-align: center; font-family: HelveticaRegular;}
+.ep-modal h2 {margin: 15px 0px 15px 0px; font-weight: bold; font-size: 2.2em; text-shadow: 0 2px 2px #CCC; color: #808080}
+.ep-modal .blue{color: #18B9E8}
+.ep-modal .big{font-size: 2.8em}
+.ep-modal-form-container{margin: 0px 210px;}
+.ep-modal-form-container .form-submit-container input{margin: 0px}
+.ep-modal-form-container .form-submit-container{margin: 15px 0px}
+
+.main-canvas{
+    font-family: HelveticaRegular;
+    text-align: center;
+    width: 882px;
+    float: left;
+    margin: 20px;
+    padding: 15px 0px;
+    background-color: #E5E6E7;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px; 
+    border-radius: 20px;
+    color: #808080
+}
+.main-canvas-title h2{font-weight:bold;font-size:2.5em;margin:0px 0px 10px 0px;text-shadow:0 2px 2px #CCCCCC;color:#18B9E8}
+.main-canvas-title h3{font-size:1.5em;margin:0px;text-shadow:0 2px 2px #CCCCCC;color:#7F7F7F}
+.form-container-centered{margin:0px 315px}
+.white-frame, .form-canvas{background-color:#FFFFFF;padding:10px;margin:0px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;text-align:left}
+.form_row, .form_row_label, .form_row_field{display:block}
+.main-canvas-content-footer, .form-container-footer{text-align:left;margin-top:15px;background:url(/images/dark_grey_separator.png) repeat-x}
+.main-canvas-content-footer p, .form-container-footer p{padding-top:5px}
+.main-canvas a, .main-canvas-content-footer a,.form-container-footer a{color:#4674B7;text-decoration:underline;font-size:1.1em}
+.main-canvas a:hover, .main-canvas-content-footer a:hover, .form-container-footer a:hover{color:#18B9E8;text-decoration:underline;cursor:pointer}
+form input, form select{width:224px;border:none;padding:4px;background:#E6E6E7;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
+div.form-submit-container {margin-top:10px;text-align:right}
+a.lt-button, #sign-up-container input.submit, form#sign-up-form input.submit, input.submit {
+    width: auto;
+    margin-top: 10px; 
+    padding: 5px;
+    color: #FFFFFF; 
+    text-transform: uppercase;
+    background-color: #18B9E8;
+    border: 2px #FFFFFF solid;
+    -webkit-transition: -webkit-box-shadow 0.3s linear; 
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+    box-shadow: 0px 0px 4px #aaa;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+    border-radius: 10px;
+}
+a.lt-button:hover, #sign-up-container input.submit:hover, form#sign-up-form input.submit:hover, input.submit:hover {
+    -webkit-box-shadow: 0px 0px 10px #555;
+    -moz-box-shadow: 0px 0px 10px #aaa; 
+    box-shadow: 0px 0px 10px #555;		
+    cursor:  pointer; 
+}
+.flash_notice{
+    font-family: HelveticaRegular;
+    text-align: center;
+    width: 852px;
+    margin: 10px 20px;
+    padding: 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px; 
+    border-radius: 20px;
+    color: #FFFFFF;
+    cursor: pointer
+}
+.flash_success{background-color: #9DC44D;}
+.flash_error{background-color:#FF3232}
+p.flash_message{font-weight:bold;font-size:1.8em;margin:0px;text-shadow:0 2px 2px #333333;}
+
+/* SELF SERVICE */
+
+/* FIN SELF SERVICE */
+
+/*input.submit {
+    margin-top: 10px;
+    width: auto;
+    padding: 5px;
+    color: #FFFFFF; 
+    text-transform: uppercase;
+    background-color: #18B9E8;
+    border: 2px #18B9E8 solid;
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+    box-shadow: 0px 0px 4px #aaa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+}
+input.submit:hover { 		
+    -webkit-box-shadow: 0px 0px 10px #555;
+    -moz-box-shadow: 0px 0px 10px #aaa; 
+    box-shadow: 0px 0px 10px #555;		
+    cursor:  pointer; 
+}*/

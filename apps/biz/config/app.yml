@@ -1,0 +1,44 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+#dev:
+#  elbuho:
+#    user: test_client
+#    api_key: test_client
+#    url: "http://50.16.82.211/elbuho/index.php/elbuho_api_v2"
+    
+all:
+  sendgrid:
+    username: lealtaguser
+    password: 3lP3rr03lP3rr0
+    email:  'no-reply@lealtag.com'
+    name:   'LealTag - Mereces ser premiado'
+      
+  ep:
+    coupons_per_page: 20
+    feedbacks_per_page: 20
+    main_domain: 'https://lealtag.com'
+    domain: 'lealtag.com'
+
+  recaptcha:
+    private_key: 6Levot0SAAAAAD-9enzWaQlN42XW1Wxevy1mZuc6
+    public_key: 6Levot0SAAAAAEjWVMjQQcJzEQWil2cCW-AqmbNM
+  
+  sf_guard_plugin:
+     remember_key_expiration_age: 2592000   # 30 days in seconds
+     remember_cookie_name:        epBizRememberMe
+     signin_form:                 epSigninBizForm
+       
+  mailing_config:
+    from:
+      email: "no-reply@lealtag.com"
+      fullname: "LealTag - Mereces ser premiado"
+      
+  sfApplyPlugin:
+    apply_subject: "Bienvenido a LealTag - Activa tu cuenta"
+    reset_subject: "Solicitud de modificación de tu contraseña en LealTag."
+    
+    # Account validation email configurations
+    from:
+      email: "no-reply@lealtag.com"
+      fullname: "LealTag - Mereces ser premiado"

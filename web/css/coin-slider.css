@@ -1,0 +1,56 @@
+
+.slider-container {width:923px;margin:0px auto 0px auto;position:relative}
+#coin-slider{overflow:hidden;width:923px;height:324px;margin:0 auto}
+.coin-slider{position:relative;margin:0 auto;width:923px;height:324px}
+#coin-slider img {display:none}
+.coin-slider a{text-decoration:none;outline:none;border:none}
+.cs-buttons{font-size:0px;position:absolute;line-height:0;bottom:304px;left:0;right:15px;text-align:right}
+.coin-slider-text{font-family: Swis721ThBTThin;font-weight: bold;width: 870px;position:absolute;top: 15px;left: 25px;text-align:left;color: #FFFFFF}
+.coin-slider-text-title{width: 345px; font-size: 2.4em;text-shadow: 3px 3px 3px #000; text-align: center; margin-bottom: 10px}
+.video-canvas{
+    overflow: hidden;
+    width: 340px;
+    padding: 2px;
+    background-color: #F0F0F0;
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+    -webkit-box-shadow: 0px 0px 10px #555;
+    -moz-box-shadow: 0px 0px 10px #555; 
+    box-shadow: 0px 0px 10px #555;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px; 
+    border-radius: 2px
+}
+.coin-slider-text-content{width: 320px;font-size: 1.5em;text-shadow: 0 1px 1px #555}
+.coin-slider-text-content a {
+    width: 30px;
+    padding: 3px 6px;
+    font-family: Arial;
+    font-size: 0.6em;
+    font-weight: normal;
+    color: #18B9E8; 
+    text-shadow: none;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+    -webkit-box-shadow: 0px 0px 5px #aaa;
+    -moz-box-shadow: 0px 0px 5px #aaa; 
+    box-shadow: 0px 0px 5px #aaa;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    border-radius: 15px
+}
+.coin-slider-text-content a:hover { 		
+    -webkit-box-shadow: 0px 0px 5px #ccc;
+    -moz-box-shadow: 0px 0px 5px #ccc;
+    box-shadow: 0px 0px 5px #ccc;	
+    cursor:  pointer
+}
+
+.cs-buttons a{
+    margin:0 2px;
+    height:16px;
+    width:16px;
+    background: url(/images/slider-pagination.png) no-repeat right 0;
+    display:inline-block;
+}
+.cs-buttons a:hover,.cs-buttons a.cs-active{background: url(/images/slider-pagination.png) no-repeat 0 0;}

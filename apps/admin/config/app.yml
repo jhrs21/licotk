@@ -1,0 +1,22 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  ep:
+    coupons_per_page: 20
+    feedbacks_per_page: 20
+    main_domain: 'https://lealtag.com'
+    domain: 'lealtag.com'
+    
+  sendgrid:
+    username: lealtaguser
+    password: 3lP3rr03lP3rr0
+    email:  'no-reply@lealtag.com'
+    name:   'LealTag - Mereces ser premiado'
+  
+  emails:
+    registration_remainder_subject: '¡Aprovecha y canjea tus premios LealTag!'
+    registration_remainder_teaser:  'Completa tu registro para que puedas disfrutar de tus premios'
+    prize_remainder_subject:        '¡No olvides canjear tu premio LealTag en %affiliate%!'
+    prize_remainder_teaser:         'Te mereces ese premio por ser un cliente fiel'

@@ -1,0 +1,4 @@
+Thu, 31 Oct 2013 17:35:31 -0430 [B421 26060][Tera-WURFL] WARNING: Loading patch: custom_web_patch.xml
+Thu, 31 Oct 2013 17:35:31 -0430 [B421 26060][Tera-WURFL] WARNING: Loading patch: web_browsers_patch.xml
+Thu, 31 Oct 2013 17:35:59 -0430 [B421 26060][rebuildCacheTable] WARNING: Rebuilt cache table, existing table was empty - this is very unusual.
+Thu, 31 Oct 2013 17:35:59 -0430 [B421 26060][Tera-WURFL] WARNING: Finished loading WURFL 2.3.5, db.scientiamobile.com - 2013-10-09 14:25:49 (Wed Oct 09 14:28:36 -0400 2013) in 31.87 seconds

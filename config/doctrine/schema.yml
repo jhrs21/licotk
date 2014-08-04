@@ -1,0 +1,667 @@
+Country:
+  actAs: [Timestampable]
+  columns:
+    name: { type: string(255), unique: true, notnull: true }
+
+State:
+  actAs:
+    Timestampable: ~
+    Sluggable: { fields: [name], name: slug, type: string, length: 255 }
+  columns:
+    name: { type: string(255), notnull: true }
+    country_id: { type: integer, notnull: true }
+  relations:
+    Country: { local: country_id, foreign: id, foreignAlias: States, onDelete: cascade }
+    
+Municipality:
+  actAs:
+    Timestampable: ~
+    Sluggable: { fields: [name], name: slug, type: string, length: 255 }
+  columns:
+    name: { type: string(255), notnull: true }
+    state_id: { type: integer, notnull: true }
+  relations:
+    State: { local: state_id, foreign: id, foreignAlias: Municipalities, onDelete: cascade }
+    Cities: { refClass: MunicipalityCity, local: municipality_id, foreign: city_id, foreignAlias: Municipalities }
+      
+MunicipalityCity:
+  actAs:
+    Timestampable: ~
+  columns:
+    municipality_id: { type: integer, notnull: true }
+    city_id: { type: integer, notnull: true }
+  relations:
+    Municipality: { local: municipality_id, foreign: id, onDelete: cascade }
+    City: { local: city_id, foreign: id, onDelete: cascade }
+    
+City:
+  actAs:
+    Timestampable: ~
+    Sluggable: { fields: [name], name: slug, type: string, length: 255 }
+  columns:
+    name: { type: string(255), notnull: true }
+    state_id: { type: integer, notnull: true }
+  relations:
+    State: { local: state_id, foreign: id, foreignAlias: Cities, onDelete: cascade }
+    
+Category:
+  actAs:
+    Timestampable: ~
+    Sluggable: { fields: [name], name: slug, type: string, length: 255, canUpdate: true }
+  columns:
+    alpha_id: { type: string(20), notnull: true, unique: true }
+    category_type: { type: enum, values: [place, brand], default: place, notnull: true }
+    name: { type: string(255), notnull: true, unique: true }
+    description: { type: string(255), notnull: false }
+    parent_id: { type: integer, notnull: false }
+  relations:
+    ParentCategory: { class: Category, local: parent_id, foreign: id, foreignAlias: SubCategories, onDelete: cascade }
+
+Affiliate:
+  actAs:
+    Timestampable: ~
+    Sluggable: { fields: [name], name: slug, type: string, length: 255, canUpdate: true }
+  columns:
+    alpha_id: { type: string(20), notnull: true, unique: true }
+    hash: { type: string(128), notnull: true, unique: true }
+    name: { type: string(255), notnull: true, unique: true }
+    description: { type: string(500), notnull: true }
+    logo: { type: string(255), notnull: false }
+    thumb: { type: string(255), notnull: false }
+    active: { type: boolean, notnull: true, default: true }
+    category_id: { type: integer, notnull: false }
+  relations:
+    Category: { local: category_id, foreign: id, foreignAlias: Affiliates, onDelete: cascade }
+    Categories: { refClass: AffiliateCategory, class: Category, local: affiliate_id, foreign: category_id, foreignAlias: Assets }
+    
+AffiliateCategory:
+  actAs:
+    Timestampable: ~
+  columns:
+    affiliate_id: { type: integer, notnull: true }
+    category_id: { type: integer, notnull: true }
+  relations:
+    Affiliate: { local: affiliate_id, foreign: id, onDelete: cascade }
+    Category: { local: category_id, foreign: id, onDelete: cascade }
+
+Promo:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id: { type: string(20), notnull: true, unique: true }
+    hash: { type: string(128), notnull: true, unique: true }
+    name: { type: string(255), notnull: true }
+    description: { type: string(1000), notnull: true }
+    max_uses: { type: int, notnull: true, default: 0 }
+    max_daily_tags: { type: int, notnull: true, default: 0 }
+    thumb: { type: string(255), notnull: false }
+    photo: { type: string(255), notnull: false }
+    indepabis: { type: string(3000), notnull: false }
+    status: { type: enum, values: [pending, approved, active, expired, finished, indepabis], default: active, notnull: true }
+    redeem_automated: { type: boolean, notnull: true, default: false }
+    starts_at: { type: timestamp, notnull: true }
+    ends_at: { type: timestamp, notnull: true }
+    begins_at: { type: timestamp, notnull: true }
+    expires_at: { type: timestamp, notnull: true }
+    affiliate_id: { type: integer, notnull: true }
+  relations:
+    Affiliate: { local: affiliate_id, foreign: id, foreignAlias: Promos, onDelete: cascade }
+
+PromoTerm:
+  actAs:
+    Timestampable: ~
+  columns:
+    term: { type: string(2000), notnull: true }
+    promo_id: { type: integer, notnull: true }
+  relations:
+    Promo: { local: promo_id, foreign: id, foreignAlias: Terms, onDelete: cascade  }
+
+PromoPrize:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id: { type: string(20), notnull: true, unique: true }
+    hash: { type: string(128), notnull: true, unique: true }
+    threshold: { type: integer, notnull: true }
+    prize: { type: string(255), notnull: true }
+    thumb: { type: string(255), notnull: false }
+    stock: { type: integer, notnull: true }
+    delivered: { type: integer, notnull: true, default: 0 }
+    promo_id: { type: integer, notnull: true }
+  relations:
+    Promo: { local: promo_id, foreign: id, foreignAlias: Prizes, onDelete: cascade }
+    
+PromoCode:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id: { type: string(25), notnull: true, unique: true }
+    hash: { type: string(128), notnull: true, unique: true }
+    type: { type: enum, values: [single_use, many_uses, validation_required], notnull: true, default: many_uses }
+    status: { type: enum, values: [active, used, disabled, expired, inactive, unassigned], notnull: true }
+    used_at: { type: timestamp, notnull: false }
+    serial: { type: int(20), notnull: false }
+    digital:  { type: boolean, notnull: true, default: false}
+    promo_id: { type: integer, notnull: false }
+    user_id: { type: integer, notnull: false }
+    asset_id: { type: integer, notnull: false }
+  relations:
+    Promo: { local: promo_id, foreign: id, foreignAlias: PromoCodes, onDelete: cascade  }
+    User:  { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: PromoCodes, onDelete: cascade  }
+    Asset: { local: asset_id, foreign: id, foreignAlias: PromoCodes, onDelete: cascade  }
+    
+PromoRedeemerConfig:
+  actAs:
+    Timestampable: ~
+  columns:
+    url:      { type: string(255), notnull: true }
+    api_key:      { type: string(255), notnull: false }
+    api_token:    { type: string(255), notnull: false }
+    promo_id: { type: integer, notnull: false }
+  relations:
+    Promo: { local: promo_id, foreign: id, foreignAlias: RedeemerConfig, type: one, foreignType: one, onDelete: cascade  }
+
+ValidationCode:
+  actAs:
+    Timestampable: ~
+  columns:
+    serial: { type: int(20), notnull: false }
+    code: { type: string(40), unique: true, notnull: true }
+    used: { type: boolean, notnull: true, default: false }
+    used_at: { type: timestamp, notnull: false }
+    user_id: { type: integer, notnull: false }
+    active: { type: boolean, notnull: true, default: false }
+    promo_code_id: { type: integer, notnull: true }
+  relations:
+    User: { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: ValidationCodes, onDelete: cascade  }
+    PromoCode: { local: promo_code_id, foreign: id, foreignAlias: ValidationCodes, onDelete: cascade  }
+  indexes:
+    unique_serial_for_promocode: { type: unique, fields: [promo_code_id, serial] }
+
+Card:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id:     { type: string(20), notnull: true, unique: true }
+    hash:         { type: string(128), notnull: true, unique: true }
+    status:       { type: enum, values: [active, complete, expired, canceled, exchanged, redeemed], notnull: true }
+    completed_at: { type: timestamp, notnull: false }
+#    active_tags:  { type: integer, notnull: true, default: 0 }
+#    total_tags:   { type: integer, notnull: true, default: 0 }
+    promo_id:     { type: integer, notnull: true }
+    user_id:      { type: integer, notnull: true }
+  relations:
+    Promo: { local: promo_id, foreign: id, foreignAlias: Cards, onDelete: cascade }
+    User:  { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: Cards, onDelete: cascade }
+
+Ticket:
+  actAs:
+    Timestampable: ~
+  columns:
+    used: { type: boolean, notnull: true, default: false }
+    used_at: { type: timestamp, notnull: false }
+    cache: { type: boolean, notnull: true, default: false }
+    latitude: { type: decimal(10), scale: 6, notnull: false }
+    longitude: { type: decimal(10), scale: 6, notnull: false }
+    validation_key: { type: string(255), notnull: false }
+    via: { type: enum, values: [app, app_bb, app_ios, app_android, web, web_email, web_card, tablet, tablet_email, tablet_card, td, other], notnull: true, default: other }
+    promo_id: { type: integer, notnull: true }
+    user_id: { type: integer, notnull: true }
+    card_id: { type: integer, notnull: true }
+    promo_code_id: { type: integer, notnull: true }
+    validation_code_id: { type: integer, notnull: false }
+    asset_id: { type: integer, notnull: false }
+  relations:
+    Promo: { local: promo_id, foreign: id, foreignAlias: Tickets, onDelete: cascade }
+    User: { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: Tickets, onDelete: cascade }
+    Card: { local: card_id, foreign: id, foreignAlias: Tickets, onDelete: cascade }
+    PromoCode: { local: promo_code_id, foreign: id, foreignAlias: Tickets, onDelete: cascade }
+    ValidationCode: { local: validation_code_id, foreign: id, type: one, foreignType: one, foreignAlias: Ticket, onDelete: cascade }
+    Asset: { local: asset_id, foreign: id, foreignAlias: Tickets, onDelete: cascade }
+
+Coupon:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id: { type: string(20), notnull: true, unique: true }
+    hash: { type: string(128), notnull: true, unique: true }
+    status: { type: enum, values: [active, used, expired], notnull: true }
+    serial: { type: string(255), unique: true, notnull: true }
+    password: { type: string(255), notnull: true }
+    used_at: { type: timestamp, notnull: false }
+    expires_at: { type: timestamp, notnull: false }
+    promo_id: { type: integer, notnull: true }
+    user_id: { type: integer, notnull: true }
+    card_id: { type: integer, notnull: true }
+    prize_id: { type: integer, notnull: true }
+    asset_id: { type: integer, notnull: false }
+  relations:
+    Promo: { local: promo_id, foreign: id, foreignAlias: Coupons, onDelete: cascade }
+    User: { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: Coupons, onDelete: cascade }
+    Card: { local: card_id, foreign: id, type: one, foreignType: one, foreignAlias: Coupon, onDelete: cascade }
+    Prize: { class: PromoPrize, local: prize_id, foreign: id, foreignAlias: Coupons, onDelete: cascade }
+    RedeemedAt: { class: Asset, local: asset_id, foreign: id, foreignAlias: RedeemedCoupons, onDelete: cascade }
+  indexes:
+    unique_serial_and_password: { fields: [serial, password], type: unique }
+
+Message:
+  actAs:
+    Timestampable: ~
+  columns:
+    subject: { type: string(255), notnull: true }
+    text: { type: clob, notnull: true }
+    message_type: { type: enum, values: [message, email, sms], notnull: true }
+    schedule: { type: timestamp, notnull: true }
+    affiliate_id: { type: integer, notnull: true }
+    promo_id: { type: integer, notnull: false }
+  relations:
+    Affiliate: { local: affiliate_id, foreign: id, foreignAlias: Messages, onDelete: cascade }
+    Promo: { local: promo_id, foreign: id, foreignAlias: Messages, onDelete: cascade }
+
+Notification:
+  actAs:
+    Timestampable: ~
+  columns:
+    viewed: { type: boolean, notnull: true, default: false }
+    viewed_at: { type: timestamp, notnull: false }
+    deleted: { type: boolean, notnull: true, default: false }
+    highlighted: { type: boolean, notnull: true, default: false }
+    user_id: { type: integer, notnull: true }
+    message_id: { type: integer, notnull: true }
+  relations:
+    User: { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: Notifications, onDelete: cascade }
+    Message: { local: message_id, foreign: id, onDelete: cascade }
+    
+Asset:
+  actAs:
+    Timestampable: ~
+    Sluggable: { fields: [name], name: slug, type: string, length: 255, canUpdate: true }
+  columns:
+    alpha_id: { type: string(20), notnull: true, unique: true }
+    hash: { type: string(128), notnull: true, unique: true }
+    name: { type: string(255), notnull: true }
+    description: { type: string(255), notnull: false }
+    big_logo: { type: string(255), notnull: false }
+    logo: { type: string(255), notnull: false }
+    thumb: { type: string(255), notnull: false }
+    asset_type: { type: enum, values: [place, brand], notnull: true }
+    affiliate_id: { type: integer, notnull: true }
+    category_id: { type: integer, notnull: false }
+  relations:
+    Affiliate: { local: affiliate_id, foreign: id, foreignAlias: Assets, onDelete: cascade }
+    Promos: { refClass: AssetPromo, class: Promo, local: asset_id, foreign: promo_id, foreignAlias: Assets }
+    Category: { local: category_id, foreign: id, foreignAlias: Assets, onDelete: cascade }
+    Categories: { refClass: AssetCategory, class: Category, local: asset_id, foreign: category_id, foreignAlias: Assets }
+    Currencies: { refClass: CurrencyAsset, class: Currency, local: asset_id, foreign: currency_id, foreignAlias: Assets }
+      
+AssetPromo:
+  actAs:
+    Timestampable: ~
+  columns:
+    asset_id: { type: integer, notnull: true }
+    promo_id: { type: integer, notnull: true }
+  relations:
+    Asset: { local: asset_id, foreign: id, onDelete: cascade }
+    Promo: { local: promo_id, foreign: id, onDelete: cascade }
+    
+AssetCategory:
+  actAs:
+    Timestampable: ~
+  columns:
+    asset_id: { type: integer, notnull: true }
+    category_id: { type: integer, notnull: true }
+  relations:
+    Asset: { local: asset_id, foreign: id, onDelete: cascade }
+    Category: { local: category_id, foreign: id, onDelete: cascade }    
+    
+Location:
+  actAs:
+    Timestampable: ~
+  columns:
+    name: { type: string(255), notnull: true }
+    address: { type: string(255), notnull: true }
+    latitude: { type: decimal(10), scale: 6, notnull: true }
+    longitude: { type: decimal(10), scale: 6, notnull: true }
+    affiliate_id: { type: integer, notnull: false }
+    asset_id: { type: integer, notnull: false }
+    country_id: { type: integer, notnull: true }
+    state_id: { type: integer, notnull: true }
+    municipality_id: { type: integer, notnull: true }
+    city_id: { type: integer, notnull: false }
+  relations:
+    Affiliate: { local: affiliate_id, foreign: id, foreignType: one, foreignAlias: Location, onDelete: cascade  }
+    Asset: { local: asset_id, foreign: id, foreignAlias: Location, onDelete: cascade  }
+    Country: { local: country_id, foreign: id, onDelete: cascade  }
+    State: { local: state_id, foreign: id, onDelete: cascade  }
+    Municipality: { local: municipality_id, foreign: id, onDelete: cascade  }
+    City: { local: city_id, foreign: id, onDelete: cascade  }
+    
+Subscription:
+  actAs:
+    Timestampable: ~
+  columns:
+    status: { type: enum, values: [active, inactive, suspended], notnull: true}
+    affiliate_id: { type: integer, notnull: true }
+    asset_id: {type: integer}
+    user_id: { type: integer, notnull: true }
+    last_interaction: { type: timestamp, notnull: true }
+  relations:
+    Affiliate: { local: affiliate_id, foreign: id, foreignAlias: Subcriptions, onDelete: cascade  }
+    User: { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: Subscriptions, onDelete: cascade  }
+    Asset: { local: asset_id, foreign: id, foreignAlias: Subcriptions, onDelete: cascade }
+
+CurrencyAsset:
+  actAs:
+    Timestampable: ~
+  columns:
+    currency_id: { type: integer, notnull: true }
+    asset_id: { type: integer, notnull: true }
+    starts_at: { type: timestamp, notnull: true }
+    ends_at: { type: timestamp, notnull: true }
+  relations:
+    Asset: { local: asset_id, foreign: id, onDelete: cascade }
+    Currency: { local: currency_id, foreign: id, onDelete: cascade }
+
+Currency:
+  actAs:
+    Timestampable: ~
+  columns:
+    name: { type: string(100), notnull: true, unique: true }
+    symbol: { type: string(10), notnull: true, unique: true }
+    alpha_id: { type: string(128), notnull: true, unique: true }
+    is_super: { type: boolean, notnull: true, default: false }
+#    currency_asset_id: { type: integer, notnull: false }
+#  relations:
+#    Currency: { refClass: CurrencyAsset, local: currency_id, foreign: asset_id, foreignAlias: Currencies, onDelete: cascade }
+    
+Pocket:
+  actAs:
+    Timestampable: ~
+  columns:
+    balance: { type: integer, notnull: true, default: 0 }
+    is_super: { type: boolean, notnull: true, default: false }
+    currency_id: { type: integer, notnull: true }
+    user_id: { type: integer, notnull: true }
+    total_tags: { type: int, notnull: true, default: 0 }
+    currency_asset_id: { type: integer, notnull: false }
+  relations:
+    Currency: { local: currency_id, foreign: id, foreignAlias: Pockets, onDelete: cascade }
+    User: { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: Pockets, onDelete: cascade }
+    CurrencyAsset: { local: currency_asset_id, foreign: id, foreignType: one, foreignAlias: Currency, onDelete: cascade }
+
+Flow:
+  actAs:
+    Timestampable: ~
+  columns:
+    description: { type: integer, notnull: true }
+    direction: { type: enum, values: [income, expense], notnull: true}
+    amount: { type: integer, notnull: true }
+    balance: { type: integer, notnull: true }
+    action_id: { type: integer, notnull: false }
+    user_id: { type: integer, notnull: true }
+    pocket_id: { type: integer, notnull: true }
+    currency_id: { type: integer, notnull: true }
+    points_product_id: { type: integer, notnull: false }
+  relations:
+    User: { class: sfGuardUser, local: user_id, foreign: id, onDelete: cascade }
+    Currency: { local: currency_id, foreign: id, onDelete: cascade }
+    Pocket: { local: pocket_id, foreign: id, onDelete: cascade }
+    Action: { class: ValuePerAction, local: action_id, foreign: id, onDelete: cascade  }
+    PointsProduct: { local: points_product_id, foreign: id, onDelete: cascade }
+
+ValuePerAction:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id: { type: string(20), notnull: true, unique: true }
+    action: { type: string(100), notnull: true}
+    value: { type: integer, notnull: true }
+    is_super: { type: boolean, notnull: true, default: false }
+    currency_asset_id: { type: integer, notnull: false }
+    description: { type: string(255), notnull: false }
+  relations:
+    CurrencyAsset: { local: currency_asset_id, foreign: id, onDelete: cascade }
+    
+PointsProduct:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id: { type: string(20), notnull: true, unique: true }
+    name: { type: string(100), notnull: true }
+    value: { type: integer, notnull: true }
+    description: { type: string(255), notnull: false }
+    asset_id: { type: integer, notnull: false }
+  relations:
+    Asset:  { local: asset_id, foreign: id, foreignAlias: Feedbacks, onDelete: cascade  }
+
+## LA SIGUIENTE TABLA ES UTITLIZA POR EL PLUGIN: sfDoctrineApplyPlugin
+sfGuardUserProfile:
+  tableName: sf_guard_user_profile
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    user_id: { type: integer, notnull: true }
+    email: { type: string(80) }
+    fullname: { type: string(255) }
+    validate: { type: string(200) }
+    ## INICIO MODIFICACIONES
+    country_id: { type: integer, notnull: false }
+    state_id: { type: integer, notnull: false }
+    municipality_id: { type: integer, notnull: false }
+    city_id: { type: integer, notnull: false }
+    ## FIN MODIFICACIONES
+  relations:
+    User: { class: sfGuardUser, foreign: id, local: user_id, type: one, foreignType: one, foreignAlias: Profile, onDelete: cascade }
+    ## INICIO MODIFICACIONES
+    Country: { local: country_id, foreign: id, foreignAlias: Users, onDelete: cascade }
+    State: { local: state_id, foreign: id, foreignAlias: Users, onDelete: cascade }
+    Municipality: { local: municipality_id, foreign: id, foreignAlias: Users, onDelete: cascade }
+    City: { local: city_id, foreign: id, foreignAlias: Users, onDelete: cascade }
+    ## FIN MODIFICACIONES
+
+UserProfile:
+  inheritance: { type: concrete, extends: sfGuardUserProfile }
+  columns:
+    user_id: { type: integer, notnull: true }
+    id_number: { type: string(20), notnull: true }
+    phone: { type: string(20), notnull: true }
+    gender: { type: enum, values: [female,male], notnull: true }
+    birthdate: { type: date, notnull: true }
+  relations:
+    User: { class: sfGuardUser, foreign: id, local: user_id, type: one, foreignType: one, foreignAlias: UserProfile, onDelete: cascade  }
+
+UserAffiliateProfile:
+  inheritance: { type: concrete, extends: sfGuardUserProfile }
+  columns:
+    user_id: { type: integer, notnull: true }
+    position: { type: string(120), notnull: true }
+    id_number: { type: string(20), notnull: true }
+    phone: { type: string(20), notnull: true }
+    phone2: { type: string(20), notnull: false }
+  relations:
+    User: { class: sfGuardUser, foreign: id, local: user_id, type: one, foreignType: one, foreignAlias: AffiliateProfile, onDelete: cascade  }
+    
+Feedback:
+  actAs:
+    Timestampable: ~
+  columns:
+    action:       { type: enum, values: [tag, redeem], default: tag, notnull: true }
+    message:      { type: string(255), notnull: true }
+    user_id:      { type: integer, notnull: true }
+    valoration:   { type: integer, values: [0, 1, 2], notnull: true }
+    affiliate_id: { type: integer, notnull: true  }
+    promo_id:     { type: integer, notnull: true }
+    asset_id:     { type: integer, notnull: false }
+  relations:
+    Promo:      { local: promo_id, foreign: id, foreignAlias: Feedbacks, onDelete: cascade }
+    User:       { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: Feedbacks, onDelete: cascade }
+    Affiliate:  { local: affiliate_id, foreign: id, onDelete: cascade }
+    Asset:      { local: asset_id, foreign: id, foreignAlias: Feedbacks, onDelete: cascade  }
+    
+ApiUser:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:       { type: string(255), notnull: true, unique: true }
+    algorithm:  { type: string(128), default: sha1, notnull: true }
+    salt:       { type: string(128), notnull: true }
+    apikey:     { type: string(128), notnull: true, unique: true }
+
+MembershipCard:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id:   { type: string(20), notnull: true, unique: true }
+    user_id:    { type: integer, notnull: false }
+    status:     { type: enum, values: [active, inactive, unassigned], default: unassigned, notnull: true }
+    validate:   { type: string(200), notnull: false }
+    is_virtual: { type: boolean, notnull: true, default: false }
+    asset_id:   { type: integer, notnull: false }
+  relations:
+    User:   { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: MembershipCards, onDelete: cascade }
+    Asset:  { class: Asset, local: asset_id, foreign: id, foreignAlias: MembershipCards, onDelete: cascade }
+    
+MailMessage:
+  actAs: { Timestampable: ~ }
+  columns:
+    teaser:       { type: string(255), notnull: true }
+    subject:      { type: string(255), notnull: true }
+    body:         { type: string(25000), notnull: true }
+    query_params: { type: string(2000), notnull: false }
+    max_reach:    { type: int, notnull: true, default: 0 }
+    
+# Configuracion de Jose
+#
+#MailMessage:
+#  actAs: { Timestampable: ~ }
+#  columns:
+#    message:        { type: blob, notnull: true }
+#    subject:        { type: string(255), notnull: false }
+#    body:           { type: string(2000), notnull: false }
+#    query:          { type: string(400), notnull: false }
+#    quantity:       { type: integer, notnull: true }
+#    affiliate_id:   { type: integer, notnull: false }
+#    promo_id:       { type: integer, notnull: false }
+#    asset_id:       { type: integer, notnull: false }
+#  relations:
+#    Promo:        { local: promo_id, foreign: id, onDelete: cascade }
+#    Affiliate:    { local: affiliate_id, foreign: id, onDelete: cascade }
+#    Asset:        { local: asset_id, foreign: id, onDelete: cascade }
+
+## Tabla para registrar las llamadas al api de td
+TdApiLog:
+  actAs:
+    Timestampable: ~
+  columns:
+    user_email: { type: string(200), notnull: true }
+    user_hash:  { type: string(200), notnull: true }
+    promo_id:   { type: integer, notnull: true }
+    prize_id:   { type: integer, notnull: true }
+    success:    { type: boolean, notnull: true }
+    error_code: { type: string(20), notnull: flase }
+    message:    { type: string(255), notnull: true }
+    
+Survey:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id:    { type: string(255), notnull: true, unique: true }
+    name:        { type: string(255), notnull: true }
+    description: { type: string(255), notnull: false }
+    all_promos:  { type: boolean, notnull: true, default: false }
+    is_master:   { type: boolean, notnull: true, default: false }
+    is_active:   { type: boolean, notnull: true, default: true }
+  relations:
+    Promos:  { refClass: SurveyPromo, class: Promo, local: survey_id, foreign: promo_id, foreignAlias: Surveys }
+    
+SurveyPromo:    
+  actAs:
+    Timestampable: ~
+  columns:
+    survey_id:  { type: integer, notnull: true }
+    promo_id:   { type: integer, notnull: true }
+  relations:
+    Survey:  { local: survey_id, foreign: id, onDelete: cascade }
+    Promo:   { local: promo_id, foreign: id, onDelete: cascade }
+    
+SurveyItem:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id:     { type: string(255), notnull: true, unique: true }
+    label:        { type: string(255), notnull: true }
+    help:         { type: string(255), notnull: false }
+    item_type:    { type: enum, values: [text,simple_selection,multiple_selection,drop_list,date], notnull: true, default: text }
+    is_required:  { type: boolean, notnull: true, default: true }
+    position:     { type: integer, notnull: true, default: 1 }
+    is_active:    { type: boolean, notnull: true, default: true }
+    survey_id:    { type: integer, notnull: true }
+  relations:
+    Survey: { local: survey_id, foreign: id, foreignAlias: Items, onDelete: cascade }
+    
+SurveyItemOption:
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id:        { type: string(255), notnull: true, unique: true }
+    label:           { type: string(255), notnull: true }
+    image:           { type: string(255), notnull: false }
+    image_only:      { type: boolean, notnull: true, default: false }
+    position:        { type: integer, notnull: true, default: 1 }
+    survey_item_id:  { type: integer, notnull: true }
+  relations:
+    Item: { class: SurveyItem, local: survey_item_id, foreign: id, foreignAlias: Options, onDelete: cascade }    
+    
+SurveyApplication:
+  actAs:
+    Timestampable: ~
+  columns:
+    action:     { type: enum, values: [tag,redeem,application], notnull: true, default: tag }
+    via:        { type: enum, values: [web,web_mobile,app], notnull: true, default: web }
+    user_id:    { type: integer, notnull: false }
+    survey_id:  { type: integer, notnull: true }
+    asset_id:   { type: integer, notnull: false }
+  relations:
+    User:    { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: SurveysTaken, onDelete: cascade }
+    Survey:  { local: survey_id, foreign: id, foreignAlias: Applications, onDelete: cascade }
+    Asset:   { local: asset_id, foreign: id, foreignAlias: SurveysTaken, onDelete: cascade }
+    
+SurveyItemAnswer:
+  actAs:
+    Timestampable: ~
+  columns:
+    answer:                 { type: string(1000), notnull: true }
+    user_id:                { type: integer, notnull: true }
+    survey_id:              { type: integer, notnull: true }
+    survey_application_id:  { type: integer, notnull: true }
+    survey_item_id:         { type: integer, notnull: true }
+  relations:
+    User:         { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: Answers, onDelete: cascade }
+    Survey:       { local: survey_id, foreign: id, foreignAlias: Answers, onDelete: cascade }
+    Application:  { class: SurveyApplication, local: survey_application_id, foreign: id, foreignAlias: Answers, onDelete: cascade, orderBy: survey_item_id }
+    Item:         { class: SurveyItem, local: survey_item_id, foreign: id, foreignAlias: Answers, onDelete: cascade }
+
+ParticipationRequest:
+  actAs:
+    Timestampable: ~
+  columns:
+    hash:          { type: string(50), unique: true, notnull: true }
+    action:        { type: enum, values: [tag,redeem,application], notnull: true, default: tag }
+    with_feedback: { type: boolean, notnull: true, default: false }
+    used:          { type: boolean, notnull: true, default: false }
+    used_at:       { type: timestamp, notnull: false }
+    user_id:       { type: integer, notnull: true }
+    promo_id:      { type: integer, notnull: true }
+    asset_id:      { type: integer, notnull: true }
+  relations:
+    User:    { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: ParticipationRequests, onDelete: cascade }
+    Surveys: { refClass: SurveyParticipationRequest, class: Survey, local: participation_request_id, foreign: survey_id, foreignAlias: ParticipationRequests }
+    Promo:   { local: promo_id, foreign: id, onDelete: cascade }
+    Asset:   { local: asset_id, foreign: id, onDelete: cascade }
+    
+SurveyParticipationRequest:
+  columns:
+    survey_id:                { type: integer, notnull: true }
+    participation_request_id: { type: integer, notnull: true }
+  relations:
+    Survey:               { local: survey_id, foreign: id, onDelete: cascade }
+    ParticipationRequest: { local: participation_request_id, foreign: id, onDelete: cascade }

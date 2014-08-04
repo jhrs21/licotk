@@ -1,0 +1,235 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+places:
+  url:     api/:apikey/:name/:user_id/places.:sf_format
+  param:   { module: place, action: places }
+  requirements: { sf_format: json, sf_method: get }
+  
+brands:
+  url:     api/:apikey/:name/:user_id/brands.:sf_format
+  param:   { module: brand, action: brands }
+  requirements: { sf_format: json, sf_method: get }
+  
+api_checkin_tag:
+  url:     api/:apikey/:name/:asset/:promocode/:vcode/tag.:sf_format
+  param:   { module: api2, action: checkInTag }
+  requirements: { sf_format: json }
+  
+api_checkin_redeem:
+  url:     api/:apikey/:name/:asset/redeem.:sf_format
+  param:   { module: api2, action: checkInRedeem }
+  requirements: { sf_format: json }
+  
+api_checkin_stuff:
+  url:     api/:apikey/:name/:asset/stuff.:sf_format
+  param:   { module: api2, action: checkInStuff }
+  requirements: { sf_format: json }
+  
+api_get_validation_codes:
+  url:     api/:apikey/:name/:asset/:promo/getcodes.:sf_format
+  param:   { module: api, action: getCodes }
+  requirements: { sf_format: json }
+  
+api_get_asset:
+  url:     api/:apikey/:name/:asset/getasset.:sf_format
+  param:   { module: api2, action: getAsset }
+  requirements: { sf_format: json }
+  
+api_get_validation_codes:
+  url:     api/:apikey/:name/:asset/:promo/getcodes.:sf_format
+  param:   { module: api2, action: getCodes }
+  requirements: { sf_format: json }
+  
+api_give_tag:
+  url:     api/:apikey/:name/:promocode/tag.:sf_format
+  param:   { module: api2, action: giveTag }
+  requirements: { sf_format: json }
+  
+##  RUTAS RELATIVAS AL USUARIO
+user_login:
+  url:     api/:apikey/:name/user/login.:sf_format
+  param:   { module: api2, action: userLogin }
+  requirements: { sf_format: json, sf_method: get }
+
+user_signup:
+  url:     api/:apikey/:name/user/signup.:sf_format
+  param:   { module: api2, action: userSignUp, sf_format: html }
+  requirements: { sf_method: get, sf_format: json }
+
+  ##  ES LA MISMA MIERDA QUE SIGNUP
+user_signin:
+  url:     api/:apikey/:name/user/signin.:sf_format
+  param:   { module: api2, action: userSignUp, sf_format: html }
+  requirements: { sf_method: get, sf_format: json }  
+
+user_update:
+  url:     api/:apikey/:name/user/:user_id/update.:sf_format
+  param:   { module: api2, action: userUpdate }
+  requirements: { sf_format: json, sf_method: get }
+  
+user_stuff:
+  url:     api/:apikey/:name/user/:user_id/stuff.:sf_format
+  param:   { module: api2, action: userStuff }
+  requirements: { sf_format: json, sf_method: get }
+  
+user_ticket:
+  url:     api/:apikey/:name/user/:user_id/ticket.:sf_format
+  param:   { module: api2, action: userTicket }
+  requirements: { sf_format: json, sf_method: get }  
+
+user_acquire:
+  url:     api/:apikey/:name/user/:user_id/acquire.:sf_format
+  param:   { module: api2, action: userAcquire }
+  requirements: { sf_format: json, sf_method: get }  
+
+user_feedback:
+  url:     api/:apikey/:name/user/:user_id/feedback.:sf_format
+  param:   { module: api2, action: userFeedback }
+  requirements: { sf_format: json, sf_method: get }
+
+##  FIN RUTAS RELATIVAS AL USUARIO
+  
+##  RUTAS RELAVITAS A LOS ESTABLECIMIENTOS 
+  
+places_place:
+  url:     api/:apikey/:name/:user_id/places/place.:sf_format
+  param:   { module: api2, action: place }
+  requirements: { sf_format: json, sf_method: get }
+
+places_leading:
+  url:     api/:apikey/:name/:user_id/places/leading.:sf_format
+  param:   { module: api2, action: placesLeading }
+  requirements: { sf_format: json, sf_method: get }
+
+place_affiliate:
+  url:     api/:apikey/:name/:user_id/places/affiliate.:sf_format
+  param:   { module: api2, action: place }
+  requirements: { sf_format: json, sf_method: get }
+  
+places_search:
+  url:     api/:apikey/:name/:user_id/places/search.:sf_format
+  param:   { module: api2, action: placesSearch }
+  requirements: { sf_format: json, sf_method: get }
+  
+places_nearby:
+  url:     api/:apikey/:name/:user_id/places/nearby.:sf_format
+  param:   { module: api2, action: placesNearby }
+  requirements: { sf_format: json, sf_method: get }
+  
+places_category:
+  url:     api/:apikey/:name/:user_id/places/category.:sf_format
+  param:   { module: api2, action: categoryPlaces }
+  requirements: { sf_format: json, sf_method: get }    
+
+##  FIN RUTAS RELAVITAS A LOS ESTABLECIMIENTOS
+
+##  RUTAS RELAVITAS A LAS MARCAS
+
+brands_leading:
+  url:     api/:apikey/:name/:user_id/brands/leading.:sf_format
+  param:   { module: api2, action: brandsLeading }
+  requirements: { sf_format: json, sf_method: get }
+  
+brands_brand:
+  url:     api/:apikey/:name/:user_id/brands/brand.:sf_format
+  param:   { module: api2, action: brand }
+  requirements: { sf_format: json, sf_method: get }
+
+brands_search:
+  url:     api/:apikey/:name/:user_id/brands/search.:sf_format
+  param:   { module: api2, action: brandsSearch }
+  requirements: { sf_format: json, sf_method: get }
+
+##  FIN RUTAS RELAVITAS A LAS MARCAS  
+
+##  RUTAS RELAVITAS A LAS CATEGORIAS
+
+categories:
+  url:     api/:apikey/:name/:user_id/categories.:sf_format
+  param:   { module: api2, action: categories }
+  requirements: { sf_format: json, sf_method: get }
+  
+##  FIN RUTAS RELAVITAS A LAS CATEGORIAS
+
+##  RUTAS RELAVITAS A LAS ENCUESTAS
+
+survey_application:
+  url:    api/:apikey/:name/:asset/surveys/application
+  param:  { module: survey, action: surveyApplication }
+  requirements: { sf_method: post }
+
+##  FIN RUTAS RELAVITAS A LAS ENCUESTAS
+
+##  RUTAS RELAVITAS A LOS PUNTOS PERRO
+
+prueba:
+  url:    api/:apikey/:asset/points/test
+  param:  { module: points, action: index }
+  requirements: { sf_method: get }
+  
+get_user_points:
+  url:    api/:apikey/:asset/points/:currency/getUserPoints/:user_id
+  param:  { module: points, action: getUserPoints }
+  requirements: { sf_method: get }
+  
+create_value_per_action:
+  url:    api/:apikey/:asset/points/:currency/newAction
+  param:  { module: points, action: createValuePerAction }
+  requirements: { sf_method: post }
+
+edit_value_per_action:
+  url:    api/:apikey/:asset/points/:currency/editAction/:action_per_value
+  param:  { module: points, action: editValuePerAction }
+  requirements: { sf_method: post }
+
+get_actions:
+  url:    api/:apikey/:asset/points/getActions
+  param:  { module: points, action: getActions }
+  requirements: { sf_method: get }
+  
+consume_user_points:
+  url:    api/:apikey/:asset/points/:currency/consumeUserPoints/:user_id
+  param:  { module: points, action: consumeUserPoints }
+  requirements: { sf_method: post }
+  
+discount_user_points:
+  url:    api/:apikey/:asset/points/:currency/discountUserPoints/:user_id
+  param:  { module: points, action: discountUserPoints }
+  requirements: { sf_method: get }
+  
+add_user_points:
+  url:    api/:apikey/:asset/points/:currency/addUserPoints/:user_id
+  param:  { module: points, action: addUserPoints }
+  requirements: { sf_method: get }
+  
+get_balance_user_points:
+  url:    api/:apikey/:asset/points/:currency/getFlow/:user_id
+  param:  { module: points, action: getFlow }
+  requirements: { sf_method: get }
+  
+create_currency:
+  url:    api/:apikey/:asset/points/newCurrency
+  param:  { module: points, action: createCurrency }
+  requirements: { sf_method: post }
+  
+get_wallet:
+  url:    api/:apikey/:asset/points/getWallet/:user_id
+  param:  { module: points, action: getWallet }
+  requirements: { sf_method: get }
+  
+create_product:
+  url:    api/:apikey/:asset/points/:currency/newProduct
+  param:  { module: points, action: createProduct }
+  requirements: { sf_method: post }
+  
+add_asset_to_currency:
+  url:    api/:apikey/:asset/points/:currency/addAssetToCurrency
+  param:  { module: points, action: addAssetToCurrency }
+  requirements: { sf_method: post }
+  
+get_currencies:
+  url:    api/:apikey/:asset/points/getCurrencies
+  param:  { module: points, action: getCurrencies }
+  requirements: { sf_method: get }
+##  FIN RUTAS RELATIVAS A LOS PUNTOS PERROS
