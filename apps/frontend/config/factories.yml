@@ -54,7 +54,7 @@ all:
       transport:
         class: Swift_SmtpTransport
         param:
-          host:       lealtag.com
+          host:       licoteca.com.ve
           port:       25 # 587
-          username:   ~ #no-reply@lealtag.com
+          username:   ~ #no-reply@licoteca.com.ve
           password:   ~ #6KjMb9SZ

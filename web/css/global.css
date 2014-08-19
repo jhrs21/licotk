@@ -633,6 +633,8 @@ hr.separator{background:#ccc;color:#ccc;clear:both;float:none;width:100%;height:
 /* --  Begin LT-SignUp  -- */
 select#sfApplyApply_phone_code{width:30%}
 #sfApplyApply_phone_number{width:60%}
+select#sfApplyApply_id_number_code{width:30%}
+#sfApplyApply_id_number_number{width:60%}
 #sign-up-form .form_row_small .form_row_label{width:45%}
 #sign-up-form .form_row_small .form_row_field{width:50%}
 #signup-left-top-corner{top:15px;left:15px}

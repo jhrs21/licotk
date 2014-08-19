@@ -298,6 +298,7 @@ class api2Actions extends baseEpApiActions {
 
         $this->result['success'] = 1;
         $this->result['user'] = $user->asArray();
+        $this->result['user']['member_since'] = $user->getCreatedAt();
     }
 
     public function executeUserUpdate(sfWebRequest $request) {

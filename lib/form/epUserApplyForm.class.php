@@ -12,7 +12,8 @@ class epUserApplyForm extends UserProfileForm {
         parent::configure();
 
         unset(
-            $this['user_id'], $this['validate'], $this['fullname'], $this['id_number'],
+            $this['user_id'], $this['validate'], $this['fullname'], 
+                #$this['id_number'],
             $this['country_id'], $this['state_id'], $this['city_id']
             #$this['municipality_id']
         );
@@ -45,10 +46,15 @@ class epUserApplyForm extends UserProfileForm {
 
         $this->widgetSchema->moveField('gender', sfWidgetFormSchema::AFTER, 'birthdate');
 
-        $this->setWidget('id_number', new sfWidgetFormInput(
+        $this->setWidget('id_number', new sfWidgetFormIdNumber(
+                array('format' => '%code%-%number%'),
+                array('data-bvalidator' => 'required', 'data-bvalidator-msg' => 'Campo obligatorio.')
+            ));
+                
+                /*new sfWidgetFormInput(
                 array(),
                 array('maxlength' => 8, 'data-bvalidator' => 'digit,required', 'data-bvalidator-msg' => 'Ingrese sólo números.')
-            ));
+            ));*/
 
         $this->widgetSchema->moveField('id_number', sfWidgetFormSchema::AFTER, 'gender');
 
@@ -62,7 +68,7 @@ class epUserApplyForm extends UserProfileForm {
         $this->widgetSchema->setLabels(array(
                 'first_name' => 'Nombre(s):',
                 'last_name' => 'Apellido(s):',
-                'id_number' => 'Cédula de Identidad:',
+                'id_number' => 'Cédula/RIF:',
                 'phone' => 'Celular:',
                 'gender' => 'Género:',
                 'birthdate' => 'Fecha de Nacimiento:',
@@ -86,11 +92,12 @@ class epUserApplyForm extends UserProfileForm {
                     array(),
                     array('required' => 'Campo obligatorio.')
                 ));
-
+        
         $this->setValidator('id_number', new sfValidatorAnd(
                     array(
-                        new sfValidatorString(array('required' => true,'trim' => true,'max_length' => 8)),
-                        new sfValidatorRegex(array('pattern' => '/^[[:digit:]]+$/'),array('invalid' => 'Solo puede contener dígitos sin puntos ni comas'))
+                        new sfValidatorIdNumber(array('required' => true),array('invalid' => 'Cedula inválido.'))
+                        #new sfValidatorString(array('required' => true,'trim' => true,'max_length' => 100)),
+                        #new sfValidatorRegex(array('pattern' => '/^[A-Z][0-9]+$/'),array('invalid' => 'Cédula o RIF inválido'))
                     ),
                     array('required' => false),
                     array('required' => 'Campo obligatorio.')

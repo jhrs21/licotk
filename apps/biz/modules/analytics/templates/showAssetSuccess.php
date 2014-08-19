@@ -63,7 +63,7 @@
             <?php
                 $agesChart = InteractiveChart::newColumnChart();
                 $agesChart->setWidthAndHeight($width2, $height2);
-                $agesChart->setDataColors(array('#1765AF', '#A84D9D'));
+                $agesChart->setDataColors(array('#1765AF', '#FFD900'));
                 $agesChart->setOption('title', '¿Qué edad tienen mis fans?');
                 $agesChart->setVerticalAxisTitle('Personas');
                 $agesChart->inlineGraph($data, $label, $type);
@@ -73,7 +73,7 @@
             <?php
                 $weekdayChart = InteractiveChart::newColumnChart();
                 $weekdayChart->setWidthAndHeight($width3, $height3);
-                $weekdayChart->setDataColors(array('#1765AF', '#A84D9D'));
+                $weekdayChart->setDataColors(array('#1765AF', '#FFD900'));
                 $weekdayChart->setOption('title', '¿Que días vienen mis fans?');
                 $weekdayChart->setVerticalAxisTitle('Personas');
                 $weekdayChart->inlineGraph($dataWeekday, $labelWeekday, $type3);
@@ -83,7 +83,7 @@
             <?php
                 $hourChart = InteractiveChart::newColumnChart();
                 $hourChart->setWidthAndHeight($width4, $height4);
-                $hourChart->setDataColors(array('#1765AF', '#A84D9D'));
+                $hourChart->setDataColors(array('#1765AF', '#FFD900'));
                 $hourChart->setOption('title', $title4);
                 $hourChart->setVerticalAxisTitle('Visitas');
                 $hourChart->inlineGraph($dataHour, $labelHour, $type4);
@@ -93,7 +93,7 @@
             <?php
             $cardChart = InteractiveChart::newColumnChart();
             $cardChart->setWidthAndHeight($width5, $height5);
-            $cardChart->setDataColors(array('#1765AF', '#A84D9D'));
+            $cardChart->setDataColors(array('#1765AF', '#FFD900'));
             $cardChart->setOption('title', $title5);
             $cardChart->setVerticalAxisTitle('Premios');
             $cardChart->inlineGraph($dataCard, $labelCard, $type5);
@@ -103,7 +103,7 @@
             <?php
             $xChart = InteractiveChart::newColumnChart();
             $xChart->setWidthAndHeight($widthX, $heightX);
-            $xChart->setDataColors(array('#1765AF', '#A84D9D'));
+            $xChart->setDataColors(array('#1765AF', '#FFD900'));
             $xChart->setOption('title', $titleX);
             $xChart->setVerticalAxisTitle('Usuarios');
             $xChart->inlineGraph($dataX, $labelX, $typeX);

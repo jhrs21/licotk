@@ -123,7 +123,7 @@ ul.top-menu li a:hover,ul.top-menu li.active a{color:#18B9E8}
 #gender-percentage-male{margin-top:32px;margin-right:10px;width:70px;text-align:right}
 #gender-percentage-female{margin-top:32px;margin-left:10px;width:70px}
 #gender-image{width:257px;height:71px;background: url("/images/estadisticas_rostros_sexo.png") no-repeat scroll -5px 0 transparent}
-div.female{color:#A84D9D;font-weight:bold}
+div.female{color:#FFD900;font-weight:bold}
 div.male{color:#1765AF;font-weight:bold}
 div.gender-number{font-size:2em}
 .feedback-area .main-canvas-content-footer{width:100%}
