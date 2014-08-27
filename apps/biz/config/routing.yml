@@ -472,6 +472,12 @@ survey_download_data:
 ##  End of Survey Module Routes
 ##
 
+# Desarrollo especifico para Licoteca
+user_list:
+    url:    /usuarios
+    param:  { module: user, action: index, sf_format: html }
+    requirements: { sf_method: get }
+
 #options:  { model: JobeetCategory, type: object }
 ## generic rules
 ## please, remove them by adding more specific rules

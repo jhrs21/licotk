@@ -338,6 +338,23 @@ MembershipCard:
     status: unassigned
 <?php endfor; ?>
 
+LicotecaUserLevel:
+  bronze:
+    alpha_id: alpha_id_bronze
+    name: bronze
+    bottom: 0
+    top: 3
+  silver:
+    alpha_id: alpha_id_silver
+    name: silver
+    bottom: 4
+    top: 5
+  gold:
+    alpha_id: alpha_id_gold
+    name: gold
+    bottom: 6
+    top: 999
+
 Survey:
   survey1:
     alpha_id: survey1

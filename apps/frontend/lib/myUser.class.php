@@ -5,7 +5,7 @@ class myUser extends sfGuardSecurityUser {
     public function getAskForFeedback() {
         return $this->getAttribute('ask_for_feedback', false);
     }
-
+    
     /**
      * Returns the PromoCode object related to a Tag that the user has just done
      * 

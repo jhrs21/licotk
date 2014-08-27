@@ -519,6 +519,15 @@ MembershipCard:
   relations:
     User:   { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: MembershipCards, onDelete: cascade }
     Asset:  { class: Asset, local: asset_id, foreign: id, foreignAlias: MembershipCards, onDelete: cascade }
+
+LicotecaUserLevel:
+    actAs:
+        Timestampable: ~
+    columns:
+        alpha_id:   { type: string(20), notnull: true, unique: true }
+        name:   { type: string(20), notnull: true }
+        bottom: { type: integer, notnull: true }
+        top:    { type: integer, notnull: true }
     
 MailMessage:
   actAs: { Timestampable: ~ }

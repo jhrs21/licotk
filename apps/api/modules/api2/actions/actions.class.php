@@ -1240,7 +1240,7 @@ class api2Actions extends baseEpApiActions {
         $route = $routing->generate('survey_feedback', array(), true).'?h='.$pr->getHash();
         
         $this->mail(array(
-            'subject'       => 'Has recibido un Tag por ser cliente fiel en '.$asset->getName(),
+            'subject'       => 'Has recibido una visita en '.$asset->getName(),
             //'teaser'        => '¡Vamos a vivirlo!',
             'to'            => $profile->getEmail(),
             'html'          => 'sendTagNotification',
@@ -1265,7 +1265,7 @@ class api2Actions extends baseEpApiActions {
         $route = $routing->generate('survey_feedback', array(), true).'?h='.$pr->getHash();
         
         $this->mail(array(
-            'subject'       => 'Has recibido '.($numTags > 1 ? $numTags.' Tags' : 'un Tag').' por ser cliente fiel en '.$asset->getName(),
+            'subject'       => 'Hemos registrado '.($numTags > 1 ? $numTags.' visitas' : 'una visita').' en '.$asset->getName(),
             'teaser'        => 'Gracias por ser un cliente fiel en ' . $asset->getName(),
             'to'            => $profile->getEmail(),
             'html'          => 'sendManyTagsNotification',

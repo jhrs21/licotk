@@ -13,12 +13,10 @@
             <p>
                 Pronto recibirás un correo electrónico para verificar tu cuenta.
                 <br>
-                Comienza a disfrutar de todo lo que <b>LealTag</b> trae para ti.
+                Comienza a disfrutar de todo lo que el <b>Club Licoteca</b> trae para ti.
             </p>
             <p>
-                ¡Mereces ser premiado!
-                <br>
-                El equipo de LealTag ;)
+                El equipo del Club Licoteca
             </p>
         </div>
         <div class="main-canvas-footer">
