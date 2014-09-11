@@ -3,20 +3,20 @@
         <div class="list-title title-small"><p>Serial</p></div>
         <div class="list-title title-big"><p>Premio</p></div>
         <div class="list-title title-small"><p>Estado</p></div>
-        <div class="list-title title-medium"><p>Miembro</p></div>
+        <div class="list-title title-medium"><p>Afiliado</p></div>
         <div class="list-title title-small"><p>Fecha de vencimiento</p></div>
         <div class="list-title title-small"><p>Fecha de canje</p></div>
         <div class="list-title title-small last"><p>Acciones</p></div>
     </div>
-    <?php foreach ($pager->getResults() as $coupon): ?>
+    <?php foreach ($pager->getResults() as $user): ?>
         <div class="promo-row">
             <div class="promo-row-cell promo-row-cell-small">
-                <a href=""><?php echo $coupon->getSerial() ?></a>
+                <a href=""><?php echo $user->getSerial() ?></a>
             </div>
-            <div class="promo-row-cell promo-row-cell-big"><?php echo $coupon->getPrize() ?></p></div>
+            <div class="promo-row-cell promo-row-cell-big"><?php echo $user->getPrize() ?></p></div>
             <div class="promo-row-cell promo-row-cell-small">
                 <?php
-                switch ($coupon->getStatus()) {
+                switch ($user->getStatus()) {
                     case 'active':
                         echo 'Activo';
                         break;
@@ -32,23 +32,23 @@
                 ?>
             </div>
             <div class="promo-row-cell promo-row-cell-medium">
-                <?php echo $coupon->getUser()->getFullname() ?><br>
-                <?php echo $coupon->getUser()->getUserProfile()->getIdNumber() ?>
+                <?php echo $user->getUser()->getFullname() ?><br>
+                <?php echo $user->getUser()->getUserProfile()->getIdNumber() ?>
             </div>
             <div class="promo-row-cell promo-row-cell-small">
                 <?php echo $promo->getDateTimeObject('expires_at')->format('d/m/Y') ?>
             </div>
             <div class="promo-row-cell promo-row-cell-small">
-                <?php if($coupon->getUsedAt()==NULL){ 
+                <?php if($user->getUsedAt()==NULL){ 
                         echo "Sin usar";
                 }else {
-                        echo $coupon->getDateTimeObject('used_at')->format('d/m/Y');
+                        echo $user->getDateTimeObject('used_at')->format('d/m/Y');
                     }?>
             </div>
             <div class="promo-row-cell promo-row-cell-small last">
-                <?php if($coupon->hasStatus('active')): ?>
+                <?php if($user->hasStatus('active')): ?>
                     <a class="prize-redeem cbox-form"
-                       href="<?php echo url_for('promo_redeem_coupon').'?serial='.$coupon->getSerial()?>">
+                       href="<?php echo url_for('promo_redeem_coupon').'?serial='.$user->getSerial()?>">
                         Canjear
                     </a>
                 <?php endif; ?>

@@ -22,7 +22,7 @@
             <?php elseif (strcasecmp($card->getStatus(), 'complete') == 0) :?>
                 <a class="lt-button lt-button-orange box_round" href="<?php echo url_for('pre_generate_coupon',$card)?>"><?php echo __('Solicitar premio');?></a>
             <?php elseif (strcasecmp($card->getStatus(), 'exchanged') == 0) : ?>
-                <?php $coupon = $card->getCoupon(); ?>
+                <?php $user = $card->getCoupon(); ?>
                 <a class="lt-button lt-button-purple box_round" target="_blank"
                    href="<?php echo url_for('generate_coupon',array('alpha_id' => $card->getAlphaId(),'prize' => $card->getCoupon()->getPrize()->getAlphaId()))?>">
                        <?php echo __('Ver premio');?>

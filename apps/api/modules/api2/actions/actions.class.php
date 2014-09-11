@@ -1150,7 +1150,10 @@ class api2Actions extends baseEpApiActions {
 
         $this->result['success'] = 1;
         
-        $this->sendRedeemNotification($coupon->getUser()->getUserProfile(), $coupon->getPromo(), $asset, true);
+        $this->sendRedeemNotification($coupon->getUser()->getUserProfile(), $coupon->getPromo(), $asset, false);
+        # Respaldo para Licoteca
+        $admin_user = Doctrine_Core::getTable('sfGuardUser')->findOneByIsAdmin(true);
+        $this->sendRedeemNotification($admin_user->getUserProfile(), $coupon->getPromo(), $asset, false);
     }
 
     public function executeGiveTag(sfWebRequest $request) {

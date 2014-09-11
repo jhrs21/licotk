@@ -173,7 +173,7 @@ sfGuardPermission:
     description:    User permission
     
 UserProfile:
-  profile_pv:
+  profile_jr:
     fullname: Jose Riera
     email: jhrs21@yahoo.com
     id_number: 18329575
@@ -182,6 +182,17 @@ UserProfile:
     User: jr
     City: caracas
     Municipality: baruta
+    State: miranda
+    Country: venezuela
+  profile_licoteca:
+    fullname: Licoteca admin
+    email: licoteca@lealtag.com
+    id_number: 1
+    birthdate: '2014-01-01'
+    gender: male
+    User: licoteca_admin
+    City: caracas
+    Municipality: chacao
     State: miranda
     Country: venezuela
 

@@ -19,10 +19,10 @@
                     <p><?php echo __('Estadísticas para') . ': <b>' . $affiliate . '</b>' ?></p>
                 </div>
                 <div id="nuevosfans-semanal" class="analytics-title">
-                    <p><?php echo __('Miembros esta semana') . ': <b>' . $newFans . '</b>' ?></p>
+                    <p><?php echo __('Afiliados esta semana') . ': <b>' . $newFans . '</b>' ?></p>
                 </div>
                 <div id="nuevosfans-total" class="analytics-title">
-                    <p><?php echo __('Miembros Totales') . ': <b>' . $totalFans . '</b>' ?></p>
+                    <p><?php echo __('Afiliados Totales') . ': <b>' . $totalFans . '</b>' ?></p>
                 </div>
                 <div id="tags-total" class="analytics-title">
                     <p><?php echo __('Visitas Totales') . ': <b>' . $totalTickets . '</b>' ?></p>
@@ -31,7 +31,7 @@
 
             <div id="gender-analitycs">
                 <div class="analytics-title">
-                    <p><?php echo __('¿Cuál es la edad promedio de mis miembros?') ?></p>
+                    <p><?php echo __('¿Cuál es la edad promedio de mis afiliados?') ?></p>
                 </div>
                 <div id="edad-hombres" class="gender-number male">
                     <?php echo $edadPromH ?>
@@ -55,7 +55,7 @@
                     <?php echo $frecuenciaM ?>
                 </div>
                 <div class="analytics-title">
-                    <p><?php echo __('Número de visitas promedio de mis miembros en el último trimestre') ?></p>
+                    <p><?php echo __('Número de visitas promedio de mis afiliados en el último trimestre') ?></p>
                 </div>
             </div>
             <!-- GRAFICOS DE GOOGLE ANALYTICS -->
@@ -63,7 +63,7 @@
             $agesChart = InteractiveChart::newColumnChart();
             $agesChart->setWidthAndHeight($width2, $height2);
             $agesChart->setDataColors(array('#1765AF', '#FFD900'));
-            $agesChart->setOption('title', '¿Qué edad tienen mis miembros?');
+            $agesChart->setOption('title', '¿Qué edad tienen mis afiliados?');
             $agesChart->setVerticalAxisTitle('Personas');
             $agesChart->inlineGraph($data, $label, $type);
             $agesChart->render();
@@ -73,7 +73,7 @@
             $weekdayChart = InteractiveChart::newColumnChart();
             $weekdayChart->setWidthAndHeight($width3, $height3);
             $weekdayChart->setDataColors(array('#1765AF', '#FFD900'));
-            $weekdayChart->setOption('title', '¿Que días vienen mis miembros?');
+            $weekdayChart->setOption('title', '¿Que días vienen mis afiliados?');
             $weekdayChart->setVerticalAxisTitle('Personas');
             $weekdayChart->inlineGraph($dataWeekday, $labelWeekday, $type3);
             $weekdayChart->render();
@@ -113,7 +113,7 @@
         <div id="right">
             <div class="feedback-area white-frame barside">
                 <div class="barside-title">
-                    <?php echo __('Opiniones de tus Miembros') ?>
+                    <?php echo __('Opiniones de tus afiliados') ?>
                 </div>
                 <div class="count-feedback">
                     <!-- GRAFICO DE GOOGLE CHARTS: PieChart -->

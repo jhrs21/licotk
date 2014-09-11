@@ -3,10 +3,10 @@
     <th>Status</th>
     <th>Fecha de creación</th>
 </tr>
-<?php foreach ($coupons as $coupon): ?>
+<?php foreach ($coupons as $user): ?>
     <tr>
-        <td><?php echo $coupon->getSerial() ?></td>
-        <td><?php echo $coupon->getStatus() ?></td>
-        <td><?php echo $coupon->getCreatedAt() ?></td>
+        <td><?php echo $user->getSerial() ?></td>
+        <td><?php echo $user->getStatus() ?></td>
+        <td><?php echo $user->getCreatedAt() ?></td>
     </tr>
 <?php endforeach; ?>

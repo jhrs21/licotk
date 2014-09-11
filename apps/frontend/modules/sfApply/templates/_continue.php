@@ -7,6 +7,6 @@
             sfConfig::get('app_sfApplyPlugin_afterLogin', sfConfig::get('app_sfApplyPlugin_after', '@homepage')) 
             : 
             $sf_user->getReferer('@sf_guard_login'),
-            array('class' => 'lightblue')
+            array('class' => 'lt-button lt-button-blue box_round opensanscondensedlight')
     ) ?>
 </p>

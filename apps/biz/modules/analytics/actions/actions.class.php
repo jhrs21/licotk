@@ -307,14 +307,14 @@ class analyticsActions extends sfActions {
 
         $this->width2 = '600';
         $this->height2 = '250';
-        $this->title2 = 'Edad de mis miembros';
+        $this->title2 = 'Edad de mis afiliados';
         $this->data = array('Hombres' => $subdataH, 'Mujeres' => $subdataM);
         $this->label = array('menor 20', '20-30', '30-40', '40-50', 'mayor 50');
         $this->type = 'ColumnChartAges';
 
         $this->width3 = '600';
         $this->height3 = '250';
-        $this->title3 = 'Que dias vienen mis miembros';
+        $this->title3 = 'Que dias vienen mis afiliados';
         $this->dataWeekday = array('Hombres' => $subdataDiasH, 'Mujeres' => $subdataDiasM);
         $this->labelWeekday = array('Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab', 'Dom');
         $this->type3 = 'ColumnChartWeekday';
@@ -381,7 +381,7 @@ class analyticsActions extends sfActions {
 
         $this->width4 = '600';
         $this->height4 = '250';
-        $this->title4 = '¿A qué hora vienen mis miembros?';
+        $this->title4 = '¿A qué hora vienen mis afiliados?';
         $this->dataHour = array('Hombres' => $subdataHorasH, 'Mujeres' => $subdataHorasM);
         $this->labelHour = array('12am - 6 am', '6 am - 9am', '9 am - 12pm', '12pm - 3pm', '3pm - 6pm', '6pm - 12am');
         $this->type4 = 'ColumnChartHour';
@@ -412,7 +412,7 @@ class analyticsActions extends sfActions {
 
         $this->width5 = '600';
         $this->height5 = '200';
-        $this->title5 = '¿Cuál es el estatus de los premios de mis miembros?';
+        $this->title5 = '¿Cuál es el estatus de los premios de mis afiliados?';
         $this->dataCard = array("Premios" => $cards_array);
         $this->labelCard = array('Por completar', 'Completados', 'Cupón generado', 'Canjeados');
         $this->type5 = 'ColumnChartCard';
@@ -682,14 +682,14 @@ class analyticsActions extends sfActions {
 
         $this->width2 = '600';
         $this->height2 = '250';
-        $this->title2 = 'Edad de mis miembros';
+        $this->title2 = 'Edad de mis afiliados';
         $this->data = array('Hombres' => $subdataH, 'Mujeres' => $subdataM);
         $this->label = array('menor 20', '20-30', '30-40', '40-50', 'mayor 50');
         $this->type = 'ColumnChartAges';
 
         $this->width3 = '600';
         $this->height3 = '250';
-        $this->title3 = 'Que dias vienen mis miembros';
+        $this->title3 = 'Que dias vienen mis afiliados';
         $this->dataWeekday = array('Hombres' => $subdataDiasH, 'Mujeres' => $subdataDiasM);
         $this->labelWeekday = array('Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab', 'Dom');
         $this->type3 = 'ColumnChartWeekday';
@@ -759,7 +759,7 @@ class analyticsActions extends sfActions {
 
         $this->width4 = '600';
         $this->height4 = '250';
-        $this->title4 = '¿A qué hora vienen mis miembros?';
+        $this->title4 = '¿A qué hora vienen mis afiliados?';
         $this->dataHour = array('Hombres' => $subdataHorasH, 'Mujeres' => $subdataHorasM);
         $this->labelHour = array('12am - 6 am', '6 am - 9am', '9 am - 12pm', '12pm - 3pm', '3pm - 6pm', '6pm - 12am');
         $this->type4 = 'ColumnChartHour';
@@ -788,7 +788,7 @@ class analyticsActions extends sfActions {
 
         $this->width5 = '600';
         $this->height5 = '200';
-        $this->title5 = '¿Cuál es el estatus de los premios de mis miembros?';
+        $this->title5 = '¿Cuál es el estatus de los premios de mis afiliados?';
         $this->dataCard = array("Premios" => $cards_array);
         $this->labelCard = array('Sin canjear', 'Canjeadas', 'Expiradas');
         $this->type5 = 'ColumnChartCard';

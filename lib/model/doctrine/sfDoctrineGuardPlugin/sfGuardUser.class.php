@@ -295,7 +295,8 @@ class sfGuardUser extends PluginsfGuardUser {
     
     public function getLicotecaLevel() {
         $levels = Doctrine::getTable('LicotecaUserLevel')->findAll();
-        $tags_quantity = $this->getPockets()[0]->getTotalTags();
+        $tags_quantity = $this->getPockets();
+        $tags_quantity = $tags_quantity[0]->getTotalTags();
         foreach ($levels as $l){
             if ($l->getBottom() >= $tags_quantity and $tags_quantity <= $l->getTop()) {
                 return $l->getName();

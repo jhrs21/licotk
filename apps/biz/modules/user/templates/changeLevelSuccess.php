@@ -2,15 +2,9 @@
     <?php include_partial('html_static/optionsMenu', array('isActive' => array('promo' => true))) ?>
     <div id="prizes-container" class="main-canvas">
         <div class="main-canvas-title">
-            <h2>Listado de Usuarios</h2>
-        </div>
-        <div id="list_container">
-            <?php include_partial('listUser', array('users' => $users)) ?>
+            <h2>Cambiar de nivel</h2>
         </div>
     </div>
-    <!--    <div>
-            <a href="<?php echo url_for('promo_redeem_coupon_validation', $promo) ?>">Canjear cupón</a>
-        </div>-->
 </div>
 
 <script type="text/javascript">
