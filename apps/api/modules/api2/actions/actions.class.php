@@ -93,17 +93,17 @@ class api2Actions extends baseEpApiActions {
     public function executeUserSignUp(sfWebRequest $request) {
         $this->result = array();
         $this->result['success'] = 0;
-
+        
         $route_params = $this->getRoute()->getParameters();
 
         $apiCredentials = array('apikey' => $route_params['apikey'], 'name' => $route_params['name']);
 
-        $requiredParams = array('first_name', 'last_name', 'email', 'password', 'gender', 'birthdate');
+        $requiredParams = array('first_name', 'last_name', 'email', 'password', 'gender', 'birthdate', 'municipality_id', 'phone');
 
         if (!$this->validateApiRules($apiCredentials, $requiredParams, $request)) {
             return 'Error';
         }
-
+        
         $values = array();
 
         $values['first_name'] = $request->getParameter('first_name');
@@ -113,14 +113,16 @@ class api2Actions extends baseEpApiActions {
         $values['id_number'] = $request->getParameter('id_number');
         $values['email'] = $request->getParameter('email');
         $values['password'] = $request->getParameter('password');
+        $values['municipality_id'] = $request->getParameter('municipality_id');
+        $values['phone'] = $request->getParameter('phone');
 
         $form = new epUserApplyApiForm(array(), array(), false);
 
         $form->bind($values);
-
+        
         if ($form->isValid()) {
             $values = $form->getValues();
-
+            
             $buhoValues = array();
             $buhoValues['fullname'] = $values['first_name'] . ' ' . $values['last_name'];
             $buhoValues['email'] = $values['email'];
@@ -128,11 +130,13 @@ class api2Actions extends baseEpApiActions {
             $buhoValues['birthday'] = $values['birthdate'];
             $buhoValues['identifier'] = $values['id_number'];
             $buhoValues['gender'] = $values['gender'];
+            $buhoValues['municipality_id'] = $values['municipality_id'];
+            $buhoValues['phone'] = $values['phone'];
 
             //$buho = new epBuhoApi();
             //$result = $buho->buhoCreateUser($buhoValues);
 	    $validator = Util::GenSecret(16,0);
-	    $hash = Util::GenSecret(8,0);
+	    $hash = strtolower(Util::GenSecret(32,0));
             $result = array("success" => 1, "user" => array("validator"=>$validator, "hash"=>$hash));
 
             //  Verificar si el usuario es registrado en El Buho sin inconvenientes
@@ -160,6 +164,7 @@ class api2Actions extends baseEpApiActions {
 
                 $this->result['success'] = 1;
                 $this->result['user'] = $profile->getUser()->asArray();
+                $this->result['user']['municipality'] = $profile->getUser()->getUserProfile()->getMunicipality()->getName();
             } 
             catch (Exception $e) {
                 $profile = $form->getObject();
@@ -299,6 +304,8 @@ class api2Actions extends baseEpApiActions {
         $this->result['success'] = 1;
         $this->result['user'] = $user->asArray();
         $this->result['user']['member_since'] = $user->getCreatedAt();
+        $this->result['user']['municipality'] = $user->getUserProfile()->getMunicipality()->getName();
+        $this->result['user']['phone'] = $user->getUserProfile()->getPhone();
     }
 
     public function executeUserUpdate(sfWebRequest $request) {
@@ -338,6 +345,8 @@ class api2Actions extends baseEpApiActions {
         $values['gender'] = $request->getParameter('gender');
         $values['birthdate'] = $request->getParameter('birthdate');
         $values['id_number'] = $request->getParameter('id_number');
+        $values['phone'] = $request->getParameter('phone');
+        $values['municipality'] = $request->getParameter('municipality');
 
         $formOptions = array();
 

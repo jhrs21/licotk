@@ -37,6 +37,26 @@ class userActions extends sfActions
     
     public function executeChangeLevel(sfWebRequest $request){
         $params = $request->getGetParameters();
+        if (array_key_exists('u', $params)){
+            var_dump('renderizar a otra vista'); die;
+        }
+        $levels = Doctrine::getTable('LicotecaUserLevel')->findAll();
+        $this->result = array();
+        foreach ($levels as $level) {
+            array_push($this->result, ['level' => $level->getName(), 'bottom' => $level->getBottom(), 'top' => $level->getTop()]);
+        }
+        $this->form = new epLicotecaLevelForm();
+        
+        if ($request->isMethod('post'))
+        {
+            $this->form->bind($request->getParameter($this->form->getName()));
+            $formValues = $this->form->getValues();
+            $level_object = Doctrine::getTable('LicotecaUserLevel')->find($formValues['level']);
+            $level_object->setBottom($formValues['bottom']);
+            $level_object->setTop($formValues['top']);
+            $level_object->save();
+            $this->redirect('change_user_level');
+        }
         
     }
 }

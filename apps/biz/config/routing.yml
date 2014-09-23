@@ -482,6 +482,11 @@ change_user_level:
     url:    /usuarios/nivel
     param:  { module: user, action: changeLevel, sf_format: html }
     requirements: { sf_method: get }
+    
+change_user_level_post:
+    url:    /usuarios/nivel
+    param:  { module: user, action: changeLevel, sf_format: html }
+    requirements: { sf_method: post }
 
 #options:  { model: JobeetCategory, type: object }
 ## generic rules

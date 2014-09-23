@@ -32,7 +32,7 @@ body:before {content:"";height:100%;float:left;width:0;margin-top:-32767px}/*Ope
 .main-canvas-content-title span{color:#808080}
 .main-canvas-content-title{text-align:center}
 .main-canvas-content-footer{margin:2%;padding-top:1%;background:url(/images/dark_grey_separator.png) 0 top repeat-x}
-.main-canvas-content-footer a{font-size:1.2em;font-weight:bold;color:#4674B7;margin-bottom:10px}
+.main-canvas-content-footer a{font-size:1.2em;font-weight:bold;color:#FFD900;margin-bottom:10px}
 .main-canvas-content-footer a:hover{color:#18b9e8;text-decoration:underline}
 .white-frame{background-color:#fff;-webkit-box-shadow:0px 0px 4px #aaa;-moz-box-shadow:0px 0px 4px #aaa;box-shadow:0px 0px 4px #aaa;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px}
 .color-banner{padding-bottom:14px;background: url('/images/color_banner_footer.png') 0 100% no-repeat}
@@ -346,3 +346,28 @@ a{color:#0d0d0d ;text-decoration:none}
 .flash_success{background-color:#9DC44D}
 .flash_error{background-color:#FF3232}
 p.flash_message{font-weight:bold;font-size:1.8em;margin:0px;text-shadow:0 2px 2px #333333;}
+
+// Licoteca tweaks
+div#licoteca-level-form{
+    margin: auto;
+    width: 400px;
+}
+
+table#licoteca-levels{
+    width: 400px;
+    margin: 15px auto;
+}
+
+table#licoteca-levels td{
+    font-size: 1.4em;
+    color: #1A1A1A;
+    border: solid white;
+    padding: 5px;
+}
+
+input#epLicotecaLevelForm_bottom{
+    width: 50px;
+}
+input#epLicotecaLevelForm_top{
+    width: 50px;
+}

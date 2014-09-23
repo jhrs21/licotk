@@ -5,7 +5,9 @@ class epUserApplyMobileForm extends epUserApplyForm {
     public function configure() {
         parent::configure();
 
-        unset($this['password2'], $this['phone']);
+        unset($this['password2']
+                #, $this['phone']
+                );
     }
 
     public function getPostValidators() {
