@@ -346,7 +346,7 @@ class api2Actions extends baseEpApiActions {
         $values['birthdate'] = $request->getParameter('birthdate');
         $values['id_number'] = $request->getParameter('id_number');
         $values['phone'] = $request->getParameter('phone');
-        $values['municipality'] = $request->getParameter('municipality');
+        $values['municipality_id'] = $request->getParameter('municipality_id');
 
         $formOptions = array();
 
@@ -368,6 +368,7 @@ class api2Actions extends baseEpApiActions {
             $buhoValues['mobile_phone'] = array_key_exists('phone', $formValues) ? (is_null($formValues['phone']) ? '' : $formValues['phone']) : '';
             $buhoValues['birthday'] = $formValues['birthdate'];
             $buhoValues['gender'] = $formValues['gender'];
+            $buhoValues['municipality'] = $formValues['municipality_id'];
             
             //$result = $buho->buhoUpdateUser($buhoValues);
 
