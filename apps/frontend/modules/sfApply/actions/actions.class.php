@@ -655,7 +655,7 @@ class sfApplyActions extends BasesfApplyActions {
          * This will save both sfGuardUser and UserProfile objects at once
          */
         $user->save();
-
+        
         return $user;
     }
 

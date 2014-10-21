@@ -165,7 +165,7 @@ class baseEpApiActions extends sfActions {
                 $user->setUserProfile($profile);
                 
                 $user->save();
-
+                
                 try {
                     $this->sendPreRegisteredVerificationMail($profile, $asset);
                     return $user;

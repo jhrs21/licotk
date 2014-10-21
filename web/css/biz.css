@@ -371,3 +371,12 @@ input#epLicotecaLevelForm_bottom{
 input#epLicotecaLevelForm_top{
     width: 50px;
 }
+
+div#email-user-level-licoteca{
+    font-size: 1.8em;
+    padding: 10px;
+}
+
+form#user-licoteca-level-form div.white-frame{
+    padding-bottom: 10px;
+}

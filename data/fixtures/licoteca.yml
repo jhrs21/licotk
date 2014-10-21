@@ -365,6 +365,11 @@ LicotecaUserLevel:
     name: gold
     bottom: 6
     top: 999
+    
+UserLicotecaUserLevel:
+  lul:
+    User: jr
+    LicotecaUserLevel: bronze
 
 Survey:
   survey1:

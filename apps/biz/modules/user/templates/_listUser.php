@@ -21,10 +21,9 @@
                     <?php echo $user['level'] ?>
                 </div>
                 <div class="promo-row-cell promo-row-cell-medium last">
-                    <a href="<?php echo url_for('change_user_level').'?u='.$user['id']?>">
+                    <a href="<?php echo url_for('change_user_level').'?user='.$user['id']?>">
                         Cambiar de Nivel
-                    </a><br>
-                    Modificar visitas
+                    </a>
                 </div>
             </div>
         <?php endforeach; ?>
@@ -33,6 +32,7 @@
     <h2>No hay premios o no se han encontrado resultados en la busqueda.</h2>
 </div>
 <?php endif; ?>
+<div class="main-canvas-content-footer"><a href=<?php echo url_for('manage_licoteca_levels') ?>>Administrar Niveles</a></div>
 <script type="text/javascript">
     jQuery('.cbox-form').colorbox({
         width: '50%'

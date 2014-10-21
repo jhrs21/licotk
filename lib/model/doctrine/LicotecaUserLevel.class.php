@@ -12,4 +12,10 @@
  */
 class LicotecaUserLevel extends BaseLicotecaUserLevel
 {
+    public function getFirstLevel() {
+        $level = Doctrine_Query::create()
+                    ->from('LicotecaUserLevel lul')
+                    ->orderBy('bottom');
+        return $level->fetchOne();
+    }
 }

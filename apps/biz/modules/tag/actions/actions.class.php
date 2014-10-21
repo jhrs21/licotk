@@ -199,7 +199,7 @@ class tagActions extends sfActions {
             $profile->setValidate('pr' . self::createGuid());
             $profile->setUser($user);
             $profile->save();
-
+            
             try {
                 $this->sendUserVerificationAndCompleteDataMail($profile, $asset->getName());
                 return $user;

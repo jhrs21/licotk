@@ -19,6 +19,9 @@
         <li class="option <?php echo array_key_exists('give_tag',$isActive) && $isActive['give_tag'] ? 'active' : '' ?>">
             <a href="<?php echo url_for('give_tag') ?>">Acreditar una Visita</a>
         </li>
+        <li class="option <?php echo array_key_exists('user_list',$isActive) && $isActive['user_list'] ? 'active' : '' ?>">
+            <a href="<?php echo url_for('user_list') ?>">Niveles de usuarios</a>
+        </li>
         <li class="option <?php echo array_key_exists('change_pass',$isActive) && $isActive['change_pass'] ? 'active' : '' ?>">
             <a href="<?php echo url_for('affiliate_change_pass') ?>">Cambiar contraseña</a>
         </li>

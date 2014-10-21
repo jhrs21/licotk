@@ -130,7 +130,7 @@
                         <li><a href="http://blog.lealtag.com" target="_blank" title="Blog de LealTag">BLOG</a></li>
                         -->
                         
-                        <li><a href="http://club.licoteca.com.ve/biz" title="Módulo de negocios">MÓDULO DE NEGOCIOS</a></li>
+                        <li><a href=<?php echo "http://".$_SERVER["SERVER_NAME"]."/biz"?> title="Módulo de negocios">MÓDULO DE NEGOCIOS</a></li>
 
                     </ul>
                 </div>

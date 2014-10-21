@@ -1,5 +1,5 @@
 <div class="main-container-inner">
-    <?php include_partial('html_static/optionsMenu', array('isActive' => array('promo' => true))) ?>
+    <?php include_partial('html_static/optionsMenu', array('isActive' => array('user_list' => true))) ?>
     <div id="prizes-container" class="main-canvas">
         <div class="main-canvas-title">
             <h2>Listado de Usuarios</h2>

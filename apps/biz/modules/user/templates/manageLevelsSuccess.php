@@ -3,21 +3,27 @@
     <div id="prizes-container" class="main-canvas">
         <div class="main-canvas-title">
             <h2>Cambiar de nivel</h2>
-            <div id="email-user-level-licoteca">
-                Usuario: <?php echo $user->getEmailAddress()?>
-            </div>
+            <table id="licoteca-levels">
+                <?php foreach ($result as $res): ?>
+                <tr>
+                    <td><?php echo $res['level']?></td>
+                    <td><?php echo $res['bottom']?></td>
+                    <td><?php echo $res['top']?></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
             <div id="licoteca-form-container" style="margin: auto; width: 400px;">
-                <form id="user-licoteca-level-form" action="<?php echo url_for('change_user_level_post')."?user=".$user->getAlphaId() ?>" method="post">
+                <form id="licoteca-level-form" action="<?php echo url_for('manage_licoteca_levels_post') ?>" method="post">
                     <div class="white-frame">
                         <?php echo $form ?>
                     </div>
                     <div class="form_footer">
-                        <input id="supf-submit" class="form_submit" type="submit" value="Cambiar Nivel"/>
+                        <input id="supf-submit" class="form_submit" type="submit" value="Cambiar Datos del Nivel"/>
                     </div>
                 </form>
             </div>
             <div class="main-canvas-content-footer">
-                <a href="<?php echo url_for('user_list') ?>">Regresar</a>
+                <a href="<?php echo url_for('promo') ?>">Regresar a Mis Promociones</a>
             </div>
         </div>
     </div>

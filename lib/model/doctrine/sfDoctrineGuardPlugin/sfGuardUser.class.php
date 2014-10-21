@@ -288,22 +288,20 @@ class sfGuardUser extends PluginsfGuardUser {
             $vmcard->setIsVirtual(true);
 
             $this->getMembershipCards()->add($vmcard);
+            
+            #$licoteca_level = new LicotecaUserLevel();
+            $level = new UserLicotecaUserLevel();
+            #$level->setLevelId(1);
+            
+            #$this->getUserLicotecaLevels()->add($level);
         }
 
         return parent::save($conn);
     }
     
     public function getLicotecaLevel() {
-        $levels = Doctrine::getTable('LicotecaUserLevel')->findAll();
-        $tags_quantity = $this->getPockets();
-        $tags_quantity = $tags_quantity[0]->getTotalTags();
-        foreach ($levels as $l){
-            if ($l->getBottom() >= $tags_quantity and $tags_quantity <= $l->getTop()) {
-                return $l->getName();
-            }
-        }            
-        $ll = "";
-        return $ll;
+        $user_level = Doctrine::getTable('UserLicotecaUserLevel')->findOneByUserId($this->id);
+        return $user_level->getLicotecaUserLevel()->getName();
     }
 
 }

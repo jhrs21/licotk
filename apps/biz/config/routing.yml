@@ -488,6 +488,16 @@ change_user_level_post:
     param:  { module: user, action: changeLevel, sf_format: html }
     requirements: { sf_method: post }
 
+manage_licoteca_levels:
+    url:    /niveles
+    param:  { module: user, action: manageLevels, sf_format: html }
+    requirements: { sf_method: get }
+    
+manage_licoteca_levels_post:
+    url:    /niveles
+    param:  { module: user, action: manageLevels, sf_format: html }
+    requirements: { sf_method: post }
+
 #options:  { model: JobeetCategory, type: object }
 ## generic rules
 ## please, remove them by adding more specific rules

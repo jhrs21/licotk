@@ -520,14 +520,26 @@ MembershipCard:
     User:   { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: MembershipCards, onDelete: cascade }
     Asset:  { class: Asset, local: asset_id, foreign: id, foreignAlias: MembershipCards, onDelete: cascade }
 
+#TABLAS PARA LICOTECA
 LicotecaUserLevel:
-    actAs:
-        Timestampable: ~
-    columns:
-        alpha_id:   { type: string(20), notnull: true, unique: true }
-        name:   { type: string(20), notnull: true }
-        bottom: { type: integer, notnull: true }
-        top:    { type: integer, notnull: true }
+  actAs:
+    Timestampable: ~
+  columns:
+    alpha_id:   { type: string(20), notnull: true, unique: true }
+    name:   { type: string(20), notnull: true }
+    bottom: { type: integer, notnull: true }
+    top:    { type: integer, notnull: true }
+        
+UserLicotecaUserLevel:
+  actAs:
+    Timestampable: ~
+  columns:
+    user_id: { type: integer, notnull: true }
+    level_id: { type: integer, notnull: true }
+  relations:
+    User: { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: UserLicotecaLevels, onDelete: cascade }
+    LicotecaUserLevel: { class: LicotecaUserLevel, local: level_id, foreign: id, foreignAlias: UserLicotecaLevels, onDelete: cascade } 
+# FIN DE TABLAS PARA LICOTECA    
     
 MailMessage:
   actAs: { Timestampable: ~ }

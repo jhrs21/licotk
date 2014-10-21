@@ -23,23 +23,46 @@ class userActions extends sfActions
       $this->pager = new sfDoctrinePager('sfGuardUser', 20);
       $this->users = [];      
       foreach ($subcriptions as $s){
-          $pockets = $s->getUser()->getPockets();
-          array_push($this->users, 
-                  array(
-                      "fullname" => $s->getUser()->getFullname(),
-                      "email" => $s->getUser()->getEmailAddress(),
-                      "tags" => $pockets[0]->getTotalTags(),
-                      "level" => $s->getUser()->getLicotecaLevel(),
-                      "id" => $s->getUser()->getAlphaId()
-                  ) ); 
+            $pockets = $s->getUser()->getPockets();
+            array_push($this->users, 
+                    array(
+                        "fullname" => $s->getUser()->getFullname(),
+                        "email" => $s->getUser()->getEmailAddress(),
+                        "tags" => $pockets[0]->getTotalTags(),
+                        "level" => $s->getUser()->getLicotecaLevel(),
+                        "id" => $s->getUser()->getAlphaId()
+                    ));
       }
     }
     
     public function executeChangeLevel(sfWebRequest $request){
         $params = $request->getGetParameters();
-        if (array_key_exists('u', $params)){
-            var_dump('renderizar a otra vista'); die;
+        $this->user = null;
+        $user_level = "";
+        if (array_key_exists('user', $params) && $params['user'] != ''){
+            $this->user = Doctrine::getTable('sfGuardUser')->findOneByAlphaId($params['user']);
+            if (!$this->user){
+                $this->forward404();
+            }
+        }else{
+            $this->forward404();
         }
+        $user_level = Doctrine::getTable('UserLicotecaUserLevel')->findOneByUserId($this->user->getId())->getLevelId();
+                
+        $this->form = new epUserLicotecaLevelForm(array(), array('level' => $user_level));
+        
+        if ($request->isMethod('post'))
+        {
+            $this->form->bind($request->getParameter($this->form->getName()));
+            $formValues = $this->form->getValues();
+            $obj = Doctrine::getTable('UserLicotecaUserLevel')->findOneByUserId($this->user->getId());
+            $obj->setLevelId($formValues['level']);
+            $obj->save();
+            $this->redirect('user_list');
+        }
+    }
+    
+    public function executeManageLevels(sfWebRequest $request){
         $levels = Doctrine::getTable('LicotecaUserLevel')->findAll();
         $this->result = array();
         foreach ($levels as $level) {
@@ -57,6 +80,5 @@ class userActions extends sfActions
             $level_object->save();
             $this->redirect('change_user_level');
         }
-        
     }
 }
