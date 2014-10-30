@@ -248,8 +248,8 @@ class sfGuardAuthActions extends BasesfGuardAuthActions {
 
     protected function sendWelcomeMail($profile) {
         $this->mail(array(
-            'subject'       => 'Bienvenido a LealTag',
-            'teaser'        => 'Felicidades, ahora tienes una cuenta en LealTag',
+            'subject'       => 'Bienvenido a Licoteca',
+            'teaser'        => 'Felicidades, ahora tienes una cuenta en Licoteca',
             'to'            => $profile->getEmail(),
             'html'          => 'email/sendWelcome',
             'text'          => 'email/sendWelcomeText',
@@ -262,8 +262,8 @@ class sfGuardAuthActions extends BasesfGuardAuthActions {
         $route = $this->getContext()->getRouting()->generate('validate', array('validate' => $profile->getValidate()), true);
         
         $this->mail(array(
-            'subject'       => 'Bienvenido a LealTag - Verifica tu cuenta',
-            'teaser'        => 'Felicidades, solo falta un paso más para activar tu cuenta en LealTag',
+            'subject'       => 'Bienvenido a Licoteca - Verifica tu cuenta',
+            'teaser'        => 'Felicidades, solo falta un paso más para activar tu cuenta en Licoteca',
             'to'            => $profile->getEmail(),
             'html'          => 'email/sendValidateNew',
             'text'          => 'email/sendValidateNewText',
@@ -281,7 +281,7 @@ class sfGuardAuthActions extends BasesfGuardAuthActions {
         
         $this->mail(array(
             'subject'       => 'Completa tu registro para ser premiado',
-            'teaser'        => 'Felicidades, solo falta un paso más para activar tu cuenta en LealTag',
+            'teaser'        => 'Felicidades, solo falta un paso más para activar tu cuenta en Licoteca',
             'to'            => $profile->getEmail(),
             'html'          => 'email/sendValidatePreregistered',
             'text'          => 'email/sendValidatePreregisteredText',
@@ -295,7 +295,7 @@ class sfGuardAuthActions extends BasesfGuardAuthActions {
         
         $this->mail(array(
             'subject'       => 'Verifica tu cuenta para ser premiado',
-            'teaser'        => 'Felicidades, solo falta un paso más para activar tu cuenta en LealTag',
+            'teaser'        => 'Felicidades, solo falta un paso más para activar tu cuenta en Licoteca',
             'to'            => $userData['email'],
             'html'          => 'email/sendValidatePreregistered',
             'text'          => 'email/sendValidatePreregisteredText',

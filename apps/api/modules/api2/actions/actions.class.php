@@ -413,6 +413,8 @@ class api2Actions extends baseEpApiActions {
             $this->result['success'] = 1;
 
             $this->result['user'] = $profile->getUser()->asArray();
+            $this->result['user']['member_since'] = $profile->getUser()->getCreatedAt();
+            $this->result['user']['municipality'] = $profile->getUser()->getUserProfile()->getMunicipality()->getName();
         } 
         else {
             foreach ($form->getErrorSchema()->getErrors() as $e) {

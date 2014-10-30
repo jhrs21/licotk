@@ -19,10 +19,11 @@ class userActions extends sfActions
       $user = $this->getUser()->getGuardUser();
       $affiliate = $user->getAffiliate();
       $subcriptions = $affiliate->getSubcriptions();
-
+      $temp = Doctrine::getTable('UserLicotecaUserLevel')->findAll();
       $this->pager = new sfDoctrinePager('sfGuardUser', 20);
       $this->users = [];      
-      foreach ($subcriptions as $s){
+      foreach ($temp as $s){
+      //foreach ($subcriptions as $s){
             $pockets = $s->getUser()->getPockets();
             array_push($this->users, 
                     array(

@@ -289,11 +289,11 @@ class sfGuardUser extends PluginsfGuardUser {
 
             $this->getMembershipCards()->add($vmcard);
             
-            #$licoteca_level = new LicotecaUserLevel();
+            $licoteca_level = new LicotecaUserLevel();
             $level = new UserLicotecaUserLevel();
-            #$level->setLevelId(1);
+            $level->setLevelId(1);
             
-            #$this->getUserLicotecaLevels()->add($level);
+            $this->getUserLicotecaLevels()->add($level);
         }
 
         return parent::save($conn);

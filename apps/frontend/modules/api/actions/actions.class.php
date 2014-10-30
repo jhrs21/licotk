@@ -2082,7 +2082,7 @@ class apiActions extends sfActions
     
     protected function sendWelcomeMail($profile) {
         $this->mail(array(
-                'subject' => sfContext::getInstance()->getI18N()->__('Bienvenido a LealTag'),
+                'subject' => sfContext::getInstance()->getI18N()->__('Bienvenido a Licoteca'),
                 'fullname' => $profile->getFullname(),
                 'email' => $profile->getEmail(),
                 'parameters' => array(
@@ -2097,7 +2097,7 @@ class apiActions extends sfActions
         $route = $this->getContext()->getRouting()->generate('validate', array('validate' => $profile->getValidate()), true);
         
         $this->mail(array(
-                'subject' => sfContext::getInstance()->getI18N()->__('Bienvenido a LealTag - Verifica tu cuenta'),
+                'subject' => sfContext::getInstance()->getI18N()->__('Bienvenido a Licoteca - Verifica tu cuenta'),
                 'fullname' => $profile->getFullname(),
                 'email' => $profile->getEmail(),
                 'parameters' => array(
@@ -2115,7 +2115,7 @@ class apiActions extends sfActions
         $route = $this->getContext()->getRouting()->generate('validate', array('validate' => $profile->getValidate()), true);
         
         $this->mail(array(
-                'subject' => sfContext::getInstance()->getI18N()->__('Bienvenido a LealTag - Verifica tu cuenta y completa tus datos'),
+                'subject' => sfContext::getInstance()->getI18N()->__('Bienvenido a Licoteca - Verifica tu cuenta y completa tus datos'),
                 'fullname' => $profile->getFullname(),
                 'email' => $profile->getEmail(),
                 'parameters' => array(
@@ -2131,7 +2131,7 @@ class apiActions extends sfActions
     
     protected function sendMembershipCardVerificationMail(sfGuardUser $user, MembershipCard $mcard, $replace = false) {        
         $this->mail(array(
-                'subject' => sfContext::getInstance()->getI18N()->__('¡Valida tu Tarjeta de LealTag!'),
+                'subject' => sfContext::getInstance()->getI18N()->__('¡Valida tu Tarjeta de Licoteca!'),
                 'fullname' => $user->getUserProfile()->getFullname(),
                 'email' => $user->getUserProfile()->getEmail(),
                 'parameters' => array(

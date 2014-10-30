@@ -826,8 +826,8 @@ class baseEpApiActions extends sfActions {
         $route = $routing->generate('validate', array('validate' => $profile->getValidate()), true);
         
         $this->mail(array(
-            'subject'       => 'Bienvenido a LealTag - Verifica tu cuenta',
-            'teaser'        => 'Felicidades, solo falta un paso más para activar tu cuenta en LealTag',
+            'subject'       => 'Bienvenido a Licoteca - Verifica tu cuenta',
+            'teaser'        => 'Felicidades, solo falta un paso más para activar tu cuenta en Licoteca',
             'to'            => $profile->getEmail(),
             'html'          => 'sendValidateNew',
             'text'          => 'sendValidateNewText',
