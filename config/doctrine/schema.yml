@@ -538,7 +538,7 @@ UserLicotecaUserLevel:
     level_id: { type: integer, notnull: true }
   relations:
     User: { class: sfGuardUser, local: user_id, foreign: id, foreignAlias: UserLicotecaLevels, onDelete: cascade }
-    LicotecaUserLevel: { class: LicotecaUserLevel, local: level_id, foreign: id, foreignAlias: UserLicotecaLevels, onDelete: cascade } 
+    LicotecaUserLevel: { class: LicotecaUserLevel, local: level_id, foreign: id, foreignType: one, foreignAlias: UserLicotecaLevels, onDelete: cascade } 
 # FIN DE TABLAS PARA LICOTECA    
     
 MailMessage:
