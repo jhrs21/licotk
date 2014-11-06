@@ -306,6 +306,7 @@ class api2Actions extends baseEpApiActions {
         $this->result['user']['member_since'] = $user->getCreatedAt();
         $this->result['user']['municipality'] = $user->getUserProfile()->getMunicipality()->getName();
         $this->result['user']['phone'] = $user->getUserProfile()->getPhone();
+        $this->result['user']['level'] = $user->getLicotecaLevel();
     }
 
     public function executeUserUpdate(sfWebRequest $request) {
@@ -415,6 +416,7 @@ class api2Actions extends baseEpApiActions {
             $this->result['user'] = $profile->getUser()->asArray();
             $this->result['user']['member_since'] = $profile->getUser()->getCreatedAt();
             $this->result['user']['municipality'] = $profile->getUser()->getUserProfile()->getMunicipality()->getName();
+            $this->result['user']['level'] = $profile->getUser()->getLicotecaLevel();
         } 
         else {
             foreach ($form->getErrorSchema()->getErrors() as $e) {
